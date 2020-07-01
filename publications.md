@@ -2,8 +2,6 @@
 layout: page
 ---
 
-<br>
-
 # How to cite our work
 
 You should cite the [publication(s)](https://github.com/vincentcasseau/hyStrath/wiki/Publications#publications) related to the solver(s) you are using __and__ make a reference to this website:  
@@ -17,22 +15,20 @@ howpublished={\url{https://github.com/vincentcasseau/hyStrath/}}
 } 
 ```
 
-<br><br>
-<br><br>
+<br>
 
 # Publications
 
 <br>
 
-## Journal articles:
+### Journal articles:
   - [*__dsmcFoam+__*] &nbsp; C. White _et al._, 03/2018: [dsmcFoam+: An OpenFOAM based direct simulation Monte Carlo solver](https://pure.strath.ac.uk/portal/files/81235392/White_etal_CPC_2017_an_OpenFOAM_based_direct_simulation_Monte_Carlo_solver.pdf)  
   - [*__pdFoam__*] &nbsp; C. J. Capon _et al._, 06/2017: [pdFOAM: A PIC-DSMC code for near-Earth plasma-body interactions](http://eprints.gla.ac.uk/138700/7/138700.pdf)
   - [*__hy2Foam__*] &nbsp; V. Casseau _et al._, 12/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/45/html)  
   - [*__hy2Foam__*] &nbsp; V. Casseau _et al._, 10/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part One: Zero-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/34/html)
   
-<br>
 
-## Latest conference papers:
+### Latest conference papers:
   - [*__dsmcFoam+__*] &nbsp; V. Casseau _et al._, 08/2019: [Effective diffusivity in porous media under rarefied gas conditions](https://github.com/vincentcasseau/hyStrath/blob/master/doc/ConferencePreprint_RGD31_CasseauWhite.pdf)
   - [*__ARC__*] &nbsp; V. Renato _et al._, 09/2017: [Multi-dimensional Ablation and Thermal Response Program for Martian Entry
 Analysis](https://strathprints.strath.ac.uk/62926/1/Renato_Scanlon_IAC_2017_Multi_dimensional_ablation_and_thermal_response_program_for_Martian_entry_analysis.pdf)
