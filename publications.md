@@ -22,7 +22,7 @@ howpublished={\url{https://github.com/vincentcasseau/hyStrath/}}
 
 # Publications
 
-<br><br>
+<br>
 
 ## Journal articles:
   - [*__dsmcFoam+__*] &nbsp; C. White _et al._, 03/2018: [dsmcFoam+: An OpenFOAM based direct simulation Monte Carlo solver](https://pure.strath.ac.uk/portal/files/81235392/White_etal_CPC_2017_an_OpenFOAM_based_direct_simulation_Monte_Carlo_solver.pdf)  
@@ -30,7 +30,7 @@ howpublished={\url{https://github.com/vincentcasseau/hyStrath/}}
   - [*__hy2Foam__*] &nbsp; V. Casseau _et al._, 12/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/45/html)  
   - [*__hy2Foam__*] &nbsp; V. Casseau _et al._, 10/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part One: Zero-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/34/html)
   
-<br><br>
+<br>
 
 ## Latest conference papers:
   - [*__dsmcFoam+__*] &nbsp; V. Casseau _et al._, 08/2019: [Effective diffusivity in porous media under rarefied gas conditions](https://github.com/vincentcasseau/hyStrath/blob/master/doc/ConferencePreprint_RGD31_CasseauWhite.pdf)
@@ -40,8 +40,7 @@ Analysis](https://strathprints.strath.ac.uk/62926/1/Renato_Scanlon_IAC_2017_Mult
 Re-entry Analysis](https://pure.strath.ac.uk/portal/files/72079768/Renato_etal_ISTS_2017_Multi_dimensional_ablation_and_thermal_response_program_for_re_entry_analysis.pdf)
   - [*__hyFoam__*] &nbsp; J.-J. O.E. Hoste _et al._, 03/2017: [Numerical Modeling and Simulation of Supersonic Flows in Propulsion Systems by Open-Source Solvers](http://eprints.gla.ac.uk/140369/1/140369.pdf)  
   - [*__hy2Foam__*, *__dsmcFoam+__*, *__hyperFoam__*] &nbsp; D. E.R. Espinoza _et al._, 07/2016: [An open-source hybrid CFD-DSMC solver for high speed flows](http://strathprints.strath.ac.uk/59955/14/Espinoza_etal_SRGD2016_An_open_source_hybrid_CFD_DSMC_solver_for_high_speed_flows.pdf)  
-  
-<br><br>  
+ 
 
 ## PhD theses:
 - [*__hyperFoam__*] &nbsp; D. E.R. Espinoza, 11/2018: [An Open-Source Hybrid CFD-DSMC Solver for High-Speed Flows](https://github.com/vincentcasseau/hyStrath/blob/master/doc/PhDthesis-danielespinoza.pdf)
@@ -49,7 +48,7 @@ Re-entry Analysis](https://pure.strath.ac.uk/portal/files/72079768/Renato_etal_I
 - [*__pdFoam__*] &nbsp; C. J. Capon, 09/2017: [Ionospheric Aerodynamics in Low Earth Orbit](http://unsworks.unsw.edu.au/fapi/datastream/unsworks:46528/SOURCE01?view=true)
 - [*__hyFoam__*, *__hy2Foam__*] &nbsp; V. Casseau, 07/2017: [An Open-Source CFD Solver for Planetary Entry](https://github.com/vincentcasseau/hyStrath/blob/master/doc/PhDthesis-vincentcasseau.pdf)
 
-<br><br>
+<br>
 
 ## Extended abstracts:
 - [*__hy2Foam__*, *__dsmcFoam+__*, *__hyperFoam__*] &nbsp; V. Casseau _et al._, 11/2016: [Open-source High-fidelity Solvers Dedicated to Re-entry Analysis and Design for Demise](https://github.com/vincentcasseau/hyStrath/blob/master/doc/ExtendedAbstract_Stardust2016_CasseauEspinoza.pdf), Final Stardust Conference, 31st Oct - 4th Nov 2016, ESA-ESTEC, Noordwijk, The Netherlands
