@@ -12,7 +12,7 @@ Every contribution is welcome whether that is:
 - an addition to be made to the _How-tos_ 
 - etc
 
-Please [get in touch](https://github.com/vincentcasseau/hyStrath/wiki/People-and-Contact#contact) if you are interested.
+Please [get in touch](https://vincentcasseau.github.io/people-and-contact/#Contact) if you are interested.
 
 <br>
 

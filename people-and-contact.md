@@ -1,10 +1,8 @@
 ---
 layout: page
+title: "People & Contact"
 ---
 
-# Contributors
-
-## _hyStrath_ platform  
 _GitHub coordinator_:  
 * **Dr Vincent Casseau** &nbsp; <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank"><img src="https://i2.wp.com/poxse.com/wp-content/uploads/2016/01/linkedin-logo.jpg?ssl=1" alt="LinkedIn profile" width="15"></a> 
 <a style="text-decoration: none" href="https://www.researchgate.net/profile/Vincent_Casseau" target="_blank"><img src="https://www.wur.nl/upload_mm/2/8/5/9f59698c-e156-4f33-9520-405cb7f4d9c6_researchgate_56f72ad6_490x330.png" alt="ResearchGate profile" width="22"></a>
@@ -92,21 +90,22 @@ _Contributors_:
 * the Micro & Nano Flows Group  
 * R.Tech Engineering  
 
-**[View more](https://github.com/vincentcasseau/hyStrath/wiki/Contributions#list-of-external-contributors)**   
+**[View more](https://vincentcasseau.github.io/contributions/#List-of-external-contributors)**   
 
-<br><br>
+<br>
+
+---
 
 # Contact
+{: Contact}
 
 **Enquiries: hystrath@gmail.com**    
 
 This e-mail address may be used if  
-1. you would like to [contribute](https://github.com/vincentcasseau/hyStrath/wiki/Contributions)
+1. you would like to [contribute](https://vincentcasseau.github.io/contributions/)
 2. you would like to use the hyStrath platform for educational purposes
 3. you need support in the form of consulting services   
 
 This e-mail address should not be used to
 1. report bugs, the [Issues](https://github.com/vincentcasseau/hyStrath/issues) page is there for this purpose  
 2. seek for free OpenFOAM advice, please visit [CFD-Online](https://www.cfd-online.com/Forums/openfoam/) instead
-
-<br><br>
