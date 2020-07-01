@@ -18,9 +18,11 @@ howpublished={\url{https://github.com/vincentcasseau/hyStrath/}}
 
 <br>
 
+---
+
 ## Publications  
 {: #Publications }
-.  
+  
 #### Journal articles:
   - [*__dsmcFoam+__*] &nbsp; C. White _et al._, 03/2018: [dsmcFoam+: An OpenFOAM based direct simulation Monte Carlo solver](https://pure.strath.ac.uk/portal/files/81235392/White_etal_CPC_2017_an_OpenFOAM_based_direct_simulation_Monte_Carlo_solver.pdf)  
   - [*__pdFoam__*] &nbsp; C. J. Capon _et al._, 06/2017: [pdFOAM: A PIC-DSMC code for near-Earth plasma-body interactions](http://eprints.gla.ac.uk/138700/7/138700.pdf)
@@ -54,8 +56,9 @@ and continuum hypersonic flow over re-entry objects](https://strathprints.strath
 #### Presentation slides:
 - [*__hy2Foam__*, *__dsmcFoam+__*, *__hyperFoam__*] &nbsp; V. Casseau & D. E.R. Espinoza, 11/2016: [Open-source High-fidelity Solvers Dedicated to Re-entry Analysis and Design for Demise](https://github.com/vincentcasseau/hyStrath/blob/master/doc/Slides_FinalStardustConference2016_CasseauEspinoza.pdf)  
 
-<br> 
 <br>
+ 
+---
 
 ## Other relevant publications
 

@@ -27,10 +27,10 @@ author: hyStrath
 navbar-links:
   Home: "home"
   Code:
-    - Compatibility: "https://github.com/vincentcasseau/hyStrath/"
-    - Maintenance: "https://github.com/vincentcasseau/hyStrath/"
-    - Installation: "https://github.com/vincentcasseau/hyStrath/"
-    - Sync: "https://github.com/vincentcasseau/hyStrath/"
+    - Compatibility: "compatibility"
+    - Maintenance: "maintenance"
+    - Installation: "installation"
+    - Sync: "sync"
   Contributions: "contributions"
   Publications: "publications"
   How-tos:

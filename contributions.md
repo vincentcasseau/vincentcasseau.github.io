@@ -1,8 +1,9 @@
 ---
 layout: page
+title: ""
 ---
 
-# Contributions
+## Contributions
 
 Every contribution is welcome whether that is:
 - an open-source tool useful for hypersonic / rarefied gas dynamics calculations
@@ -15,7 +16,7 @@ Every contribution is welcome whether that is:
 
 Please [get in touch](https://github.com/vincentcasseau/hyStrath/wiki/People-and-Contact#contact) if you are interested.
 
-<br><br>
+<br>
 
 --- 
 
@@ -23,7 +24,7 @@ Please [get in touch](https://github.com/vincentcasseau/hyStrath/wiki/People-and
 
 You will need to fill a _pull request_ and this can be achieved as follows:  
 
-1. Fork your own copy of _hyStrath_ using the fork button in the top right-hand corner  
+1. Fork your own copy of _hyStrath_ using the fork button    
 2. Open a terminal window and create a local copy of your _hyStrath_ repository   
 ```sh
 cd $WM_PROJECT_USER_DIR  
@@ -31,7 +32,9 @@ git clone https://github.com/USERNAME/hyStrath
 ```   
 3. Add/edit files in your local repository  
 4. At any time, track the changes that you have made using  
-`git status`
+```sh
+git status
+```  
 5. Once you are ready to commit and push your changes, type in:  
 ```
 cd $WM_PROJECT_USER_DIR/hyStrath  
@@ -43,7 +46,7 @@ git push origin master
 7. Compare the _master_ on vincentcasseau/hyStrath with your _master_ on USERNAME/hyStrath and press _Create pull request_ once you are done
 8. Your contribution to _hyStrath_ will be pending for approval and will be dealt with shortly. Thank you!  
 
-<br><br>
+<br>
 
 --- 
  
@@ -54,5 +57,3 @@ git push origin master
 | [R.Tech Engineering](http://rtech-engineering.com/) | OF-v1706 | [Update to OpenFOAM v1706](https://github.com/vincentcasseau/hyStrath/wiki/Compatibility,-Maintenance,-Installation-and-Sync#maintenance), v1706 branch created | 12 May 2018 |
 | [the Micro & Nano Flows Group](http://www.micronanoflows.ac.uk/) |  | [Original dsmcFoam solver and lagrangian library](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig), OF-2.4.0 | March 2017 |
 
-
-<br><br>
