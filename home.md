@@ -29,7 +29,7 @@ Implementation of the OpenFOAM CFD solvers _hyFoam_ and _hy2Foam_ was initiated 
 --- 
 
 ###### hyhy
-{: #hy2Foam }
+
 
 <p align="center">
   <img src="/docs/img/logos/hy2FoamLogo.png" width="200"/>
