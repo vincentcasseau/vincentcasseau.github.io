@@ -32,7 +32,7 @@ title: Maintenance
     <td align="center" colspan="2">29 Aug 2018, merged into Master</td>
   </tr>
   <tr>
-    <td align="center"><b>Master<b/></td>
+    <td align="center"><b>Master</b></td>
     <td align="center">OF-v1706</td>
     <td align="center" colspan="3"> </td>
   </tr>
