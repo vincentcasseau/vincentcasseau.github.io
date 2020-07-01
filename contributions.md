@@ -54,6 +54,6 @@ git push origin master
 
 | Contributor | _hyStrath_ branch | Contribution | Date |  
 |:-------------:|:-------------:|:-------------:|:-------------:|
-| [R.Tech Engineering](http://rtech-engineering.com/) | OF-v1706 | [Update to OpenFOAM v1706](https://github.com/vincentcasseau/hyStrath/wiki/Compatibility,-Maintenance,-Installation-and-Sync#maintenance), v1706 branch created | 12 May 2018 |
+| [R.Tech Engineering](http://rtech-engineering.com/) | OF-v1706 | [Update to OpenFOAM v1706](https://vincentcasseau.github.io/maintenance/), v1706 branch created | 12 May 2018 |
 | [the Micro & Nano Flows Group](http://www.micronanoflows.ac.uk/) |  | [Original dsmcFoam solver and lagrangian library](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig), OF-2.4.0 | March 2017 |
 
