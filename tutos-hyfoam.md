@@ -17,9 +17,7 @@ Attached shock wave | Laminar flow
 
 + The working directory for the 2D planar laminar flat plate is located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hyFoam/laminarFlatPlateLTS).  
 
-+ An on-line description of the case scenario will soon be added.  
-
-+ [View more](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hyFoam-::-laminarFlatPlateLTS)
++ [View more](https://vincentcasseau.github.io/tutos-hy2foam-laminarflatplatelts/)
 
 <br>
 
@@ -33,9 +31,7 @@ Axially-symmetric flow-field | Cold hypersonics
 
 + The working directory for the ogive-cylinder-flare HB2 configuration is located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hyFoam/axisymmetric-HB2).  
 
-+ An on-line description of the case scenario will soon be added.  
-
-+ [View more](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hyFoam-::-axisymmetricHB2)
++ [View more](https://vincentcasseau.github.io/tutos-hy2foam-axisymmetrichb2/)
 
 <br>
 

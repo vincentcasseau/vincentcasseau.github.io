@@ -40,4 +40,4 @@ title: Tutorials
 
 ---  
 
-##### Contributor: Dr Vincent Casseau
+Contributor: Dr Vincent Casseau

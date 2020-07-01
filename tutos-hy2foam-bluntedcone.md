@@ -33,7 +33,7 @@ title: Tutorials
 `gnuplot gnuplot/monitorResiduals`    
 
 <p align="center">
-  <img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/tutorials/hy2Foam/tutorial-bluntedCone-residuals.png" width="400">
+  <img src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-residuals.png" width="400">
 </p>
 
 <br>
@@ -42,20 +42,22 @@ title: Tutorials
 + Flow visualisations using Paraview:  
 
 <p align="center">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/tutorials/hy2Foam/tutorial-bluntedCone-fieldTt.gif" width="500">  
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/tutorials/hy2Foam/tutorial-bluntedCone-fieldTv.gif" width="500">  
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/tutorials/hy2Foam/tutorial-bluntedCone-fieldMach.gif" width="500">  
+<img src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-fieldTt.gif" width="500">  
+<img src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-fieldTv.gif" width="500">  
+<img src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-fieldMach.gif" width="500">  
 </p>
 
 <br>
 
-+ Post-processing:   
-`gnuplot gnuplot/monitorCd`   
-`gnuplot gnuplot/monitorIntegratedWallHeatFlux`  
++ Post-processing:
+```sh
+gnuplot gnuplot/monitorCd 
+gnuplot gnuplot/monitorIntegratedWallHeatFlux
+```  
 
 <p align="center">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/tutorials/hy2Foam/tutorial-bluntedCone-dragCoefficient.png" width="400">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/tutorials/hy2Foam/tutorial-bluntedCone-integratedWallHeatFlux.png" width="400">
+<img src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-dragCoefficient.png" width="400">
+<img src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-integratedWallHeatFlux.png" width="400">
 </p>
 
 + Solution: stagnation line data and surface coefficients
@@ -76,4 +78,4 @@ title: Tutorials
 
 ---  
 
-##### Contributors: Dr Vincent Casseau and Dr Daniel E.R. Espinoza
+Contributors: Dr Vincent Casseau and Dr Daniel E.R. Espinoza

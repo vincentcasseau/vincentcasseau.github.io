@@ -59,4 +59,4 @@ and map results from one stage to the next using the *mapFields -consistent* uti
 
 ---  
 
-##### Contributor: Dr Vincent Casseau
+Contributor: Dr Vincent Casseau
