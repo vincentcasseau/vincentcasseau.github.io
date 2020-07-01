@@ -30,7 +30,6 @@ Implementation of the OpenFOAM CFD solvers _hyFoam_ and _hy2Foam_ was initiated 
 --- 
 
 ###### &nbsp;
-
 <p align="center">
   <img src="/docs/img/logos/hy2FoamLogo.png" width="200"/>
 </p>
@@ -66,8 +65,9 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 <br><br>
  
 ---  
-###### &nbsp; <p align="center"> 
-<img src="/docs/img/logos/hyFoamLogo.png" width="190"/>
+###### &nbsp;
+<p align="center"> 
+  <img src="/docs/img/logos/hyFoamLogo.png" width="190"/>
 </p>
 
 _hyFoam_ is an open-source computational fluid dynamics (CFD)
@@ -86,8 +86,9 @@ solver that derives from _hy2Foam_. In the latter code, the trans-rotational and
 
 ---  
   
-###### &nbsp; <p align="center">
-<img src="/docs/img/logos/hy2MhdFoamLogo.png" width="210"/>
+###### &nbsp;
+<p align="center">
+  <img src="/docs/img/logos/hy2MhdFoamLogo.png" width="210"/>
 </p>
 
 By: A. Ryakhovskiy, Ioffe Institute & Peter the Great St. Petersburg Polytechnic University , St Petersburg, Russia  
@@ -118,8 +119,9 @@ _hy2MhdFoam_ supplements _hy2Foam_ with features relative to magnetohydrodynamic
 
 ---  
   
-###### &nbsp; <p align="center">
-<img src="/docs/img/logos/dsmcFoamPlusLogo.png" width="220"/>
+###### &nbsp;
+<p align="center">
+  <img src="/docs/img/logos/dsmcFoamPlusLogo.png" width="220"/>
 </p>
 
 A modified version of the _dsmcFoam+_ direct simulation Monte Carlo solver located at [MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig). The new features are the following
@@ -148,8 +150,9 @@ A modified version of the _dsmcFoam+_ direct simulation Monte Carlo solver locat
 
 ---  
   
-###### &nbsp; <p align="center">
-<img src="/docs/img/logos/pdFoamLogo.png" width="190"/>
+###### &nbsp;
+<p align="center">
+  <img src="/docs/img/logos/pdFoamLogo.png" width="190"/>
 </p>
 
 By: C. Capon, UNSW, Canberra, Australia  
@@ -158,4 +161,3 @@ By: C. Capon, UNSW, Canberra, Australia
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/hybridMethods/pdFoam)  
 [**&#x2191; Back to Contents**](https://github.com/vincentcasseau/hyStrath/wiki#contents)
 
-<br>
