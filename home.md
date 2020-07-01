@@ -5,7 +5,7 @@ subtitle: the hypersonic valley
 ---
 
 <p align="center">
-  <img src="/docs/img/logos/satelliteMachLogo.png" width="300"/>
+  <img src="/docs/img/logos/satelliteMachLogo.png" width="200"/>
 </p>
 
 #### The _hyStrath_ GitHub repository is featuring hypersonic and rarefied gas dynamics code developments released under license GPL-3.0. It is the only platform to conjointly host open-source CFD and DSMC codes designed for atmospheric entry analysis.   
@@ -20,7 +20,7 @@ Implementation of the OpenFOAM CFD solvers _hyFoam_ and _hy2Foam_ was initiated 
 ---  
 
 ### Contents
-  + [_**hy2Foam**_](https://github.com/vincentcasseau/hyStrath/wiki#-)  
+  + [_**hy2Foam**_](#hy2Foam)  
   + [_**hyFoam**_](https://github.com/vincentcasseau/hyStrath/wiki#--1)  
   + [_**hy2MhdFoam**_](https://github.com/vincentcasseau/hyStrath/wiki#--2)
   + [_**dsmcFoam+**_](https://github.com/vincentcasseau/hyStrath/wiki#--3)
