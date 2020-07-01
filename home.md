@@ -1,9 +1,7 @@
 
 <h1 align="center">Ceud mìle fàilte gu <i>hyStrath</i> Wiki!</h1>
 
-<p align="center">
-  <img src="/docs/img/logos/satelliteMachLogo.png" width="300">
-</p>
+img: "/docs/img/logos/satelliteMachLogo.png"  
 
 
 #### The _hyStrath_ (literally 'hypersonic valley') GitHub repository is featuring hypersonic and rarefied gas dynamics code developments released under license GPL-3.0. It is the only platform to conjointly host open-source CFD and DSMC codes designed for atmospheric entry analysis.   
