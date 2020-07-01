@@ -1,3 +1,9 @@
+---
+layout: page
+title: How-tos
+subtitle: DSMC Module
+---
+
 # Table of contents
 
 ---  
