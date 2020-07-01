@@ -44,8 +44,8 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 * all dictionaries can be re-read on-the-fly: handy on a high-performance computer  
 * layer functions for the strongly-coupled hybrid CFD-DSMC code _hyperFoam_  
 
-[**> How-tos**](https://github.com/vincentcasseau/hyStrath/wiki/CFD:-How-to)  
-[**> Tutorials**](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hy2Foam)  
+[**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd/)  
+[**> Tutorials**](https://vincentcasseau.github.io/tutos-hy2foam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2Foam)  
 [**&#x2191; Back to Contents**](#Solvers)  
 
@@ -65,8 +65,8 @@ solver that derives from _hy2Foam_. In the latter code, the trans-rotational and
 * hydrogen compounds added to the thermochemical database
 * transport models: CEA2 (Chemical Equilibrium with Applications, NASA)
 
-[**> How-tos**](https://github.com/vincentcasseau/hyStrath/wiki/CFD:-How-to)  
-[**> Tutorials**](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hyFoam)  
+[**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd/)  
+[**> Tutorials**](https://vincentcasseau.github.io/tutos-hyfoam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2Foam)  
 [**&#x2191; Back to Contents**](#Solvers)  
 
@@ -99,8 +99,8 @@ _hy2MhdFoam_ supplements _hy2Foam_ with features relative to magnetohydrodynamic
   + Artificial ionization  
   + P-1 radiation model  
 
-[**> How-tos**](https://github.com/vincentcasseau/hyStrath/wiki/CFD:-How-to)  
-[**> Tutorials**](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hy2MhdFoam)  
+[**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd/)  
+[**> Tutorials**](https://vincentcasseau.github.io/tutos-hy2mhdfoam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2MhdFoam)  
 [**&#x2191; Back to Contents**](#Solvers)  
 
@@ -131,8 +131,8 @@ A modified version of the _dsmcFoam+_ direct simulation Monte Carlo solver locat
   + variable time-step method
   + extension of the QK reaction classes to Martian entry problems  
 
-[**> How-tos**](https://github.com/vincentcasseau/hyStrath/wiki/DSMC:-How-to)  
-[**> Tutorials**](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-dsmcFoam)  
+[**> How-tos**](https://vincentcasseau.github.io/how-tos-dsmc/)  
+[**> Tutorials**](https://vincentcasseau.github.io/tutos-dsmcfoam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/discreteMethods/dsmc/dsmcFoam%2B)  
 [**&#x2191; Back to Contents**](#Solvers)
 
@@ -148,7 +148,7 @@ A modified version of the _dsmcFoam+_ direct simulation Monte Carlo solver locat
 
 By: C. Capon, UNSW, Canberra, Australia  
 
-[**> Tutorials**](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-pdFoam)  
+[**> Tutorials**](https://vincentcasseau.github.io/tutos-pdfoam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/hybridMethods/pdFoam)  
 [**&#x2191; Back to Contents**](#Solvers)
 
