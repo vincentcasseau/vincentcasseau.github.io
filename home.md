@@ -2,7 +2,6 @@
 layout: page
 title: hyStrath
 subtitle: the hypersonic valley
-share-img: /docs/img/logos/satelliteMachLogo.png
 ---
 
 <p align="center">
@@ -68,7 +67,7 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
  
 ---  
 ###### &nbsp; <p align="center"> 
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/hyFoamLogo.png" width="190">
+<img src="/docs/img/logos/hyFoamLogo.png" width="190"/>
 </p>
 
 _hyFoam_ is an open-source computational fluid dynamics (CFD)
@@ -88,7 +87,7 @@ solver that derives from _hy2Foam_. In the latter code, the trans-rotational and
 ---  
   
 ###### &nbsp; <p align="center">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/hy2MhdFoamLogo.png" width="210">
+<img src="/docs/img/logos/hy2MhdFoamLogo.png" width="210"/>
 </p>
 
 By: A. Ryakhovskiy, Ioffe Institute & Peter the Great St. Petersburg Polytechnic University , St Petersburg, Russia  
@@ -120,7 +119,7 @@ _hy2MhdFoam_ supplements _hy2Foam_ with features relative to magnetohydrodynamic
 ---  
   
 ###### &nbsp; <p align="center">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/dsmcFoamPlusLogo.png" width="220">
+<img src="/docs/img/logos/dsmcFoamPlusLogo.png" width="220"/>
 </p>
 
 A modified version of the _dsmcFoam+_ direct simulation Monte Carlo solver located at [MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig). The new features are the following
@@ -150,7 +149,7 @@ A modified version of the _dsmcFoam+_ direct simulation Monte Carlo solver locat
 ---  
   
 ###### &nbsp; <p align="center">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/pdFoamLogo.png" width="190">
+<img src="/docs/img/logos/pdFoamLogo.png" width="190"/>
 </p>
 
 By: C. Capon, UNSW, Canberra, Australia  
