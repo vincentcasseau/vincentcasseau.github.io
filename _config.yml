@@ -25,13 +25,15 @@ author: hyStrath
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Home: "home"
+  Installation: "home"
   Publications: "home"
-  People & Contact: "home"
-  How-to:
+  How-tos:
     - CFD: "https://github.com/vincentcasseau/hyStrath/"
     - DSMC: "https://github.com/vincentcasseau/hyStrath/"
-  Github: "https://github.com/vincentcasseau/hyStrath/"
+  Tutorials:
+    - CFD: "https://github.com/vincentcasseau/hyStrath/"
+    - DSMC: "https://github.com/vincentcasseau/hyStrath/" 
+  People: "home"   
 
 # --- Logo --- #
 
