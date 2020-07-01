@@ -63,6 +63,7 @@ _Contributors_:
 <br>
 
 ## Hybrid modules &nbsp;—&nbsp; __*hyperFoam*__, __*pdFoam*__  
+&nbsp;
 
 #### CFD-DSMC  
 _Lead developer_:  
@@ -72,6 +73,8 @@ _Contributors_:
 * **Dr Vincent Casseau**  
 * **Dr Thomas J. Scanlon**  
 * **Dr Richard E. Brown** 
+
+&nbsp;
 
 #### PIC-DSMC  
 _Lead developer_:  

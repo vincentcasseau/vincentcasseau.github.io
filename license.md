@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ""
+title: "License"
 --- 
 
 GNU GENERAL PUBLIC LICENSE
