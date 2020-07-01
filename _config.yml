@@ -31,14 +31,16 @@ navbar-links:
     - Maintenance: "https://github.com/vincentcasseau/hyStrath/"
     - Installation: "https://github.com/vincentcasseau/hyStrath/"
     - Sync: "https://github.com/vincentcasseau/hyStrath/"
-  Publications: "home"
+  Contributions: "contributions"
+  Publications: "publications"
   How-tos:
     - CFD: "https://github.com/vincentcasseau/hyStrath/"
     - DSMC: "https://github.com/vincentcasseau/hyStrath/"
   Tutorials:
     - CFD: "https://github.com/vincentcasseau/hyStrath/"
     - DSMC: "https://github.com/vincentcasseau/hyStrath/" 
-  People: "home"   
+  People: "people-and-contact"
+  License: "license"
 
 # --- Logo --- #
 
