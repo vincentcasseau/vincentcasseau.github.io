@@ -5,7 +5,7 @@ subtitle: the hypersonic valley
 ---
 
 <p align="center">
-  <img src="/docs/img/logos/satelliteMachLogo.png" width="200"/>
+  <img src="/docs/img/logos/satelliteMachLogo.png" width="250"/>
 </p>
 
 #### The _hyStrath_ GitHub repository is featuring hypersonic and rarefied gas dynamics code developments released under license GPL-3.0. It is the only platform to conjointly host open-source CFD and DSMC codes designed for atmospheric entry analysis.   
@@ -20,18 +20,18 @@ Implementation of the OpenFOAM CFD solvers _hyFoam_ and _hy2Foam_ was initiated 
 ---  
 
 ### Contents
+{: #Contents }
   + [_**hy2Foam**_](#hy2Foam)  
-  + [_**hyFoam**_](https://github.com/vincentcasseau/hyStrath/wiki#--1)  
-  + [_**hy2MhdFoam**_](https://github.com/vincentcasseau/hyStrath/wiki#--2)
-  + [_**dsmcFoam+**_](https://github.com/vincentcasseau/hyStrath/wiki#--3)
-  + [_**pdFoam**_](https://github.com/vincentcasseau/hyStrath/wiki#--4)
+  + [_**hyFoam**_](#hyFoam)  
+  + [_**hy2MhdFoam**_](#hy2MhdFoam)
+  + [_**dsmcFoam+**_](#dsmcFoam+)
+  + [_**pdFoam**_](#pdFoam)
 
   
 --- 
 
 ###### &nbsp;
 {: #hy2Foam }
-
 <p align="center">
   <img src="/docs/img/logos/hy2FoamLogo.png" width="200"/>
 </p>
@@ -62,12 +62,13 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 [**> How-tos**](https://github.com/vincentcasseau/hyStrath/wiki/CFD:-How-to)  
 [**> Tutorials**](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hy2Foam)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2Foam)  
-[**&#x2191; Back to Contents**](https://github.com/vincentcasseau/hyStrath/wiki#contents)  
+[**&#x2191; Back to Contents**](#Contents)  
 
 <br><br>
  
 ---  
 ###### &nbsp;
+{: #hyFoam }
 <p align="center"> 
   <img src="/docs/img/logos/hyFoamLogo.png" width="190"/>
 </p>
@@ -82,13 +83,14 @@ solver that derives from _hy2Foam_. In the latter code, the trans-rotational and
 [**> How-tos**](https://github.com/vincentcasseau/hyStrath/wiki/CFD:-How-to)  
 [**> Tutorials**](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hyFoam)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2Foam)  
-[**&#x2191; Back to Contents**](https://github.com/vincentcasseau/hyStrath/wiki#contents)  
+[**&#x2191; Back to Contents**](#Contents)  
 
 <br><br>
 
 ---  
   
 ###### &nbsp;
+{: #hy2MhdFoam }
 <p align="center">
   <img src="/docs/img/logos/hy2MhdFoamLogo.png" width="210"/>
 </p>
@@ -115,13 +117,14 @@ _hy2MhdFoam_ supplements _hy2Foam_ with features relative to magnetohydrodynamic
 [**> How-tos**](https://github.com/vincentcasseau/hyStrath/wiki/CFD:-How-to)  
 [**> Tutorials**](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hy2MhdFoam)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2MhdFoam)  
-[**&#x2191; Back to Contents**](https://github.com/vincentcasseau/hyStrath/wiki#contents)  
+[**&#x2191; Back to Contents**](#Contents)  
 
 <br><br>
 
 ---  
   
 ###### &nbsp;
+{: #dsmcFoam+ }
 <p align="center">
   <img src="/docs/img/logos/dsmcFoamPlusLogo.png" width="220"/>
 </p>
@@ -146,13 +149,14 @@ A modified version of the _dsmcFoam+_ direct simulation Monte Carlo solver locat
 [**> How-tos**](https://github.com/vincentcasseau/hyStrath/wiki/DSMC:-How-to)  
 [**> Tutorials**](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-dsmcFoam)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/discreteMethods/dsmc/dsmcFoam%2B)  
-[**&#x2191; Back to Contents**](https://github.com/vincentcasseau/hyStrath/wiki#contents)
+[**&#x2191; Back to Contents**](#Contents)
 
 <br><br>
 
 ---  
   
 ###### &nbsp;
+{: #pdFoam }
 <p align="center">
   <img src="/docs/img/logos/pdFoamLogo.png" width="190"/>
 </p>
@@ -161,5 +165,5 @@ By: C. Capon, UNSW, Canberra, Australia
 
 [**> Tutorials**](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-pdFoam)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/hybridMethods/pdFoam)  
-[**&#x2191; Back to Contents**](https://github.com/vincentcasseau/hyStrath/wiki#contents)
+[**&#x2191; Back to Contents**](#Contents)
 
