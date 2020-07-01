@@ -20,16 +20,16 @@ Implementation of the OpenFOAM CFD solvers _hyFoam_ and _hy2Foam_ was initiated 
 ---  
 
 ### Contents
-  + [_**hy2Foam**_](https://vincentcasseau.github.io/home/#--1)  
+  + [_**hy2Foam**_](https://vincentcasseau.github.io/home/#-)  
   + [_**hyFoam**_](https://vincentcasseau.github.io/home/#--1)  
   + [_**hy2MhdFoam**_](https://vincentcasseau.github.io/home/#--2)
   + [_**dsmcFoam+**_](https://vincentcasseau.github.io/home/#--3)
   + [_**pdFoam**_](https://vincentcasseau.github.io/home/#--4)
+
   
 --- 
 
-###### hyhy
-
+###### &nbsp;
 
 <p align="center">
   <img src="/docs/img/logos/hy2FoamLogo.png" width="200"/>
@@ -58,7 +58,7 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 * all dictionaries can be re-read on-the-fly: handy on a high-performance computer  
 * layer functions for the strongly-coupled hybrid CFD-DSMC code _hyperFoam_  
 
-[**> How-tos**](#hy2Foam)  
+[**> How-tos**](https://github.com/vincentcasseau/hyStrath/wiki/CFD:-How-to)  
 [**> Tutorials**](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hy2Foam)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2Foam)  
 [**&#x2191; Back to Contents**](https://github.com/vincentcasseau/hyStrath/wiki#contents)  
