@@ -26,7 +26,7 @@ author: hyStrath
 
 navbar-links:
   Home: "home"
-  Code: "https://github.com/vincentcasseau/hyStrath/"
+  Code:
     - Compatibility: "https://github.com/vincentcasseau/hyStrath/"
     - Maintenance: "https://github.com/vincentcasseau/hyStrath/"
     - Installation: "https://github.com/vincentcasseau/hyStrath/"
@@ -196,7 +196,7 @@ paginate: 5
 
 kramdown:
   input: GFM
-#  auto_ids: true
+  auto_ids: true
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
