@@ -4,6 +4,7 @@ title: Synchronisation
 --- 
 
 ## OF-v1706   
+{: #OF-v1706 }
 
 1. Change the current working directory to your local *hyStrath* repository
 ```sh 

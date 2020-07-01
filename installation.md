@@ -3,7 +3,9 @@ layout: page
 title: Installation
 --- 
 
-## OF-v1706
+### OF-v1706
+{: #OF-v1706 }
+
 1. Download the source .tgz files for Ubuntu (30/06/2017: OpenFOAM v1706) for both [OpenFOAM](https://sourceforge.net/projects/openfoam/files/v1706/OpenFOAM-v1706.tgz) and the [ThirdParty](https://sourceforge.net/projects/openfoam/files/v1706/ThirdParty-v1706.tgz)  
 2. Untar them  
 3. Install the [system requirements](https://www.openfoam.com/documentation/system-requirements.php): 
