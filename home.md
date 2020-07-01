@@ -2,7 +2,7 @@
 <h1 align="center">Ceud mìle fàilte gu <i>hyStrath</i> Wiki!</h1>
 
 <p align="center">
-  <img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/satelliteMachLogo.png" width="300">
+  <img src="docs/img/logos/satelliteMachLogo.png" width="300">
 </p>
 
 
