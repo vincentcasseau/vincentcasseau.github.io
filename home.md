@@ -20,7 +20,7 @@ Implementation of the OpenFOAM CFD solvers _hyFoam_ and _hy2Foam_ was initiated 
 ---  
 
 ### Contents
-  + [_**hy2Foam**_](https://vincentcasseau.github.io/home/#-)  
+  + [_**hy2Foam**_](#hy2Foam)  
   + [_**hyFoam**_](https://vincentcasseau.github.io/home/#--1)  
   + [_**hy2MhdFoam**_](https://vincentcasseau.github.io/home/#--2)
   + [_**dsmcFoam+**_](https://vincentcasseau.github.io/home/#--3)
@@ -30,6 +30,8 @@ Implementation of the OpenFOAM CFD solvers _hyFoam_ and _hy2Foam_ was initiated 
 --- 
 
 ###### &nbsp;
+{: #hy2Foam }
+
 <p align="center">
   <img src="/docs/img/logos/hy2FoamLogo.png" width="200"/>
 </p>

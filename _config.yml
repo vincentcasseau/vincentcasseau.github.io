@@ -25,7 +25,11 @@ author: hyStrath
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Installation: "home"
+  Code: "https://github.com/vincentcasseau/hyStrath/"
+    - Compatibility: "https://github.com/vincentcasseau/hyStrath/"
+    - Maintenance: "https://github.com/vincentcasseau/hyStrath/"
+    - Installation: "https://github.com/vincentcasseau/hyStrath/"
+    - Sync: "https://github.com/vincentcasseau/hyStrath/"
   Publications: "home"
   How-tos:
     - CFD: "https://github.com/vincentcasseau/hyStrath/"
@@ -99,9 +103,9 @@ excerpt_length: 50
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#C9CBFF"
+navbar-col: "#F5F5F5"
 navbar-text-col: "#404040"
-navbar-border-col: "#7677A6"
+navbar-border-col: "#EAEAEA"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
@@ -191,6 +195,7 @@ paginate: 5
 
 kramdown:
   input: GFM
+  auto_ids: true
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
