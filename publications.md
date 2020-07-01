@@ -1,9 +1,9 @@
 ---
 layout: page
-title:  
+title: ""
 ---
  
-# How to cite our work
+## How to cite our work
 
 You should cite the [publication(s)](#Publications) related to the solver(s) you are using __and__ make a reference to this website:  
 ```
@@ -18,7 +18,7 @@ howpublished={\url{https://github.com/vincentcasseau/hyStrath/}}
 
 <br>
 
-# Publications  
+## Publications  
 {: #Publications }
 
 #### Journal articles:
