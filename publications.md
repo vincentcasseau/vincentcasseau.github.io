@@ -20,7 +20,6 @@ howpublished={\url{https://github.com/vincentcasseau/hyStrath/}}
 
 ## Publications  
 {: #Publications }
-
 &nbsp;  
 #### Journal articles:
   - [*__dsmcFoam+__*] &nbsp; C. White _et al._, 03/2018: [dsmcFoam+: An OpenFOAM based direct simulation Monte Carlo solver](https://pure.strath.ac.uk/portal/files/81235392/White_etal_CPC_2017_an_OpenFOAM_based_direct_simulation_Monte_Carlo_solver.pdf)  
