@@ -25,8 +25,8 @@ author: hyStrath
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Home: "home"
-  Code:
+  Solvers: "solvers"
+  Download:
     - Compatibility: "compatibility"
     - Maintenance: "maintenance"
     - Installation: "installation"
@@ -34,11 +34,14 @@ navbar-links:
   Contributions: "contributions"
   Publications: "publications"
   How-tos:
-    - CFD: "https://github.com/vincentcasseau/hyStrath/"
-    - DSMC: "https://github.com/vincentcasseau/hyStrath/"
+    - CFD: "how-tos-cfd"
+    - DSMC: "how-tos-dsmc"
   Tutorials:
-    - CFD: "https://github.com/vincentcasseau/hyStrath/"
-    - DSMC: "https://github.com/vincentcasseau/hyStrath/" 
+    - hyFoam: "tutos-hyfoam"
+    - hy2Foam: "tutos-hy2foam"
+    - hy2MhdFoam: "tutos-hy2mhdfoam"
+    - dsmcFoam+: "tutos-dsmcfoam"
+    - pdFoam: "tutos-pdfoam" 
   People: "people-and-contact"
   License: "license"
 
@@ -226,7 +229,6 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - screenshot.png
 
 plugins:
   - jekyll-paginate
