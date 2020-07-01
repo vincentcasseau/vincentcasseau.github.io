@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Home
-image: /docs/img/logos/satelliteMachLogo.png
+title: hyStrath
 ---
 
+image: /docs/img/logos/satelliteMachLogo.png
 
 #### The _hyStrath_ (literally 'hypersonic valley') GitHub repository is featuring hypersonic and rarefied gas dynamics code developments released under license GPL-3.0. It is the only platform to conjointly host open-source CFD and DSMC codes designed for atmospheric entry analysis.   
 Implementation of the OpenFOAM CFD solvers _hyFoam_ and _hy2Foam_ was initiated in 2014 at the University of Strathclyde, Glasgow, UK, and was funded by the [Engineering and Physical Sciences Research Council](https://www.epsrc.ac.uk/) (EPSRC) until early 2017. A modified version of the _dsmcFoam+_ code was added end of 2017 as part of a European Space Agency project and was funded by [Fluid Gravity Engineering](http://www.fluidgravity.co.uk/fgewebsite/).
@@ -26,9 +26,9 @@ Implementation of the OpenFOAM CFD solvers _hyFoam_ and _hy2Foam_ was initiated 
   
 --- 
 
-###### &nbsp; <p align="center">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/hy2FoamLogo.png" width="200">
-</p>
+###### &nbsp;
+
+image: /docs/img/logos/hy2FoamLogo.png
 
 _hy2Foam_ is an open-source two-temperature computational fluid dynamics (CFD)
 solver that has been developed to tackle the highly complex flow physics of the hypersonic planetary
