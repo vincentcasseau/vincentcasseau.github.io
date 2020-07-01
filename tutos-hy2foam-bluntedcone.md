@@ -29,15 +29,16 @@ title: Tutorials
 
 <br>
 
-+ Monitoring:   
-`gnuplot gnuplot/monitorResiduals`    
++ Monitoring:  
+```sh
+gnuplot gnuplot/monitorResiduals
+```   
 
 <p align="center">
   <img src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-residuals.png" width="400">
 </p>
 
 <br>
-
 
 + Flow visualisations using Paraview:  
 
