@@ -1,8 +1,10 @@
-<div class="paragraph"><p><br>
-<br></p></div>
+---
+layout: page
+title: Tutorials
+---
   
 <p align="center">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/hy2FoamLogo.png" width="210">
+  <img src="/docs/img/logos/hy2FoamLogo.png" width="210">
 </p>
 
 # Blunted cone
@@ -14,27 +16,27 @@
 + View of the _gmsh_ mesh provided in the _constant/backup-polyMesh_ folder  
 
 <p align="center">
-<img src="http://www.mdpi.com/aerospace/aerospace-03-00045/article_deploy/html/images/aerospace-03-00045-g001.png" width="400">
+  <img src="http://www.mdpi.com/aerospace/aerospace-03-00045/article_deploy/html/images/aerospace-03-00045-g001.png" width="400">
 </p>
 
 > _Mesh for the blunted cone (each 5th line is represented in each direction)._
 
 + Running this tutorial:  
-`./Allclean`  
-`./Allrun`  
+```sh
+./Allclean  
+./Allrun
+```  
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 + Monitoring:   
 `gnuplot gnuplot/monitorResiduals`    
 
 <p align="center">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/tutorials/hy2Foam/tutorial-bluntedCone-residuals.png" width="400">
+  <img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/tutorials/hy2Foam/tutorial-bluntedCone-residuals.png" width="400">
 </p>
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 
 + Flow visualisations using Paraview:  
@@ -45,8 +47,7 @@
 <img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/tutorials/hy2Foam/tutorial-bluntedCone-fieldMach.gif" width="500">  
 </p>
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 + Post-processing:   
 `gnuplot gnuplot/monitorCd`   
@@ -64,14 +65,14 @@
 
 > _(a–c) Stagnation line profiles, and (d–f) surface quantities along the blunted cone; (a) normalised temperature; (b) normalised mass density; (c) normalised velocity; (d) pressure coefficient; (e) friction coefficient; (f) Stanton number._
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 + Testing that the results are matching the solution within a given tolerance:  
-`./Alltest`  
+```sh
+./Alltest
+```   
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
 

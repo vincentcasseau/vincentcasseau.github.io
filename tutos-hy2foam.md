@@ -20,7 +20,7 @@ Vibrational excitation | Thermal non-equilibrium | Chemistry-vibration coupling
 
 + A description can be found in: V. Casseau _et al._, 10/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part One: Zero-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/34/html), Section _3.4. Relaxation of a Chemically-Reacting Mixture_.  
 
-+ [View more](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hy2Foam-::-heatBath)
++ [View more](https://vincentcasseau.github.io/tutos-hy2foam-heatbath/)
 
 <br>
 
@@ -36,7 +36,7 @@ Axially-symmetric flow-field | Thermal non-equilibrium | Slip boundary condition
 
 + A description can be found in: V. Casseau _et al._, 12/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/45/html), Section _3.1. Mach 11.3 Blunted Cone_.  
 
-+ [View more](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hy2Foam--::--bluntedCone)
++ [View more](https://vincentcasseau.github.io/tutos-hy2foam-bluntedcone/)
 
 <br>
 
@@ -52,4 +52,4 @@ Hypervelocity flow | Thermal non-equilibrium | Chemically reacting flow
 
 + A description can be found in: V. Casseau _et al._, 12/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/45/html), Section _3.2. Mach 20 Cylinder_.  
 
-+ [View more](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hy2Foam-::-2D-Cylinder)
++ [View more](https://vincentcasseau.github.io/tutos-hy2foam-2dcylinder/)
