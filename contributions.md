@@ -1,9 +1,7 @@
 ---
 layout: page
-title: ""
+title: Contributions
 ---
-
-## Contributions
 
 Every contribution is welcome whether that is:
 - an open-source tool useful for hypersonic / rarefied gas dynamics calculations
@@ -21,6 +19,7 @@ Please [get in touch](https://github.com/vincentcasseau/hyStrath/wiki/People-and
 --- 
 
 ## How can I contribute?
+{: #How-can-I-contribute }
 
 You will need to fill a _pull request_ and this can be achieved as follows:  
 
