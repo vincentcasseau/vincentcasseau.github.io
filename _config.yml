@@ -25,6 +25,7 @@ author: hyStrath
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  Home: "home"
   Code: "https://github.com/vincentcasseau/hyStrath/"
     - Compatibility: "https://github.com/vincentcasseau/hyStrath/"
     - Maintenance: "https://github.com/vincentcasseau/hyStrath/"
