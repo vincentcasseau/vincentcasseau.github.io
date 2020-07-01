@@ -140,7 +140,7 @@ set output "gnuplot/residuals.eps"
 set size 0.95,0.47
 set origin 0.03,0.53
 set logscale y
-{{ set format y "10^{%01T}" | escape }}
+
 set xlabel "Timestep [x 100]"
 set ylabel "Residuals"
 set mytics 10
