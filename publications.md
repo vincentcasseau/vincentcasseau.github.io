@@ -4,6 +4,7 @@ title: ""
 ---
  
 ## How to cite our work
+{: #How-to-cite-our-work }
 
 You should cite the [publication(s)](#Publications) related to the solver(s) you are using __and__ make a reference to this website:  
 ```
@@ -61,6 +62,7 @@ and continuum hypersonic flow over re-entry objects](https://strathprints.strath
 ---
 
 ## Other relevant publications
+{: #Other-relevant-publications }
 
 #### Journal articles:
   - [*__dsmcFoam__*] &nbsp; T. J. Scanlon _et al._, 06/2015: [Open-Source Direct Simulation Monte Carlo Chemistry

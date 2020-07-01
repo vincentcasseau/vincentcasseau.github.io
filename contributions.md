@@ -51,6 +51,7 @@ git push origin master
 --- 
  
 ## List of external contributors
+{: #List-of-external-contributors }
 
 | Contributor | _hyStrath_ branch | Contribution | Date |  
 |:-------------:|:-------------:|:-------------:|:-------------:|

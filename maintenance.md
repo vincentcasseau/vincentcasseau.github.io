@@ -26,7 +26,7 @@ title: Maintenance
     <td align="center">30 Nov 2019</td>
   </tr>
   <tr>  
-    <td align="center">OF-v1706<a href="https://github.com/vincentcasseau/hyStrath/wiki/Contributions#list-of-contributors">*</a></td>
+    <td align="center">OF-v1706<a href="https://vincentcasseau.github.io/contributions/#List-of-external-contributors">*</a></td>
     <td align="center">OF-v1706</td>
     <td align="center">12 May 2018</td>
     <td align="center" colspan="2">29 Aug 2018, merged into Master</td>
