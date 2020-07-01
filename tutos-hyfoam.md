@@ -1,11 +1,14 @@
-<div class="paragraph"><p><br>
-<br></p></div>
-  
+---
+layout: page
+title: Tutorials
+---
+
 <p align="center">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/hyFoamLogo.png" width="200">
+  <img src="/docs/img/logos/hyFoamLogo.png" width="200">
 </p>
 
 ---  
+
 # 1) Mach 2 laminar flat plate (LTS)
 
 <p align="center">
@@ -18,8 +21,7 @@ Attached shock wave | Laminar flow
 
 + [View more](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hyFoam-::-laminarFlatPlateLTS)
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
 
@@ -35,8 +37,7 @@ Axially-symmetric flow-field | Cold hypersonics
 
 + [View more](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hyFoam-::-axisymmetricHB2)
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
 
@@ -53,7 +54,3 @@ Scramjet flow-field | RAS turbulence modelling
 + See also: [Eilmer3](http://cfcfd.mechmining.uq.edu.au/docs/tools/eilmer/), from  Dr Peter Jacobs, Dr Rowan Gollan, Dr Daniel Potter and others (University of Queensland, Australia).
 
 + Contributors: Dr Jimmy-John O.E. Hoste, Daniela Puorto, Dr Vincent Casseau
-
-
-<br>
-

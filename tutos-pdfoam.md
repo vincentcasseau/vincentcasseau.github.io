@@ -1,5 +1,7 @@
-<div class="paragraph"><p><br>
-<br></p></div>
+---
+layout: page
+title: Tutorials
+---
   
 <p align="center">
 <img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/pdFoamLogo.png" width="200">

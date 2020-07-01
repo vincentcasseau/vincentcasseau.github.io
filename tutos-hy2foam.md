@@ -1,12 +1,15 @@
-<div class="paragraph"><p><br>
-<br></p></div>
-  
+---
+layout: page
+title: Tutorials
+---
+
 <p align="center">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/hy2FoamLogo.png" width="210">
+  <img src="/docs/img/logos/hy2FoamLogo.png" width="210">
 </p>
 
 
 ---  
+
 # 1) Adiabatic heat bath
 
 <p align="center">
@@ -19,11 +22,10 @@ Vibrational excitation | Thermal non-equilibrium | Chemistry-vibration coupling
 
 + [View more](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hy2Foam-::-heatBath)
 
-
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
+
 # 2) Blunted cone
 
 <p align="center">
@@ -36,10 +38,10 @@ Axially-symmetric flow-field | Thermal non-equilibrium | Slip boundary condition
 
 + [View more](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hy2Foam--::--bluntedCone)
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
+
 # 3) 2D Cylinder
 
 <p align="center">
@@ -51,6 +53,3 @@ Hypervelocity flow | Thermal non-equilibrium | Chemically reacting flow
 + A description can be found in: V. Casseau _et al._, 12/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/45/html), Section _3.2. Mach 20 Cylinder_.  
 
 + [View more](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hy2Foam-::-2D-Cylinder)
-
-
-<br>
