@@ -4,6 +4,8 @@ title: How-tos
 subtitle: DSMC Module
 ---
 
+&nbsp;  
+
 # Table of contents
 
 ---  
@@ -73,11 +75,4 @@ subtitle: DSMC Module
 
 ---  
 ## J. How-to :: Monitoring, Sampling, & Post-processing
-
-
-<div class="paragraph"><p><br>
-<br></p></div>
-
---- 
-##### Contributor: Dr Vincent Casseau
 
