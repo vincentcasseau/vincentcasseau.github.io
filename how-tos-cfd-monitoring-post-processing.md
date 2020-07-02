@@ -142,13 +142,13 @@ plot \
 
 + An example is given below for monitoring the residuals. The fields (_**Ux**_, _**Uy**_, _**e\_{ve, N2}**_, _**e**_) may be edited depending on the simulation set-up.
 
-```c++
+```sh
 set output "gnuplot/residuals.eps"
 
 set size 0.95,0.47
 set origin 0.03,0.53
 set logscale y
-set format y "10^%01T"
+set format y "10^{%01T}"
 set xlabel "Timestep [x 100]"
 set ylabel "Residuals"
 set mytics 10
