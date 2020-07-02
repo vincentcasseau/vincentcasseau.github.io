@@ -25,11 +25,11 @@ author: hyStrath
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Solvers:
+  Flow Solvers:
     - hy2Foam: "solvers-hy2Foam"
     - hyFoam: "solvers-hyFoam"
-    - hy2Mhd: "solvers-hy2MhdFoam"
-    - dsmcFoam: "solvers-dsmcFoam"
+    - hy2MhdFoam: "solvers-hy2MhdFoam"
+    - dsmcFoam+: "solvers-dsmcFoam"
     - pdFoam: "solvers-pdFoam"
     - Disclaimer: "disclaimer"
   Download:
