@@ -2,6 +2,7 @@
 layout: page
 title: How-tos
 subtitle: DSMC Module
+nav-short: true
 ---
 
 # Initialisation
@@ -10,7 +11,6 @@ subtitle: DSMC Module
 
 ---
 ## 1) Creating the _0/_ folder
-{: #1-creating-the-0-folder} 
  
 In the working directory, type in:  
 ```sh
@@ -18,8 +18,10 @@ dsmcInitialise+
 ```
 This command line will create the _0/_ folder. Simulators data is stored into the _0/lagrangian/dsmc/_ subfolder and two volume fields, _cellLevel_ and _dsmcSigmaTcRMax_, are printed. The main DSMC executable will always look for these information in the time folder corresponding to the starting time. 
 
+<br>
+
+---
 ## 2) Simulators data  
-{: #2-simulators-data }
 
 | File    | Meaning          |
 |:-------------:|-------------|
@@ -35,8 +37,10 @@ This command line will create the _0/_ folder. Simulators data is stored into th
 | vibLevel      | vibrational energy level for each vibrational energy mode |
 | ELevel      | electronic energy level |
 
+<br>
+
+---
 ## 3) Initial volume fields 
-{: #3-initial-volume-fields }
  
 + _dsmcSigmaTcRMax_ is a first estimate of the maximum value taken by the product of the collision cross-section by the relative speed. For a gas mixture, it is usually obtained by considering the properties (diameter, omega, alpha) of the most abundant species. As the simulation proceeds, this field is updated as soon as a new local maximum is found. It requires no user intervention.
 

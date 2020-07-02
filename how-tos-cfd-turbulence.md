@@ -2,6 +2,7 @@
 layout: page
 title: How-tos
 subtitle: CFD Module
+nav-short: true
 ---
 
 These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
