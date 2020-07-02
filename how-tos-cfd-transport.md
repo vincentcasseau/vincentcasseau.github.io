@@ -8,18 +8,24 @@ These how-tos are based on the working folder located [here](https://github.com/
 
 # Transport modelling
 
+<br>
+
 ---
 
 ## 1) Individual shear viscosity and thermal conductivity
 
+<div class="paragraph"><p><br>
 ### 1.1 Inviscid simulation    
 + In the _thermophysicalProperties/thermoType_ dictionary, edit the _transport_ entry to __*constant*__
 + In the _thermoDEM/#nameSpecies/transport/constant_ dictionary, for all #nameSpecies present in the gas mixture, edit the value of the entry _mu_ to be __*0*__
+<br></p></div>
 
+<div class="paragraph"><p><br>
 ### 1.2 Viscous simulation with constant shear viscosity and thermal conductivity
 + In the _thermophysicalProperties/thermoType_ dictionary, edit the _transport_ entry to __*constant*__
 + In the _thermoDEM/#nameSpecies/transport/constant_ dictionary, for all #nameSpecies present in the gas mixture, edit the value of the entry _mu_ to the desired value
 + The thermal conductivity is then calculated using Eucken's formula
+<br></p></div>
 
 ### 1.3 To go further
 The names of all valid entries for the _transport_ keyword in the _thermophysicalProperties/thermoType_ dictionary are  
