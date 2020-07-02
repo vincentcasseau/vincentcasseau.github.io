@@ -12,7 +12,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ---  
 ## 1) Thermal equilibrium
 
-The solver's default behaviour is to use the two-temperature formulation with multiple vibro-electronic energy pools. In the <b style="color: #228B22">thermophysicalProperties</b> dictionary, two switches, `downgradeToSingleTv` and `downgradeToSingleTemperature`, can alter this behaviour to either produce a two-temperature solver with a single vibro-electronic energy pool or a single-temperature solver. 
+The solver's default behaviour is to use the two-temperature formulation with multiple vibro-electronic energy pools. In the <b style="color: #228B22">thermophysicalProperties</b> dictionary, two switches, <span style="font-family:'Lucida Console', monospace, color: #FF0066">downgradeToSingleTv</span> and <span style="font-family:'Lucida Console', monospace, color: #FF0066">downgradeToSingleTemperature</span>, can alter this behaviour to either produce a two-temperature solver with a single vibro-electronic energy pool or a single-temperature solver. 
   
 Thus, the single-temperature solver, _hyFoam_, is obtained with  
 
@@ -46,7 +46,7 @@ The path to the non-equilibrium dictionary is also set in this dictionary
     twoTemperatureDictFile "$FOAM_CASE/constant/thermo2TModel";
 ```
 
-and its default name is <b style="color: #228B22">thermo2TModel</b>. It is composed of one subdictionary, <span style="color: #228B22">thermalRelaxationModels</span>, for the selection of the energy transfer models, and various subdictionaries to store the models coefficients. In this variant of _hy2Foam_, the only energy transfers taking place are vibrational-translational (V—T) and heavy-particles — electrons (h—e). If the gas mixture is composed of neutral species only, then the h—e energy transfer is automatically discarded.  
+and its default name is <b style="color: #228B22">thermo2TModel</b>. It is composed of one subdictionary, <span style="color: #228B22">thermalRelaxationModels</span>, for the selection of the energy transfer models, and various subdictionaries to store the models coefficients. In this variant of _hy2Foam_, the energy transfers taking place are vibrational-translational (V—T) and heavy-particles — electrons (h—e). If the gas mixture is composed of neutral species only, then the h—e energy transfer is automatically discarded.  
 The default subdictionary implementation is as follows
 
 ```c++
@@ -69,7 +69,7 @@ thermalRelaxationModels
 }
 ```
 
-+ The Landau-Teller equation is used for V—T energy exchange and the V—T relaxation time is dictated by the Millikan-White semi-empirical formula with Park's correction. In the example above, the coefficients for the calculation of the relaxation time are colliding-pair specific and read from one of the subsequent subdictionaries (since `overwriteDefault` is _on_).
+The Landau-Teller equation is used for V—T energy exchange and the V—T relaxation time is dictated by the Millikan-White semi-empirical formula with Park's correction. In the example above, the coefficients for the calculation of the relaxation time are colliding-pair specific and read from one of the subsequent subdictionaries (since <span style="font-family:'Lucida Console', monospace, color: #FF0066">overwriteDefault</span> is _on_).
 
 <table>
   <tr>
@@ -81,47 +81,47 @@ thermalRelaxationModels
     <td align="center"><b>Meaning</b></td>
   </tr>
   <tr>
-    <td align="center">`relaxationType`</td>
-    <td align="center">_noVTEnergyTransfer_, _LandauTellerVT_ (recommended)</td>
+    <td align="center"><span style="font-family:'Lucida Console', monospace, color: #FF0066">relaxationType</span></td>
+    <td align="center"><i>noVTEnergyTransfer</i>, <i>LandauTellerVT</i> (recommended)</td>
     <td align="center">Name of the V—T energy transfer model</td>
   </tr>
   <tr>
-    <td align="center">`model`</td>
-    <td align="center">_MillikanWhite_, _MillikanWhitePark_ (recommended)</td>
+    <td align="center"><span style="font-family:'Lucida Console', monospace, color: #FF0066">model</span></td>
+    <td align="center"><i>MillikanWhite</i>, <i>MillikanWhitePark</i> (recommended)</td>
     <td align="center">description</td>
   </tr>
   <tr>  
-    <td align="center">`fullCoeffsForm`</td>
-    <td align="center">_on_ (recommended), _off_</td>
+    <td align="center"><span style="font-family:'Lucida Console', monospace, color: #FF0066">fullCoeffsForm</span></td>
+    <td align="center"><i>on</i> (recommended), <i>off</i></td>
     <td align="center">description</td>
   </tr>
   <tr>
-    <td align="center">`overwriteDefault`</td>
-    <td align="center">_on_ (recommended), _off_</td>
+    <td align="center"><span style="font-family:'Lucida Console', monospace, color: #FF0066">overwriteDefault</span></td>
+    <td align="center"><i>on</i> (recommended), <i>off</i></td>
     <td align="center">description</td>
   </tr>
   <tr>
-    <td align="center">`speciesDependent`</td>
-    <td align="center">_on_ (recommended), _off_</td>
+    <td align="center"><span style="font-family:'Lucida Console', monospace, color: #FF0066">speciesDependent</span></td>
+    <td align="center"><i>on</i> (recommended), <i>off</i></td>
     <td align="center">description</td>
   </tr>
   <tr>
-    <td align="center">`collidingPair`</td>
-    <td align="center">_on_ (recommended), _off_</td>
+    <td align="center"><span style="font-family:'Lucida Console', monospace, color: #FF0066">collidingPair</span></td>
+    <td align="center"><i>on</i> (recommended), <i>off</i></td>
     <td align="center">description</td>
   </tr>
 </table>
 
-+ The h—e energy transfer from Appleton & Bray (1963) does not require any input. It can be disabled using a `relaxationType` defined as _noHEEnergyTransfer_.
+The h—e energy transfer from Appleton & Bray (1963) does not require any input. It can be disabled using a `relaxationType` defined as _noHEEnergyTransfer_.
 
 
 ### 2.2 Two-temperature solver, multiple vibro-electronic energy pools
-+ In the current version of the code, this configuration has several limitations that are as follows    
-   - the gas mixture must be composed of neutral particles only  
-   - the electronic mode of all particles must be turned off (see [A. §1.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle))
-   - the molecules must be planar  
+In the current version of the code, this configuration has several limitations that are as follows    
+   + the gas mixture must be composed of neutral particles only  
+   + the electronic mode of all particles must be turned off (see [A. §1.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle))
+   + the molecules must be planar  
 
-+ If the above conditions are fulfilled, then the <b style="color: #228B22">thermophysicalProperties</b> dictionary setup is
+If the above conditions are fulfilled, then the <b style="color: #228B22">thermophysicalProperties</b> dictionary setup is
   
 ```c++
     downgradeToSingleTv          no;
