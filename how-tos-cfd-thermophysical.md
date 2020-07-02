@@ -61,7 +61,7 @@ In the _specie_ subdictionary, the molecular weight, _**molWeight**_, is given i
 The subsequent entry named _**particleType**_ defines the particle type (0: electron, 1: neutral atom, 2: molecule, 3: charged molecule).  
 Then, the keyword _**charge**_ indicates the charge of the particle (-1: electron, 0: neutral atom and molecule, +1: charged atom and molecule).  
 Next comes the diameter of the particle, _**diameter**_, in meters.  
-_**omega**_ is the temperature exponent of viscosity as described in [Transport](https://vincentcasseau.github.io/how-tos-cfd-transport/#13-other-transport-models). _**eta_s**_ is a factor that enters in the calculation of the [vibrational thermal conductivity](https://github.com/vincentcasseau/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1) (this entry is optional and equal to 1.2 by default).
+_**omega**_ is the temperature exponent of viscosity as described in [B. Transport](https://vincentcasseau.github.io/how-tos-cfd-transport/#13-other-transport-models). _**eta_s**_ is a factor that enters in the calculation of the [vibrational thermal conductivity](https://github.com/vincentcasseau/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1) (this entry is optional and equal to 1.2 by default).
 The number of vibrational energy modes of the particle is defined using the keyword _**noVibTemp**_ and finally the number of electronic energy levels is specified by the entry _**noElecLevels**_.
   
   

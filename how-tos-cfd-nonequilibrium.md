@@ -73,7 +73,7 @@ thermalRelaxationModels
 ### 2.2 Two-temperature solver, multiple vibro-electronic energy pools
 + In the current version of the code, this configuration has several limitations that are as follows    
    - the gas mixture must be composed of neutral particles only  
-   - the electronic mode of all particles must be turned off (see [A. §1.2](https://vincentcasseau.github.io/how-tos-cfd-transport/#12-disablingenabling-the-electronic-mode-of-a-particle))
+   - the electronic mode of all particles must be turned off (see [A. §1.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle))
    - the molecules must be planar  
 
 + If the above conditions are fulfilled, then the _thermophysicalProperties_ dictionary set-up is  
@@ -144,7 +144,7 @@ These quantities are calculated according to the entries specified in the _trans
 
 There are three models (_mfpModel_) available for the computation of the mean free path (mfp) that are: _**maxwellian**_, _**hardSphere**_, and _**variableHardSphere**_.   
 
-You might want to compute the mfp at patches only to speed-up the calculations: indeed, knowledge of the mfp at patches is enough to use the [Smoluchowski temperature jump boundary condition](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#21-trans-rotational-temperature). To this aim, two booleans (_**computeFieldAndBoundaries**_ and _**computeMfpBoundaries**_) are used and the correct combination is shown below
+You might want to compute the mfp at patches only to speed-up the calculations: indeed, knowledge of the mfp at patches is enough to use the [Smoluchowski temperature jump boundary condition](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#31-trans-rotational-temperature). To this aim, two switches (_**computeFieldAndBoundaries**_ and _**computeMfpBoundaries**_) are used and the correct combination is shown below
 
 ```c++
 rarefiedParameters

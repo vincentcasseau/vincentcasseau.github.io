@@ -92,49 +92,49 @@ These how-tos are based on the working folder located [here](https://github.com/
 <br>
 
 ---  
-## [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-Initial-conditions)
+## [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/)
 
-### [1) The _include/_ sub-folder](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions#1-the-include-sub-folder)
+### [1) The _include/_ sub-folder](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#1-the-include-sub-folder)
 
-### [2) Species mass fractions](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions#2-species-mass-fractions)  
-+ **[2.1 Non-catalytic wall](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions#21-non-catalytic-wall)**  
-+ **[2.2 Super-catalytic wall](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions#22-super-catalytic-wall)**
+### [2) Species mass fractions](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#2-species-mass-fractions)  
++ **[2.1 Non-catalytic wall](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#21-non-catalytic-wall)**  
++ **[2.2 Super-catalytic wall](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#22-super-catalytic-wall)**
 
-### [3) Temperature fields](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions#3-temperature-fields)  
-+ **[3.1 Trans-rotational temperature](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions#31-trans-rotational-temperature)**  
-+ **[3.2 Vibro-electronic temperature](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions#32-vibro-electronic-temperature)**  
-      - [3.2.1 Single vibro-electronic energy pool formulation](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions#321-single-vibro-electronic-energy-pool-formulation)  
-      - [3.2.2 Multiple vibro-electronic energy pools formulation](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions#322-multiple-vibro-electronic-energy-pools-formulation)   
+### [3) Temperature fields](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#3-temperature-fields)  
++ **[3.1 Trans-rotational temperature](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#31-trans-rotational-temperature)**  
++ **[3.2 Vibro-electronic temperature](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#32-vibro-electronic-temperature)**  
+      - [3.2.1 Single vibro-electronic energy pool formulation](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#321-single-vibro-electronic-energy-pool-formulation)  
+      - [3.2.2 Multiple vibro-electronic energy pools formulation](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#322-multiple-vibro-electronic-energy-pools-formulation)   
  
-### [4) Velocity field](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions#4-velocity-field)  
+### [4) Velocity field](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#4-velocity-field)  
 
 <br>
 
 ---  
-## [H. Advanced](https://vincentcasseau.github.io/how-tos-cfd-advanced)
+## [H. Advanced](https://vincentcasseau.github.io/how-tos-cfd-advanced/)
 
-### [1) Local time stepping](https://vincentcasseau.github.io/how-tos-cfd-advanced#1-local-time-stepping)  
+### [1) Local time stepping](https://vincentcasseau.github.io/how-tos-cfd-advanced/#1-local-time-stepping)  
 
-### [2) On-the-fly dictionary editing](https://vincentcasseau.github.io/how-tos-cfd-advanced#2-on-the-fly-dictionary-editing)  
+### [2) On-the-fly dictionary editing](https://vincentcasseau.github.io/how-tos-cfd-advanced/#2-on-the-fly-dictionary-editing)  
 
-### [3) Bounding the temperature field](https://vincentcasseau.github.io/how-tos-cfd-advanced#3-bounding-the-temperature-field) 
+### [3) Bounding the temperature field](https://vincentcasseau.github.io/how-tos-cfd-advanced/#3-bounding-the-temperature-field) 
 
-### [4) The _hyLight_ switch](https://vincentcasseau.github.io/how-tos-cfd-advanced#4-the-hylight-switch)   
+### [4) The _hyLight_ switch](https://vincentcasseau.github.io/how-tos-cfd-advanced/#4-the-hylight-switch)   
 
 <br>
 
 ---  
 ## [I. Monitoring & Post-processing](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing)
 
-### [1) Monitoring](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing#1-monitoring)  
-+ **[1.1 Wall heat flux](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing#11-wall-heat-flux)**  
-+ **[1.2 Wall shear stress](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing#12-wall-shear-stress)**
-+ **[1.3 Forces](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing#13-forces)**  
-+ **[1.4 Residuals](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing#14-residuals)**  
+### [1) Monitoring](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing/#1-monitoring)  
++ **[1.1 Wall heat flux](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing/#11-wall-heat-flux)**  
++ **[1.2 Wall shear stress](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing/#12-wall-shear-stress)**
++ **[1.3 Forces](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing/#13-forces)**  
++ **[1.4 Residuals](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing/#14-residuals)**  
 
-### [2) Post-processing](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing#2-post-processing)  
-+ **[2.1 Pressure coefficient](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing#21-pressure-coefficient)**  
-+ **[2.2 Stanton number](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing#22-stanton-number)**  
-+ **[2.3 Skin-friction coefficient](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing#23-skin-friction-coefficient)**  
-+ **[2.4 _y+_](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing#24-y)**  
-+ **[2.5 ParaView](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing#25-paraview)**  
+### [2) Post-processing](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing/#2-post-processing)  
++ **[2.1 Pressure coefficient](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing/#21-pressure-coefficient)**  
++ **[2.2 Stanton number](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing/#22-stanton-number)**  
++ **[2.3 Skin-friction coefficient](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing/#23-skin-friction-coefficient)**  
++ **[2.4 _y+_](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing/#24-y)**  
++ **[2.5 ParaView](https://vincentcasseau.github.io/how-tos-cfd-monitoring-post-processing/#25-paraview)**  
