@@ -73,7 +73,7 @@ thermalRelaxationModels
 ### 2.2 Two-temperature solver, multiple vibro-electronic energy pools
 + In the current version of the code, this configuration has several limitations that are as follows    
    - the gas mixture must be composed of neutral particles only  
-   - the electronic mode of all particles must be turned off (see [A. §1.2](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Transport#12-disablingenabling-the-electronic-mode-of-a-particle))
+   - the electronic mode of all particles must be turned off (see [A. §1.2](https://vincentcasseau.github.io/how-tos-cfd-transport/#12-disablingenabling-the-electronic-mode-of-a-particle))
    - the molecules must be planar  
 
 + If the above conditions are fulfilled, then the _thermophysicalProperties_ dictionary set-up is  
@@ -82,7 +82,7 @@ thermalRelaxationModels
     downgradeToSingleTemperature no;
 ```
 
-On top of the energy exchange processes described in [§2.1](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Nonequilibrium#21-two-temperature-solver-single-vibro-electronic-energy-pool), the _thermalRelaxationModels_ subdictionary is augmented with vibrational-vibrational (V-V) and electron-vibrational (e-V) energy transfers.
+On top of the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), the _thermalRelaxationModels_ subdictionary is augmented with vibrational-vibrational (V-V) and electron-vibrational (e-V) energy transfers.
 
 ```c++
 thermalRelaxationModels
@@ -106,7 +106,7 @@ thermalRelaxationModels
 }
 ```
 
-+ The V-V energy transfer process from Knab _et al._ (1992) is the unique V-V model implemented. [Similarly to the V-T model](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Nonequilibrium#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the _collidingPair_ boolean.  
++ The V-V energy transfer process from Knab _et al._ (1992) is the unique V-V model implemented. [Similarly to the V-T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the _collidingPair_ boolean.  
 V-V energy exchange can be disabled using a _relaxationType_ defined as _noVVEnergyTransfer_. 
 
 + In this version of _hy2Foam_, species need to be split into different vibro-electronic energy pools.
@@ -144,7 +144,7 @@ These quantities are calculated according to the entries specified in the _trans
 
 There are three models (_mfpModel_) available for the computation of the mean free path (mfp) that are: _**maxwellian**_, _**hardSphere**_, and _**variableHardSphere**_.   
 
-You might want to compute the mfp at patches only to speed-up the calculations: indeed, knowledge of the mfp at patches is enough to use the [Smoluchowski temperature jump boundary condition](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Initial-conditions#21-trans-rotational-temperature). To this aim, two booleans (_**computeFieldAndBoundaries**_ and _**computeMfpBoundaries**_) are used and the correct combination is shown below
+You might want to compute the mfp at patches only to speed-up the calculations: indeed, knowledge of the mfp at patches is enough to use the [Smoluchowski temperature jump boundary condition](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#21-trans-rotational-temperature). To this aim, two booleans (_**computeFieldAndBoundaries**_ and _**computeMfpBoundaries**_) are used and the correct combination is shown below
 
 ```c++
 rarefiedParameters

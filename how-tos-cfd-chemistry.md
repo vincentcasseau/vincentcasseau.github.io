@@ -2,6 +2,7 @@
 layout: page
 title: How-tos
 subtitle: CFD Module
+nav-short: true
 ---
 
 These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
@@ -59,7 +60,7 @@ As illustrated in the example, a specific order should be respected
 5. electrons  
 
 + In the _thermoDEM_ dictionary, uncomment all species listed in the _hTCReactions#name_ dictionary (**and comment out those which are not present**)
-+ All species listed in the _hTCReactions#name_ dictionary should also be present in the _0/_ directory. This is discussed in [How-to :: Initial conditions](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Initial-conditions).
++ All species listed in the _hTCReactions#name_ dictionary should also be present in the _0/_ directory. This is discussed in [How-to :: Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/).
 
 ### 1.3 Printing species quantities  
 + In the _hTCProperties_ dictionary, switch on/off any of those booleans to print the desired fields  
@@ -246,7 +247,7 @@ modifiedTemperatureCoeffs
 ---  
 
 ## 4) To go further: chemistry-vibration coupling  
-This aspect is detailed in [How-to :: Nonequilibrium](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Nonequilibrium#4-chemistry-vibration-coupling).
+This aspect is detailed in [How-to :: Nonequilibrium](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#4-chemistry-vibration-coupling).
 
 <div class="paragraph"><p><br>
 <br></p></div>

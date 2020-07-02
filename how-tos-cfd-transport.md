@@ -24,7 +24,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 + In the _thermoDEM/#nameSpecies/transport/constant_ dictionary, for all #nameSpecies present in the gas mixture, edit the value of the entry _mu_ to the desired value
 + The thermal conductivity is then calculated using Eucken's formula
 
-### 1.3 To go further
+### 1.3 Other transport models
 The names of all valid entries for the _transport_ keyword in the _thermophysicalProperties/thermoType_ dictionary are  
 
 | Transport model name    | Parameters          |
@@ -59,7 +59,7 @@ The available mixing rules are
 | _Wilke_      | - |
 | _ArmalySutton_ | _correctedArmalySutton_    |
 
-and can be chosen editing the entry _mixingRule_ in the _transportProperties/transportModels_ dictionary. The mixture shear viscosity and thermal conductivity can be printed by reproducing the procedure described in [§1.4](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Transport#14-print-species-shear-viscosity-and-thermal-conductivity):  
+and can be chosen editing the entry _mixingRule_ in the _transportProperties/transportModels_ dictionary. The mixture shear viscosity and thermal conductivity can be printed by reproducing the procedure described in [§1.4](https://vincentcasseau.github.io/how-tos-cfd-transport/#14-print-species-shear-viscosity-and-thermal-conductivity):  
 ```c++
     writeViscosityMixture          on;  
     writeThermalConducMixture      on; 
@@ -137,7 +137,7 @@ In the _transportProperties/transportModels_ dictionary, edit the following entr
     multiSpeciesTransport         SCEBD; 
 ``` 
 
-Please refer to [§3.3](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Transport#33-ficks-law) for the list of available binary diffusion coefficient models.
+Please refer to [§3.3](https://vincentcasseau.github.io/how-tos-cfd-transport/#33-ficks-law) for the list of available binary diffusion coefficient models.
 
 ### 3.5 Additional features (to Fick and SCEBD models)
 - Results using the non-corrected forms of Fick's law and the SCEBD model can be obtained by switching on the _useNonCorrectedForm_ boolean located in the _diffusiveFluxesParameters_ subdictionary (for comparison with the corrected form only). It is turned to *off* by default, which means that the sum of the diffusive fluxes is zero.

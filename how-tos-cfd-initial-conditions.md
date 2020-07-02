@@ -2,6 +2,7 @@
 layout: page
 title: How-tos
 subtitle: CFD Module
+nav-short: true
 ---
 
 These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
@@ -32,7 +33,7 @@ outlet
 ```
 
 + It is good practice to regroup the initial conditions into a single dictionary
-as shown later in [§ 3.1](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Initial-conditions#31-trans-rotational-temperature) using a call to the _**include/initialConditions**_ dictionary and the symbol _**$**_.
+as shown later in [§ 3.1](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#31-trans-rotational-temperature) using a call to the _**include/initialConditions**_ dictionary and the symbol _**$**_.
 
 The include statement can be placed at the top of file  
 
@@ -89,7 +90,7 @@ Y_O       0;
 
 ## 2) Species mass fractions
   
-+ Within the _0/_ folder should be specified all mass fractions of species appearing in the [_**species()**_ list](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Chemistry#12-addingdeleting-species) located in the _**constant/hTCReactions#name**_ dictionary  
++ Within the _0/_ folder should be specified all mass fractions of species appearing in the [_**species()**_ list](https://vincentcasseau.github.io/how-tos-cfd-chemistry/#12-addingdeleting-species) located in the _**constant/hTCReactions#name**_ dictionary  
 + Naming convention for mass-fraction in OpenFOAM avoids the prefix _Y\__, which means the mass-fraction of _N2_ is simply called _**N2**_.
 
 ### 2.1 Non-catalytic wall
@@ -142,7 +143,7 @@ Y_O       0;
 ### 3.2 Vibro-electronic temperature
 
 #### 3.2.1 Single vibro-electronic energy pool formulation  
-+ Please refer to [D. §2.1](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Nonequilibrium#21-two-temperature-solver-single-vibro-electronic-energy-pool) if you are not familiar with this code feature   
++ Please refer to [D. §2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool) if you are not familiar with this code feature   
 + The mixture vibro-electronic temperature field is called _**Tv**_ and must be present in the _0/_ folder
 + The Smoluchowski temperature jump boundary condition for the mixture vibro-electronic counterpart writes as follows
 ```c++
@@ -157,7 +158,7 @@ Y_O       0;
 
 
 #### 3.2.2 Multiple vibro-electronic energy pools formulation  
-+ Please refer to [D. §2.2](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Nonequilibrium#22-two-temperature-solver-multiple-vibro-electronic-energy-pools) if you are not familiar with this code feature  
++ Please refer to [D. §2.2](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#22-two-temperature-solver-multiple-vibro-electronic-energy-pools) if you are not familiar with this code feature  
 + The species vibro-electronic temperature fields are called _**Tv\_#nameSpecies**_. There are as many _**Tv\_#nameSpecies**_ fields to define in the _0/_ folder as there are species in the _**species()**_ list.  
 + The Smoluchowski temperature jump boundary condition for the species (molecule) vibro-electronic temperature writes as follows
 ```c++
@@ -178,7 +179,7 @@ Y_O       0;
 
 ## 4) Velocity field
 
-+ The Maxwell velocity slip boundary condition has been slightly re-written (the [mean free path](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Nonequilibrium#3-mean-free-path-and-breakdown-parameter) now depends upon the model retained in _transportProperties_ dictionary) and is defined as 
++ The Maxwell velocity slip boundary condition has been slightly re-written (the [mean free path](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#3-mean-free-path-and-breakdown-parameter) now depends upon the model retained in _transportProperties_ dictionary) and is defined as 
 
 ```c++
     wall

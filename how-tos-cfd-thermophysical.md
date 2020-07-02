@@ -61,7 +61,7 @@ In the _specie_ subdictionary, the molecular weight, _**molWeight**_, is given i
 The subsequent entry named _**particleType**_ defines the particle type (0: electron, 1: neutral atom, 2: molecule, 3: charged molecule).  
 Then, the keyword _**charge**_ indicates the charge of the particle (-1: electron, 0: neutral atom and molecule, +1: charged atom and molecule).  
 Next comes the diameter of the particle, _**diameter**_, in meters.  
-_**omega**_ is the temperature exponent of viscosity as described in [How-to :: Transport](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Transport#13-to-go-further). _**eta_s**_ is a factor that enters in the calculation of the [vibrational thermal conductivity](https://github.com/vincentcasseau/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1) (this entry is optional and equal to 1.2 by default).
+_**omega**_ is the temperature exponent of viscosity as described in [How-to :: Transport](https://vincentcasseau.github.io/how-tos-cfd-transport/#13-other-transport-models). _**eta_s**_ is a factor that enters in the calculation of the [vibrational thermal conductivity](https://github.com/vincentcasseau/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1) (this entry is optional and equal to 1.2 by default).
 The number of vibrational energy modes of the particle is defined using the keyword _**noVibTemp**_ and finally the number of electronic energy levels is specified by the entry _**noElecLevels**_.
   
   
@@ -75,7 +75,7 @@ and
  
 where _R\_m_ is the specific gas constant. Thus, the first two elements in the _**decoupledCvCoeffs()**_ list are the coefficients by which _R\_m_ should be multiplied.
 
-For the vibrational and electronic modes, the expressions of _Cv\_v_ and _Cv\_el_ are a function of the entries given in the following lists: _**vibrationalList()**_ and _**electronicList()**_. Hence, elements 3 and 4 can be seen as binary switches (see [§1.1](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Thermophysical#11-disablingenabling-the-vibrational-mode-of-a-molecule) and [§1.2](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Thermophysical#12-disablingenabling-the-electronic-mode-of-a-particle)).  
+For the vibrational and electronic modes, the expressions of _Cv\_v_ and _Cv\_el_ are a function of the entries given in the following lists: _**vibrationalList()**_ and _**electronicList()**_. Hence, elements 3 and 4 can be seen as binary switches (see [§1.1](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#11-disablingenabling-the-vibrational-mode-of-a-molecule) and [§1.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle)).  
 
 The 5th element of the list is the ratio of the species chemical enthalpy taken at 298 K (in J/mol) to the universal gas constant, while the 6th element is not used.  
 
