@@ -29,7 +29,7 @@ Sampling | Periodic boundaries
 
 + The working directory for the freespace periodic case is located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/dsmcFoam%2B/threeDimensional/freeSpacePeriodic).  
 
-+ [View more](https://vincentcasseau.github.io/tutos-dsmcfoam/2-freespace-periodic)
++ [View more](https://vincentcasseau.github.io/tutos-dsmcfoam-freespace)
 
 <br>
 

@@ -78,6 +78,6 @@ Modeling for Hypersonic Flows](https://pdfs.semanticscholar.org/5819/1acfdf18b4c
 
 #### PhD theses  
   - [*__Eilmer3__*, *__Eilmer4__*] &nbsp; J.-J. O.E. Hoste, 08/2018: [Scramjet Combustion Modeling using Eddy Dissipation Model](https://github.com/vincentcasseau/hyStrath/blob/master/doc/PhDthesis-jimmyjohnhoste.pdf)  
-[Eilmer3](http://cfcfd.mechmining.uq.edu.au/docs/tools/eilmer/) is a research and educational simulation code for 2D and 3D gas dynamics designed by  Dr Peter Jacobs, Dr Rowan Gollan, Dr Daniel Potter and others (University of Queensland, Australia). See also the [tutorial case available on hyStrath](https://vincentcasseau.github.io/tutos-hyfoam/tutos-hyfoam/#3-lorrain-geometry) that uses *__hyFoam__*
+[Eilmer3](http://cfcfd.mechmining.uq.edu.au/docs/tools/eilmer/) is a research and educational simulation code for 2D and 3D gas dynamics designed by  Dr Peter Jacobs, Dr Rowan Gollan, Dr Daniel Potter and others (University of Queensland, Australia). See also the [tutorial case available on hyStrath](https://vincentcasseau.github.io/tutos-hyfoam/#3-lorrain-geometry) that uses *__hyFoam__*
   - [*__dsmcFoam__*] &nbsp; R. C. Palharini, 09/2014: [Atmospheric Reentry Modelling Using an Open-Source DSMC Code](https://github.com/vincentcasseau/hyStrath/blob/master/doc/PhDthesis-rodrigopalharini.pdf)  
 

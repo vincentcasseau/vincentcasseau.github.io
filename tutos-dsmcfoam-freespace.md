@@ -1,8 +1,10 @@
-<div class="paragraph"><p><br>
-<br></p></div>
+---
+layout: page
+title: Tutorials
+---
   
 <p align="center">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/dsmcFoamPlusLogo.png" width="260">
+  <img src="/docs/img/logos/dsmcFoamPlusLogo.png" width="260">
 </p>
 
 # Freespace periodic
@@ -10,19 +12,23 @@
 + The working directory for the freespace periodic case is located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/dsmcFoam%2B/threeDimensional/freeSpacePeriodic).  
 
 + Running this tutorial:  
-`./Allclean`  
-`./Allrun`  
+```sh
+./Allclean  
+./Allrun
+```   
 
 + Monitoring:   
-`gnuplot gnuplot/monitor`  
+```sh
+gnuplot gnuplot/monitor
+```  
 
 + Flow visualisations using Paraview:  
 <p align="center">
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/tutorials/dsmcFoam+/freespacePeriodic/tutorial-dsmcFoam+-freespace-fieldTtmix.gif" width="800">  
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/tutorials/dsmcFoam+/freespacePeriodic/tutorial-dsmcFoam+-freespace-fieldUxmix.gif" width="800">  
-<img src="https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/tutorials/dsmcFoam+/freespacePeriodic/tutorial-dsmcFoam+-freespace-fieldrhoNmix.gif" width="800">  
+  <img src="/docs/img/tutos/dsmcFoam+/freespacePeriodic/tutorial-dsmcFoam+-freespace-fieldTtmix.gif" width="800">  
+  <img src="/docs/img/tutos/dsmcFoam+/freespacePeriodic/tutorial-dsmcFoam+-freespace-fieldUxmix.gif" width="800">  
+  <img src="/docs/img/tutos/dsmcFoam+/freespacePeriodic/tutorial-dsmcFoam+-freespace-fieldrhoNmix.gif" width="800">  
 </p>
 
 ---  
 
-##### Contributor: Dr Vincent Casseau
+Contributor: Dr Vincent Casseau
