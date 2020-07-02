@@ -73,7 +73,7 @@ round-avatar: true
 social-network-links:
   email: "hystrath@gmail.com"
   github: "vincentcasseau/hyStrath"
-  linkedin: "vincentcasseau"
+#  linkedin: "vincentcasseau"
 #  facebook: deanattali   
 #  twitter: daattali
 #  rss: true
