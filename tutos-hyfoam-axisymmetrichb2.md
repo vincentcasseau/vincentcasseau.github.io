@@ -28,7 +28,7 @@ title: Tutorials
 + Monitoring:   
 ```sh
 gnuplot gnuplot/monitorResiduals
-`    
+```   
 
 <br>
 
