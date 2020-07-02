@@ -9,15 +9,15 @@ These how-tos are based on the working folder located [here](https://github.com/
 # Table of contents
 
 ---  
-## [A. How-to :: Thermophysical](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Thermophysical)
-### [1) Species thermophysical properties](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Thermophysical#1-species-thermophysical-properties)
-+ **[1.1 Disabling/enabling the vibrational mode of a molecule](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Transport#11-disablingenabling-the-vibrational-mode-of-a-molecule)**  
-+ **[1.2 Disabling/enabling the electronic mode of a particle](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Transport#12-disablingenabling-the-electronic-mode-of-a-particle)**  
+## [A. Thermophysical](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/)
+### [1) Species thermophysical properties](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#1-species-thermophysical-properties)
++ **[1.1 Disabling/enabling the vibrational mode of a molecule](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#11-disablingenabling-the-vibrational-mode-of-a-molecule)**  
++ **[1.2 Disabling/enabling the electronic mode of a particle](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle)**  
 
 <br>
 
 ---  
-## [B. How-to :: Transport](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Transport)
+## [B. Transport](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Transport)
 ### [1) Species thermophysical properties](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Transport#1-individual-shear-viscosity-and-thermal-conductivity)
 + **[1.1 Inviscid simulation](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Transport#11-inviscid-simulation)**  
 + **[1.2 Viscous simulation with constant shear viscosity and thermal conductivity](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Transport#12-viscous-simulation-with-constant-shear-viscosity-and-thermal-conductivity)**  
@@ -36,7 +36,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 <br>
 
 ---  
-## [C. How-to :: Chemistry](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Chemistry)
+## [C. Chemistry](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Chemistry)
 ### [1) Multi-species flow](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Chemistry#1-multi-species-flow)
 + **[1.1 The _chemDicts/_ folder](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Chemistry#11-the-chemdicts-folder)**  
 + **[1.2 Adding/deleting species](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Chemistry#12-addingdeleting-species)** 
@@ -57,7 +57,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 <br>
 
 --- 
-## [D. How-to :: Nonequilibrium](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Nonequilibrium)
+## [D. Nonequilibrium](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Nonequilibrium)
 ### [1) Thermal equilibrium](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Nonequilibrium#1-thermal-equilibrium)
 
 ### [2) Thermal non-equilibrium](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Nonequilibrium#2-thermal-non-equilibrium)
@@ -79,7 +79,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 <br>
 
 ---  
-## [E. How-to :: Turbulence](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Turbulence)
+## [E. Turbulence](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Turbulence)
 ### [1) Laminar flow simulation](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Turbulence#1-laminar-flow-simulation) 
  
 ### [2) Turbulent flow simulation](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Turbulence#2-turbulent-flow-simulation) 
@@ -87,12 +87,12 @@ These how-tos are based on the working folder located [here](https://github.com/
 <br>
 
 ---  
-## F. How-to :: MHD
+## F. MHD
 
 <br>
 
 ---  
-## [G. How-to :: Initial conditions](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Initial-conditions)
+## [G. Initial conditions](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Initial-conditions)
 
 ### [1) The _include/_ sub-folder](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Initial-conditions#1-the-include-sub-folder)
 
@@ -111,7 +111,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 <br>
 
 ---  
-## [H. How-to :: Advanced](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Advanced)
+## [H. Advanced](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Advanced)
 
 ### [1) Local time stepping](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Advanced#1-local-time-stepping)  
 
@@ -124,7 +124,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 <br>
 
 ---  
-## [I. How-to :: Monitoring & Post-processing](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Monitoring-&-Post-processing)
+## [I. Monitoring & Post-processing](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Monitoring-&-Post-processing)
 
 ### [1) Monitoring](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Monitoring-&-Post-processing#1-monitoring)  
 + **[1.1 Wall heat flux](https://github.com/vincentcasseau/hyStrath/wiki/How-to-::-Monitoring-&-Post-processing#11-wall-heat-flux)**  

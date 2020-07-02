@@ -9,42 +9,42 @@ subtitle: DSMC Module
 # Table of contents
 
 ---  
-## A. How-to :: Thermophysical
+## A. Thermophysical
 
 
 <div class="paragraph"><p><br>
 <br></p></div>
 
 ---  
-## B. How-to :: Collisions
+## B. Collisions
 
 
 <div class="paragraph"><p><br>
 <br></p></div>
 
 ---  
-## C. How-to :: Chemistry
+## C. Chemistry
 
 
 <div class="paragraph"><p><br>
 <br></p></div>
 
 --- 
-## D. How-to :: Boundary conditions     
+## D. Boundary conditions     
 
 
 <div class="paragraph"><p><br>
 <br></p></div>
 
 ---  
-## E. How-to :: Coordinate system
+## E. Coordinate system
 
 
 <div class="paragraph"><p><br>
 <br></p></div>
 
 ---  
-## [F. How-to :: Initialisation](https://github.com/vincentcasseau/hyStrath/wiki/DSMC:-How-to-::-Initialisation)
+## [F. Initialisation](https://github.com/vincentcasseau/hyStrath/wiki/DSMC:-How-to-::-Initialisation)
 ### [1) Creating the _0/_ folder](https://github.com/vincentcasseau/hyStrath/wiki/DSMC:-How-to-::-Initialisation#1-creating-the-0-folder)  
 ### [2) Simulators data](https://github.com/vincentcasseau/hyStrath/wiki/DSMC:-How-to-::-Initialisation#2-simulators-data)  
 ### [3) Initial volume fields](https://github.com/vincentcasseau/hyStrath/wiki/DSMC:-How-to-::-Initialisation#3-initial-volume-fields)
@@ -53,26 +53,26 @@ subtitle: DSMC Module
 <br></p></div>
 
 ---  
-## G. How-to :: Load balancing
+## G. Load balancing
 
 
 <div class="paragraph"><p><br>
 <br></p></div>
 
 ---  
-## H. How-to :: Adaptive mesh refinement
+## H. Adaptive mesh refinement
 
 
 <div class="paragraph"><p><br>
 <br></p></div>
 
 ---  
-## I. How-to :: Advanced
+## I. Advanced
 
 
 <div class="paragraph"><p><br>
 <br></p></div>
 
 ---  
-## J. How-to :: Monitoring, Sampling, & Post-processing
+## J. Monitoring, Sampling, & Post-processing
 
