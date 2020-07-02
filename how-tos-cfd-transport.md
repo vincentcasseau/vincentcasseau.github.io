@@ -89,6 +89,7 @@ In the _transportProperties/transportModels_ dictionary, edit the following entr
 The Lewis number value can be found in the _diffusiveFluxesParameters_ subdictionary.  
 
 ### 3.3 Fick's law and binary diffusion models
+{: #33-ficks-law}
 In the _transportProperties/transportModels_ dictionary, edit the following entries to  
 ```c++
     multiSpeciesTransport         Fick; 
