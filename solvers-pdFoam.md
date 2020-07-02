@@ -25,4 +25,5 @@ By: C. Capon, UNSW, Canberra, Australia
 
 [**> Tutorials**](https://vincentcasseau.github.io/tutos-pdfoam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/hybridMethods/pdFoam)  
+[**> Disclaimer**](https://vincentcasseau.github.io/disclaimer/)  
 [**&#x2191; Back to Contents**](#Solvers)

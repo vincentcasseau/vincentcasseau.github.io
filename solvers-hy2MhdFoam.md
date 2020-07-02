@@ -43,4 +43,5 @@ _hy2MhdFoam_ supplements _hy2Foam_ with features relative to magnetohydrodynamic
 [**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd/)  
 [**> Tutorials**](https://vincentcasseau.github.io/tutos-hy2mhdfoam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2MhdFoam)  
+[**> Disclaimer**](https://vincentcasseau.github.io/disclaimer/)  
 [**&#x2191; Back to Contents**](#Solvers)

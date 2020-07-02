@@ -41,4 +41,5 @@ A modified version of the _dsmcFoam+_ direct simulation Monte Carlo solver locat
 [**> How-tos**](https://vincentcasseau.github.io/how-tos-dsmc/)  
 [**> Tutorials**](https://vincentcasseau.github.io/tutos-dsmcfoam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/discreteMethods/dsmc/dsmcFoam%2B)  
+[**> Disclaimer**](https://vincentcasseau.github.io/disclaimer/)  
 [**&#x2191; Back to Contents**](#Solvers)

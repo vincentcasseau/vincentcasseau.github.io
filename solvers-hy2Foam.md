@@ -47,4 +47,5 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 [**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd/)  
 [**> Tutorials**](https://vincentcasseau.github.io/tutos-hy2foam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2Foam)  
+[**> Disclaimer**](https://vincentcasseau.github.io/disclaimer/)  
 [**&#x2191; Back to Contents**](#Solvers)

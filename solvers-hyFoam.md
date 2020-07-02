@@ -31,4 +31,5 @@ solver that derives from _hy2Foam_. In the latter code, the trans-rotational and
 [**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd/)  
 [**> Tutorials**](https://vincentcasseau.github.io/tutos-hyfoam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2Foam)  
+[**> Disclaimer**](https://vincentcasseau.github.io/disclaimer/)  
 [**&#x2191; Back to Contents**](#Solvers)
