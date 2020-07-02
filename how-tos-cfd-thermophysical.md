@@ -9,7 +9,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 
 # Thermophysical modelling
 
-
+---  
 ## 1) Species thermophysical properties
 
 + The species thermophysical properties are given in the [_thermoDEM_](https://github.com/vincentcasseau/hyStrath/blob/master/run/hyStrath/hy2Foam/genericCase/constant/thermoDEM) dictionary. For the nitrogen molecule, it is defined as follows:    

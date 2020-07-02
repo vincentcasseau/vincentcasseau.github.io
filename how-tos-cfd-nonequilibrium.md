@@ -12,37 +12,41 @@ These how-tos are based on the working folder located [here](https://github.com/
 ---  
 ## 1) Thermal equilibrium
 
-+ The default solver behaviour is to use the two-temperature formulation with multiple vibro-electronic energy pools. In the _thermophysicalProperties_ dictionary, two switches can alter this behaviour to either produce a two-temperature solver with a single vibro-electronic energy pool (_**downgradeToSingleTv**_) or a single-temperature solver (_**downgradeToSingleTemperature**_).  
+The default solver behaviour is to use the two-temperature formulation with multiple vibro-electronic energy pools. In the <b style="color: #228B22">thermophysicalProperties</b> dictionary, two switches can alter this behaviour to either produce a two-temperature solver with a single vibro-electronic energy pool (_**downgradeToSingleTv**_) or a single-temperature solver (_**downgradeToSingleTemperature**_).  
   
 Thus, the single-temperature solver, _hyFoam_, is obtained with  
+
 ```c++
     downgradeToSingleTv          no;
     downgradeToSingleTemperature yes;
 ```  
 
-> The command line for running _hyFoam_ is identical to _hy2Foam_, _i.e._,  
-hy2Foam > log.hyFoam&
+The command line to run _hyFoam_ is identical to _hy2Foam_   
 
+```sh
+hy2Foam > log.hyFoam 2>&1 &
+```
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
 ## 2) Thermal non-equilibrium
 
 ### 2.1 Two-temperature solver, single vibro-electronic energy pool  
-+ The _thermophysicalProperties_ dictionary set-up for this version of _hy2Foam_ is obtained with
++ The <b style="color: #228B22">thermophysicalProperties</b> dictionary set-up for this version of _hy2Foam_ is obtained with
+
 ```c++
     downgradeToSingleTv          yes;
     downgradeToSingleTemperature no;
 ```
 
 + The path to the dictionary dealing with the non-equilibrium aspects is given by  
+
 ```c++
     twoTemperatureDictFile "$FOAM_CASE/constant/thermo2TModel";
 ```
 
-The _thermo2TModel_ dictionary is composed of one subdictionary named _**thermalRelaxationModels**_ that is used for the selection of the energy transfer models, and various subdictionaries that contain the coefficients of these models. For this version of _hy2Foam_, the only transfers that can take place are vibrational-translational (V-T) and heavy-particles - electrons (h-e). If the gas mixture is composed of neutral species only, then h-e energy transfer is disregarded automatically.  
+The <b style="color: #228B22">thermo2TModel</b> dictionary is composed of one subdictionary named <span style="color: #228B22">thermalRelaxationModels</span> that is used for the selection of the energy transfer models, and various subdictionaries that contain the coefficients of these models. For this version of _hy2Foam_, the only transfers that can take place are vibrational-translational (V-T) and heavy-particles - electrons (h-e). If the gas mixture is composed of neutral species only, then h-e energy transfer is disregarded automatically.  
 The default subdictionary implementation is as follows
 
 ```c++
@@ -76,13 +80,13 @@ thermalRelaxationModels
    - the electronic mode of all particles must be turned off (see [A. §1.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle))
    - the molecules must be planar  
 
-+ If the above conditions are fulfilled, then the _thermophysicalProperties_ dictionary set-up is  
++ If the above conditions are fulfilled, then the <b style="color: #228B22">thermophysicalProperties</b> dictionary set-up is  
 ```c++
     downgradeToSingleTv          no;
     downgradeToSingleTemperature no;
 ```
 
-On top of the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), the _thermalRelaxationModels_ subdictionary is augmented with vibrational-vibrational (V-V) and electron-vibrational (e-V) energy transfers.
+On top of the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), the <span style="color: #228B22">thermalRelaxationModels</span> subdictionary is augmented with vibrational-vibrational (V-V) and electron-vibrational (e-V) energy transfers.
 
 ```c++
 thermalRelaxationModels
