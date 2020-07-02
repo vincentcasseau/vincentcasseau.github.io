@@ -9,6 +9,6 @@ title: Tutorials
 
 ---  
 
-# 1) NASA MSL Forebody
+# 1) NASA MSL forebody
 
-+ The working directory for the NASA MSL Forebody case is located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2MhdFoam/NASA_MSL_forebody_NR-MHD).
++ The working directory for the NASA MSL forebody case is located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2MhdFoam/NASA_MSL_forebody_NR-MHD).

@@ -26,19 +26,17 @@ author: hyStrath
 
 navbar-links:
   Flow Solvers:
-    - hy2Foam: "solvers-hy2Foam"
-    - hyFoam: "solvers-hyFoam"
-    - hy2MhdFoam: "solvers-hy2MhdFoam"
-    - dsmcFoam+: "solvers-dsmcFoam"
-    - pdFoam: "solvers-pdFoam"
+    - hy2Foam: "solvers-hy2foam"
+    - hyFoam: "solvers-hyfoam"
+    - hy2MhdFoam: "solvers-hy2mhdfoam"
+    - dsmcFoam+: "solvers-dsmcfoam"
+    - pdFoam: "solvers-pdfoam"
     - Disclaimer: "disclaimer"
   Download:
     - Compatibility: "compatibility"
     - Maintenance: "maintenance"
     - Installation: "installation"
     - Sync: "sync"
-  Contributions: "contributions"
-  Publications: "publications"
   How-tos:
     - CFD: "how-tos-cfd"
     - DSMC: "how-tos-dsmc"
@@ -48,6 +46,8 @@ navbar-links:
     - hy2MhdFoam: "tutos-hy2mhdfoam"
     - dsmcFoam+: "tutos-dsmcfoam"
     - pdFoam: "tutos-pdfoam" 
+  Contributions: "contributions"
+  Publications: "publications"
   People: "people-and-contact"
   License: "license"
 

@@ -9,13 +9,13 @@ title: Tutorials
 
 ---  
 
-# 1) 2-D Sheath
+# 1) 2-D sheath
 
 <p align="center">
  
 </p>
 
-+ The working directory for the 2-D Sheath case is located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/pdFoam/2D_sheath).  
++ The working directory for the 2-D sheath case is located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/pdFoam/2D_sheath).  
 
 <br>
 
