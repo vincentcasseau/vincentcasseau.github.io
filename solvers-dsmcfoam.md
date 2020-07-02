@@ -8,7 +8,7 @@ title: Solvers
 ### [_**hy2Foam**_](https://vincentcasseau.github.io/solvers-hy2foam/)  
 ### [_**hyFoam**_](https://vincentcasseau.github.io/solvers-hyfoam/)  
 ### [_**hy2MhdFoam**_](https://vincentcasseau.github.io/solvers-hy2mhdfoam/)
-### [_**dsmcFoam+**_](https://vincentcasseau.github.io/solvers-dsmcmoam/)
+### [_**dsmcFoam+**_](https://vincentcasseau.github.io/solvers-dsmcfoam/)
 ### [_**pdFoam**_](https://vincentcasseau.github.io/solvers-pdfoam/)
 
 <br>
