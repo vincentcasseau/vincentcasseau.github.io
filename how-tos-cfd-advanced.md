@@ -1,3 +1,9 @@
+---
+layout: page
+title: How-tos
+subtitle: CFD Module
+---
+
 These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
 
 # Advanced features
@@ -115,4 +121,4 @@ to run a minimalistic version of the solver. For instance, quantities like the K
 
 ---
 
-##### Contributor: Dr Vincent Casseau
+Contributor: Dr Vincent Casseau

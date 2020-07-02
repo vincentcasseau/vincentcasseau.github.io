@@ -1,3 +1,9 @@
+---
+layout: page
+title: How-tos
+subtitle: CFD Module
+---
+
 These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
 
 # Thermophysical modelling
@@ -102,4 +108,4 @@ In the following example, the electronic energy mode of the N atom is enabled
 
 ---  
 
-##### Contributor: Dr Vincent Casseau
+Contributor: Dr Vincent Casseau

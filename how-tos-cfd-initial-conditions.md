@@ -1,3 +1,9 @@
+---
+layout: page
+title: How-tos
+subtitle: CFD Module
+---
+
 These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
 
 # Initial conditions: the _0/_ folder
@@ -212,4 +218,4 @@ libs ("libstrathFiniteVolume.so");
 
 ---
 
-##### Contributor: Dr Vincent Casseau
+Contributor: Dr Vincent Casseau
