@@ -89,7 +89,6 @@ In the _transportProperties/transportModels_ dictionary, edit the following entr
 The Lewis number value can be found in the _diffusiveFluxesParameters_ subdictionary.  
 
 ### 3.3 Fick's law and binary diffusion models
-{: #33-ficks-law}
 In the _transportProperties/transportModels_ dictionary, edit the following entries to  
 ```c++
     multiSpeciesTransport         Fick; 
@@ -138,7 +137,7 @@ In the _transportProperties/transportModels_ dictionary, edit the following entr
     multiSpeciesTransport         SCEBD; 
 ``` 
 
-Please refer to [§3.3](https://vincentcasseau.github.io/how-tos-cfd-transport/#33-ficks-law) for the list of available binary diffusion coefficient models.
+Please refer to [§3.3](https://vincentcasseau.github.io/how-tos-cfd-transport/#33-ficks-law-and-binary-diffusion-models) for the list of available binary diffusion coefficient models.
 
 ### 3.5 Additional features (to Fick and SCEBD models)
 - Results using the non-corrected forms of Fick's law and the SCEBD model can be obtained by switching on the _useNonCorrectedForm_ boolean located in the _diffusiveFluxesParameters_ subdictionary (for comparison with the corrected form only). It is turned to *off* by default, which means that the sum of the diffusive fluxes is zero.
@@ -146,10 +145,3 @@ Please refer to [§3.3](https://vincentcasseau.github.io/how-tos-cfd-transport/#
 > The _useNonCorrectedForm_ entry can be deleted from the _diffusiveFluxesParameters_ subdictionary if you wish (safer).
 
 - In the same subdictionary, the _addPressureGradientTerm_ boolean adds on the effect of the pressure gradient.
-
-<div class="paragraph"><p><br>
-<br></p></div>
-
----
-
-Contributor: Dr Vincent Casseau

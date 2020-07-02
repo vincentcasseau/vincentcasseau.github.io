@@ -16,7 +16,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 
 > Local time stepping is currently inappropriate for axisymmetric and chemically-reacting simulations.  
 
-The [Lorrain scramjet tutorial](https://github.com/vincentcasseau/hyStrath/wiki/Tutorials-::-hyFoam#1-lorrain-geometry) is a suitable case for running LTS and the aforementioned time discretisation scheme is the only modification to be made.
+The [Lorrain scramjet tutorial](https://vincentcasseau.github.io/tutos-hyfoam/#3-lorrain-geometry) is a suitable case for running LTS and the aforementioned time discretisation scheme is the only modification to be made.
 
 <div class="paragraph"><p><br>
 <br></p></div>
@@ -115,11 +115,3 @@ Attempt to use rho2ReactionThermo out of temperature range 3197 times during thi
 
 The _**hyLight**_ switch located into the _thermophysicalProperties_ dictionary disables some of the code features
 to run a minimalistic version of the solver. For instance, quantities like the Knudsen number or the overall temperature will not be calculated at each time-step when this boolean is switched on (even when the set-up of the _transportProperties_ dictionary is telling otherwise). The solution should not be affected by the state of the _hyLight_ switch, only the number of fields to be printed might differ.
-
-
-<div class="paragraph"><p><br>
-<br></p></div>
-
----
-
-Contributor: Dr Vincent Casseau

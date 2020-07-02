@@ -248,10 +248,3 @@ modifiedTemperatureCoeffs
 
 ## 4) To go further: chemistry-vibration coupling  
 This aspect is detailed in [How-to :: Nonequilibrium](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#4-chemistry-vibration-coupling).
-
-<div class="paragraph"><p><br>
-<br></p></div>
-
----  
-
-Contributor: Dr Vincent Casseau

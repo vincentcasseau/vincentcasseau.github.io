@@ -239,11 +239,4 @@ yPlus
 ### 2.5 ParaView
 
 + Open ParaView and load wall patches in _Mesh Regions_  
-+ Plot any of these surface quantities/coefficients using the _**plotData**_ filter 
-
-<div class="paragraph"><p><br>
-<br></p></div>
-
----
-
-Contributor: Dr Vincent Casseau
++ Plot any of these surface quantities/coefficients using the _**plotData**_ filter

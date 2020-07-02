@@ -45,9 +45,3 @@ This command line will create the _0/_ folder. Simulators data is stored into th
 + _dsmcSigmaTcRMax_ is a first estimate of the maximum value taken by the product of the collision cross-section by the relative speed. For a gas mixture, it is usually obtained by considering the properties (diameter, omega, alpha) of the most abundant species. As the simulation proceeds, this field is updated as soon as a new local maximum is found. It requires no user intervention.
 
 + _cellLevel_ represents the level of refinement of each cell. At _t_ = 0, it is equal to 0 which means that all cells are root cells (they cannot be further coarsened). This field will only be used when the AMR flag is passed as an argument to the main DSMC executable.
-
-<br>
-
----
-
-Contributor: Dr Vincent Casseau

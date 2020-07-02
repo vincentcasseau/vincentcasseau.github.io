@@ -27,11 +27,3 @@ These how-tos are based on the working folder located [here](https://github.com/
 
 + Depending on which model is chosen, some fields may have to be added to the _0/_ directory.
 
-
-<div class="paragraph"><p><br>
-<br></p></div>
-
----
-
-Contributor: Dr Vincent Casseau
-

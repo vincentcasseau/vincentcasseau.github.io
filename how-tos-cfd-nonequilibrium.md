@@ -260,11 +260,3 @@ chemistryVibrationCoupling
     }
 }
 ```
-
-
-<div class="paragraph"><p><br>
-<br></p></div>
-
----  
-
-Contributor: Dr Vincent Casseau

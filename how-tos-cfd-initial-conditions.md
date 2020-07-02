@@ -213,10 +213,3 @@ To use the _**rampInlet**_ boundary condition, a line should be added into the _
 ```c++
 libs ("libstrathFiniteVolume.so");
 ```
-
-<div class="paragraph"><p><br>
-<br></p></div>
-
----
-
-Contributor: Dr Vincent Casseau
