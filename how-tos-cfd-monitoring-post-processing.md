@@ -30,6 +30,7 @@ Patch 4 named lowerWall: 416.2644537
 + Thus, the integrated wall heat flux can easily be monitored (and later plotted) during the simulation using the _grep_ command. In the present case: _grep lowerWall log.hy2Foam_
 
 + Alternatively, use the dedicated monitoring script given in the _gnuplot/_ folder, called _monitorIntegratedWallHeatFlux_ replacing _#patchName_ by the name of the wall patch.  
+
 ```sh
 set output "gnuplot/integratedWallHeatFlux.eps"
 
