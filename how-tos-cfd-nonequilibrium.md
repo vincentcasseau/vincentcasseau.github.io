@@ -33,20 +33,20 @@ hy2Foam > log.hyFoam 2>&1 &
 ## 2) Thermal non-equilibrium
 
 ### 2.1 Two-temperature solver, single vibro-electronic energy pool  
-+ The <b style="color: #228B22">thermophysicalProperties</b> dictionary set-up for this version of _hy2Foam_ is obtained with
+The <b style="color: #228B22">thermophysicalProperties</b> dictionary setup for this variant of _hy2Foam_ is obtained with
 
 ```c++
     downgradeToSingleTv          yes;
     downgradeToSingleTemperature no;
 ```
 
-+ The path to the dictionary dealing with the non-equilibrium aspects is given by  
+The path to the non-equilibrium dictionary is also set in this dictionary   
 
 ```c++
     twoTemperatureDictFile "$FOAM_CASE/constant/thermo2TModel";
 ```
 
-The <b style="color: #228B22">thermo2TModel</b> dictionary is composed of one subdictionary named <span style="color: #228B22">thermalRelaxationModels</span> that is used for the selection of the energy transfer models, and various subdictionaries that contain the coefficients of these models. For this version of _hy2Foam_, the only transfers that can take place are vibrational-translational (V-T) and heavy-particles - electrons (h-e). If the gas mixture is composed of neutral species only, then h-e energy transfer is disregarded automatically.  
+and its default name is <b style="color: #228B22">thermo2TModel</b>. It is composed of one subdictionary named <span style="color: #228B22">thermalRelaxationModels</span> for the selection of the energy transfer models, and various subdictionaries to store these models coefficients. In this variant of _hy2Foam_, the only transfers that can take place are vibrational-translational (V-T) and heavy-particles - electrons (h-e). If the gas mixture is composed of neutral species only, then h-e energy transfer is disregarded automatically.  
 The default subdictionary implementation is as follows
 
 ```c++
@@ -136,8 +136,7 @@ This is achieved in the _hTCReactions#name_ dictionary with the _**vibTempAssoci
 ```
 A value of _**1**_ in forth position means that the forth species in the _species()_ list, _**N**_, is grouped into the same vibro-electronic energy pool as the _**1**_ st molecule appearing in the list, here _**N2**_. 
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
 ## 3) Mean free path and breakdown parameter
@@ -198,8 +197,7 @@ rarefiedParameters
 }
 ```
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
 ## 4) Chemistry-vibration coupling
