@@ -33,7 +33,7 @@ hy2Foam > log.hyFoam 2>&1 &
 ## 2) Thermal non-equilibrium
 
 ### 2.1 Two-temperature solver, single vibro-electronic energy pool  
-The <b style="color: #228B22">thermophysicalProperties</b> dictionary setup for this variant of _hy2Foam_ is obtained with
+The <b style="color: #228B22">thermophysicalProperties</b> dictionary setup in this variant of _hy2Foam_ is  
 
 ```c++
     downgradeToSingleTv          yes;
@@ -46,7 +46,7 @@ The path to the non-equilibrium dictionary is also set in this dictionary
     twoTemperatureDictFile "$FOAM_CASE/constant/thermo2TModel";
 ```
 
-and its default name is <b style="color: #228B22">thermo2TModel</b>. It is composed of one subdictionary named <span style="color: #228B22">thermalRelaxationModels</span> for the selection of the energy transfer models, and various subdictionaries to store these models coefficients. In this variant of _hy2Foam_, the only transfers that can take place are vibrational-translational (V-T) and heavy-particles - electrons (h-e). If the gas mixture is composed of neutral species only, then h-e energy transfer is disregarded automatically.  
+and its default name is <b style="color: #228B22">thermo2TModel</b>. It is composed of one subdictionary, <span style="color: #228B22">thermalRelaxationModels</span>, for the selection of the energy transfer models, and various subdictionaries to store the models coefficients. In this variant of _hy2Foam_, the only energy transfers taking place are vibrational-translational (V—&nbsp;T) and heavy-particles —&nbsp; electrons (h—&nbsp;e). If the gas mixture is composed of neutral species only, then h—&nbsp;e energy transfer is disregarded automatically.  
 The default subdictionary implementation is as follows
 
 ```c++
@@ -69,9 +69,9 @@ thermalRelaxationModels
 }
 ```
 
-+ The Landau-Teller equation is used for V-T energy exchange and the V-T relaxation time is dictated by the Millikan-White semi-empirical formula with Park's correction. In the example above, the coefficients for the calculation of the relaxation time are colliding-pair specific and read from one of the subsequent subdictionaries (since _overwriteDefault_ is _on_).
++ The Landau-Teller equation is used for V—&nbsp;T energy exchange and the V—&nbsp;T relaxation time is dictated by the Millikan-White semi-empirical formula with Park's correction. In the example above, the coefficients for the calculation of the relaxation time are colliding-pair specific and read from one of the subsequent subdictionaries (since `overwriteDefault` is _on_).
 
-+ The h-e energy transfer process from Appleton & Bray (1963) does not require any input. It can be disabled using a _relaxationType_ defined as _noHEEnergyTransfer_.
++ The h—&nbsp;e energy transfer process from Appleton & Bray (1963) does not require any input. It can be disabled using a `relaxationType` defined as _noHEEnergyTransfer_.
 
 
 ### 2.2 Two-temperature solver, multiple vibro-electronic energy pools
@@ -80,7 +80,8 @@ thermalRelaxationModels
    - the electronic mode of all particles must be turned off (see [A. §1.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle))
    - the molecules must be planar  
 
-+ If the above conditions are fulfilled, then the <b style="color: #228B22">thermophysicalProperties</b> dictionary set-up is  
++ If the above conditions are fulfilled, then the <b style="color: #228B22">thermophysicalProperties</b> dictionary setup is
+  
 ```c++
     downgradeToSingleTv          no;
     downgradeToSingleTemperature no;
