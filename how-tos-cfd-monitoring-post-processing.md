@@ -31,7 +31,7 @@ Patch 4 named lowerWall: 416.2644537
 
 + Alternatively, use the dedicated monitoring script given in the _gnuplot/_ folder, called _monitorIntegratedWallHeatFlux_ replacing _#patchName_ by the name of the wall patch.  
 ```c++
-set output "gnuplot/integratedWallHeatFlux.eps"
+{%set output "gnuplot/integratedWallHeatFlux.eps"
 
 set size 0.95,0.47
 set origin 0.03,0.53
@@ -39,7 +39,7 @@ set xlabel "Time  [sec]"
 set ylabel "Integrated wall heat flux  [kW]"
 
 plot \
-"< cat log.hy2Foam | grep -e 'named #patchName:' -e '^Time =' | awk '/^Time =/,/^Time =/ {lastc = $0; next}{ if ( lastc != \"\") { print lastc; lastc = \"\"; } print }' $1 | cut -d ':' -f 2 | cut -d '=' -f 2 | paste -d ' ' - -" u 1:($2/1000.0) w l ls 1 lw 1.8 not
+"< cat log.hy2Foam | grep -e 'named #patchName:' -e '^Time =' | awk '/^Time =/,/^Time =/ {lastc = $0; next}{ if ( lastc != \"\") { print lastc; lastc = \"\"; } print }' $1 | cut -d ':' -f 2 | cut -d '=' -f 2 | paste -d ' ' - -" u 1:($2/1000.0) w l ls 1 lw 1.8 not%}
 ```
 
 ### 1.2 Wall shear stress
