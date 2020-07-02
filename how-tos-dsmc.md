@@ -44,10 +44,10 @@ subtitle: DSMC Module
 <br></p></div>
 
 ---  
-## [F. Initialisation](https://vincentcasseau.github.io/how-tos-dsmc-initialisation)
-### [1) Creating the _0/_ folder](https://vincentcasseau.github.io/how-tos-dsmc-initialisation#1-creating-the-0-folder)  
-### [2) Simulators data](https://vincentcasseau.github.io/how-tos-dsmc-initialisation#2-simulators-data)  
-### [3) Initial volume fields](https://vincentcasseau.github.io/how-tos-dsmc-initialisation#3-initial-volume-fields)
+## [F. Initialisation](https://vincentcasseau.github.io/how-tos-dsmc-initialisation/)
+### [1) Creating the _0/_ folder](https://vincentcasseau.github.io/how-tos-dsmc-initialisation/#1-creating-the-0-folder)  
+### [2) Simulators data](https://vincentcasseau.github.io/how-tos-dsmc-initialisation/#2-simulators-data)  
+### [3) Initial volume fields](https://vincentcasseau.github.io/how-tos-dsmc-initialisation/#3-initial-volume-fields)
 
 <div class="paragraph"><p><br>
 <br></p></div>
