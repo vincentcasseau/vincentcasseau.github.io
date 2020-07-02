@@ -28,8 +28,8 @@ navbar-links:
   Solvers:
     - hy2Foam: "solvers-hy2Foam"
     - hyFoam: "solvers-hyFoam"
-    - hy2MhdFoam: "solvers-hy2MhdFoam"
-    - dsmcFoam+: "solvers-dsmcFoam"
+    - hy2Mhd: "solvers-hy2MhdFoam"
+    - dsmcFoam: "solvers-dsmcFoam"
     - pdFoam: "solvers-pdFoam"
     - Disclaimer: "disclaimer"
   Download:

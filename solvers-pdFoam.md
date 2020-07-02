@@ -6,10 +6,10 @@ title: Solvers
 ## &nbsp;
 {: #Solvers }
 ### [_**hy2Foam**_](https://vincentcasseau.github.io/solvers-hy2Foam/)  
-### [_**hyFoam**_](#https://vincentcasseau.github.io/solvers-hyFoam/)  
-### [_**hy2MhdFoam**_](#https://vincentcasseau.github.io/solvers-hy2MhdFoam/)
-### [_**dsmcFoam+**_](#https://vincentcasseau.github.io/solvers-dsmcFoam/)
-### [_**pdFoam**_](#https://vincentcasseau.github.io/solvers-pdFoam/)
+### [_**hyFoam**_](https://vincentcasseau.github.io/solvers-hyFoam/)  
+### [_**hy2MhdFoam**_](https://vincentcasseau.github.io/solvers-hy2MhdFoam/)
+### [_**dsmcFoam+**_](https://vincentcasseau.github.io/solvers-dsmcFoam/)
+### [_**pdFoam**_](https://vincentcasseau.github.io/solvers-pdFoam/)
 
 <br>
   
