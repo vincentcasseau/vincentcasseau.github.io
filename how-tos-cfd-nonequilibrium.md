@@ -46,7 +46,7 @@ The path to the non-equilibrium dictionary is also set in this dictionary
     twoTemperatureDictFile "$FOAM_CASE/constant/thermo2TModel";
 ```
 
-and its default name is <b style="color: #228B22">thermo2TModel</b>. It is composed of one subdictionary, <span style="color: #228B22">thermalRelaxationModels</span>, for the selection of the energy transfer models, and various subdictionaries to store the models coefficients. In this variant of _hy2Foam_, the only energy transfers taking place are vibrational-translational (V—&nbsp;T) and heavy-particles —&nbsp; electrons (h—&nbsp;e). If the gas mixture is composed of neutral species only, then h—&nbsp;e energy transfer is disregarded automatically.  
+and its default name is <b style="color: #228B22">thermo2TModel</b>. It is composed of one subdictionary, <span style="color: #228B22">thermalRelaxationModels</span>, for the selection of the energy transfer models, and various subdictionaries to store the models coefficients. In this variant of _hy2Foam_, the only energy transfers taking place are vibrational-translational (V—T) and heavy-particles — electrons (h—e). If the gas mixture is composed of neutral species only, then the h—e energy transfer is automatically discarded.  
 The default subdictionary implementation is as follows
 
 ```c++
@@ -69,9 +69,50 @@ thermalRelaxationModels
 }
 ```
 
-+ The Landau-Teller equation is used for V—&nbsp;T energy exchange and the V—&nbsp;T relaxation time is dictated by the Millikan-White semi-empirical formula with Park's correction. In the example above, the coefficients for the calculation of the relaxation time are colliding-pair specific and read from one of the subsequent subdictionaries (since `overwriteDefault` is _on_).
++ The Landau-Teller equation is used for V—T energy exchange and the V—T relaxation time is dictated by the Millikan-White semi-empirical formula with Park's correction. In the example above, the coefficients for the calculation of the relaxation time are colliding-pair specific and read from one of the subsequent subdictionaries (since `overwriteDefault` is _on_).
 
-+ The h—&nbsp;e energy transfer process from Appleton & Bray (1963) does not require any input. It can be disabled using a `relaxationType` defined as _noHEEnergyTransfer_.
+<table>
+  <tr>
+    <td align="center" colspan="3"><b>V—T energy exchange</b></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Key</b></td>
+    <td align="center"><b>Values</b></td>
+    <td align="center"><b>Meaning</b></td>
+  </tr>
+  <tr>
+    <td align="center">`relaxationType`</td>
+    <td align="center">_noVTEnergyTransfer_, _LandauTellerVT_ (recommended)</td>
+    <td align="center">Name of the V—T energy transfer model</td>
+  </tr>
+  <tr>
+    <td align="center">`model`</td>
+    <td align="center">_MillikanWhite_, _MillikanWhitePark_ (recommended)</td>
+    <td align="center">description</td>
+  </tr>
+  <tr>  
+    <td align="center">`fullCoeffsForm`</td>
+    <td align="center">_on_ (recommended), _off_</td>
+    <td align="center">description</td>
+  </tr>
+  <tr>
+    <td align="center">`overwriteDefault`</td>
+    <td align="center">_on_ (recommended), _off_</td>
+    <td align="center">description</td>
+  </tr>
+  <tr>
+    <td align="center">`speciesDependent`</td>
+    <td align="center">_on_ (recommended), _off_</td>
+    <td align="center">description</td>
+  </tr>
+  <tr>
+    <td align="center">`collidingPair`</td>
+    <td align="center">_on_ (recommended), _off_</td>
+    <td align="center">description</td>
+  </tr>
+</table>
+
++ The h—e energy transfer from Appleton & Bray (1963) does not require any input. It can be disabled using a `relaxationType` defined as _noHEEnergyTransfer_.
 
 
 ### 2.2 Two-temperature solver, multiple vibro-electronic energy pools
@@ -87,7 +128,7 @@ thermalRelaxationModels
     downgradeToSingleTemperature no;
 ```
 
-On top of the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), the <span style="color: #228B22">thermalRelaxationModels</span> subdictionary is augmented with vibrational-vibrational (V-V) and electron-vibrational (e-V) energy transfers.
+On top of the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), the <span style="color: #228B22">thermalRelaxationModels</span> subdictionary is augmented with vibrational-vibrational (V—V) and electron-vibrational (e—V) energy transfers.
 
 ```c++
 thermalRelaxationModels
@@ -111,8 +152,8 @@ thermalRelaxationModels
 }
 ```
 
-+ The V-V energy transfer process from Knab _et al._ (1992) is the unique V-V model implemented. [Similarly to the V-T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the _collidingPair_ boolean.  
-V-V energy exchange can be disabled using a _relaxationType_ defined as _noVVEnergyTransfer_. 
++ The V—V energy transfer process from Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V-T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the _collidingPair_ boolean.  
+V—V energy exchange can be disabled using a _relaxationType_ defined as _noVVEnergyTransfer_. 
 
 + In this version of _hy2Foam_, species need to be split into different vibro-electronic energy pools.
 This is achieved in the _hTCReactions#name_ dictionary with the _**vibTempAssociativity()**_ list. The list order is similar to the _**species()**_ list and the integer value _0_ is reserved to neutral molecules. For a 5-species air:  
