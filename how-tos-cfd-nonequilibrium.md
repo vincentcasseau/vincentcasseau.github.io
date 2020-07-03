@@ -12,7 +12,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ---  
 ## 1) Thermal equilibrium
 
-The solver's default behaviour is to use the two-temperature formulation with multiple vibro-electronic energy pools. In the <dict>thermophysicalProperties</dict> dictionary, two switches, `downgradeToSingleTv` and `downgradeToSingleTemperature`, can alter this behaviour to either produce a two-temperature solver with a single vibro-electronic energy pool or a single-temperature solver. 
+The solver's default behaviour is to use the two-temperature formulation with multiple vibro-electronic energy pools. In the <dict>thermophysicalProperties</dict> dictionary, two switches, <dictkey>downgradeToSingleTv</dictkey> and <dictkey>downgradeToSingleTemperature</dictkey>, can alter this behaviour to either produce a two-temperature solver with a single vibro-electronic energy pool or a single-temperature solver. 
   
 Thus, the single-temperature solver, _hyFoam_, is obtained with  
 
@@ -33,7 +33,7 @@ hy2Foam > log.hyFoam 2>&1 &
 ## 2) Thermal non-equilibrium
 
 ### 2.1 Two-temperature solver, single vibro-electronic energy pool  
-The <b style="color: #228B22">thermophysicalProperties</b> dictionary setup in this variant of _hy2Foam_ is  
+The <dict>thermophysicalProperties<dict> dictionary setup in this variant of _hy2Foam_ is  
 
 ```c++
     downgradeToSingleTv          yes;
@@ -46,7 +46,7 @@ The path to the non-equilibrium dictionary is also set in this dictionary
     twoTemperatureDictFile "$FOAM_CASE/constant/thermo2TModel";
 ```
 
-and its default name is <b style="color: #228B22">thermo2TModel</b>. It is composed of one subdictionary, <span style="color: #228B22">thermalRelaxationModels</span>, for the selection of the energy transfer models, and various subdictionaries to store the models coefficients. In this variant of _hy2Foam_, the energy transfers taking place are vibrational-translational (V—T) and heavy-particles — electrons (h—e). If the gas mixture is composed of neutral species only, then the h—e energy transfer is automatically discarded.  
+and its default name is <dict>thermo2TModel</dict>. It is composed of one subdictionary, <subdict>thermalRelaxationModels</subdict>, for the selection of the energy transfer models, and various subdictionaries to store the models coefficients. In this variant of _hy2Foam_, the energy transfers taking place are vibrational-translational (V—T) and heavy-particles — electrons (h—e). If the gas mixture is composed of neutral species only, then the h—e energy transfer is automatically discarded.  
 The default subdictionary implementation is as follows
 
 ```c++
