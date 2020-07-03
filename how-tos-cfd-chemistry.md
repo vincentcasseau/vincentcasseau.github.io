@@ -124,7 +124,7 @@ Within the <dict>hTCReactions#name</dict> dictionary, the <subdict>reactions</su
 | <dictkey>beta</dictkey>      |  temperature exponent          |   -     |
 | <dictkey>Ta</dictkey>      |  temperature of activation           |   K    |
 
-> <strong>Please pay attention to the units of the pre-exponential factor, <dictkey>A</dictkey>, whn customising your own <dict>hTCReactions#name</dict> dictionary.</strong>  
+> Please pay attention to the units of the pre-exponential factor, <dictkey>A</dictkey>, when customising your own <dict>hTCReactions#name</dict> dictionary.
 
 The reaction <dictkey>type</dictkey> is defined as <dictval>irreversibleArrheniusReaction</dictval>.
 
@@ -153,7 +153,7 @@ Extra coefficients entering into the calculation of the reverse reaction rate co
 | <dictkey>ni()</dictkey>      |  mixture number density list | m^-3 |
 | <dictkey>A0()</dictkey> - <dictkey>A4()</dictkey>      | Park's coefficients for _k\_rev_  |   -    |
  
-In the <dict>hTCReactions#name/</dict><subdict>reactions</subdict> dictionary, the reaction <dictkey>type</dictkey>  can either be <dictkey>reversibleArrheniusReaction</dictkey> or <dictkey>nonEquilibriumReversibleArrheniusReaction</dictkey>. Their implementation is exemplified hereafter    
+In the <dict>hTCReactions#name/</dict><subdict>reactions</subdict> dictionary, the reaction <dictkey>type</dictkey>  can either be <dictval>reversibleArrheniusReaction</dictval> or <dictval>nonEquilibriumReversibleArrheniusReaction</dictval>. Their implementation is exemplified hereafter    
 
 ```c++
 reactions
@@ -169,7 +169,7 @@ reactions
         
         ni       (1e20 1e21 1e22 1e23 1e24 1e25);
         A0       (1.8103 0.91354 0.64183 0.55388 0.52455 0.50989);
-        A1       (1.9607 2.316 2.4253 2.46 2.4715 2.4773);
+        A1       (8.8685 9.2238 9.3331 9.3678 9.3793 9.3851);
         A2       (3.5716 2.2885 1.9026 1.7763 1.7342 1.7132);
         A3       (-7.3623 -6.7969 -6.6277 -6.572 -6.5534 -6.5441);
         A4       (0.083861 0.046338 0.035151 0.031445 0.030209 0.029591);  
