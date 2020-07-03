@@ -13,7 +13,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ## 1) The include/ sub-folder
 
 To avoid repetitive editing in the <dirname>0/</dirname> folder, in particular if there are many species in the gas mixture, a call to a dictionary within the <dirname>include/</dirname> sub-folder can be made.
-_empty_, _cyclic_, _wedge_, <dictval>zeroGradient</dictval>, and _symmetry_ patches can be regrouped into <dirname>include/</dirname><dict>boundaries</dict>. For example, any field in the <dirname>0/</dirname> folder requires a <dictval>zeroGradient</dictval> outlet (typical supersonic/hypersonic outlet BC). Below, the outlet patch is omitted and replaced by a call to <dict>boundaries</dict>.
+<dictval>empty</dictval>, <dictval>cyclic</dictval>, <dictval>wedge</dictval>, <dictval>zeroGradient</dictval>, and <dictval>symmetry</dictval> patches can be regrouped into <dirname>include/</dirname><dict>boundaries</dict>. For example, any field in the <dirname>0/</dirname> folder requires a <dictval>zeroGradient</dictval> outlet (typical supersonic/hypersonic outlet BC). Below, the outlet patch is omitted and replaced by a call to <dict>boundaries</dict>.
 
 ```c++
 boundaryField
@@ -88,7 +88,7 @@ Y_O       0;
 ---  
 ## 2) Species mass fractions
   
-Within the <dirname>0/</dirname> folder should be specified all mass fractions of species appearing in the [_**species()**_ list](https://vincentcasseau.github.io/how-tos-cfd-chemistry/#12-addingdeleting-species) located in the _**constant/hTCReactions#name**_ dictionary.  
+Within the <dirname>0/</dirname> folder should be specified all mass fractions of species appearing in the [_**species()**_ list](https://vincentcasseau.github.io/how-tos-cfd-chemistry/#12-addingdeleting-species) located in the <dirname>constant/</dirname><dict>hTCReactions#name</dict> dictionary.  
   
 Naming convention for mass-fraction in OpenFOAM avoids the prefix _Y\__, which means the mass-fraction of _N2_ is simply called _**N2**_.  
 
