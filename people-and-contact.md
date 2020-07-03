@@ -7,7 +7,7 @@ _GitHub coordinator_:
 
 * **Dr Vincent Casseau** &nbsp; <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank">
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fas fa-circle fa-stack-1x" style='color:#0072B1' max-width:50%></i>
+      <i class="fas fa-circle fa-stack-1x" style='color:#0072B1'></i>
       <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
     </span>
     <span class="sr-only">LinkedIn</span>
