@@ -83,12 +83,12 @@ The Landau-Teller equation is used for V—T energy exchange and the V—T relax
   <tr>
     <td align="center"><dictkey>relaxationType</dictkey></td>
     <td align="center"><dictval>LandauTellerVT</dictval> &nbsp; <i class="fa fa-thumbs-up" style="font-size:18px;color:green" title="recommended"></i> <br /> <dictval>noVTEnergyTransfer</dictval>  </td>
-    <td align="center">Name of the V—T energy transfer model</td>
+    <td align="center">name of the V—T energy transfer model</td>
   </tr>
   <tr>
     <td align="center"><dictkey>model</dictkey></td>
     <td align="center"><dictval>MillikanWhitePark</dictval> &nbsp; <i class="fa fa-thumbs-up" style="font-size:18px;color:green" title="recommended"></i> <br /> <dictval>MillikanWhite</dictval></td>  
-    <td align="center">whether to use Park's correction or not</td>
+    <td align="center">if <dictkey>LandauTellerVT</dictkey> is chosen, whether to use Park's correction or not</td>
   </tr>
   <tr>  
     <td align="center"><dictkey>fullCoeffsForm</dictkey></td>
