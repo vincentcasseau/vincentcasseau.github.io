@@ -82,7 +82,7 @@ The Landau-Teller equation is used for V—T energy exchange and the V—T relax
   </tr>
   <tr>
     <td align="center">`relaxationType`</td>
-    <td align="center">_noVTEnergyTransfer_, _LandauTellerVT_ (recommended)</td>
+    <td align="center">_noVTEnergyTransfer_ <br /> _LandauTellerVT_ (recommended)</td>
     <td align="center">Name of the V—T energy transfer model</td>
   </tr>
   <tr>
