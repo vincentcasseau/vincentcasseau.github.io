@@ -34,7 +34,7 @@ hy2Foam > log.hyFoam 2>&1 &
 ---  
 ## 2) Thermal non-equilibrium
 
-As mentioned in the introduction, the non-equilibrium solver _hy2Foam_ can take two forms: it can either solve for the mixture vibro-electronic energy equation or multiple vibro-electronic energy equations. The choice of the former variant is highly recommended.
+As mentioned in the introduction, the non-equilibrium solver _hy2Foam_ can take two forms: it can either solve for mixture vibro-electronic energy equation or multiple vibro-electronic energy equations. The choice of the former variant is highly recommended.
 
 ### 2.1 Two-temperature solver, single vibro-electronic energy pool  
 The <dict>thermophysicalProperties</dict> dictionary setup in this variant of _hy2Foam_ is  
@@ -44,14 +44,14 @@ The <dict>thermophysicalProperties</dict> dictionary setup in this variant of _h
     downgradeToSingleTemperature no;
 ```
 
-The path to the non-equilibrium dictionary is also set in this dictionary   
+The path to the non-equilibrium dictionary is also set in <dict>thermophysicalProperties</dict>   
 
 ```c++
     twoTemperatureDictFile "$FOAM_CASE/constant/thermo2TModel";
 ```
 
-and its default name is <dict>thermo2TModel</dict>. It is composed of one subdictionary, <subdict>thermalRelaxationModels</subdict>, for the selection of the energy transfer models, and various subdictionaries to store the models coefficients. In this variant of _hy2Foam_, the energy transfers taking place are vibrational-translational (V—T) and heavy-particles — electrons (h—e). If the gas mixture is composed of neutral species only, then the h—e energy transfer is automatically discarded.  
-The default subdictionary implementation is as follows
+and its default name is <dict>thermo2TModel</dict>. It is composed of one subdictionary, <subdict>thermalRelaxationModels</subdict>, for the selection of the energy transfer models, and various subdictionaries to store the models coefficients. The energy transfers that are allowed to take place are vibrational-translational (V—T) and heavy-particles — electrons (h—e). If the gas mixture is composed of neutral species only, then h—e energy transfer is automatically discarded.
+The subdictionary's default implementation is as follows
 
 ```c++
 thermalRelaxationModels
@@ -73,7 +73,7 @@ thermalRelaxationModels
 }
 ```
 
-The Landau-Teller equation is used for V—T energy exchange and the V—T relaxation time is dictated by the Millikan-White semi-empirical formula with Park's correction. In the example above, the coefficients for the calculation of the relaxation time are colliding-pair specific and read from one of the subsequent subdictionaries (since <dictkey>overwriteDefault</dictkey> is <dictval>on</dictval>).
+As is customary, the Landau-Teller equation is employed for V—T energy exchange and the V—T relaxation time is obtained using the Millikan & White semi-empirical formula, with or without Park's correction. In the example above, the coefficients entering in the calculation of the V—T relaxation time are made colliding-pair specific and are read from one of the subsequent subdictionaries (since <dictkey>overwriteDefault</dictkey> is <dictval>on</dictval>). The meaning of the all entries in <subdict>thermalRelaxationModels</subdict> is given in the Table below
 
 <table>
   <tr>
