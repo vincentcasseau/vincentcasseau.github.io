@@ -8,8 +8,12 @@ The OpenFOAM versions listed below are the only ones that are supported by this 
 ### Master branch  
 + OF-v1706: [https://www.openfoam.com/releases/openfoam-v1706](https://www.openfoam.com/releases/openfoam-v1706)  
 
+&nbsp;  
+
 ### OF-v1612+ branch (CFD and DSMC modules)
 + OF-v1612+: [https://www.openfoam.com/releases/openfoam-v1612+](https://www.openfoam.com/releases/openfoam-v1612+) 
+
+&nbsp;  
 
 ### OF-2.4.0 branch (CFD module)   
 + OF-2.4.0-MNF: [https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF)  

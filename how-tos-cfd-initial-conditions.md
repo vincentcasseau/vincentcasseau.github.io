@@ -7,13 +7,13 @@ nav-short: true
 
 These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
 
-# Initial conditions: the _0/_ folder
+# Initial conditions: the 0/ folder
 
 ---  
-## 1) The _include/_ sub-folder
+## 1) The include/ sub-folder
 
-+ To avoid repetitive editing in the _0/_ folder, in particular if there are many species in the gas mixture, a call to a dictionary within the _include/_ sub-folder can be made.
-_empty_, _cyclic_, _wedge_, _zeroGradient_, and _symmetry_ patches can be regrouped into _**include/boundaries**_. For example, any field in the _0/_ folder requires a _zeroGradient_ outlet (typical supersonic/hypersonic outlet BC). Below, the outlet patch is omitted and replaced by a call to _boundaries_.
+To avoid repetitive editing in the <dirname>0/</dirname> folder, in particular if there are many species in the gas mixture, a call to a dictionary within the <dirname>include/</dirname> sub-folder can be made.
+_empty_, _cyclic_, _wedge_, <dictval>zeroGradient</dictval>, and _symmetry_ patches can be regrouped into <dirname>include/</dirname><dict>boundaries</dict>. For example, any field in the <dirname>0/</dirname> folder requires a <dictval>zeroGradient</dictval> outlet (typical supersonic/hypersonic outlet BC). Below, the outlet patch is omitted and replaced by a call to <dict>boundaries</dict>.
 
 ```c++
 boundaryField
@@ -24,7 +24,7 @@ boundaryField
 }
 ```
 
-In _**include/boundaries**_:  
+In <dirname>include/</dirname><dict>boundaries</dict>  
 ```c++
 outlet
 {
@@ -32,8 +32,8 @@ outlet
 }
 ```
 
-+ It is good practice to regroup the initial conditions into a single dictionary
-as shown later in [§ 3.1](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#31-trans-rotational-temperature) using a call to the _**include/initialConditions**_ dictionary and the symbol _**$**_.
+It is good practice to regroup the initial conditions into a single dictionary
+as shown later in [§ 3.1](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#31-trans-rotational-temperature) using a call to the <dirname>include/</dirname><dict>initialConditions</dict> dictionary and the symbol _**$**_.
 
 The include statement can be placed at the top of file  
 
@@ -59,7 +59,7 @@ boundaryField
 }
 ```
 
-In _**include/initialConditions**_:
+In <dirname>include/</dirname><dict>initialConditions</dict>
 
 ```c++
 Ttr       300;
@@ -81,20 +81,20 @@ Y_N       0;
 Y_O       0;
 ```
 
-> This makes running parameterized simulations easier using a bash/python script that will solely edit the _**0/include/initialConditions**_ dictionary entries.
+> This makes running parameterized simulations easier using a bash/python script that will solely edit the <dirname>0/include/</dirname><dict>initialConditions</dict> dictionary entries.
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
-
 ## 2) Species mass fractions
   
-+ Within the _0/_ folder should be specified all mass fractions of species appearing in the [_**species()**_ list](https://vincentcasseau.github.io/how-tos-cfd-chemistry/#12-addingdeleting-species) located in the _**constant/hTCReactions#name**_ dictionary  
-+ Naming convention for mass-fraction in OpenFOAM avoids the prefix _Y\__, which means the mass-fraction of _N2_ is simply called _**N2**_.
+Within the <dirname>0/</dirname> folder should be specified all mass fractions of species appearing in the [_**species()**_ list](https://vincentcasseau.github.io/how-tos-cfd-chemistry/#12-addingdeleting-species) located in the _**constant/hTCReactions#name**_ dictionary.  
+  
+Naming convention for mass-fraction in OpenFOAM avoids the prefix _Y\__, which means the mass-fraction of _N2_ is simply called _**N2**_.  
 
 ### 2.1 Non-catalytic wall
-+ For a non-catalytic wall, a _zeroGradient_ BC can be used:
++ For a non-catalytic wall, a <dictval>zeroGradient</dictval> BC can be used  
+
 ```c++
     wall
     {
@@ -102,8 +102,10 @@ Y_O       0;
     }
 ```
 
+&nbsp;
+
 ### 2.2 Super-catalytic wall
-+ For a super-catalytic wall, the mixture composition at the wall is that of the free-stream and the current implementation is as follows:  
+For a super-catalytic wall, the mixture composition at the wall is that of the free-stream and the current implementation is as follows:  
 ```c++
     inlet
     {
@@ -118,18 +120,17 @@ Y_O       0;
     }
 ```
 
-
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
-
 ## 3) Temperature fields
 
 ### 3.1 Trans-rotational temperature
-+ The trans-rotational temperature field is named _**Tt**_  and must be present in the _0/_ folder
-+ Its implementation in the _0/_ folder is identical to the standard temperature field in OpenFOAM, except for the Smoluchowski temperature jump boundary condition.  
-+ The Smoluchowski temperature jump boundary condition for the trans-rotational counterpart writes as follows
+The trans-rotational temperature field is named _**Tt**_  and must be present in the <dirname>0/</dirname> folder.  
+
+Its implementation in the <dirname>0/</dirname> folder is identical to the standard temperature field in OpenFOAM, except for the Smoluchowski temperature jump boundary condition.    
+
+The Smoluchowski temperature jump boundary condition for the trans-rotational counterpart writes as follows
 ```c++
     wall
     {
@@ -140,11 +141,13 @@ Y_O       0;
     }
 ```
 
+&nbsp;
+
 ### 3.2 Vibro-electronic temperature
 
 #### 3.2.1 Single vibro-electronic energy pool formulation  
 + Please refer to [D. §2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool) if you are not familiar with this code feature   
-+ The mixture vibro-electronic temperature field is called _**Tv**_ and must be present in the _0/_ folder
++ The mixture vibro-electronic temperature field is called _**Tv**_ and must be present in the <dirname>0/</dirname> folder
 + The Smoluchowski temperature jump boundary condition for the mixture vibro-electronic counterpart writes as follows
 ```c++
     wall
@@ -159,7 +162,7 @@ Y_O       0;
 
 #### 3.2.2 Multiple vibro-electronic energy pools formulation  
 + Please refer to [D. §2.2](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#22-two-temperature-solver-multiple-vibro-electronic-energy-pools) if you are not familiar with this code feature  
-+ The species vibro-electronic temperature fields are called _**Tv\_#nameSpecies**_. There are as many _**Tv\_#nameSpecies**_ fields to define in the _0/_ folder as there are species in the _**species()**_ list.  
++ The species vibro-electronic temperature fields are called _**Tv\_#nameSpecies**_. There are as many _**Tv\_#nameSpecies**_ fields to define in the <dirname>0/</dirname> folder as there are species in the _**species()**_ list.  
 + The Smoluchowski temperature jump boundary condition for the species (molecule) vibro-electronic temperature writes as follows
 ```c++
     wall
