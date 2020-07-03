@@ -277,16 +277,17 @@ chemistryVibrationCoupling
 }
 ```
 
-Park's temperature, defined as T_tr^<dictkey>exponentTtr</dictkey> x T_ve^(1 - <dictkey>exponentTtr</dictkey>), is utilised for dissociation reactions if need be and a value of 0.7 is usually employed for <dictkey>exponentTtr</dictkey>. In this example, the <dictval>preferential</dictval> model is retained (the other <dictkey>sourceTermModel<dictkey> being <dictval>nonPreferential</dictval>).   
+Park's temperature, defined as T_tr^<dictkey>exponentTtr</dictkey> x T_ve^(1 - <dictkey>exponentTtr</dictkey>), is utilised for dissociation reactions if need be and a value of 0.7 is usually employed for <dictkey>exponentTtr</dictkey>. In this example, the <dictval>preferential</dictval> model is retained (the other <dictkey>sourceTermModel</dictkey> being <dictval>nonPreferential</dictval>).   
 
 #### 4.1.2 Reactions dictionary
 
-A controlling temperature, <dictkey>controlT</dictkey>, is added to the <dict>hTCReactions#name</dict> dictionary. For example, Park's temperature will be used in the following case for forward reaction rate calculations
+A controlling temperature, <dictkey>controlT</dictkey>, is added to the <dict>hTCReactions#name</dict> dictionary. For example, Park's temperature <dictkey>exponentTtr</dictkey> will be used for forward reaction rate calculations if <dictkey>controlT</dictkey> is defined as follows  
 
 ```c++
 controlT dissociation;
 ```
-Other accepted entries for <dictkey>controlT</dictkey> can be found in <dict>hTCReactionsEarth93</dict>.
+
+Other accepted values for <dictkey>controlT</dictkey> can be found in <dict>hTCReactionsEarth93</dict>.
 
 
 ### 4.2 Coupled vibration-dissociation-vibration (CVDV) model
