@@ -106,7 +106,7 @@ The Landau-Teller equation is used for V—T energy exchange and the V—T relax
     <td align="center">description</td>
   </tr>
   <tr>
-    <td align="center"><dictkey>collidingPair<dictkey></td>
+    <td align="center"><dictkey>collidingPair</dictkey></td>
     <td align="center"><dictval>on</dictval> (recommended) <br /> <dictval>off</dictval></td>
     <td align="center">description</td>
   </tr>
