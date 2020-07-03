@@ -27,11 +27,11 @@ The names of all valid entries for the <dictkey>transport</dictkey> keyword in t
 
 | Transport model name    | Parameters          |
 |:-------------:|-------------|
-| _constant_      | _mu_ |
-| _SutherlandEucken_      | _As_, _Ts_     |
-| _BlottnerEucken_ | _A_, _B_, _C_     |
-| _CEA_      | _temp()_, _visco()_, _kappa()_      |
-| _powerLawEucken_ | _diameter_, _omega_     |
+| <dictval>constant</dictval>      | <dictkey>mu</dictkey> |
+| <dictval>SutherlandEucken</dictval>      | <dictkey>As</dictkey>, <dictkey>Ts</dictkey>     |
+| <dictval>BlottnerEucken</dictval> | <dictkey>A</dictkey>, <dictkey>B</dictkey>, <dictkey>C</dictkey>     |
+| <dictval>CEA</dictval>      | <dictkey>temp()</dictkey>, <dictkey>visco()<dictkey>, <dictkey>kappa()</dictkey>      |
+| <dictval>powerLawEucken</dictval> | <dictkey>diameter</dictkey>, <dictkey>omega</dictkey>     |
 
 The coefficients of these models are to be found in the <dict>thermoDEM/</dict><subdict>#speciesName</subdict> dictionary. The first four models are employing coefficients located into the <subdict>transport</subdict> subdictionary, while the _powerLawEucken_ model is using the species diameter, _diameter_, and species temperature exponent of viscosity, _omega_, located in the <subdict>specie</subdict> subdictionary.
 
@@ -52,9 +52,9 @@ The available mixing rules are
 
 | Mixing rule name    | Parameters          |
 |:-------------:|:-------------:|
-| _molar_      | - |
-| _Wilke_      | - |
-| _ArmalySutton_ | _correctedArmalySutton_    |
+| <dictval>molar</dictval>      | - |
+| <dictval>Wilke</dictval>      | - |
+| <dictval>ArmalySutton</dictval> | _correctedArmalySutton_    |
 
 and can be chosen editing the entry <dictkey>mixingRule</dictkey> in the <dict>transportProperties/</dict><subdict>transportModels</subdict> dictionary. The mixture shear viscosity and thermal conductivity can be printed by reproducing the procedure described in [§1.4](https://vincentcasseau.github.io/how-tos-cfd-transport/#14-print-species-shear-viscosity-and-thermal-conductivity)
   
@@ -99,10 +99,10 @@ Available models for the calculation of binary diffusion coefficients are
 
 | Binary diffusion model name    | Parameters          |
 |:-------------:|-------------|
-| _constant_      | _constantBinaryDiffusivityModelCoefficients_ |
-| _GuptaD_      | _yearGuptaModel_, _collisionData_ dict     |
-| _GuptaO_ | _yearGuptaModel_, _collisionData_ dict     |
-| _Stephani_ | _molWeight_, _diameter_, _omega_     |
+| <dictval>constant</dictval>      | <dictkey>constantBinaryDiffusivityModelCoefficients</dictkey> |
+| <dictval>GuptaD</dictval>      | <dictval>yearGuptaModel</dictval>, <subdict>collisionData</subdict> dict     |
+| <dictval>GuptaO</dictval> | <dictkey>yearGuptaModel</dictkey>, <subdict>collisionData</subdict> dict     |
+| <dictval>Stephani</dictval> | <dictkey>molWeight</dictkey>, <dictkey>diameter</dictkey>, <dictkey>omega</dictkey>     |
 
 The <dictkey>constantBinaryDiffusivityModelCoefficients</dictkey> and <dictkey>yearGuptaModel</dictkey> entries can be found in the <subdict>diffusiveFluxesParameters</subdict> subdictionary. <dictkey>yearGuptaModel</dictkey> accepted values are <dictval>"1989"</dictval> or <dictval>"1990"</dictval>. Please refer to the <subdict>collisionData</subdict> dictionary for the correct combination.
 
