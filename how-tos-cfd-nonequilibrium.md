@@ -156,7 +156,7 @@ thermalRelaxationModels
 V—V energy exchange can be disabled using a <dictkey>relaxationType</dictkey> set to <dictval>noVVEnergyTransfer</dictval>. 
 
 + In this version of _hy2Foam_, species need to be split into different vibro-electronic energy pools.
-This is achieved in the <dict>hTCReactions#name</dict> dictionary with the <dictkey>vibTempAssociativity()</dictkey> list. The list order is similar to the <dictkey>species()</dictkey> list and the integer value <dictval>0<dictval> is reserved to neutral molecules. For a 5-species air:  
+This is achieved in the <dict>hTCReactions#name</dict> dictionary with the <dictkey>vibTempAssociativity()</dictkey> list. The list order is similar to the <dictkey>species()</dictkey> list and the integer value <dictval>0</dictval> is reserved to neutral molecules. For a 5-species air:  
 
 ```c++
     species
@@ -176,7 +176,7 @@ This is achieved in the <dict>hTCReactions#name</dict> dictionary with the <dict
 
     vibTempAssociativity (0 0 0 1 2);
 ```
-A value of _**1**_ in forth position means that the forth species in the _species()_ list, _**N**_, is grouped into the same vibro-electronic energy pool as the _**1**_ st molecule appearing in the list, here _**N2**_. 
+A value of <dictval>1</dictval> in forth position means that the forth species in the _species()_ list, _**N**_, is grouped into the same vibro-electronic energy pool as the _**1**_ st molecule appearing in the list, here <dictval>N2</dictval>. 
 
 <br>
 
