@@ -88,7 +88,7 @@ The Landau-Teller equation is used for V—T energy exchange and the V—T relax
   <tr>
     <td align="center"><dictkey>model</dictkey></td>
     <td align="center"><dictval>MillikanWhitePark</dictval> &nbsp; <i class="fa fa-thumbs-up" style="font-size:18px;color:green" title="recommended"></i> <br /> <dictval>MillikanWhite</dictval></td>  
-    <td align="center">description</td>
+    <td align="center">whether to use Park's correction or not</td>
   </tr>
   <tr>  
     <td align="center"><dictkey>fullCoeffsForm</dictkey></td>
@@ -98,7 +98,7 @@ The Landau-Teller equation is used for V—T energy exchange and the V—T relax
   <tr>
     <td align="center"><dictkey>overwriteDefault</dictkey></td>
     <td align="center"><dictval>on</dictval> &nbsp; <i class="fa fa-thumbs-up" style="font-size:18px;color:green" title="recommended"></i> <br /> <dictval>off</dictval></td>
-    <td align="center">if <dictkey>fullCoeffsForm</dictkey> is <dictval>on</dictval>, whether to use the dictionary values (<subdict>MillikanWhite</subdict> or (<subdict>Park</subdict>) or the harcoded values</td>
+    <td align="center">if <dictkey>fullCoeffsForm</dictkey> is <dictval>on</dictval>, whether to use the dictionary values (<subdict>MillikanWhite</subdict> or <subdict>Park</subdict>) or the harcoded values</td>
   </tr>
   <tr>
     <td align="center"><dictkey>speciesDependent</dictkey></td>
