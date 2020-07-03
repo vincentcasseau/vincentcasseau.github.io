@@ -131,6 +131,7 @@ The trans-rotational temperature field is named _**Tt**_  and must be present in
 Its implementation in the <dirname>0/</dirname> folder is identical to the standard temperature field in OpenFOAM, except for the Smoluchowski temperature jump boundary condition.    
 
 The Smoluchowski temperature jump boundary condition for the trans-rotational counterpart writes as follows
+
 ```c++
     wall
     {
