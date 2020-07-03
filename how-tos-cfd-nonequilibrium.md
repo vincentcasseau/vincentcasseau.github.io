@@ -97,12 +97,12 @@ As is customary, the Landau-Teller equation is employed for V—T energy exchang
   <tr>  
     <td align="center"><dictkey>fullCoeffsForm</dictkey></td>
     <td align="center"><dictval>on</dictval> &nbsp; <i class="fa fa-thumbs-up" style="font-size:18px;color:green" title="recommended"></i> <br /> <dictval>off</dictval></td>
-    <td align="center">whether to use the tabulated data or the Millikan and White formula</td>
+    <td align="center">whether to use the tabulated data or the Millikan and White formulas for _A_ and _B_</td>
   </tr>
   <tr>
     <td align="center"><dictkey>overwriteDefault</dictkey></td>
     <td align="center"><dictval>on</dictval> &nbsp; <i class="fa fa-thumbs-up" style="font-size:18px;color:green" title="recommended"></i> <br /> <dictval>off</dictval></td>
-    <td align="center">if <dictkey>fullCoeffsForm</dictkey> is <dictval>on</dictval>, whether to use the dictionary values (<subdict>MillikanWhite</subdict> or <subdict>Park</subdict>) or the harcoded values</td>
+    <td align="center">if <dictkey>fullCoeffsForm</dictkey> is <dictval>on</dictval>, whether to use the subdictionary values (<subdict>MillikanWhite</subdict> or <subdict>Park</subdict>) or the harcoded values</td>
   </tr>
   <tr>
     <td align="center"><dictkey>speciesDependent</dictkey></td>
@@ -132,7 +132,7 @@ If the above conditions are fulfilled, then the <dict>thermophysicalProperties</
     downgradeToSingleTemperature no;
 ```
 
-In addition to the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), the <subdict>thermalRelaxationModels</subdict> subdictionary is augmented with vibrational-vibrational (V—V) and electron-vibrational (e—V) energy transfers and the <subdict>thermalRelaxationModels</subdict>
+In addition to the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), the <subdict>thermalRelaxationModels</subdict> subdictionary is augmented with vibrational-vibrational (V—V) and electron-vibrational (e—V) energy transfers and the <subdict>thermalRelaxationModels</subdict> takes the following form  
 
 ```c++
 thermalRelaxationModels
@@ -157,6 +157,8 @@ thermalRelaxationModels
 ```
 
 V—V energy transfer presented in Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V—T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the <dictkey>collidingPair</dictkey> key. V—V energy exchange can also be disabled by setting the <dictkey>relaxationType</dictkey> to <dictval>noVVEnergyTransfer</dictval>.  
+
+e—V energy transfer is not tested and should not be used.  
 
 In this variant of _hy2Foam_, species are grouped into several vibro-electronic energy pools.
 This is done in the <dict>hTCReactions#name</dict> dictionary by using the <dictkey>vibTempAssociativity()</dictkey> list. The elements' order in <dictkey>vibTempAssociativity()</dictkey> is similar to the <dictkey>species()</dictkey> list and the integer value <dictval>0</dictval> is reserved to neutral molecules. For a 5-species air:  
