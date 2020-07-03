@@ -38,7 +38,7 @@ The names of all valid entries for the _transport_ keyword in the _thermophysica
 > The coefficients of these models are to be found in the _thermoDEM/#nameSpecies_ dictionary. The first four models are employing coefficients located into the _transport_ subdictionary, while the _powerLawEucken_ model is using the species diameter, _diameter_, and species temperature exponent of viscosity, _omega_, located in the _specie_ subdictionary.
 
 ### 1.4 Print species shear viscosity and thermal conductivity
-In the _transportProperties/transportModels_ dictionary, edit any of the following booleans to _**on**_  
+In the <dict>transportProperties/</dict>transportModels_ dictionary, edit any of the following booleans to _**on**_  
 ```c++
     writeViscositySpecies          on;  
     writeThermalConducSpecies      on; 
@@ -59,7 +59,7 @@ The available mixing rules are
 | _Wilke_      | - |
 | _ArmalySutton_ | _correctedArmalySutton_    |
 
-and can be chosen editing the entry _mixingRule_ in the _transportProperties/transportModels_ dictionary. The mixture shear viscosity and thermal conductivity can be printed by reproducing the procedure described in [§1.4](https://vincentcasseau.github.io/how-tos-cfd-transport/#14-print-species-shear-viscosity-and-thermal-conductivity):  
+and can be chosen editing the entry _mixingRule_ in the <dict>transportProperties/</dict>transportModels_ dictionary. The mixture shear viscosity and thermal conductivity can be printed by reproducing the procedure described in [§1.4](https://vincentcasseau.github.io/how-tos-cfd-transport/#14-print-species-shear-viscosity-and-thermal-conductivity):  
 ```c++
     writeViscosityMixture          on;  
     writeThermalConducMixture      on; 
@@ -73,14 +73,14 @@ and can be chosen editing the entry _mixingRule_ in the _transportProperties/tra
 ## 3) Mass diffusion
 
 ### 3.1 Disable multi-species diffusion
-In the _transportProperties/transportModels_ dictionary, edit the following entries to  
+In the <dict>transportProperties/</dict>transportModels_ dictionary, edit the following entries to  
 ```c++
     multiSpeciesTransport         noSpeciesDiffusion;  
     binaryDiffusivityModel        noBinaryDiffusivityModel;
 ```
 
 ### 3.2 Lewis number model
-In the _transportProperties/transportModels_ dictionary, edit the following entries to  
+In the <dict>transportProperties/</dict>transportModels_ dictionary, edit the following entries to  
 ```c++
     multiSpeciesTransport         LewisNumber;  
     binaryDiffusivityModel        noBinaryDiffusivityModel;
@@ -89,7 +89,7 @@ In the _transportProperties/transportModels_ dictionary, edit the following entr
 The Lewis number value can be found in the _diffusiveFluxesParameters_ subdictionary.  
 
 ### 3.3 Fick's law and binary diffusion models
-In the _transportProperties/transportModels_ dictionary, edit the following entries to  
+In the <dict>transportProperties/</dict>transportModels_ dictionary, edit the following entries to  
 ```c++
     multiSpeciesTransport         Fick; 
 ``` 
@@ -132,7 +132,7 @@ collisionData
 ```  
 
 ### 3.4 SCEBD model 
-In the _transportProperties/transportModels_ dictionary, edit the following entry to  
+In the <dict>transportProperties/</dict>transportModels_ dictionary, edit the following entry to  
 ```c++
     multiSpeciesTransport         SCEBD; 
 ``` 

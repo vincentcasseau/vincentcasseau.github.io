@@ -10,20 +10,17 @@ These how-tos are based on the working folder located [here](https://github.com/
 # Turbulence modelling
 
 ---
-
 ## 1) Laminar flow simulation 
   
-+ In the _turbulenceProperties_ dictionary, edit the _simulationType_ entry to __*laminar*__
+In the <dict>turbulenceProperties</dict> dictionary, edit the <dictkey>simulationType</dictkey> entry to <dictval>laminar</dictval>.
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---
 
 ## 2) Turbulent flow simulation
 
-+ In the _turbulenceProperties_ dictionary, edit the _simulationType_ entry to __*RAS*__  
-+ In the _turbulenceProperties_ dictionary, __*RAS*__ sub-dictionary, edit the _RASModel_ entry to the desired turbulence model and the _turbulence_ switch to __*on*__
-
-+ Depending on which model is chosen, some fields may have to be added to the _0/_ directory.
++ In the <dict>turbulenceProperties</dict> dictionary, edit the <dictkey>simulationType</dictkey> entry to <dictval>RAS</dictval>  
++ In the <dict>turbulenceProperties</dict> dictionary, <subdict>RAS</subdict> sub-dictionary, edit the <dictkey>RASModel</dictkey> entry to the desired turbulence model and the <dictkey>turbulence</dictkey> switch to <dictval>on</dictval>.
++ Depending on which model is chosen, some fields may have to be added to the <dirname>0/</dirname> directory.
 

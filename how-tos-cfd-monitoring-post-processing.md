@@ -15,7 +15,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ### 1.1 Wall heat flux  
 
 + Pre-requirement: the patch type in _constant/polyMesh/boundary_ has to be _**wall**_.  
-+ Open the _transportProperties_ dictionary and make sure the switch is active  
++ Open the <dict>transportProperties</dict> dictionary and make sure the switch is active  
 
 ```c++
     writeWallHeatFlux              on;
