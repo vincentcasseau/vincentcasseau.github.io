@@ -229,7 +229,7 @@ reactions
         
         ni       (1e20 1e21 1e22 1e23 1e24 1e25);
         A0       (1.8103 0.91354 0.64183 0.55388 0.52455 0.50989);
-        A1       (1.9607 2.316 2.4253 2.46 2.4715 2.4773);
+        A1       (8.8685 9.2238 9.3331 9.3678 9.3793 9.3851);
         A2       (3.5716 2.2885 1.9026 1.7763 1.7342 1.7132);
         A3       (-7.3623 -6.7969 -6.6277 -6.572 -6.5534 -6.5441);
         A4       (0.083861 0.046338 0.035151 0.031445 0.030209 0.029591);  
@@ -239,7 +239,7 @@ reactions
 **NB:** All species present in the <dictkey>species()</dictkey> list must be present in the <dictkey>coeff()</dictkey> list, no more, no less. 
 
 ### 3.3  Increase robustness
-Backward reaction rates may sometimes cause problems in the low-temperature regions and yield the simulation to crash. A minimum temperature value, <dictkey>Tmin</dictkey>, can be introduced into the rate calculations to increase robustness [Scalabrin, 2007]. A switch called <dictkey>modifiedTemperature</dictkey> located in the <dict>chemistryProperties</dict> dictionary is there for this purpose.
+Backward reaction rates may sometimes cause problems in low-temperature regions and yield the simulation to crash. A minimum temperature value, <dictkey>Tmin</dictkey>, can be introduced into the rate calculations to increase robustness [Scalabrin, 2007]. A switch called <dictkey>modifiedTemperature</dictkey> located in the <dict>chemistryProperties</dict> dictionary is there for this purpose.
 
 ```c++
 modifiedTemperature on;
