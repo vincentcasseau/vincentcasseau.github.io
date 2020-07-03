@@ -39,7 +39,6 @@ navbar-links:
     - Sync: "sync"
   How-tos:
     - CFD: "how-tos-cfd"
-    - DSMC: "how-tos-dsmc"
   Tutorials:
     - hyFoam: "tutos-hyfoam"
     - hy2Foam: "tutos-hy2foam"
