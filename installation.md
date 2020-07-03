@@ -29,5 +29,4 @@ git clone https://github.com/vincentcasseau/hyStrath.git --branch master --singl
 ```sh 
 ./install.sh 8 2>/dev/null
 ```
- 
 where _8_ is the number of processors to be used during the installation (it can be edited).

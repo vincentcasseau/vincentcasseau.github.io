@@ -34,7 +34,7 @@ git clone https://github.com/USERNAME/hyStrath
 ```sh
 git status
 ```  
-5. Once you are ready to commit and push your changes, type in:  
+5. Once you are ready to commit and push your changes, type in  
 ```
 cd $WM_PROJECT_USER_DIR/hyStrath  
 git add PATH/TO/NEW/CONTENTS/  
