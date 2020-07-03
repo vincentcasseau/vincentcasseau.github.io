@@ -46,14 +46,14 @@ After:
 Phase no 1.1  ExecutionTime = 72.32 s  ClockTime = 74 s  Iteration no 4505 (0.03 s)
 ```
 
-For the <strong><dict>thermo2TModel</dict> dictionary<strong>:  
-    - The steps are equivalent to the <dict>transportProperties</dict> dictionary: add the entry _**applyChanges        true;**_ after editing the desired subdictionary and save.  
+For the <strong><dict>thermo2TModel</dict> dictionary</strong>:  
+  + The steps are equivalent to the <dict>transportProperties</dict> dictionary: add the entry _**applyChanges        true;**_ after editing the desired subdictionary and save.  
 
 
-For **any other dictionary**:
-    - Make modifications to the dictionary in question (_e.g._, adding extra chemical reaction, etc) and save.  
-    - Open the <dict>hTCProperties</dict> dictionary and add the entry: _**applyChanges        true;**_  
-    - Save the <dict>hTCProperties</dict> dictionary  
+For **any other dictionary**:  
+  + Make modifications to the dictionary in question (_e.g._, adding extra chemical reaction, etc) and save.  
+  + Open the <dict>hTCProperties</dict> dictionary and add the entry: _**applyChanges        true;**_  
+  + Save the <dict>hTCProperties</dict> dictionary  
 
 As shown in the log file, the simulation enters into a new stage/phase
 
