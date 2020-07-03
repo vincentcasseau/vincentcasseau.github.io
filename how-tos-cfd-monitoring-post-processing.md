@@ -200,7 +200,7 @@ where <dirname>system/</dirname><dict>surfaceCoefficients</dict> is a dictionary
 
 ### 2.1 Pressure coefficient
 
-+ Within the _functions_ sub-dictionary, add
+Within the _functions_ sub-dictionary, add  
   
 ```c++
 pressureCoefficient
@@ -217,7 +217,6 @@ pressureCoefficient
 ### 2.2 Stanton number
 
 The _**wallHeatFlux**_ field is required as an input.  
-
 Within the _functions_ sub-dictionary, add
   
 ```c++
