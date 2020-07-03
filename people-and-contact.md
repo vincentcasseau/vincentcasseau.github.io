@@ -15,7 +15,7 @@ _GitHub coordinator_:
   </a> <a style="text-decoration: none" href="https://www.researchgate.net/profile/Vincent_Casseau" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#00D0AF'></i>
-      <i class="fab fa-researchgate fa-stack-1x fa-inverse"></i>
+      <i class="fab fa-researchgate fa-stack-1x"></i>
     </span>
     <span class="sr-only">ResearchGate</span>
   </a> &nbsp; Postdoctoral Fellow at [McGill University](https://www.cfdlab.mcgill.ca/)
