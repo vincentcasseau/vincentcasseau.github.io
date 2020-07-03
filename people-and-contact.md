@@ -162,9 +162,7 @@ _Contributors_:
 # External contributors
 {: #External-contributors}
 
-* R.Tech Engineering, Verniolle, France  
-
-**[View more](https://vincentcasseau.github.io/contributions/#list-of-external-contributions)**   
+* [R.Tech Engineering](http://rtech-engineering.com/), Verniolle, France  
 
 <br>
 
