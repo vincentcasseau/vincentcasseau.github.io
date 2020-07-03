@@ -13,10 +13,10 @@ _GitHub coordinator_:
     <span class="sr-only">LinkedIn</span>
   </a> <a style="text-decoration: none" href="https://www.researchgate.net/profile/Vincent_Casseau" target="_blank" alt="ResearchGate">
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fab fa-researchgate fa-stack-1x fa-inverse" style='color:#00D0AF'></i>
+      <i class="fab fa-researchgate fa-stack-2x fa-inverse" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
-  </a>  
+  </a> &nbsp; Postdoctoral Fellow at [McGill University](https://www.cfdlab.mcgill.ca/)
 
 <br>
 
@@ -40,13 +40,13 @@ _Contributors_:
     <span class="sr-only">LinkedIn</span>
   </a> <a style="text-decoration: none" href="https://www.researchgate.net/profile/Jimmy_John_Hoste" target="_blank" alt="ResearchGate">
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fab fa-researchgate fa-stack-1x fa-inverse" style='color:#00D0AF'></i>
+      <i class="fab fa-researchgate fa-stack-2x fa-inverse" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
   </a>  &nbsp; Research Associate at [DLR Göttingen](https://www.dlr.de/dlr/en/desktopdefault.aspx/tabid-10256), Göttingen, Germany
 * **Dr Thomas J. Scanlon** BEng PhD CEng MIMechE &nbsp; <a style="text-decoration: none" href="https://www.researchgate.net/profile/Thomas_Scanlon" target="_blank" alt="ResearchGate">
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fab fa-researchgate fa-stack-1x fa-inverse" style='color:#00D0AF'></i>
+      <i class="fab fa-researchgate fa-stack-2x fa-inverse" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
   </a> &nbsp; Lead Consultant at [MTS-CFD](https://www.mts-cfd.com/), Glasgow, UK
@@ -67,7 +67,7 @@ _Acknowledgements_:
     <span class="sr-only">LinkedIn</span>
   </a> <a style="text-decoration: none" href="https://www.researchgate.net/profile/Rodrigo_Palharini" target="_blank" alt="ResearchGate">
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fab fa-researchgate fa-stack-1x fa-inverse" style='color:#00D0AF'></i>
+      <i class="fab fa-researchgate fa-stack-2x fa-inverse" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
   </a> &nbsp; Lecturer in Fluid Mechanics at [Universidad Técnica Federico de Santa María](http://www.mecanica.usm.cl/), Santiago, Chile
@@ -84,7 +84,7 @@ _Lead developer_:
     <span class="sr-only">LinkedIn</span>
   </a> <a style="text-decoration: none" href="https://www.researchgate.net/profile/Alexey_Ryakhovskiy" target="_blank" alt="ResearchGate">
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fab fa-researchgate fa-stack-1x fa-inverse" style='color:#00D0AF'></i>
+      <i class="fab fa-researchgate fa-stack-2x fa-inverse" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
   </a> &nbsp; Lecturer at [Peter the Great St. Petersburg Polytechnic University](https://english.spbstu.ru/science/) (SPbPU) and Scientific Researcher at [Corning Incorporated](https://www.corning.com/worldwide/en.html), St. Petersburg, Russia  
