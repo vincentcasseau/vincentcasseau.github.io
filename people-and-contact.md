@@ -14,11 +14,11 @@ _GitHub coordinator_:
     <span class="sr-only">LinkedIn</span>
   </a> <a style="text-decoration: none" href="https://www.researchgate.net/profile/Vincent_Casseau" target="_blank">
     <span class="fa-stack" aria-hidden="true">
-      <i class="fas fa-circle fa-stack-2x" style='color:#00D0AF'></i>
       <i class="fab fa-researchgate fa-stack-2x" style='color:#00D0AF'></i>
+      <i class="fas fa-circle fa-stack-2x" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
-  </a> &nbsp; **Dr Vincent Casseau** &nbsp; Postdoctoral Fellow at [McGill University](https://www.cfdlab.mcgill.ca/), Montreal, Canada
+  </a> &nbsp; **Dr Vincent Casseau**, Postdoctoral Fellow at [McGill University](https://www.cfdlab.mcgill.ca/), Montreal, Canada
 
 <br>
 
@@ -45,20 +45,20 @@ _Contributors_:
       <i class="fab fa-researchgate fa-stack-2x fa-inverse" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
-  </a> &nbsp; **Dr Jimmy-John O.E. Hoste** &nbsp; Research Associate at [DLR Göttingen](https://www.dlr.de/dlr/en/desktopdefault.aspx/tabid-10256), Göttingen, Germany
+  </a> &nbsp; **Dr Jimmy-John O.E. Hoste**, Research Associate at [DLR Göttingen](https://www.dlr.de/dlr/en/desktopdefault.aspx/tabid-10256), Göttingen, Germany
 * <a style="text-decoration: none" href="https://www.researchgate.net/profile/Thomas_Scanlon" target="_blank">
     <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fab fa-researchgate fa-stack-2x fa-inverse" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
-  </a> &nbsp; **Dr Thomas J. Scanlon** BEng PhD CEng MIMechE  &nbsp; Lead Consultant at [MTS-CFD](https://www.mts-cfd.com/), Glasgow, UK
+  </a> &nbsp; **Dr Thomas J. Scanlon** BEng PhD CEng MIMechE, Lead Consultant at [MTS-CFD](https://www.mts-cfd.com/), Glasgow, UK
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/richard-brown-05520726" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
       <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
     </span>
     <span class="sr-only">LinkedIn</span>
-  </a> &nbsp; **Dr Richard E. Brown** CEng FIMechE FRAeS &nbsp;  Specialist Mathematical Modeller at [Sophrodyne Ltd](http://www.sophrodyne.com/), Glasgow, UK  
+  </a> &nbsp; **Dr Richard E. Brown** CEng FIMechE FRAeS, Specialist Mathematical Modeller at [Sophrodyne Ltd](http://www.sophrodyne.com/), Glasgow, UK  
 
 _Acknowledgements_:  
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/rodrigo-palharini-59316775" target="_blank">
@@ -72,7 +72,7 @@ _Acknowledgements_:
       <i class="fab fa-researchgate fa-stack-2x fa-inverse" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
-  </a> &nbsp; **Dr Rodrigo C. Palharini** &nbsp;  Lecturer in Fluid Mechanics at [Universidad Técnica Federico de Santa María](http://www.mecanica.usm.cl/), Santiago, Chile
+  </a> &nbsp; **Dr Rodrigo C. Palharini**, Lecturer in Fluid Mechanics at [Universidad Técnica Federico de Santa María](http://www.mecanica.usm.cl/), Santiago, Chile
 
 <br>
 
@@ -89,7 +89,7 @@ _Lead developer_:
       <i class="fab fa-researchgate fa-stack-2x fa-inverse" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
-  </a> &nbsp; **Alexey Ryakhovskiy** &nbsp;  Lecturer at [Peter the Great St. Petersburg Polytechnic University](https://english.spbstu.ru/science/) (SPbPU) and Scientific Researcher at [Corning Incorporated](https://www.corning.com/worldwide/en.html), St. Petersburg, Russia  
+  </a> &nbsp; **Alexey Ryakhovskiy**, Lecturer at [Peter the Great St. Petersburg Polytechnic University](https://english.spbstu.ru/science/) (SPbPU) and Scientific Researcher at [Corning Incorporated](https://www.corning.com/worldwide/en.html), St. Petersburg, Russia  
 
 <br> 
 
@@ -109,14 +109,14 @@ _Lead developer_:
 _Current developers_: 
 * **Dr Vincent Casseau** 
 * **Dr Daniel E.R. Espinoza**  
-* **Tim Teichmann** &nbsp; PhD student in the [Institute for Technical Physics](http://www.itep.kit.edu/english/), Karlsruhe Institute of Technology (KIT), Eggenstein-Leopoldshafen, Germany
+* **Tim Teichmann**, &nbsp; PhD student in the [Institute for Technical Physics](http://www.itep.kit.edu/english/), Karlsruhe Institute of Technology (KIT), Eggenstein-Leopoldshafen, Germany
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/craig-white-53b70387" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
       <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
     </span>
     <span class="sr-only">LinkedIn</span>
-  </a> &nbsp; **Dr Craig White** &nbsp; Lecturer in Aerospace Sciences at the [University of Glasgow](https://www.gla.ac.uk/schools/engineering/staff/craigwhite/), Glasgow, UK
+  </a> &nbsp; **Dr Craig White**, Lecturer in Aerospace Sciences at the [University of Glasgow](https://www.gla.ac.uk/schools/engineering/staff/craigwhite/), Glasgow, UK
  
 _Contributors_:  
 * **Dr Rodrigo C. Palharini**  
@@ -148,7 +148,7 @@ _Lead developer_:
       <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
     </span>
     <span class="sr-only">LinkedIn</span>
-  </a> &nbsp; **Dr Christopher J. Capon** &nbsp; CEO at [Space Services Australia](https://oninnovation.com.au/en/ON-teams/ON-Accelerate6-Teams/Space-Services-Australia) & Research Fellow at [UNSW Canberra Space](https://www.unsw.adfa.edu.au/space-research/mr-christopher-capon), Canberra, Australia
+  </a> &nbsp; **Dr Christopher J. Capon**, CEO at [Space Services Australia](https://oninnovation.com.au/en/ON-teams/ON-Accelerate6-Teams/Space-Services-Australia) & Research Fellow at [UNSW Canberra Space](https://www.unsw.adfa.edu.au/space-research/mr-christopher-capon), Canberra, Australia
 
 _Contributors_:  
 * **Prof Russell R. Boyce**, Chair for Space Engineering at [UNSW Canberra Space](https://research.unsw.edu.au/people/professor-russell-robert-boyce), Canberra, Australia  
