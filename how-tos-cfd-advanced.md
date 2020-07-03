@@ -50,7 +50,7 @@ For the <strong><dict>thermo2TModel</dict> dictionary</strong>:
   + The steps are equivalent to the <dict>transportProperties</dict> dictionary: add the entry _**applyChanges        true;**_ after editing the desired subdictionary and save.  
 
 
-For **any other dictionary**:  
+For **any other dictionaries**:  
   + Make modifications to the dictionary in question (_e.g._, adding extra chemical reaction, etc) and save.  
   + Open the <dict>hTCProperties</dict> dictionary and add the entry: _**applyChanges        true;**_  
   + Save the <dict>hTCProperties</dict> dictionary  
@@ -74,14 +74,14 @@ Phase no 2.0  ExecutionTime = 153.05 s  ClockTime = 157 s  Iteration no 9075 (0.
 <br>
 
 For **boundary conditions**:  
-    - Open the <dict>hTCProperties</dict> dictionary   
-    - Add the entry _**applyChangesAtWriteTimeAndWait        #numberOfSeconds;**_ where _**#numberOfSeconds**_ is an integer value prescribing the time during which the simulation will be paused.  
-    - Save the <dict>hTCProperties</dict> dictionary   
-    - Type in: _tail -f log.hy2Foam_ into the terminal window and wait until the next write time  
-    - Once the simulation is sleeping, _reconstructPar_ can be used (for a parallel job)  
-    - Edit the desired boundary condition and save  
-    - Delete the _processors#ID_ folders and run: _decomposePar -latestTime_ 
-    - Monitor the log file as the simulation restarts to make sure everything went well  
+  + Open the <dict>hTCProperties</dict> dictionary   
+  + Add the entry _**applyChangesAtWriteTimeAndWait        #numberOfSeconds;**_ where _**#numberOfSeconds**_ is an integer value prescribing the time during which the simulation will be paused.  
+  + Save the <dict>hTCProperties</dict> dictionary   
+  + Type in: _tail -f log.hy2Foam_ into the terminal window and wait until the next write time  
+  + Once the simulation is sleeping, _reconstructPar_ can be used (for a parallel job)  
+  + Edit the desired boundary condition and save  
+  + Delete the _processors#ID_ folders and run: _decomposePar -latestTime_ 
+  + Monitor the log file as the simulation restarts to make sure everything went well  
 
 <br>
 
