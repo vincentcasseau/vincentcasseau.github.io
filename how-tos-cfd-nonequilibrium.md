@@ -69,7 +69,7 @@ thermalRelaxationModels
 }
 ```
 
-The Landau-Teller equation is used for V—T energy exchange and the V—T relaxation time is dictated by the Millikan-White semi-empirical formula with Park's correction. In the example above, the coefficients for the calculation of the relaxation time are colliding-pair specific and read from one of the subsequent subdictionaries (since `overwriteDefault` is <i>on</i>).
+The Landau-Teller equation is used for V—T energy exchange and the V—T relaxation time is dictated by the Millikan-White semi-empirical formula with Park's correction. In the example above, the coefficients for the calculation of the relaxation time are colliding-pair specific and read from one of the subsequent subdictionaries (since <dictkey>overwriteDefault</dictkey> is <dictval>on</dictval>).
 
 <table>
   <tr>
@@ -81,38 +81,38 @@ The Landau-Teller equation is used for V—T energy exchange and the V—T relax
     <td align="center"><b>Meaning</b></td>
   </tr>
   <tr>
-    <td align="center">`relaxationType`</td>
-    <td align="center">_noVTEnergyTransfer_ <br /> _LandauTellerVT_ (recommended)</td>
+    <td align="center"><dictkey>relaxationType</dictkey></td>
+    <td align="center"><dictval>LandauTellerVT</dictval> (recommended) <br /> <dictval>noVTEnergyTransfer</dictval>  </td>
     <td align="center">Name of the V—T energy transfer model</td>
   </tr>
   <tr>
-    <td align="center">`model`</td>
-    <td align="center">_MillikanWhite_, _MillikanWhitePark_ (recommended)</td>
+    <td align="center"><dictkey>model</dictkey></td>
+    <td align="center"><dictval>MillikanWhite</dictval> <br /> <dictval>MillikanWhitePark</dictval> (recommended)</td>
     <td align="center">description</td>
   </tr>
   <tr>  
     <td align="center"><dictkey>fullCoeffsForm</dictkey></td>
-    <td align="center"><i>on</i> (recommended), <i>off</i></td>
+    <td align="center"><dictval>on</dictval> (recommended) <br /> <dictval>off</dictval></td>
     <td align="center">description</td>
   </tr>
   <tr>
     <td align="center"><dictkey>overwriteDefault</dictkey></td>
-    <td align="center"><i>on</i> (recommended), <i>off</i></td>
+    <td align="center"><dictval>on</dictval> (recommended) <br /> <dictval>off</dictval></td>
     <td align="center">description</td>
   </tr>
   <tr>
-    <td align="center">`speciesDependent`</td>
-    <td align="center"><i>on</i> (recommended), <i>off</i></td>
+    <td align="center"><dictkey>speciesDependent</dictkey></td>
+    <td align="center"><dictval>on</dictval> (recommended) <br /> <dictval>off</dictval></td>
     <td align="center">description</td>
   </tr>
   <tr>
-    <td align="center">`collidingPair`</td>
-    <td align="center"><i>on</i> (recommended), <i>off</i></td>
+    <td align="center"><dictkey>collidingPair<dictkey></td>
+    <td align="center"><dictval>on</dictval> (recommended) <br /> <dictval>off</dictval></td>
     <td align="center">description</td>
   </tr>
 </table>
 
-The h—e energy transfer from Appleton & Bray (1963) does not require any input. It can be disabled using a `relaxationType` defined as _noHEEnergyTransfer_.
+The h—e energy transfer of Appleton & Bray (1963) does not require any input. It can be disabled using a <dictkey>relaxationType</dictkey> set to <dictval>noHEEnergyTransfer</dictval>.
 
 
 ### 2.2 Two-temperature solver, multiple vibro-electronic energy pools
@@ -121,14 +121,14 @@ In the current version of the code, this configuration has several limitations t
    + the electronic mode of all particles must be turned off (see [A. §1.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle))
    + the molecules must be planar  
 
-If the above conditions are fulfilled, then the <b style="color: #228B22">thermophysicalProperties</b> dictionary setup is
+If the above conditions are fulfilled, then the <dict>thermophysicalProperties</dict> dictionary setup is
   
 ```c++
     downgradeToSingleTv          no;
     downgradeToSingleTemperature no;
 ```
 
-On top of the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), the <span style="color: #228B22">thermalRelaxationModels</span> subdictionary is augmented with vibrational-vibrational (V—V) and electron-vibrational (e—V) energy transfers.
+On top of the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), the <subdict>thermalRelaxationModels</subdict> subdictionary is augmented with vibrational-vibrational (V—V) and electron-vibrational (e—V) energy transfers.
 
 ```c++
 thermalRelaxationModels
@@ -152,11 +152,11 @@ thermalRelaxationModels
 }
 ```
 
-+ The V—V energy transfer process from Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V-T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the _collidingPair_ boolean.  
-V—V energy exchange can be disabled using a _relaxationType_ defined as _noVVEnergyTransfer_. 
++ The V—V energy transfer process from Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V-T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the <dictkey>collidingPair</dictkey> switch.  
+V—V energy exchange can be disabled using a <dictkey>relaxationType</dictkey> set to <dictval>noVVEnergyTransfer</dictval>. 
 
 + In this version of _hy2Foam_, species need to be split into different vibro-electronic energy pools.
-This is achieved in the _hTCReactions#name_ dictionary with the _**vibTempAssociativity()**_ list. The list order is similar to the _**species()**_ list and the integer value _0_ is reserved to neutral molecules. For a 5-species air:  
+This is achieved in the <dict>hTCReactions#name</dict> dictionary with the <dictkey>vibTempAssociativity()</dictkey> list. The list order is similar to the <dictkey>species()</dictkey> list and the integer value <dictval>0<dictval> is reserved to neutral molecules. For a 5-species air:  
 
 ```c++
     species
@@ -183,13 +183,13 @@ A value of _**1**_ in forth position means that the forth species in the _specie
 ---  
 ## 3) Mean free path and breakdown parameter
 
-These quantities are calculated according to the entries specified in the _transportProperties/rarefiedParameters_ dictionary.
+These quantities are calculated according to the entries specified in the <subdict>transportProperties/rarefiedParameters</subdict> dictionary.
 
 ### 3.1 Mean free path  
 
-There are three models (_mfpModel_) available for the computation of the mean free path (mfp) that are: _**maxwellian**_, _**hardSphere**_, and _**variableHardSphere**_.   
+There are three models (_mfpModel_) available for the computation of the mean free path (mfp) that are: <dictval>maxwellian</dictval>, <dictval>hardSphere</dictval>, and <dictval>variableHardSphere</dictval>.   
 
-You might want to compute the mfp at patches only to speed-up the calculations: indeed, knowledge of the mfp at patches is enough to use the [Smoluchowski temperature jump boundary condition](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#31-trans-rotational-temperature). To this aim, two switches (_**computeFieldAndBoundaries**_ and _**computeMfpBoundaries**_) are used and the correct combination is shown below
+You might want to compute the mfp at patches only to speed-up the calculations: indeed, knowledge of the mfp at patches is enough to use the [Smoluchowski temperature jump boundary condition](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#31-trans-rotational-temperature). To this aim, two switches (<dictkey>computeFieldAndBoundaries</dictkey> and <dictkey>computeMfpBoundaries</dictkey>) are used and the correct combination is shown below
 
 ```c++
 rarefiedParameters
@@ -203,17 +203,17 @@ rarefiedParameters
 }
 ```
 
-> Always switch _**computeMfpBoundaries**_ on when the Smoluchowski temperature jump and the Maxwell velocity slip BCs are used.
+> Always switch <dictkey>computeMfpBoundaries</dictkey> on when the Smoluchowski temperature jump and the Maxwell velocity slip BCs are used.
 
-To compute the mfp and other quantities in the whole domain, _**computeFieldAndBoundaries**_ must be switched <i>on</i>.  
+To compute the mfp and other quantities in the whole domain, <dictkey>computeFieldAndBoundaries</dictkey> must be switched <dictval>on</dictval>.  
 
-The species and mixture mfp can be printed using the _**writeMfpSpecies**_ and _**writeMfpMixture**_ booleans.  
+The species and mixture mfp can be printed using the <dictkey>writeMfpSpecies</dictkey> and <dictkey>writeMfpMixture</dictkey> switches.  
 
 ### 3.2 Knudsen number 
 
 #### 3.2.1 Overall Knudsen number
 
-The overall Knudsen number, defined as the ratio of the local mean free path to the problem characteristic length (_**characteristicLength**_, in meters) can be computed and printed using the following settings
+The overall Knudsen number, defined as the ratio of the local mean free path to the problem characteristic length (<dictkey>characteristicLength</dictkey>, in meters) can be computed and printed using the following settings
 
 ```c++
 rarefiedParameters
@@ -227,7 +227,7 @@ rarefiedParameters
 
 #### 3.2.2 Breakdown parameter: gradient-length Knudsen number 
 
-The gradient-length Knudsen number, _**KnGLL**_, serves as the breakdown parameter in _hy2Foam_. It is defined as the maximum of four gradient-length Knudsen numbers (called _components_) based on trans-rotational and vibro-electronic temperatures, density, and velocity. It can be printed using the following set-up
+The gradient-length Knudsen number, _**KnGLL**_, serves as the breakdown parameter in _hy2Foam_. It is defined as the maximum of four gradient-length Knudsen numbers (called _components_) based on trans-rotational and vibro-electronic temperatures, density, and velocity. It can be printed using the following setup
 
 ```c++
 rarefiedParameters
@@ -250,7 +250,7 @@ There are two chemistry-vibration models implemented but it is strongly recommen
 
 #### 4.1.1 General settings
 
-The subdictionary _**chemistryVibrationCoupling**_ is added to the _chemistryProperties_ dict. Use of the Park TTv model is illustrated below  
+The subdictionary <subdict>chemistryVibrationCoupling</subdict> is added to the <subdict>chemistryProperties</subdict> dict. Use of the Park TTv model is illustrated below  
 
 ```c++
 chemistryVibrationCoupling
@@ -271,16 +271,16 @@ chemistryVibrationCoupling
 }
 ```
 
-For dissociation reactions, Park's temperature is utilised and defined as T_tr^_**exponentTtr**_ x T_ve^(1 - _**exponentTtr**_). A value of 0.7 is usually employed for _**exponentTtr**_. In this example, the _**preferential**_ model is used.   
+For dissociation reactions, Park's temperature is utilised and defined as T_tr^<dictkey>exponentTtr</dictkey> x T_ve^(1 - <dictkey>exponentTtr</dictkey>). A value of 0.7 is usually employed for <dictkey>exponentTtr</dictkey>. In this example, the <dictkey>preferential</dictkey> model is used.   
 
 #### 4.1.2 Reactions dictionary
 
-+ A controlling temperature, _**controlT**_, is added to the _hTCReactions#name_ dictionary. For example, Park's temperature will be used in the following case for forward reaction rate calculations
++ A controlling temperature, <dictkey>controlT</dictkey>, is added to the <dict>hTCReactions#name</dict> dictionary. For example, Park's temperature will be used in the following case for forward reaction rate calculations
 
 ```c++
 controlT dissociation;
 ```
-Other accepted entries for _**controlT**_ can be found in _hTCReactionsEarth93_.
+Other accepted entries for <dictkey>controlT</dictkey> can be found in <dict>hTCReactionsEarth93</dict>.
 
 
 ### 4.2 Coupled vibration-dissociation-vibration (CVDV) model
