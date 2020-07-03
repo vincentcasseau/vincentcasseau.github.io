@@ -15,11 +15,11 @@ These how-tos are based on the working folder located [here](https://github.com/
 ### 1.1 Inviscid simulation    
 In the <dict>thermophysicalProperties/</dict><subdict>thermoType</subdict> dictionary, edit the <dictkey>transport</dictkey> entry to <dictval>constant</dictval>.
 
-In the <dict>thermoDEM/</dict><subdict>#nameSpecies/transport/constant</subdict> dictionary, for all #nameSpecies present in the gas mixture, edit the value of the entry <dictkey>mu</dictkey> to be <dictval>0</dictval>.
+In the <dict>thermoDEM/</dict><subdict>#speciesName/transport/constant</subdict> dictionary, for all #speciesName present in the gas mixture, edit the value of the entry <dictkey>mu</dictkey> to be <dictval>0</dictval>.
 
 ### 1.2 Viscous simulation with constant shear viscosity and thermal conductivity
 + In the <dict>thermophysicalProperties/</dict><subdict>thermoType</subdict> dictionary, edit the <dictkey>transport</dictkey> entry to <dictval>constant</dictval>.
-+ In the <dict>thermoDEM/</dict><subdict>#nameSpecies/transport/constant</subdict> dictionary, for all #nameSpecies present in the gas mixture, edit the value of the entry <dictkey>mu</dictkey> to the desired value.
++ In the <dict>thermoDEM/</dict><subdict>#speciesName/transport/constant</subdict> dictionary, for all #speciesName present in the gas mixture, edit the value of the entry <dictkey>mu</dictkey> to the desired value.
 + The thermal conductivity is then calculated using Eucken's formula.
 
 ### 1.3 Other transport models
@@ -33,7 +33,7 @@ The names of all valid entries for the <dictkey>transport</dictkey> keyword in t
 | _CEA_      | _temp()_, _visco()_, _kappa()_      |
 | _powerLawEucken_ | _diameter_, _omega_     |
 
-The coefficients of these models are to be found in the <dict>thermoDEM/</dict><subdict>#nameSpecies</subdict> dictionary. The first four models are employing coefficients located into the <subdict>transport</subdict> subdictionary, while the _powerLawEucken_ model is using the species diameter, _diameter_, and species temperature exponent of viscosity, _omega_, located in the <subdict>specie</subdict> subdictionary.
+The coefficients of these models are to be found in the <dict>thermoDEM/</dict><subdict>#speciesName</subdict> dictionary. The first four models are employing coefficients located into the <subdict>transport</subdict> subdictionary, while the _powerLawEucken_ model is using the species diameter, _diameter_, and species temperature exponent of viscosity, _omega_, located in the <subdict>specie</subdict> subdictionary.
 
 ### 1.4 Print species shear viscosity and thermal conductivity
 In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dictionary, edit any of the following booleans to <dictval>on</dictval>  
