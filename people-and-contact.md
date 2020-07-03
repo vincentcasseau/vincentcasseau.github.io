@@ -161,7 +161,6 @@ _Contributors_:
 # External contributors
 {: #External-contributors}
 
-* the Micro & Nano Flows Group  
 * R.Tech Engineering  
 
 **[View more](https://vincentcasseau.github.io/contributions/#list-of-external-contributions)**   
