@@ -53,7 +53,8 @@ plot \
 
 ### 1.2 Wall shear stress
 
-In the <dirname>system/</dirname><dict>controlDict</dict> dictionary, uncomment the correct include statement:  
+In the <dirname>system/</dirname><dict>controlDict</dict> dictionary, uncomment the correct include statement
+  
 ```c++
 functions
 {
@@ -178,7 +179,8 @@ plot \
 "< cat log.hy2Foam | grep 'Solving for e,' | cut -d '=' -f 3 | cut -d ',' -f 1" every 100 w l ls 4 t 'e final'
 ```
 
-and this can be executed by typing in:
+and this can be executed by typing in
+
 ```c++
     gnuplot gnuplot/monitorResiduals
 ```
