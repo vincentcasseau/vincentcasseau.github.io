@@ -6,7 +6,7 @@ nav-short: true
 
 _GitHub coordinator_:
 
-* **Dr Vincent Casseau** &nbsp; <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank">
+* <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
       <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -14,11 +14,11 @@ _GitHub coordinator_:
     <span class="sr-only">LinkedIn</span>
   </a> <a style="text-decoration: none" href="https://www.researchgate.net/profile/Vincent_Casseau" target="_blank">
     <span class="fa-stack" aria-hidden="true">
-      <i class="fas fa-circle fa-stack-2x" style='color:#00D0AF'></i>
-      <i class="fab fa-researchgate fa-stack-1x"></i>
+<!--      <i class="fas fa-circle fa-stack-2x" style='color:#00D0AF'></i>-->
+      <i class="fab fa-researchgate fa-stack-2x"></i>
     </span>
     <span class="sr-only">ResearchGate</span>
-  </a> &nbsp; Postdoctoral Fellow at [McGill University](https://www.cfdlab.mcgill.ca/)
+  </a> &nbsp; **Dr Vincent Casseau** &nbsp; Postdoctoral Fellow at [McGill University](https://www.cfdlab.mcgill.ca/)
 
 <br>
 
