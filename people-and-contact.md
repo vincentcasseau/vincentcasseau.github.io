@@ -1,19 +1,18 @@
 ---
 layout: page
-title: "People & Contact"
+title: "People"
 ---
 
 _GitHub coordinator_:
 
-* **Dr Vincent Casseau** &nbsp; <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank">
-    <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fas fa-circle fa-stack-1x" style='color:#0072B1'></i>
+* **Dr Vincent Casseau** &nbsp; <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank" alt="LinkedIn">
+    <span class="fa-stack" aria-hidden="true">
+      <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
       <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
     </span>
     <span class="sr-only">LinkedIn</span>
-  </a>
-<a style="text-decoration: none" href="https://www.researchgate.net/profile/Vincent_Casseau" target="_blank">
-    <span class="fa-stack fa-lg" aria-hidden="true">
+  </a> <a style="text-decoration: none" href="https://www.researchgate.net/profile/Vincent_Casseau" target="_blank" alt="ResearchGate">
+    <span class="fa-stack" aria-hidden="true">
       <i class="fab fa-researchgate fa-stack-1x fa-inverse" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
@@ -101,9 +100,10 @@ _Contributors_:
 * **Dr Thomas J. Scanlon**  
 * **Dr Richard E. Brown**
 
-<br>   
-
-## External contributors
+<br>  
+ 
+---
+# External contributors
 {: #External-contributors}
 
 * the Micro & Nano Flows Group  
@@ -114,7 +114,6 @@ _Contributors_:
 <br>
 
 ---
-
 # Contact
 {: #Contact}
 
