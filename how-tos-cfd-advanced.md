@@ -26,13 +26,13 @@ The [Lorrain scramjet tutorial](https://vincentcasseau.github.io/tutos-hyfoam/#3
 On-the-fly editing was made available primarily for computations on a high-performance computer on which days can be lost waiting in a priority queue. The different steps to follow are explained below depending on the dictionary that is affected by the changes.
 
 For the <strong><dict>transportProperties</dict> dictionary</strong>:  
-    - Open the <dict>transportProperties</dict> dictionary  
-    - Edit one or several entries inside the <subdict>rarefiedParameters</subdict> or <subdict>transportModels</subdict> subdictionaries  
-    - [NB: if you save the file at this point, nothing will happen] 
-    - Add an entry to the modified subdictionary that is: _**applyChanges        true;**_
-    - Save the file  
-    - [For safety, once the modification has taken effect, the file can be re-opened and the <dictkey>applyChanges</dictkey> entry can be removed. Save again.]  
-    - If this operation has worked, then your simulation should have entered into a second sub-phase of the run as shown in the log file
+  + Open the <dict>transportProperties</dict> dictionary  
+  + Edit one or several entries inside the <subdict>rarefiedParameters</subdict> or <subdict>transportModels</subdict> subdictionaries  
+  + [NB: if you save the file at this point, nothing will happen] 
+  + Add an entry to the modified subdictionary that is: _**applyChanges        true;**_
+  + Save the file  
+  + [For safety, once the modification has taken effect, the file can be re-opened and the <dictkey>applyChanges</dictkey> entry can be removed. Save again.]  
+  + If this operation has worked, then your simulation should have entered into a second sub-phase of the run as shown in the log file
 
 Before:  
 
