@@ -15,7 +15,7 @@ _GitHub coordinator_:
 <a style="text-decoration: none" href="https://www.researchgate.net/profile/Vincent_Casseau" target="_blank">
     <span class="fa-stack fa-lg" aria-hidden="true">
       <i class="fas fa-square fa-stack-2x"></i>
-      <i class="fab fa-researchgate fa-stack-1x fa-inverse"></i>
+      <i class="fab fa-researchgate fa-stack-1x" style='color:cyan'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
   </a>  
