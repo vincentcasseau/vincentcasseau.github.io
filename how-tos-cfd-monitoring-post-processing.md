@@ -65,7 +65,7 @@ functions
 }
 ```
 
-and review/edit the entries in the <dirname>system/</dirname>surfaceQuantities_ dictionary
+and review/edit the entries in the <dirname>system/</dirname><dict>surfaceQuantities</dict> dictionary
 
 ```c++
 wallShearStress
@@ -78,9 +78,12 @@ wallShearStress
 }
 ```
 
+&nbsp;
+
 ### 1.3 Forces
 
-+ In the <dirname>system/</dirname><dict>controlDict</dict> dictionary, uncomment the correct include statement:  
+In the <dirname>system/</dirname><dict>controlDict</dict> dictionary, uncomment the correct include statement
+  
 ```c++
 functions
 {
@@ -91,7 +94,8 @@ functions
     //#include "surfaceQuantities"
 }
 ```
-+ Open the <dirname>system/</dirname><dict>forces</dict> dictionary  
+
+Open the <dirname>system/</dirname><dict>forces</dict> dictionary  
 
 ```c++
 #include "../0/include/initialConditions"
@@ -129,9 +133,10 @@ forceCoeffs
     Aref 1.96646e-05; // edit accordingly
 }
 ```
-+ Review and edit the relevant entries
 
-+ Forces / Aerodynamic coefficients (_e.g._ drag coefficient) can be monitored using the script file given in the <dirname>gnuplot/</dirname> folder:
+Review and edit the relevant entries
+
+Forces / Aerodynamic coefficients (_e.g._ drag coefficient) can be monitored using the script file given in the <dirname>gnuplot/</dirname> folder
   
 ```c++
 set output "gnuplot/dragCoefficient.eps"
@@ -145,10 +150,11 @@ plot \
 "< cat log.hy2Foam | grep 'Cd' | cut -d '=' -f 2" w l ls 1 not
 ```
 
+&nbsp;
 
 ### 1.4 Residuals
 
-+ An example is given below for monitoring the residuals. The fields (_**Ux**_, _**Uy**_, _**e\_{ve, N2}**_, _**e**_) may be edited depending on the simulation set-up.
+An example is given below for monitoring the residuals. The fields (_**Ux**_, _**Uy**_, _**e\_{ve, N2}**_, _**e**_) may be edited depending on the simulation set-up.
 
 ```sh
 set output "gnuplot/residuals.eps"
@@ -177,8 +183,7 @@ and this can be executed by typing in:
     gnuplot gnuplot/monitorResiduals
 ```
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
 ## 2) Post-processing
