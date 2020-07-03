@@ -7,17 +7,17 @@ _GitHub coordinator_:
 
 * **Dr Vincent Casseau** &nbsp; <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank">
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fas fa-circle fa-stack-1x"></i>
-      <i class="fab fa-linkedin fa-stack-lg fa-inverse"></i>
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
     </span>
     <span class="sr-only">LinkedIn</span>
   </a>
 <a style="text-decoration: none" href="https://www.researchgate.net/profile/Vincent_Casseau" target="_blank">
     <span class="fa-stack fa-lg" aria-hidden="true">
-      <i class="fas fa-square fa-stack-1x"></i>
-      <i class="fab fa-researchgate fa-stack-lg fa-inverse"></i>
+      <i class="fas fa-square fa-stack-2x"></i>
+      <i class="fab fa-researchgate fa-stack-1x fa-inverse"></i>
     </span>
-    <span class="sr-only">LinkedIn</span>
+    <span class="sr-only">ResearchGate</span>
   </a>  
 
 <!--<a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank"><img src="https://i2.wp.com/poxse.com/wp-content/uploads/2016/01/linkedin-logo.jpg?ssl=1" alt="LinkedIn profile" width="15"></a> -->
