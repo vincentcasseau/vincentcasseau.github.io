@@ -108,7 +108,7 @@ _Lead developer_:
 _Current developers_: 
 * **Dr Vincent Casseau** 
 * **Dr Daniel E.R. Espinoza**  
-* **Tim Teichmann**, &nbsp; PhD student in the [Institute for Technical Physics](http://www.itep.kit.edu/english/), Karlsruhe Institute of Technology (KIT), Eggenstein-Leopoldshafen, Germany
+* **Tim Teichmann**, PhD student in the [Institute for Technical Physics](http://www.itep.kit.edu/english/), Karlsruhe Institute of Technology (KIT), Eggenstein-Leopoldshafen, Germany
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/craig-white-53b70387" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
@@ -162,7 +162,7 @@ _Contributors_:
 # External contributors
 {: #External-contributors}
 
-* R.Tech Engineering  
+* R.Tech Engineering, Verniolle, France  
 
 **[View more](https://vincentcasseau.github.io/contributions/#list-of-external-contributions)**   
 
