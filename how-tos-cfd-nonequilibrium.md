@@ -34,7 +34,7 @@ hy2Foam > log.hyFoam 2>&1 &
 ---  
 ## 2) Thermal non-equilibrium
 
-As mentioned in the introduction, the non-equilibrium solver _hy2Foam_ can take two forms: it can either solve for mixture vibro-electronic energy equation or multiple vibro-electronic energy equations. The choice of the former variant is highly recommended.
+As mentioned in the introduction, the non-equilibrium solver _hy2Foam_ can take two forms: it can either solve the mixture vibro-electronic energy equation or multiple vibro-electronic energy equations. The choice of the former variant is highly recommended.
 
 ### 2.1 Two-temperature solver, single vibro-electronic energy pool  
 The <dict>thermophysicalProperties</dict> dictionary setup in this variant of _hy2Foam_ is  
@@ -91,7 +91,7 @@ As is customary, the Landau-Teller equation is employed for V—T energy exchang
   </tr>
   <tr>
     <td align="center"><dictkey>model</dictkey></td>
-    <td align="center"><dictval>MillikanWhitePark</dictval> &nbsp; <i class="fa fa-thumbs-up" style="font-size:18px;color:green" title="recommended"></i> <br /> <dictval>MillikanWhite</dictval></td>  
+    <td align="center"><dictval>MillikanWhitePark</dictval><i class="fa fa-thumbs-up" style="font-size:18px;color:green" title="recommended"></i> <br /> <dictval>MillikanWhite</dictval></td>  
     <td align="center">if <dictval>LandauTellerVT</dictval> is chosen, whether to use Park's correction or not</td>
   </tr>
   <tr>  
