@@ -33,7 +33,7 @@ The names of all valid entries for the <dictkey>transport</dictkey> keyword in t
 | <dictval>CEA</dictval>      | <dictkey>temp()</dictkey>, <dictkey>visco()</dictkey>, <dictkey>kappa()</dictkey>      |
 | <dictval>powerLawEucken</dictval> | <dictkey>diameter</dictkey>, <dictkey>omega</dictkey>     |
 
-The coefficients of these models are to be found in the <dict>thermoDEM/</dict><subdict>#speciesName</subdict> dictionary. The first four models are employing coefficients located into the <subdict>transport</subdict> subdictionary, while the _powerLawEucken_ model is using the species diameter, _diameter_, and species temperature exponent of viscosity, _omega_, located in the <subdict>specie</subdict> subdictionary.
+The coefficients of these models are to be found in the <dict>thermoDEM/</dict><subdict>#speciesName</subdict> dictionary. The first four models are employing coefficients located into the <subdict>transport</subdict> subdictionary, while the <dictval>powerLawEucken</dictval> model is using the species diameter, <dictkey>diameter</dictkey>, and species temperature exponent of viscosity, <dictkey>omega</dictkey>, located in the <subdict>specie</subdict> subdictionary.
 
 ### 1.4 Print species shear viscosity and thermal conductivity
 In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dictionary, edit any of the following booleans to <dictval>on</dictval>  
