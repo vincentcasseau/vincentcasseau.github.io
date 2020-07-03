@@ -14,22 +14,24 @@ These how-tos are based on the working folder located [here](https://github.com/
 
 ### 1.1 Wall heat flux  
 
-+ Pre-requirement: the patch type in _constant/polyMesh/boundary_ has to be _**wall**_.  
-+ Open the <dict>transportProperties</dict> dictionary and make sure the switch is active  
+Pre-requirement: the patch type in <dirname>constant/polyMesh/</dirname><dict>boundary</dict> has to be _**wall**_.  
+
+Open the <dict>transportProperties</dict> dictionary and make sure the switch is active  
 
 ```c++
     writeWallHeatFlux              on;
 ```
-+ The field named _wallHeatFlux_ will be printed as a result in each time folder. In addition, the wall heat flux is integrated for each wall and printed in the log file at write time
+
+The field named _wallHeatFlux_ will be printed as a result in each time folder. In addition, the wall heat flux is integrated for each wall and printed in the log file at write time
 
 ```c++
 Wall heat fluxes [W]
 Patch 4 named lowerWall: 416.2644537
 ```
 
-+ Thus, the integrated wall heat flux can easily be monitored (and later plotted) during the simulation using the _grep_ command. In the present case: _grep lowerWall log.hy2Foam_
+Thus, the integrated wall heat flux can easily be monitored (and later plotted) during the simulation using the _grep_ command. In the present case: _grep lowerWall log.hy2Foam_
 
-+ Alternatively, use the dedicated monitoring script given in the _gnuplot/_ folder, called _monitorIntegratedWallHeatFlux_ replacing _#patchName_ by the name of the wall patch.  
+Alternatively, use the dedicated monitoring script given in the <dirname>gnuplot/<dirname> folder, called _monitorIntegratedWallHeatFlux_ replacing _#patchName_ by the name of the wall patch.  
 
 ```c++
 set output "gnuplot/integratedWallHeatFlux.eps"
@@ -43,9 +45,11 @@ plot \
 "< cat log.hy2Foam | grep -e 'named #patchName:' -e '^Time =' | awk '/^Time =/,/^Time =/ {lastc = $0; next}{ if ( lastc != \"\") { print lastc; lastc = \"\"; } print }' $1 | cut -d ':' -f 2 | cut -d '=' -f 2 | paste -d ' ' - -" u 1:($2/1000.0) w l ls 1 lw 1.8 not
 ```
 
+&nbsp;
+
 ### 1.2 Wall shear stress
 
-+ In the _system/controlDict_ dictionary, uncomment the correct include statement:  
+In the <dirname>system/</dirname><dict>controlDict</dict> dictionary, uncomment the correct include statement:  
 ```c++
 functions
 {
@@ -57,7 +61,7 @@ functions
 }
 ```
 
-and review/edit the entries in the _system/surfaceQuantities_ dictionary
+and review/edit the entries in the <dirname>system/</dirname>surfaceQuantities_ dictionary
 
 ```c++
 wallShearStress
@@ -72,7 +76,7 @@ wallShearStress
 
 ### 1.3 Forces
 
-+ In the _system/controlDict_ dictionary, uncomment the correct include statement:  
++ In the <dirname>system/</dirname><dict>controlDict</dict> dictionary, uncomment the correct include statement:  
 ```c++
 functions
 {
@@ -83,7 +87,7 @@ functions
     //#include "surfaceQuantities"
 }
 ```
-+ Open the _system/forces_ dictionary  
++ Open the <dirname>system/</dirname><dict>forces</dict> dictionary  
 
 ```c++
 #include "../0/include/initialConditions"
@@ -123,7 +127,7 @@ forceCoeffs
 ```
 + Review and edit the relevant entries
 
-+ Forces / Aerodynamic coefficients (_e.g._ drag coefficient) can be monitored using the script file given in the _gnuplot/_ folder:
++ Forces / Aerodynamic coefficients (_e.g._ drag coefficient) can be monitored using the script file given in the <dirname>gnuplot/</dirname> folder:
   
 ```c++
 set output "gnuplot/dragCoefficient.eps"
@@ -175,15 +179,18 @@ and this can be executed by typing in:
 ---  
 ## 2) Post-processing
 
-In a terminal window, type in:  
+In a terminal window, type in
+  
 ```c++
 hy2Foam -postProcess -dict 'system/surfaceCoefficients' -latestTime
-```  
-where _system/surfaceCoefficients_ is a dictionary that contains the desired surface coefficients. Their implementation in the _**functions**_ sub-dictionary is shown below.
+``` 
+ 
+where <dirname>system/</dirname><dict>surfaceCoefficients</dict> is a dictionary that contains the desired surface coefficients. Their implementation in the <subdict>functions</subdict> sub-dictionary is shown below.
 
 ### 2.1 Pressure coefficient
 
-+ Within the _functions_ sub-dictionary, add:  
++ Within the _functions_ sub-dictionary, add
+  
 ```c++
 pressureCoefficient
 {
@@ -194,10 +201,14 @@ pressureCoefficient
 }
 ```
 
+&nbsp;
+
 ### 2.2 Stanton number
 
-+ The _**wallHeatFlux**_ field is required as an input.  
-+ Within the _functions_ sub-dictionary, add:  
+The _**wallHeatFlux**_ field is required as an input.  
+
+Within the _functions_ sub-dictionary, add
+  
 ```c++
 StantonNumber
 {
@@ -210,10 +221,13 @@ StantonNumber
 }
 ```
 
+&nbsp;
+
 ### 2.3 Skin-friction coefficient
 
-+ The _**wallShearStress**_ field is required as an input.  
-+ Within the _functions_ sub-dictionary, add:  
+The _**wallShearStress**_ field is required as an input.  
+Within the _functions_ sub-dictionary, add  
+  
 ```c++
 frictionCoefficient
 {
@@ -224,9 +238,12 @@ frictionCoefficient
 }
 ```
 
+&nbsp;
+
 ### 2.4 y+
 
-+ Within the _functions_ sub-dictionary, add:  
+Within the _functions_ sub-dictionary, add  
+
 ```c++
 yPlus
 {
@@ -236,6 +253,8 @@ yPlus
     log             no;
 }
 ```
+
+&nbsp;
 
 ### 2.5 ParaView
 
