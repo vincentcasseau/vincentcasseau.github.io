@@ -12,7 +12,8 @@ These how-tos are based on the working folder located [here](https://github.com/
 ---  
 ## 1) Species thermophysical properties
 
-+ The species thermophysical properties are given in the [_thermoDEM_](https://github.com/vincentcasseau/hyStrath/blob/master/run/hyStrath/hy2Foam/genericCase/constant/thermoDEM) dictionary. For the nitrogen molecule, it is defined as follows:    
+The species thermophysical properties are given in the <dict>thermoDEM</dict> dictionary. For the nitrogen molecule, it is defined as follows
+    
 ```c++
 N2
 {
@@ -57,33 +58,33 @@ N2
 }
 ```
 
-In the _specie_ subdictionary, the molecular weight, _**molWeight**_, is given in g/mol.  
-The subsequent entry named _**particleType**_ defines the particle type (0: electron, 1: neutral atom, 2: molecule, 3: charged molecule).  
-Then, the keyword _**charge**_ indicates the charge of the particle (-1: electron, 0: neutral atom and molecule, +1: charged atom and molecule).  
-Next comes the diameter of the particle, _**diameter**_, in meters.  
-_**omega**_ is the temperature exponent of viscosity as described in [B. Transport](https://vincentcasseau.github.io/how-tos-cfd-transport/#13-other-transport-models). _**eta_s**_ is a factor that enters in the calculation of the [vibrational thermal conductivity](https://github.com/vincentcasseau/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1) (this entry is optional and equal to 1.2 by default).
-The number of vibrational energy modes of the particle is defined using the keyword _**noVibTemp**_ and finally the number of electronic energy levels is specified by the entry _**noElecLevels**_.
+In the <subdict>specie</subdict> subdictionary, the molecular weight, <dictkey>molWeight</dictkey>, is given in g/mol.  
+The subsequent entry named <dictkey>particleType</dictkey> defines the particle type (<dictval>0</dictval>: electron, <dictval>1</dictval>: neutral atom, <dictval>2</dictval>: molecule, <dictval>3</dictval>: charged molecule).  
+Then, the keyword <dictkey>charge</dictkey> indicates the charge of the particle (<dictval>-1</dictval>: electron, <dictval>0</dictval>: neutral atom and molecule, <dictval>+1</dictval>: charged atom and molecule).  
+Next comes the diameter of the particle, <dictkey>diameter</dictkey>, in meters.  
+<dictkey>omega</dictkey> is the temperature exponent of viscosity as described in [B. Transport](https://vincentcasseau.github.io/how-tos-cfd-transport/#13-other-transport-models). <dictkey>eta_s</dictkey> is a factor that enters in the calculation of the [vibrational thermal conductivity](https://github.com/vincentcasseau/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1) (this entry is optional and equal to <dictval>1.2</dictval> by default).
+The number of vibrational energy modes of the particle is defined using the keyword <dictkey>noVibTemp</dictkey> and finally the number of electronic energy levels is specified by the entry <dictkey>noElecLevels</dictkey>.
   
   
   
-In the _thermodynamics_ subdictionary, the first entry is a list of coefficients called _**decoupledCvCoeffs()**_. The heat capacity at constant volume, _Cv_, is decomposed into the contributions of the different energy modes that are translational (element 1), rotational (element 2), vibrational (element 3), electronic (element 4), and electron (element 5). For a planar molecule,   
-> Cv_t (T) = 1.5*R_m  
+In the <subdict>thermodynamics</subdict> subdictionary, the first entry is a list of coefficients called <dictkey>decoupledCvCoeffs()</dictkey>. The heat capacity at constant volume, _Cv_, is decomposed into the contributions of the different energy modes that are translational (element 1), rotational (element 2), vibrational (element 3), electronic (element 4), and electron (element 5). For a planar molecule,   
+Cv_t (T) = 1.5*R_m  
 
 and  
 
-> Cv_r (T) = 1.0*R_m 
+Cv_r (T) = 1.0*R_m 
  
-where _R\_m_ is the specific gas constant. Thus, the first two elements in the _**decoupledCvCoeffs()**_ list are the coefficients by which _R\_m_ should be multiplied.
+where _R\_m_ is the specific gas constant. Thus, the first two elements in the <dictkey>decoupledCvCoeffs()</dictkey> list are the coefficients by which _R\_m_ should be multiplied.
 
-For the vibrational and electronic modes, the expressions of _Cv\_v_ and _Cv\_el_ are a function of the entries given in the following lists: _**vibrationalList()**_ and _**electronicList()**_. Hence, elements 3 and 4 can be seen as binary switches (see [§1.1](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#11-disablingenabling-the-vibrational-mode-of-a-molecule) and [§1.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle)).  
+For the vibrational and electronic modes, the expressions of _Cv\_v_ and _Cv\_el_ are a function of the entries given in the following lists: <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey>. Hence, elements 3 and 4 can be seen as binary switches (see [§1.1](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#11-disablingenabling-the-vibrational-mode-of-a-molecule) and [§1.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle)).  
 
 The 5th element of the list is the ratio of the species chemical enthalpy taken at 298 K (in J/mol) to the universal gas constant, while the 6th element is not used.  
 
-Elements in the _**vibrationalList()**_ and _**electronicList()**_ lists are grouped by pairs with the first column being the degeneracy and the second column being the characteristic vibrational/electronic temperature (in K).  
+Elements in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists are grouped by pairs with the first column being the degeneracy and the second column being the characteristic vibrational/electronic temperature (in K).  
 
 ### 1.1 Disabling/enabling the vibrational mode of a molecule 
 
-In the _thermoDEM/#nameSpecies/thermodynamics_ dictionary, edit the 3rd element of the _**decoupledCvCoeffs**_ list to either be 0 (disabled) or 1 (enabled).  
+In the <dict>thermoDEM/</dict><subdict>#speciesName/thermodynamics</subdict> dictionary, edit the 3rd element of the <dictkey>decoupledCvCoeffs</dictkey> list to either be <dictval>0</dictval> (disabled) or <dictval>1</dictval> (enabled).  
 
 In the following example, the vibrational energy mode of the N2 molecule is enabled  
 
@@ -91,9 +92,11 @@ In the following example, the vibrational energy mode of the N2 molecule is enab
         decoupledCvCoeffs    ( 1.5 1 1 0 0 0 0 );
 ```
 
+&nbsp;
+
 ### 1.2 Disabling/enabling the electronic mode of a particle  
 
-In the _thermoDEM/#nameSpecies/thermodynamics_ dictionary, edit the 4th element of the _**decoupledCvCoeffs()**_ list to either be 0 (disabled) or 1 (enabled).  
+In the <dict>thermoDEM/</dict><subdict>#speciesName/thermodynamics</subdict> dictionary, edit the 4th element of the <dictkey>decoupledCvCoeffs()</dictkey> list to either be <dictval>0</dictval> (disabled) or <dictval>1</dictval> (enabled).  
 
 In the following example, the electronic energy mode of the N atom is enabled  
 
