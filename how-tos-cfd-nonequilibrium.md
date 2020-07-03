@@ -256,7 +256,7 @@ There are two chemistry-vibration models implemented but it is strongly recommen
 
 #### 4.1.1 General settings
 
-The subdictionary <subdict>chemistryVibrationCoupling</subdict> is added to the <subdict>chemistryProperties</subdict> dict. Use of the Park TTv model is illustrated below  
+The subdictionary <subdict>chemistryVibrationCoupling</subdict> is added to the <dict>chemistryProperties</dict> dict and the use of the Park TTv model is illustrated below  
 
 ```c++
 chemistryVibrationCoupling
@@ -277,7 +277,7 @@ chemistryVibrationCoupling
 }
 ```
 
-For dissociation reactions, Park's temperature is utilised and defined as T_tr^<dictkey>exponentTtr</dictkey> x T_ve^(1 - <dictkey>exponentTtr</dictkey>). A value of 0.7 is usually employed for <dictkey>exponentTtr</dictkey>. In this example, the <dictkey>preferential</dictkey> model is used.   
+Park's temperature, defined as T_tr^<dictkey>exponentTtr</dictkey> x T_ve^(1 - <dictkey>exponentTtr</dictkey>), is utilised for dissociation reactions if need be and a value of 0.7 is usually employed for <dictkey>exponentTtr</dictkey>. In this example, the <dictval>preferential</dictval> model is retained (the other <dictkey>sourceTermModel<dictkey> being <dictval>nonPreferential</dictval>).   
 
 #### 4.1.2 Reactions dictionary
 
