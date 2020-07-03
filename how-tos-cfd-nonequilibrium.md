@@ -82,7 +82,7 @@ The Landau-Teller equation is used for V—T energy exchange and the V—T relax
   </tr>
   <tr>
     <td align="center"><dictkey>relaxationType</dictkey></td>
-    <td align="center"><dictval>LandauTellerVT</dictval> (recommended) <br /> <dictval>noVTEnergyTransfer</dictval>  </td>
+    <td align="center"><dictval>LandauTellerVT</dictval> <i class="fa fa-thumbs-up" style="font-size:36px;color:green"></i> <br /> <dictval>noVTEnergyTransfer</dictval>  </td>
     <td align="center">Name of the V—T energy transfer model</td>
   </tr>
   <tr>
@@ -92,8 +92,8 @@ The Landau-Teller equation is used for V—T energy exchange and the V—T relax
   </tr>
   <tr>  
     <td align="center"><dictkey>fullCoeffsForm</dictkey></td>
-    <td align="center"><dictval>on</dictval> (recommended) <br /> <dictval>off</dictval></td>
-    <td align="center">whether to use the tabulated data or the formula from Millikan and White</td>
+    <td align="center"><dictval>on</dictval> <i class="fa fa-thumbs-up" style="font-size:36px;color:green"></i> <br /> <dictval>off</dictval></td>
+    <td align="center">whether to use the tabulated data or the Millikan and White formula</td>
   </tr>
   <tr>
     <td align="center"><dictkey>overwriteDefault</dictkey></td>
