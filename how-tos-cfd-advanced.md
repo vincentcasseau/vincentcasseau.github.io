@@ -12,7 +12,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ---  
 ## 1) Local time stepping
   
-In the <dirname>system/<dirname> directory, open the <dict>fvSchemes</dict> dictionary and edit the default <dictkey>ddtSchemes</dictkey> entry to <dictval>localEuler rDeltaT</dictval>.
+In the <dirname>system/</dirname> directory, open the <dict>fvSchemes</dict> dictionary and edit the default <dictkey>ddtSchemes</dictkey> entry to <dictval>localEuler rDeltaT</dictval>.
 
 > Local time stepping is currently inappropriate for axisymmetric and chemically-reacting simulations.  
 
