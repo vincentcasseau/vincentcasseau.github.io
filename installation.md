@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Installation
+nav-short: true
 --- 
 
 ### OF-v1706

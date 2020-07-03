@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "License"
+nav-short: true
 --- 
 
 GNU GENERAL PUBLIC LICENSE

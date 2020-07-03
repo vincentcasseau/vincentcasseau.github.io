@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Synchronisation
+nav-short: true
 --- 
 
 ### OF-v1706   

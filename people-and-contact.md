@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "People"
+title: People
+nav-short: true
 ---
 
 _GitHub coordinator_:

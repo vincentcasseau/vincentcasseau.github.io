@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Publications
+nav-short: true
 ---
 
 <br>

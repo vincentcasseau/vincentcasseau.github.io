@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Maintenance
+nav-short: true
 --- 
 
 <table>

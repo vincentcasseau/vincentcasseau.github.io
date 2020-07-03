@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Solvers
+nav-short: true
 ---
 
 ## &nbsp;

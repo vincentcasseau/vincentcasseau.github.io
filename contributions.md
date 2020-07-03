@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contributions
+nav-short: true
 ---
 
 Every contribution is welcome whether that is:
@@ -56,11 +57,11 @@ git push origin master
 
 &nbsp; 
  
-## List of external integrations
+## List of integrations
 
 | Author | _hyStrath_ branch | Contribution | Date |  
 |-------------|:-------------:|:-------------:|:-------------:|
-| [the Micro & Nano Flows Group](http://www.micronanoflows.ac.uk/) |  | [Original dsmcFoam solver and lagrangian library](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig), OF-2.4.0 | March 2017 |
+| [the Micro & Nano Flows Group](http://www.micronanoflows.ac.uk/) | **Master** | [Original dsmcFoam solver and lagrangian library](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig), OF-2.4.0 | March 2017 |
 | Anton Kidess | **Master** | [**_blockMeshDG_**](https://openfoamwiki.net/index.php/Contrib_blockMeshDG) | March 2017 |
 | Bernhard Gschaider | **Master** | [**_makeAxialMesh_**](http://openfoamwiki.net/index.php/Contrib/MakeAxialMesh) | March 2017 |
 

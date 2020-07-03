@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tutorials
+nav-short: true
 ---
 
 <p align="center">

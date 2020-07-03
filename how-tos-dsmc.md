@@ -2,6 +2,7 @@
 layout: page
 title: How-tos
 subtitle: DSMC Module
+nav-short: true
 ---
 
 &nbsp;  

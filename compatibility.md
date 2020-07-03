@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Compatibility
+nav-short: true
 --- 
 
 The OpenFOAM versions listed below are the <u>only ones</u> that are supported by this platform.  
