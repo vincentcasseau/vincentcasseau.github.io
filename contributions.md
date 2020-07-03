@@ -34,7 +34,8 @@ git clone https://github.com/USERNAME/hyStrath
 ```sh
 git status
 ```  
-5. Once you are ready to commit and push your changes, type in  
+5. Once you are ready to commit and push your changes, type in
+  
 ```
 cd $WM_PROJECT_USER_DIR/hyStrath  
 git add PATH/TO/NEW/CONTENTS/  
@@ -49,11 +50,12 @@ git push origin master
 
 --- 
  
-## List of external contributors
-{: #List-of-external-contributors }
+## List of external contributions
 
 | Contributor | _hyStrath_ branch | Contribution | Date |  
 |:-------------:|:-------------:|:-------------:|:-------------:|
 | [R.Tech Engineering](http://rtech-engineering.com/) | OF-v1706 | [Update to OpenFOAM v1706](https://vincentcasseau.github.io/maintenance/), v1706 branch created | 12 May 2018 |
 | [the Micro & Nano Flows Group](http://www.micronanoflows.ac.uk/) |  | [Original dsmcFoam solver and lagrangian library](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig), OF-2.4.0 | March 2017 |
+| Anton Kidess |  | [**_blockMeshDG_**](https://openfoamwiki.net/index.php/Contrib_blockMeshDG), **Master** | March 2017 |
+| Bernhard Gschaider |  | [**_makeAxialMesh_**](http://openfoamwiki.net/index.php/Contrib/MakeAxialMesh), **Master** | March 2017 |
 
