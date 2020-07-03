@@ -187,7 +187,7 @@ These quantities are calculated according to the entries specified in the <dict>
 
 ### 3.1 Mean free path  
 
-There are three models (_mfpModel_) available for the computation of the mean free path (mfp) that are: <dictval>maxwellian</dictval>, <dictval>hardSphere</dictval>, and <dictval>variableHardSphere</dictval>.   
+There are three <dictkey>mfpModel</dictkey> models available for the computation of the mean free path (mfp): <dictval>maxwellian</dictval>, <dictval>hardSphere</dictval>, and <dictval>variableHardSphere</dictval>.   
 
 You might want to compute the mfp at patches only to speed-up the calculations: indeed, knowledge of the mfp at patches is enough to use the [Smoluchowski temperature jump boundary condition](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#31-trans-rotational-temperature). To this aim, two switches (<dictkey>computeFieldAndBoundaries</dictkey> and <dictkey>computeMfpBoundaries</dictkey>) are used and the correct combination is shown below
 
@@ -276,7 +276,7 @@ For dissociation reactions, Park's temperature is utilised and defined as T_tr^<
 
 #### 4.1.2 Reactions dictionary
 
-+ A controlling temperature, <dictkey>controlT</dictkey>, is added to the <dict>hTCReactions#name</dict> dictionary. For example, Park's temperature will be used in the following case for forward reaction rate calculations
+A controlling temperature, <dictkey>controlT</dictkey>, is added to the <dict>hTCReactions#name</dict> dictionary. For example, Park's temperature will be used in the following case for forward reaction rate calculations
 
 ```c++
 controlT dissociation;
@@ -286,7 +286,7 @@ Other accepted entries for <dictkey>controlT</dictkey> can be found in <dict>hTC
 
 ### 4.2 Coupled vibration-dissociation-vibration (CVDV) model
 
-The CVDV model's default settings are as follows 
+The default settings of the <dictval>CVDV</dictval> model are as follows 
 
 ```c++
 chemistryVibrationCoupling
