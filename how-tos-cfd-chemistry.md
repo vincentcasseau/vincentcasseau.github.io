@@ -10,32 +10,34 @@ These how-tos are based on the working folder located [here](https://github.com/
 # Chemistry modelling
 
 ---
-
 ## 1) Multi-species flow
 
-### 1.1 The _chemDicts/_ folder
-+ Within the _constant/_ directory, the _chemDicts/_ folder regroups default chemistry dictionaries. It is preferable not to modify the original files. Thus, a copy of the most appropriate _hTCReactions#name_ dictionary can be made into the _constant/_ folder.
-+ The path to the _hTCReactions#name_ dictionary needs to be edited accordingly in _thermophysicalProperties_. This done with the entry _foamChemistryFile_ that can be defined as  
+### 1.1 The <dirname>chemDicts/</dirname> folder
+Within the <dirname>constant/</dirname> directory, the <dirname>chemDicts/</dirname> folder regroups default chemistry dictionaries. It is preferable not to modify the original files. Thus, a copy of the most appropriate <dict>hTCReactions#name</dict> dictionary can be made into the <dirname>constant/</dirname> folder.  
+
+The path to the <dict>hTCReactions#name</dict> dictionary needs to be edited accordingly in <dict>thermophysicalProperties</dict>. This done with the entry <dictkey>foamChemistryFile</dictkey> that can be defined as  
+
 ```c++
     foamChemistryFile        "$FOAM_CASE/constant/hTCReactions#name";
 ```
 
-Available _hTCReactions#name_ dictionaries are
+Available <dict>hTCReactions#name</dict> dictionaries are
 
 | Chemistry dict name    | Reference
 |:-------------:|:-------------:|
-| _hTCReactionsEarth93_      |  Park _et al._, 1993 |
-| _hTCReactionsMars74_      |  Evans, Schexnayder & Grose, 1974          |
-| _hTCReactionsMars94_      |  Park _et al._, 1994           |
-| _hTCReactionsDK_      |  Dunn & Kang, 1973          |
-| _hTCReactionsES_      |  Evans & Schexnayder, 1980          |
-| _hTCReactionsJ92_      |  Jachimowski, 1992           |
-| _hTCReactionsJ92\_fwd_      |  Jachimowski, forward reactions only, 1992           |
-| _hTCReactionsQK_      |  Quantum-kinetics, Scanlon _et al._, 2015      |
+| <dict>hTCReactionsEarth93</dict>      |  Park _et al._, 1993 |
+| <dict>hTCReactionsMars74</dict>      |  Evans, Schexnayder & Grose, 1974          |
+| <dict>hTCReactionsMars94</dict>      |  Park _et al._, 1994           |
+| <dict>hTCReactionsDK</dict>      |  Dunn & Kang, 1973          |
+| <dict>hTCReactionsES</dict>      |  Evans & Schexnayder, 1980          |
+| <dict>hTCReactionsJ92</dict>      |  Jachimowski, 1992           |
+| <dict>hTCReactionsJ92\_fwd</dict>      |  Jachimowski, forward reactions only, 1992           |
+| <dict>hTCReactionsQK<dict>      |  Quantum-kinetics, Scanlon _et al._, 2015      |
 
 
 ### 1.2 Adding/deleting species   
-+ In the _hTCReactions#name_ dictionary, the species composing the gas mixture need to be uncommented in the _species_ list entry. For a 5-species air mixture:    
+In the <dict>hTCReactions#name</dict> dictionary, the species composing the gas mixture need to be uncommented in the <dictkey>species()<dictkey> list entry. For a 5-species air mixture:  
+ 
 ```c++
     species
     (
@@ -52,6 +54,7 @@ Available _hTCReactions#name_ dictionaries are
       //e-
     );
 ```
+
 As illustrated in the example, a specific order should be respected  
 1. molecules  
 2. charged molecules  
@@ -59,11 +62,12 @@ As illustrated in the example, a specific order should be respected
 4. charged atoms  
 5. electrons  
 
-+ In the _thermoDEM_ dictionary, uncomment all species listed in the _hTCReactions#name_ dictionary (**and comment out those which are not present**)
-+ All species listed in the _hTCReactions#name_ dictionary should also be present in the _0/_ directory. This is discussed in [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/).
++ In the <dict>thermoDEM</dict> dictionary, uncomment all species listed in the <dict>hTCReactions#name</dict> dictionary (**and comment out those which are not present**)
++ All species listed in the <dict>hTCReactions#name</dict> dictionary should also be present in the <dirname>0/</dirname> directory. This is discussed in [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/).
 
 ### 1.3 Printing species quantities  
-+ In the _hTCProperties_ dictionary, switch on/off any of those booleans to print the desired fields  
++ In the <dict>hTCProperties</dict> dictionary, switch on/off any of these booleans to print the desired fields 
+ 
 ```c++
 mixtureOutputs
 {
@@ -76,51 +80,52 @@ mixtureOutputs
 }
 ```
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---
 
 ## 2) Non-reacting flow
 
 ### 2.1 Disable chemistry  
-+ In the _hTCProperties_ dictionary, switch off the _active_ boolean as follows    
+In the <dict>hTCProperties</dict> dictionary, switch off the <dictkey>active</dictkey> boolean as follows   
+ 
 ```c++
      active          off;
 ```  
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
 ## 3) Chemically-reacting flow  
 
 ### 3.1 Enable chemistry
-+ In the _hTCProperties_ dictionary, switch on the _active_ boolean as follows    
++ In the <dict>hTCProperties</dict> dictionary, switch on the <dictkey>active</dictkey> boolean as follows 
+   
 ```c++
      active          on;
 ```  
 
-+ In the _chemistryProperties_ dictionary, the same operation should be repeated with the _chemistry_ boolean  
++ In the <dict>chemistryProperties</dict> dictionary, the same operation should be repeated with the <dictkey>chemistry</dictkey> boolean  
+
 ```c++
      chemistry          on;
 ```
 
-> In this dictionary, the _initialChemicalTimeStep_ entry is not used by the solvers yet.  
+> In this dictionary, the <dictkey>initialChemicalTimeStep</dictkey> entry is not used by the solvers yet.  
 
 ### 3.2 Implementing a chemical reaction  
 #### 3.2.1 Forward reaction  
-+ Within the _hTCReactions#name_ dictionary, the _reactions_ subdictionary is enumerating the different chemical reactions to consider. The modified Arrhenius law coefficients are given in the table below
++ Within the <dict>hTCReactions#name</dict> dictionary, the <subdict>reactions</subdict> subdictionary is enumerating the different chemical reactions to consider. The modified Arrhenius law coefficients are given in the table below
 
 | Coefficient    | Meaning | Units |
 |:-------------:|:-------------|:------:|
-| _A_      |  pre-exponential factor | m^3 kmol^-1 s^-1 |
-| _beta_      |  temperature exponent          |   -     |
-| _Ta_      |  temperature of activation           |   K    |
+| <dictkey>A</dictkey>      |  pre-exponential factor | m^3 kmol^-1 s^-1 |
+| <dictkey>beta</dictkey>      |  temperature exponent          |   -     |
+| <dictkey>Ta</dictkey>      |  temperature of activation           |   K    |
 
-__Please pay attention to the units of the pre-exponential factor, *A*.__ 
+<strong>Please pay attention to the units of the pre-exponential factor, <dictkey>A</dictkey>, whn customising your own <dict>hTCReactions#name</dict> dictionary.</strong>  
 
-+ The reaction _type_ is defined as __*irreversibleArrheniusReaction*__.
+The reaction <dictkey>type</dictkey> is defined as <dictval>irreversibleArrheniusReaction</dictval>.
 
 ```c++
 reactions
@@ -137,16 +142,15 @@ reactions
 }
 ```
 
-
 #### 3.2.2 Reverse reaction   
 + Extra coefficients entering into the calculation of the reverse reaction rate constant [Park, 1990], _k\_rev_, are given below  
 
 | Extra coefficient    | Meaning | Units |
 |:-------------:|:-------------|:------:|
-| _ni()_      |  mixture number density list | m^-3 |
-| _A0()_ - _A4()_      | Park's coefficients for _k\_rev_  |   -    |
+| <dictkey>ni()</dictkey>      |  mixture number density list | m^-3 |
+| <dictkey>A0()</dictkey> - <dictkey>A4()</dictkey>      | Park's coefficients for _k\_rev_  |   -    |
  
-+ In the _hTCReactions#name/reactions_ dictionary, the reaction _type_  can either be __*reversibleArrheniusReaction*__ or __*nonEquilibriumReversibleArrheniusReaction*__. Their implementation is exemplified hereafter    
++ In the <dict>hTCReactions#name/</dict><subdict>reactions</subdict> dictionary, the reaction <dictkey>type</dictkey>  can either be <dictkey>reversibleArrheniusReaction</dictkey> or <dictkey>nonEquilibriumReversibleArrheniusReaction</dictkey>. Their implementation is exemplified hereafter    
 
 ```c++
 reactions
@@ -190,7 +194,7 @@ reactions
 ```
 
 #### 3.2.3 Third-body interaction  
-In the _hTCReactions#name/reactions_ dictionary, the _type_ of the reaction is modified to either _**irreversiblethirdBodyArrheniusReaction**_, _**reversiblethirdBodyArrheniusReaction**_, or _**nonEquilibriumReversiblethirdBodyArrheniusReaction**_. An example is given below and many more can be found in the _chemDicts/_ folder.  
+In the <dict>hTCReactions#name/</dict><subdict>reactions</subdict> dictionary, the <dictkey>type</dictkey> of the reaction is modified to either <dictval>irreversiblethirdBodyArrheniusReaction</dictval>, <dictval>reversiblethirdBodyArrheniusReaction</dictval>, or <dictval>nonEquilibriumReversiblethirdBodyArrheniusReaction</dictval>. An example is given below and many more can be found in the <dirname>chemDicts/</dirname> folder.  
 
 ```c++
 reactions
@@ -227,10 +231,10 @@ reactions
     }
 }
 ```
-**NB:** All species present in the _species_() list must be present in the _coeff_() list, no more, no less. 
+**NB:** All species present in the <dictkey>species()</dictkey> list must be present in the <dictkey>coeff()</dictkey> list, no more, no less. 
 
 ### 3.3  Increase robustness
-Backward reaction rates may sometimes cause problems in the low-temperature regions and yield the simulation to crash. A minimum temperature value, _Tmin_, can be introduced into the rate calculations to increase robustness [Scalabrin, 2007]. A switch called _**modifiedTemperature**_ located in the _chemistryProperties_ dictionary is there for this purpose.
+Backward reaction rates may sometimes cause problems in the low-temperature regions and yield the simulation to crash. A minimum temperature value, <dictkey>Tmin</dictkey>, can be introduced into the rate calculations to increase robustness [Scalabrin, 2007]. A switch called <dictkey>modifiedTemperature</dictkey> located in the <dict>chemistryProperties</dict> dictionary is there for this purpose.
 
 ```c++
 modifiedTemperature on;
@@ -241,8 +245,7 @@ modifiedTemperatureCoeffs
 }
 ```
 
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
 
