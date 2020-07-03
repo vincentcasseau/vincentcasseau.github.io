@@ -5,7 +5,9 @@ title: "People & Contact"
 
 _GitHub coordinator_:
 
-* **Dr Vincent Casseau** &nbsp; <i class="fa fa-linkedin" style="font-size:20px" href="https://uk.linkedin.com/in/vincentcasseau" title="LinkedIn"></i>
+* **Dr Vincent Casseau** &nbsp; <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+
+<i class="fa fa-linkedin" style="font-size:20px" href="https://uk.linkedin.com/in/vincentcasseau" title="LinkedIn"></i>
 
 <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank"><img src="https://i2.wp.com/poxse.com/wp-content/uploads/2016/01/linkedin-logo.jpg?ssl=1" alt="LinkedIn profile" width="15"></a> 
 <a style="text-decoration: none" href="https://www.researchgate.net/profile/Vincent_Casseau" target="_blank"><img src="https://www.wur.nl/upload_mm/2/8/5/9f59698c-e156-4f33-9520-405cb7f4d9c6_researchgate_56f72ad6_490x330.png" alt="ResearchGate profile" width="22"></a>
