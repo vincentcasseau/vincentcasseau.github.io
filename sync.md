@@ -18,5 +18,4 @@ git pull origin master
 ```sh
 ./install.sh 8 2>/dev/null
 ```
-
 where _8_ is the number of processors to be used during the synchronisation (it can be edited).
