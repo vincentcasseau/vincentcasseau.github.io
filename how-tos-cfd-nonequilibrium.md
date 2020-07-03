@@ -87,28 +87,28 @@ The Landau-Teller equation is used for V—T energy exchange and the V—T relax
   </tr>
   <tr>
     <td align="center"><dictkey>model</dictkey></td>
-    <td align="center"><dictval>MillikanWhitePark</dictval> (recommended)</td> <br /> <dictval>MillikanWhite</dictval>  
+    <td align="center"><dictval>MillikanWhitePark</dictval> (recommended) <br /> <dictval>MillikanWhite</dictval></td>  
     <td align="center">description</td>
   </tr>
   <tr>  
     <td align="center"><dictkey>fullCoeffsForm</dictkey></td>
     <td align="center"><dictval>on</dictval> (recommended) <br /> <dictval>off</dictval></td>
-    <td align="center">description</td>
+    <td align="center">whether to use the tabulated data or the formula from Millikan and White</td>
   </tr>
   <tr>
     <td align="center"><dictkey>overwriteDefault</dictkey></td>
     <td align="center"><dictval>on</dictval> (recommended) <br /> <dictval>off</dictval></td>
-    <td align="center">description</td>
+    <td align="center">if <dictkey>fullCoeffsForm</dictkey> is <dictval>on</dictval>, whether to use the dictionary values (<subdict>MillikanWhite</subdict> or (<subdict>Park</subdict>) or the harcoded values</td>
   </tr>
   <tr>
     <td align="center"><dictkey>speciesDependent</dictkey></td>
     <td align="center"><dictval>on</dictval> (recommended) <br /> <dictval>off</dictval></td>
-    <td align="center">description</td>
+    <td align="center">if <dictkey>overwriteDefault</dictkey> is <dictval>on</dictval>, whether to use different coeffs for different species or coeffs common to all species</td>
   </tr>
   <tr>
     <td align="center"><dictkey>collidingPair</dictkey></td>
     <td align="center"><dictval>on</dictval> (recommended) <br /> <dictval>off</dictval></td>
-    <td align="center">description</td>
+    <td align="center">if <dictkey>speciesDependent</dictkey> is <dictval>on</dictval>, whether to use different coeffs for different colliding partner or not</td>
   </tr>
 </table>
 
