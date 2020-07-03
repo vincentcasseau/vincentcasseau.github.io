@@ -12,7 +12,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ---  
 ## 1) Thermal equilibrium
 
-The solver's default behaviour is to use the two-temperature formulation with multiple vibro-electronic energy pools. In the <b style="color: #228B22">thermophysicalProperties</b> dictionary, two switches, `downgradeToSingleTv` and `downgradeToSingleTemperature`, can alter this behaviour to either produce a two-temperature solver with a single vibro-electronic energy pool or a single-temperature solver. 
+The solver's default behaviour is to use the two-temperature formulation with multiple vibro-electronic energy pools. In the <dict>thermophysicalProperties</dict> dictionary, two switches, `downgradeToSingleTv` and `downgradeToSingleTemperature`, can alter this behaviour to either produce a two-temperature solver with a single vibro-electronic energy pool or a single-temperature solver. 
   
 Thus, the single-temperature solver, _hyFoam_, is obtained with  
 
