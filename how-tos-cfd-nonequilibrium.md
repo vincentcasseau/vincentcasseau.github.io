@@ -88,7 +88,7 @@ The Landau-Teller equation is used for V—T energy exchange and the V—T relax
   <tr>
     <td align="center"><dictkey>model</dictkey></td>
     <td align="center"><dictval>MillikanWhitePark</dictval> &nbsp; <i class="fa fa-thumbs-up" style="font-size:18px;color:green" title="recommended"></i> <br /> <dictval>MillikanWhite</dictval></td>  
-    <td align="center">if <dictkey>LandauTellerVT</dictkey> is chosen, whether to use Park's correction or not</td>
+    <td align="center">if <dictval>LandauTellerVT</dictval> is chosen, whether to use Park's correction or not</td>
   </tr>
   <tr>  
     <td align="center"><dictkey>fullCoeffsForm</dictkey></td>
@@ -152,7 +152,7 @@ thermalRelaxationModels
 }
 ```
 
-The V—V energy transfer process described in Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V—T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the <dictkey>collidingPair</dictkey> key.  
+The V—V energy transfer process described in Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V—T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the <dictkey>collidingPair</dictkey> key.
 V—V energy exchange can be disabled by setting the <dictkey>relaxationType</dictkey> to <dictval>noVVEnergyTransfer</dictval>.  
 
 In this variant of _hy2Foam_, species are split into different vibro-electronic energy pools.
