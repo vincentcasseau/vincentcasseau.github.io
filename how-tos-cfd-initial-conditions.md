@@ -105,18 +105,19 @@ Naming convention for mass-fraction in OpenFOAM avoids the prefix _Y\__, which m
 &nbsp;
 
 ### 2.2 Super-catalytic wall
-For a super-catalytic wall, the mixture composition at the wall is that of the free-stream and the current implementation is as follows:  
+For a super-catalytic wall, the mixture composition at the wall is that of the free-stream and the current implementation is as follows
+  
 ```c++
     inlet
     {
         type            fixedValue;
-        value           uniform $Y_#nameSpecies;
+        value           uniform $Y_#speciesName;
     }
 
     wall
     {
         type            fixedValue;
-        value           uniform $Y_#nameSpecies;
+        value           uniform $Y_#speciesName;
     }
 ```
 
@@ -147,9 +148,12 @@ The Smoluchowski temperature jump boundary condition for the trans-rotational co
 ### 3.2 Vibro-electronic temperature
 
 #### 3.2.1 Single vibro-electronic energy pool formulation  
-+ Please refer to [D. §2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool) if you are not familiar with this code feature   
-+ The mixture vibro-electronic temperature field is called _**Tv**_ and must be present in the <dirname>0/</dirname> folder
-+ The Smoluchowski temperature jump boundary condition for the mixture vibro-electronic counterpart writes as follows
+Please refer to [D. §2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool) if you are not familiar with this code feature.  
+   
+The mixture vibro-electronic temperature field is called _**Tv**_ and must be present in the <dirname>0/</dirname> folder.  
+
+The Smoluchowski temperature jump boundary condition for the mixture vibro-electronic counterpart writes as follows  
+
 ```c++
     wall
     {
@@ -160,11 +164,15 @@ The Smoluchowski temperature jump boundary condition for the trans-rotational co
     }
 ```
 
+&nbsp;
 
 #### 3.2.2 Multiple vibro-electronic energy pools formulation  
-+ Please refer to [D. §2.2](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#22-two-temperature-solver-multiple-vibro-electronic-energy-pools) if you are not familiar with this code feature  
-+ The species vibro-electronic temperature fields are called _**Tv\_#nameSpecies**_. There are as many _**Tv\_#nameSpecies**_ fields to define in the <dirname>0/</dirname> folder as there are species in the _**species()**_ list.  
-+ The Smoluchowski temperature jump boundary condition for the species (molecule) vibro-electronic temperature writes as follows
+Please refer to [D. §2.2](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#22-two-temperature-solver-multiple-vibro-electronic-energy-pools) if you are not familiar with this code feature.
+  
+The species vibro-electronic temperature fields are called _**Tv\_#speciesName**_. There are as many _**Tv\_#speciesName**_ fields to define in the <dirname>0/</dirname> folder as there are species in the _**species()**_ list.  
+
+The Smoluchowski temperature jump boundary condition for the species (molecule) vibro-electronic temperature writes as follows
+
 ```c++
     wall
     {
@@ -175,15 +183,12 @@ The Smoluchowski temperature jump boundary condition for the trans-rotational co
     }
 ```
 
-
-<div class="paragraph"><p><br>
-<br></p></div>
+<br>
 
 ---  
-
 ## 4) Velocity field
 
-+ The Maxwell velocity slip boundary condition has been slightly re-written (the [mean free path](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#3-mean-free-path-and-breakdown-parameter) now depends upon the model retained in _transportProperties_ dictionary) and is defined as 
+The Maxwell velocity slip boundary condition has been slightly re-written (the [mean free path](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#3-mean-free-path-and-breakdown-parameter) now depends upon the model retained in <dict>transportProperties</dict> dictionary) and is defined as 
 
 ```c++
     wall
@@ -199,7 +204,7 @@ The Smoluchowski temperature jump boundary condition for the trans-rotational co
     }
 ```
 
-+ The velocity at the inlet patch can increase linearly with time from an _**offset**_ value up to a velocity whose components are given by the entry _**refValue**_, components that can then be multiplied by the _**amplitude**_.
+The velocity at the inlet patch can increase linearly with time from an _**offset**_ value up to a velocity whose components are given by the entry _**refValue**_, components that can then be multiplied by the _**amplitude**_.
 For example, for a linear 1e-4 sec long increase in velocity from 50 m/s up to 1000 m/s with no angle of attack nor slip angle (_**U**_ is thus aligned with the x-axis: (1 0 0)), then the new _**rampInlet**_ boundary condition is
 
 ```c++
@@ -213,7 +218,8 @@ For example, for a linear 1e-4 sec long increase in velocity from 50 m/s up to 1
     }
 ```
 
-To use the _**rampInlet**_ boundary condition, a line should be added into the _system/controlDict_ dictionary  
+To use the _**rampInlet**_ boundary condition, a line should be added into the <dirname>system/<dirname><dict>controlDict</dict> dictionary 
+ 
 ```c++
 libs ("libstrathFiniteVolume.so");
 ```
