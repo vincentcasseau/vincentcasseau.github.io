@@ -14,7 +14,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 
 ### 1.1 Wall heat flux  
 
-Pre-requirement: the patch type in <dirname>constant/polyMesh/</dirname><dict>boundary</dict> has to be _**wall**_.  
+Pre-requirement: the patch type in <dirname>constant/polyMesh/</dirname><dict>boundary</dict> has to be <dictval>wall</dictval>.  
 
 Open the <dict>transportProperties</dict> dictionary and make sure the switch is active  
 
@@ -29,9 +29,13 @@ Wall heat fluxes [W]
 Patch 4 named lowerWall: 416.2644537
 ```
 
-Thus, the integrated wall heat flux can easily be monitored (and later plotted) during the simulation using the _grep_ command. In the present case: _grep lowerWall log.hy2Foam_
+Thus, the integrated wall heat flux can easily be monitored (and later plotted) during the simulation using the _grep_ command. In the present case
 
-Alternatively, use the dedicated monitoring script given in the <dirname>gnuplot/<dirname> folder, called _monitorIntegratedWallHeatFlux_ replacing _#patchName_ by the name of the wall patch.  
+```sh
+grep lowerWall log.hy2Foam
+```
+
+Alternatively, use the dedicated monitoring script given in the <dirname>gnuplot/</dirname> folder, called _monitorIntegratedWallHeatFlux_ replacing _#patchName_ by the name of the wall patch.  
 
 ```c++
 set output "gnuplot/integratedWallHeatFlux.eps"
