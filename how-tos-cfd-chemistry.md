@@ -12,7 +12,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ---
 ## 1) Multi-species flow
 
-### 1.1 The <dirname>chemDicts/</dirname> folder
+### 1.1 The chemDicts/ folder
 Within the <dirname>constant/</dirname> directory, the <dirname>chemDicts/</dirname> folder regroups default chemistry dictionaries. It is preferable not to modify the original files. Thus, a copy of the most appropriate <dict>hTCReactions#name</dict> dictionary can be made into the <dirname>constant/</dirname> folder.  
 
 The path to the <dict>hTCReactions#name</dict> dictionary needs to be edited accordingly in <dict>thermophysicalProperties</dict>. This done with the entry <dictkey>foamChemistryFile</dictkey> that can be defined as  
@@ -31,12 +31,13 @@ Available <dict>hTCReactions#name</dict> dictionaries are
 | <dict>hTCReactionsDK</dict>      |  Dunn & Kang, 1973          |
 | <dict>hTCReactionsES</dict>      |  Evans & Schexnayder, 1980          |
 | <dict>hTCReactionsJ92</dict>      |  Jachimowski, 1992           |
-| <dict>hTCReactionsJ92\_fwd</dict>      |  Jachimowski, forward reactions only, 1992           |
+| <dict>hTCReactionsJ92_fwd</dict>      |  Jachimowski, forward reactions only, 1992           |
 | <dict>hTCReactionsQK<dict>      |  Quantum-kinetics, Scanlon _et al._, 2015      |
 
+&nbsp;  
 
 ### 1.2 Adding/deleting species   
-In the <dict>hTCReactions#name</dict> dictionary, the species composing the gas mixture need to be uncommented in the <dictkey>species()<dictkey> list entry. For a 5-species air mixture:  
+In the <dict>hTCReactions#name</dict> dictionary, the species composing the gas mixture need to be uncommented in the <dictkey>species()</dictkey> list entry. For a 5-species air mixture  
  
 ```c++
     species
@@ -62,11 +63,11 @@ As illustrated in the example, a specific order should be respected
 4. charged atoms  
 5. electrons  
 
-+ In the <dict>thermoDEM</dict> dictionary, uncomment all species listed in the <dict>hTCReactions#name</dict> dictionary (**and comment out those which are not present**)
-+ All species listed in the <dict>hTCReactions#name</dict> dictionary should also be present in the <dirname>0/</dirname> directory. This is discussed in [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/).
+In the <dict>thermoDEM</dict> dictionary, uncomment all species listed in the <dict>hTCReactions#name</dict> dictionary (**and comment out those which are not present**)  
+All species listed in the <dict>hTCReactions#name</dict> dictionary should also be present in the <dirname>0/</dirname> directory. This is discussed in [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/).
 
 ### 1.3 Printing species quantities  
-+ In the <dict>hTCProperties</dict> dictionary, switch on/off any of these booleans to print the desired fields 
+In the <dict>hTCProperties</dict> dictionary, switch <dictval>on</dictval>/<dictval>off</dictval> any of these booleans to print the desired fields 
  
 ```c++
 mixtureOutputs
@@ -87,7 +88,7 @@ mixtureOutputs
 ## 2) Non-reacting flow
 
 ### 2.1 Disable chemistry  
-In the <dict>hTCProperties</dict> dictionary, switch off the <dictkey>active</dictkey> boolean as follows   
+In the <dict>hTCProperties</dict> dictionary, switch <dictval>off</dictval> the <dictkey>active</dictkey> boolean as follows   
  
 ```c++
      active          off;
@@ -99,13 +100,13 @@ In the <dict>hTCProperties</dict> dictionary, switch off the <dictkey>active</di
 ## 3) Chemically-reacting flow  
 
 ### 3.1 Enable chemistry
-+ In the <dict>hTCProperties</dict> dictionary, switch on the <dictkey>active</dictkey> boolean as follows 
+In the <dict>hTCProperties</dict> dictionary, switch on the <dictkey>active</dictkey> boolean as follows 
    
 ```c++
      active          on;
 ```  
 
-+ In the <dict>chemistryProperties</dict> dictionary, the same operation should be repeated with the <dictkey>chemistry</dictkey> boolean  
+In the <dict>chemistryProperties</dict> dictionary, the same operation should be repeated with the <dictkey>chemistry</dictkey> boolean  
 
 ```c++
      chemistry          on;
