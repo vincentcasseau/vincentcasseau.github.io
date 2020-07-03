@@ -168,7 +168,7 @@ The Smoluchowski temperature jump boundary condition for the mixture vibro-elect
 #### 3.2.2 Multiple vibro-electronic energy pools formulation  
 Please refer to [D. §2.2](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#22-two-temperature-solver-multiple-vibro-electronic-energy-pools) if you are not familiar with this code feature.
   
-The species vibro-electronic temperature fields are called _**Tv\_#speciesName**_. There are as many _**Tv\_#speciesName**_ fields to define in the <dirname>0/</dirname> folder as there are species in the <dictkey>species()<dictkey> list.  
+The species vibro-electronic temperature fields are called _**Tv\_#speciesName**_. There are as many _**Tv\_#speciesName**_ fields to define in the <dirname>0/</dirname> folder as there are species in the <dictkey>species()</dictkey> list.  
 
 The Smoluchowski temperature jump boundary condition for the species (molecule) vibro-electronic temperature writes as follows
 
