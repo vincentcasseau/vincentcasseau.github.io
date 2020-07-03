@@ -3,7 +3,7 @@ layout: page
 title: Compatibility
 --- 
 
-The OpenFOAM versions listed below are the only ones that are supported by this platform.  
+The OpenFOAM versions listed below are the <u>only ones<u> that are supported by this platform.  
 
 ### Master branch  
 + OF-v1706: [https://www.openfoam.com/releases/openfoam-v1706](https://www.openfoam.com/releases/openfoam-v1706)  
