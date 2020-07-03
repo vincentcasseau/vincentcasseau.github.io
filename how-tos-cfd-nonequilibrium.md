@@ -194,7 +194,7 @@ These two quantities are calculated according to the entries specified in the <d
 
 There are three <dictkey>mfpModel</dictkey> models available for the computation of the mean free path (mfp): <dictval>maxwellian</dictval>, <dictval>hardSphere</dictval>, and <dictval>variableHardSphere</dictval>.   
 
-You might want to compute the mfp at patches only to speed-up the calculations: indeed, knowledge of the mfp at patches is enough to use the [Smoluchowski temperature jump boundary condition](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#31-trans-rotational-temperature). To this aim, two switches (<dictkey>computeFieldAndBoundaries</dictkey> and <dictkey>computeMfpBoundaries</dictkey>) are used and the correct combination is shown below
+You may want to compute the mfp at boundary patches only to speed-up the calculations: indeed, knowledge of the mfp at boundary patches is enough to use the [Smoluchowski temperature jump boundary condition](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#31-trans-rotational-temperature). To this aim, two switches (<dictkey>computeFieldAndBoundaries</dictkey> and <dictkey>computeMfpBoundaries</dictkey>) are implemented and the correct combination is shown below
 
 ```c++
 rarefiedParameters
@@ -210,7 +210,7 @@ rarefiedParameters
 
 > Always switch <dictkey>computeMfpBoundaries</dictkey> on when using the Smoluchowski temperature jump and the Maxwell velocity slip BCs.
 
-To compute the mfp and other quantities in the entire domain, <dictkey>computeFieldAndBoundaries</dictkey> must be switched <dictval>on</dictval>.
+To compute the mfp in the entire domain, <dictkey>computeFieldAndBoundaries</dictkey> must be switched <dictval>on</dictval>.
 The species and mixture mfp can be printed using the <dictkey>writeMfpSpecies</dictkey> and <dictkey>writeMfpMixture</dictkey> switches.  
 
 ### 3.2 Knudsen number 
