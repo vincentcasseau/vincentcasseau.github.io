@@ -9,8 +9,6 @@ These how-tos are based on the working folder located [here](https://github.com/
 
 # Transport modelling
 
-<br>
-
 ---
 ## 1) Individual shear viscosity and thermal conductivity
 
