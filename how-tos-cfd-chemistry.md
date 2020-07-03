@@ -63,7 +63,7 @@ As illustrated in the example, a specific order should be respected
 4. charged atoms  
 5. electrons  
 
-In the <dict>thermoDEM</dict> dictionary, uncomment all species listed in the <dict>hTCReactions#name</dict> dictionary (**and comment out those which are not present**)  
+In the <dict>thermoDEM</dict> dictionary, uncomment all species listed in the <dict>hTCReactions#name</dict> dictionary (**and comment out those which are not present**).  
 All species listed in the <dict>hTCReactions#name</dict> dictionary should also be present in the <dirname>0/</dirname> directory. This is discussed in [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/).
 
 ### 1.3 Printing species quantities  
@@ -116,7 +116,7 @@ In the <dict>chemistryProperties</dict> dictionary, the same operation should be
 
 ### 3.2 Implementing a chemical reaction  
 #### 3.2.1 Forward reaction  
-+ Within the <dict>hTCReactions#name</dict> dictionary, the <subdict>reactions</subdict> subdictionary is enumerating the different chemical reactions to consider. The modified Arrhenius law coefficients are given in the table below
+Within the <dict>hTCReactions#name</dict> dictionary, the <subdict>reactions</subdict> subdictionary is enumerating the different chemical reactions to consider. The modified Arrhenius law coefficients are given in the table below
 
 | Coefficient    | Meaning | Units |
 |:-------------:|:-------------|:------:|
@@ -124,7 +124,7 @@ In the <dict>chemistryProperties</dict> dictionary, the same operation should be
 | <dictkey>beta</dictkey>      |  temperature exponent          |   -     |
 | <dictkey>Ta</dictkey>      |  temperature of activation           |   K    |
 
-<strong>Please pay attention to the units of the pre-exponential factor, <dictkey>A</dictkey>, whn customising your own <dict>hTCReactions#name</dict> dictionary.</strong>  
+> <strong>Please pay attention to the units of the pre-exponential factor, <dictkey>A</dictkey>, whn customising your own <dict>hTCReactions#name</dict> dictionary.</strong>  
 
 The reaction <dictkey>type</dictkey> is defined as <dictval>irreversibleArrheniusReaction</dictval>.
 
@@ -143,15 +143,17 @@ reactions
 }
 ```
 
+&nbsp;
+
 #### 3.2.2 Reverse reaction   
-+ Extra coefficients entering into the calculation of the reverse reaction rate constant [Park, 1990], _k\_rev_, are given below  
+Extra coefficients entering into the calculation of the reverse reaction rate constant [Park, 1990], _k\_rev_, are given below  
 
 | Extra coefficient    | Meaning | Units |
 |:-------------:|:-------------|:------:|
 | <dictkey>ni()</dictkey>      |  mixture number density list | m^-3 |
 | <dictkey>A0()</dictkey> - <dictkey>A4()</dictkey>      | Park's coefficients for _k\_rev_  |   -    |
  
-+ In the <dict>hTCReactions#name/</dict><subdict>reactions</subdict> dictionary, the reaction <dictkey>type</dictkey>  can either be <dictkey>reversibleArrheniusReaction</dictkey> or <dictkey>nonEquilibriumReversibleArrheniusReaction</dictkey>. Their implementation is exemplified hereafter    
+In the <dict>hTCReactions#name/</dict><subdict>reactions</subdict> dictionary, the reaction <dictkey>type</dictkey>  can either be <dictkey>reversibleArrheniusReaction</dictkey> or <dictkey>nonEquilibriumReversibleArrheniusReaction</dictkey>. Their implementation is exemplified hereafter    
 
 ```c++
 reactions
@@ -193,6 +195,8 @@ reactions
     }
 }
 ```
+
+&nbsp;
 
 #### 3.2.3 Third-body interaction  
 In the <dict>hTCReactions#name/</dict><subdict>reactions</subdict> dictionary, the <dictkey>type</dictkey> of the reaction is modified to either <dictval>irreversiblethirdBodyArrheniusReaction</dictval>, <dictval>reversiblethirdBodyArrheniusReaction</dictval>, or <dictval>nonEquilibriumReversiblethirdBodyArrheniusReaction</dictval>. An example is given below and many more can be found in the <dirname>chemDicts/</dirname> folder.  
