@@ -12,8 +12,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ---  
 ## 1) The include/ sub-folder
 
-To avoid repetitive editing in the <dirname>0/</dirname> folder, in particular if there are many species in the gas mixture, a call to a dictionary within the <dirname>include/</dirname> sub-folder can be made.
-<dictval>empty</dictval>, <dictval>cyclic</dictval>, <dictval>wedge</dictval>, <dictval>zeroGradient</dictval>, and <dictval>symmetry</dictval> patches can be regrouped into <dirname>include/</dirname><dict>boundaries</dict>. For example, any field in the <dirname>0/</dirname> folder requires a <dictval>zeroGradient</dictval> outlet (typical supersonic/hypersonic outlet BC). Below, the outlet patch is omitted and replaced by a call to <dict>boundaries</dict>.
+To avoid repetitive editing in the <dirname>0/</dirname> folder, in particular if there are many species in the gas mixture, a call to a dictionary within the <dirname>include/</dirname> sub-folder can be made. <dictval>empty</dictval>, <dictval>cyclic</dictval>, <dictval>wedge</dictval>, <dictval>zeroGradient</dictval>, and <dictval>symmetry</dictval> patches can be regrouped into <dirname>include/</dirname><dict>boundaries</dict>. For example, any field in the <dirname>0/</dirname> folder requires a <dictval>zeroGradient</dictval> outlet (typical supersonic/hypersonic outlet BC). Below, the outlet patch is omitted and replaced by a call to <dict>boundaries</dict>.
 
 ```c++
 boundaryField
@@ -169,7 +168,7 @@ The Smoluchowski temperature jump boundary condition for the mixture vibro-elect
 #### 3.2.2 Multiple vibro-electronic energy pools formulation  
 Please refer to [D. §2.2](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#22-two-temperature-solver-multiple-vibro-electronic-energy-pools) if you are not familiar with this code feature.
   
-The species vibro-electronic temperature fields are called _**Tv\_#speciesName**_. There are as many _**Tv\_#speciesName**_ fields to define in the <dirname>0/</dirname> folder as there are species in the _**species()**_ list.  
+The species vibro-electronic temperature fields are called _**Tv\_#speciesName**_. There are as many _**Tv\_#speciesName**_ fields to define in the <dirname>0/</dirname> folder as there are species in the <dictkey>species()<dictkey> list.  
 
 The Smoluchowski temperature jump boundary condition for the species (molecule) vibro-electronic temperature writes as follows
 
@@ -204,8 +203,8 @@ The Maxwell velocity slip boundary condition has been slightly re-written (the [
     }
 ```
 
-The velocity at the inlet patch can increase linearly with time from an _**offset**_ value up to a velocity whose components are given by the entry _**refValue**_, components that can then be multiplied by the _**amplitude**_.
-For example, for a linear 1e-4 sec long increase in velocity from 50 m/s up to 1000 m/s with no angle of attack nor slip angle (_**U**_ is thus aligned with the x-axis: (1 0 0)), then the new _**rampInlet**_ boundary condition is
+The velocity at the inlet patch can increase linearly with time from an <dictkey>offset</dictkey> value up to a velocity whose components are given by the entry <dictkey>refValue</dictkey>, components that can then be multiplied by the <dictkey>amplitude</dictkey>.
+For example, for a linear 1e-4 sec long increase in velocity from 50 m/s up to 1000 m/s with no angle of attack nor slip angle (_**U**_ is thus aligned with the x-axis: (1 0 0)), then the new <dictkey>rampInlet</dictkey> boundary condition is
 
 ```c++
     inlet
@@ -218,7 +217,7 @@ For example, for a linear 1e-4 sec long increase in velocity from 50 m/s up to 1
     }
 ```
 
-To use the _**rampInlet**_ boundary condition, a line should be added into the <dirname>system/<dirname><dict>controlDict</dict> dictionary 
+To use the <dictkey>rampInlet</dictkey> boundary condition, a line should be added into the <dirname>system/<dirname><dict>controlDict</dict> dictionary 
  
 ```c++
 libs ("libstrathFiniteVolume.so");
