@@ -33,7 +33,7 @@ hy2Foam > log.hyFoam 2>&1 &
 ## 2) Thermal non-equilibrium
 
 ### 2.1 Two-temperature solver, single vibro-electronic energy pool  
-The <dict>thermophysicalProperties<dict> dictionary setup in this variant of _hy2Foam_ is  
+The <dict>thermophysicalProperties</dict> dictionary setup in this variant of _hy2Foam_ is  
 
 ```c++
     downgradeToSingleTv          yes;
