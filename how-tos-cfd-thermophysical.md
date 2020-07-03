@@ -61,7 +61,7 @@ N2
 In the <subdict>specie</subdict> subdictionary, the molecular weight, <dictkey>molWeight</dictkey>, is given in g/mol.  
 The subsequent entry named <dictkey>particleType</dictkey> defines the particle type (<dictval>0</dictval>: electron, <dictval>1</dictval>: neutral atom, <dictval>2</dictval>: molecule, <dictval>3</dictval>: charged molecule).  
 Then, the keyword <dictkey>charge</dictkey> indicates the charge of the particle (<dictval>-1</dictval>: electron, <dictval>0</dictval>: neutral atom and molecule, <dictval>+1</dictval>: charged atom and molecule).  
-Next comes the diameter of the particle, <dictkey>diameter</dictkey>, in meters.  
+Next comes the diameter of the particle, <dictkey>diameter</dictkey>, in meters.
 <dictkey>omega</dictkey> is the temperature exponent of viscosity as described in [B. Transport](https://vincentcasseau.github.io/how-tos-cfd-transport/#13-other-transport-models). <dictkey>eta_s</dictkey> is a factor that enters in the calculation of the [vibrational thermal conductivity](https://github.com/vincentcasseau/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1) (this entry is optional and equal to <dictval>1.2</dictval> by default).
 The number of vibrational energy modes of the particle is defined using the keyword <dictkey>noVibTemp</dictkey> and finally the number of electronic energy levels is specified by the entry <dictkey>noElecLevels</dictkey>.
   
