@@ -87,7 +87,7 @@ The Landau-Teller equation is used for V—T energy exchange and the V—T relax
   </tr>
   <tr>
     <td align="center"><dictkey>model</dictkey></td>
-    <td align="center"><dictval>MillikanWhite</dictval> <br /> <dictval>MillikanWhitePark</dictval> (recommended)</td>
+    <td align="center"><dictval>MillikanWhitePark</dictval> (recommended)</td> <br /> <dictval>MillikanWhite</dictval>  
     <td align="center">description</td>
   </tr>
   <tr>  
@@ -116,7 +116,7 @@ The h—e energy transfer of Appleton & Bray (1963) does not require any input. 
 
 
 ### 2.2 Two-temperature solver, multiple vibro-electronic energy pools
-In the current version of the code, this configuration has several limitations that are as follows    
+In the current version of the code, this configuration has several limitations that are as follows
    + the gas mixture must be composed of neutral particles only  
    + the electronic mode of all particles must be turned off (see [A. §1.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle))
    + the molecules must be planar  
@@ -152,10 +152,10 @@ thermalRelaxationModels
 }
 ```
 
-+ The V—V energy transfer process from Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V-T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the <dictkey>collidingPair</dictkey> switch.  
-V—V energy exchange can be disabled using a <dictkey>relaxationType</dictkey> set to <dictval>noVVEnergyTransfer</dictval>. 
+The V—V energy transfer process described in Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V—T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the <dictkey>collidingPair</dictkey> key.  
+V—V energy exchange can be disabled by setting the <dictkey>relaxationType</dictkey> to <dictval>noVVEnergyTransfer</dictval>.  
 
-+ In this version of _hy2Foam_, species need to be split into different vibro-electronic energy pools.
+In this variant of _hy2Foam_, species are split into different vibro-electronic energy pools.
 This is achieved in the <dict>hTCReactions#name</dict> dictionary with the <dictkey>vibTempAssociativity()</dictkey> list. The list order is similar to the <dictkey>species()</dictkey> list and the integer value <dictval>0</dictval> is reserved to neutral molecules. For a 5-species air:  
 
 ```c++
@@ -176,14 +176,14 @@ This is achieved in the <dict>hTCReactions#name</dict> dictionary with the <dict
 
     vibTempAssociativity (0 0 0 1 2);
 ```
-A value of <dictval>1</dictval> in forth position means that the forth species in the _species()_ list, _**N**_, is grouped into the same vibro-electronic energy pool as the _**1**_ st molecule appearing in the list, here <dictval>N2</dictval>. 
+A value of <dictval>1</dictval> in 4th position means that the 4th species in the <dictkey>species()</dictkey> list, <dictval>N</dictval>, is grouped into the same vibro-electronic energy pool as the <dictval>1</dictval>st molecule appearing in the list, here <dictval>N2</dictval>. 
 
 <br>
 
 ---  
 ## 3) Mean free path and breakdown parameter
 
-These quantities are calculated according to the entries specified in the <subdict>transportProperties/rarefiedParameters</subdict> dictionary.
+These quantities are calculated according to the entries specified in the <dict>transportProperties/</dict><subdict>rarefiedParameters</subdict> dictionary.
 
 ### 3.1 Mean free path  
 
@@ -203,17 +203,16 @@ rarefiedParameters
 }
 ```
 
-> Always switch <dictkey>computeMfpBoundaries</dictkey> on when the Smoluchowski temperature jump and the Maxwell velocity slip BCs are used.
+> Always switch <dictkey>computeMfpBoundaries</dictkey> on when using the Smoluchowski temperature jump and the Maxwell velocity slip BCs.
 
-To compute the mfp and other quantities in the whole domain, <dictkey>computeFieldAndBoundaries</dictkey> must be switched <dictval>on</dictval>.  
-
+To compute the mfp and other quantities in the entire domain, <dictkey>computeFieldAndBoundaries</dictkey> must be switched <dictval>on</dictval>.
 The species and mixture mfp can be printed using the <dictkey>writeMfpSpecies</dictkey> and <dictkey>writeMfpMixture</dictkey> switches.  
 
 ### 3.2 Knudsen number 
 
 #### 3.2.1 Overall Knudsen number
 
-The overall Knudsen number, defined as the ratio of the local mean free path to the problem characteristic length (<dictkey>characteristicLength</dictkey>, in meters) can be computed and printed using the following settings
+The overall Knudsen number, defined as the ratio of the local mean free path to the characteristic length of the problem (<dictkey>characteristicLength</dictkey>, in meters) can be computed and printed using the following settings
 
 ```c++
 rarefiedParameters
@@ -224,6 +223,8 @@ rarefiedParameters
     writeKn_overall                on;
 }
 ```
+
+&nbsp;  
 
 #### 3.2.2 Breakdown parameter: gradient-length Knudsen number 
 
