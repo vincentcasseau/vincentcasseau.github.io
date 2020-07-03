@@ -56,6 +56,6 @@ git push origin master
 |:-------------:|:-------------:|:-------------:|:-------------:|
 | [R.Tech Engineering](http://rtech-engineering.com/) | OF-v1706 | [Update to OpenFOAM v1706](https://vincentcasseau.github.io/maintenance/), v1706 branch created | 12 May 2018 |
 | [the Micro & Nano Flows Group](http://www.micronanoflows.ac.uk/) |  | [Original dsmcFoam solver and lagrangian library](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig), OF-2.4.0 | March 2017 |
-| Anton Kidess |  | [**_blockMeshDG_**](https://openfoamwiki.net/index.php/Contrib_blockMeshDG), **Master** | March 2017 |
-| Bernhard Gschaider |  | [**_makeAxialMesh_**](http://openfoamwiki.net/index.php/Contrib/MakeAxialMesh), **Master** | March 2017 |
+| Anton Kidess | **Master** | [**_blockMeshDG_**](https://openfoamwiki.net/index.php/Contrib_blockMeshDG) | March 2017 |
+| Bernhard Gschaider | **Master** | [**_makeAxialMesh_**](http://openfoamwiki.net/index.php/Contrib/MakeAxialMesh) | March 2017 |
 
