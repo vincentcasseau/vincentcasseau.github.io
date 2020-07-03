@@ -30,7 +30,7 @@ The names of all valid entries for the <dictkey>transport</dictkey> keyword in t
 | <dictval>constant</dictval>      | <dictkey>mu</dictkey> |
 | <dictval>SutherlandEucken</dictval>      | <dictkey>As</dictkey>, <dictkey>Ts</dictkey>     |
 | <dictval>BlottnerEucken</dictval> | <dictkey>A</dictkey>, <dictkey>B</dictkey>, <dictkey>C</dictkey>     |
-| <dictval>CEA</dictval>      | <dictkey>temp()</dictkey>, <dictkey>visco()<dictkey>, <dictkey>kappa()</dictkey>      |
+| <dictval>CEA</dictval>      | <dictkey>temp()</dictkey>, <dictkey>visco()</dictkey>, <dictkey>kappa()</dictkey>      |
 | <dictval>powerLawEucken</dictval> | <dictkey>diameter</dictkey>, <dictkey>omega</dictkey>     |
 
 The coefficients of these models are to be found in the <dict>thermoDEM/</dict><subdict>#speciesName</subdict> dictionary. The first four models are employing coefficients located into the <subdict>transport</subdict> subdictionary, while the _powerLawEucken_ model is using the species diameter, _diameter_, and species temperature exponent of viscosity, _omega_, located in the <subdict>specie</subdict> subdictionary.
@@ -54,7 +54,7 @@ The available mixing rules are
 |:-------------:|:-------------:|
 | <dictval>molar</dictval>      | - |
 | <dictval>Wilke</dictval>      | - |
-| <dictval>ArmalySutton</dictval> | _correctedArmalySutton_    |
+| <dictval>ArmalySutton</dictval> | <dictkey>correctedArmalySutton</dictkey>    |
 
 and can be chosen editing the entry <dictkey>mixingRule</dictkey> in the <dict>transportProperties/</dict><subdict>transportModels</subdict> dictionary. The mixture shear viscosity and thermal conductivity can be printed by reproducing the procedure described in [§1.4](https://vincentcasseau.github.io/how-tos-cfd-transport/#14-print-species-shear-viscosity-and-thermal-conductivity)
   
