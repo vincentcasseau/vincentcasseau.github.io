@@ -132,7 +132,7 @@ If the above conditions are fulfilled, then the <dict>thermophysicalProperties</
     downgradeToSingleTemperature no;
 ```
 
-On top of the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), the <subdict>thermalRelaxationModels</subdict> subdictionary is augmented with vibrational-vibrational (V—V) and electron-vibrational (e—V) energy transfers.
+In addition to the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), the <subdict>thermalRelaxationModels</subdict> subdictionary is augmented with vibrational-vibrational (V—V) and electron-vibrational (e—V) energy transfers and the <subdict>thermalRelaxationModels</subdict>
 
 ```c++
 thermalRelaxationModels
@@ -156,11 +156,10 @@ thermalRelaxationModels
 }
 ```
 
-The V—V energy transfer process described in Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V—T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the <dictkey>collidingPair</dictkey> key.
-V—V energy exchange can be disabled by setting the <dictkey>relaxationType</dictkey> to <dictval>noVVEnergyTransfer</dictval>.  
+V—V energy transfer presented in Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V—T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the <dictkey>collidingPair</dictkey> key. V—V energy exchange can also be disabled by setting the <dictkey>relaxationType</dictkey> to <dictval>noVVEnergyTransfer</dictval>.  
 
-In this variant of _hy2Foam_, species are split into different vibro-electronic energy pools.
-This is achieved in the <dict>hTCReactions#name</dict> dictionary with the <dictkey>vibTempAssociativity()</dictkey> list. The list order is similar to the <dictkey>species()</dictkey> list and the integer value <dictval>0</dictval> is reserved to neutral molecules. For a 5-species air:  
+In this variant of _hy2Foam_, species are grouped into several vibro-electronic energy pools.
+This is done in the <dict>hTCReactions#name</dict> dictionary by using the <dictkey>vibTempAssociativity()</dictkey> list. The elements' order in <dictkey>vibTempAssociativity()</dictkey> is similar to the <dictkey>species()</dictkey> list and the integer value <dictval>0</dictval> is reserved to neutral molecules. For a 5-species air:  
 
 ```c++
     species
@@ -187,7 +186,7 @@ A value of <dictval>1</dictval> in 4th position means that the 4th species in th
 ---  
 ## 3) Mean free path and breakdown parameter
 
-These quantities are calculated according to the entries specified in the <dict>transportProperties/</dict><subdict>rarefiedParameters</subdict> dictionary.
+These two quantities are calculated according to the entries specified in the <dict>transportProperties/</dict><subdict>rarefiedParameters</subdict> dictionary.
 
 ### 3.1 Mean free path  
 
