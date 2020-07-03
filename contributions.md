@@ -52,7 +52,7 @@ git push origin master
 ## List of external contributions
 
 | Contributor | _hyStrath_ branch | Contribution | Date |  
-|:-------------:|:-------------:|:-------------:|:-------------:|
+|-------------|:-------------:|:-------------:|:-------------:|
 | [R.Tech Engineering](http://rtech-engineering.com/) | OF-v1706 | [Update to OpenFOAM v1706](https://vincentcasseau.github.io/maintenance/), v1706 branch created | 12 May 2018 |
 | [the Micro & Nano Flows Group](http://www.micronanoflows.ac.uk/) |  | [Original dsmcFoam solver and lagrangian library](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig), OF-2.4.0 | March 2017 |
 | Anton Kidess | **Master** | [**_blockMeshDG_**](https://openfoamwiki.net/index.php/Contrib_blockMeshDG) | March 2017 |
