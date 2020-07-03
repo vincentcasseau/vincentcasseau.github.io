@@ -91,12 +91,12 @@ The Landau-Teller equation is used for V—T energy exchange and the V—T relax
     <td align="center">description</td>
   </tr>
   <tr>  
-    <td align="center">`fullCoeffsForm`</td>
+    <td align="center"><dictkey>fullCoeffsForm</dictkey></td>
     <td align="center"><i>on</i> (recommended), <i>off</i></td>
     <td align="center">description</td>
   </tr>
   <tr>
-    <td align="center">`overwriteDefault`</td>
+    <td align="center"><dictkey>overwriteDefault</dictkey></td>
     <td align="center"><i>on</i> (recommended), <i>off</i></td>
     <td align="center">description</td>
   </tr>
