@@ -22,8 +22,6 @@ nav-short: true
   <img src="/docs/img/logos/hy2FoamLogo.png" width="200"/>
 </p>
 
-Implementation of the OpenFOAM CFD solvers <i>hyFoam</i> and <i>hy2Foam</i> was initiated in 2014 at the University of Strathclyde, Glasgow, UK, and was funded by the <a href="https://www.epsrc.ac.uk/">Engineering and Physical Sciences Research Council</a> (EPSRC) until early 2017. 
-
 _hy2Foam_ is an open-source two-temperature computational fluid dynamics (CFD)
 solver that has been developed to tackle the highly complex flow physics of the hypersonic planetary
 atmospheric entry. Implemented within the OpenFOAM framework, the code has the capability to model physical phenomena relative to the high-speed chemically-reacting environment surrounding a spacecraft. The core of the solver initially relied on OpenFOAM solvers _rhoCentralFoam_ and _reactingFoam_ and it has been complemented with many new features, some of which are listed below
@@ -46,6 +44,14 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 * modifications to the Smoluchowski temperature jump and Maxwell velocity slip boundary conditions. Possibility to gradually increase the inlet flow velocity    
 * all dictionaries can be re-read on-the-fly which is handy on a high-performance computer  
 * layer functions for the strongly-coupled hybrid CFD-DSMC code _hyperFoam_  
+
+<div class="row">
+  <div class="column"> 
+    This work was funded by the <a href="https://www.epsrc.ac.uk/">Engineering and Physical Sciences Research Council</a> (EPSRC) from 2014 until early 2017. </div>
+  <div class="column"> 
+     <img src="/docs/img/logos/epsrc-sponsor-highres.jpg" alt="EPSRC logo"> 
+  </div>
+</div> 
 
 This work was funded by the <a href="https://www.epsrc.ac.uk/">Engineering and Physical Sciences Research Council</a> (EPSRC) from 2014 until early 2017.
 
