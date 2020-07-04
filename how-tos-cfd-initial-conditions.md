@@ -12,7 +12,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ---  
 ## 1) The include/ sub-folder
 
-A call to a dictionary in the <dirname>0/include/</dirname> sub-folder can be made to avoid editing multiple files in the <dirname>0/</dirname> directory, in particular if the gas mixture is composed of many species. <dictval>empty</dictval>, <dictval>cyclic</dictval>, <dictval>wedge</dictval>, <dictval>zeroGradient</dictval>, and <dictval>symmetry</dictval> boundary patches can be put into <dirname>include/</dirname><dict>boundaries</dict>. For instance, most fields in the <dirname>0/</dirname> folder require a <dictval>zeroGradient</dictval> outlet boundary condition (BC) and this patch can thus be replaced by a call to <dict>boundaries</dict>.
+A call to a dictionary located in the <dirname>0/include/</dirname> sub-folder can be made to avoid editing multiple files in the <dirname>0/</dirname> directory, in particular if the gas mixture is composed of many species. <dictval>empty</dictval>, <dictval>cyclic</dictval>, <dictval>wedge</dictval>, <dictval>zeroGradient</dictval>, and <dictval>symmetry</dictval> boundary patches can be put into <dirname>include/</dirname><dict>boundaries</dict>. For instance, most fields in the <dirname>0/</dirname> folder require a <dictval>zeroGradient</dictval> outlet boundary condition (BC) and this patch can thus be replaced by a call to <dict>boundaries</dict>, as shown below
 
 ```c++
 boundaryField
@@ -23,7 +23,8 @@ boundaryField
 }
 ```
 
-In <dirname>include/</dirname><dict>boundaries</dict>  
+In <dirname>include/</dirname><dict>boundaries</dict>, the outlet BC would then be written as follows
+  
 ```c++
 outlet
 {
@@ -31,10 +32,9 @@ outlet
 }
 ```
 
-It is good practice to regroup the initial conditions into a single dictionary
-as shown later in [§ 3.1](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#31-trans-rotational-temperature) using a call to the <dirname>include/</dirname><dict>initialConditions</dict> dictionary and the symbol _**$**_.
+Similarly, it can become handy to group the initial conditions into a single file by calling the <dirname>include/</dirname><dict>initialConditions</dict> dictionary and using the symbol _**$**_.
 
-The include statement can be placed at the top of file  
+The *include* statement can be placed at the top of file  
 
 ```c++
 FoamFile
@@ -58,12 +58,11 @@ boundaryField
 }
 ```
 
-In <dirname>include/</dirname><dict>initialConditions</dict>
+After repeating this operation for every field to appear in the <dirname>0/</dirname> folder, the <dirname>include/</dirname><dict>initialConditions</dict> dictionary may be defined as follows
 
 ```c++
 Ttr       300;
 Tve       $Ttr;
-TveAtom   0;
 Twall     810;
 
 pressure  5.18655;
