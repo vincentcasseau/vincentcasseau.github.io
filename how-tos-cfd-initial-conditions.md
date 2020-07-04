@@ -32,9 +32,7 @@ outlet
 }
 ```
 
-Similarly, it can become handy to group the initial conditions into a single file by calling the <dirname>include/</dirname><dict>initialConditions</dict> dictionary and using the symbol _**$**_.
-
-The *include* statement can be placed at the top of file  
+Similarly, it can become handy to group the initial conditions into a single file by calling the <dirname>include/</dirname><dict>initialConditions</dict> dictionary and using the symbol _**$**_. The *include* statement can be placed at the top of file  
 
 ```c++
 FoamFile
@@ -58,7 +56,7 @@ boundaryField
 }
 ```
 
-After repeating this operation for every field to appear in the <dirname>0/</dirname> folder, the <dirname>include/</dirname><dict>initialConditions</dict> dictionary may be defined as follows
+After repeating this operation for every field in the <dirname>0/</dirname> folder, the <dirname>include/</dirname><dict>initialConditions</dict> dictionary may be defined as follows
 
 ```c++
 Ttr       300;
@@ -79,19 +77,17 @@ Y_N       0;
 Y_O       0;
 ```
 
-> This makes running parameterized simulations easier using a bash/python script that will solely edit the <dirname>0/include/</dirname><dict>initialConditions</dict> dictionary entries.
+> A simple bash or python script can edit the entries of this single dictionary and running parameterized simulations becomes much easier.
 
 <br>
 
 ---  
 ## 2) Species mass fractions
   
-Within the <dirname>0/</dirname> folder should be specified all mass fractions of species appearing in the [_**species()**_ list](https://vincentcasseau.github.io/how-tos-cfd-chemistry/#12-addingdeleting-species) located in the <dirname>constant/</dirname><dict>hTCReactions#name</dict> dictionary.  
-  
-Naming convention for mass-fraction in OpenFOAM avoids the prefix _Y\__, which means the mass-fraction of _N2_ is simply called _**N2**_.  
+The mass fractions of all species appearing in the [_**species()**_ list](https://vincentcasseau.github.io/how-tos-cfd-chemistry/#12-addingdeleting-species) must be given in the <dirname>0/</dirname> folder. OpenFOAM's naming convention for mass fractions omits the prefix "_Y\__", which means that the mass fraction of _N2_ is simply called _**N2**_.
 
 ### 2.1 Non-catalytic wall
-+ For a non-catalytic wall, a <dictval>zeroGradient</dictval> BC can be used  
+A non-catalytic wall BC can be set-up using the <dictval>zeroGradient</dictval> wall boundary type  
 
 ```c++
     wall
