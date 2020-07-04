@@ -6,6 +6,7 @@ nav-short: true
 
 <br>
 
+---
 ## CFD module &nbsp;—&nbsp; __*hyFoam*__, __*hy2Foam*__  
 _Lead developer_:   
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank">
@@ -71,6 +72,7 @@ _Acknowledgements_:
 
 <br>
 
+---
 ## CFD-MHD module &nbsp;—&nbsp; __*hy2MhdFoam*__  
 _Lead developer_:   
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/alexey-ryakhovskiy-4a1b9886" target="_blank">
@@ -88,6 +90,7 @@ _Lead developer_:
 
 <br> 
 
+---
 ## Ablation module &nbsp;—&nbsp; __*ARC*__  
 _Lead developer_: 
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/viola-renato-bbbb18102" target="_blank">
@@ -99,7 +102,8 @@ _Lead developer_:
   </a> &nbsp; **Dr Viola Renato**  
 
 <br> 
-   
+
+---   
 ## DSMC module &nbsp;—&nbsp; __*dsmcFoam+*__        
 _Current developers_: 
 * **Dr Vincent Casseau** 
@@ -121,6 +125,7 @@ _Contributors_:
 
 <br>
 
+---
 ## Hybrid modules &nbsp;—&nbsp; __*hyperFoam*__, __*pdFoam*__  
 &nbsp;
 
@@ -152,8 +157,18 @@ _Contributors_:
 * **Dr Thomas J. Scanlon**  
 * **Dr Richard E. Brown**
 
-<br>  
+<br>
 
+---
+## External contributors
+{: #External-contributors}
+
+* [R.Tech Engineering](http://rtech-engineering.com/), Verniolle, France  
+
+<br>
+
+---
+## Other info
 
 _GitHub coordinator_:
 
@@ -174,17 +189,11 @@ _Jekyll theme designer_:
     </span>
     <span class="sr-only">LinkedIn</span>
   </a> &nbsp; **Dean Attali**
- 
----
-# External contributors
-{: #External-contributors}
-
-* [R.Tech Engineering](http://rtech-engineering.com/), Verniolle, France  
 
 <br>
 
 ---
-# Contact
+## Contact
 {: #Contact}
 
 **Enquiries: hystrath@gmail.com**    
