@@ -215,7 +215,7 @@ The Maxwell velocity slip BC has been slightly re-written (the [mean free path](
 ### 4.2 Linear inlet ramp
 The velocity at the inlet patch can be set to increase linearly with time from an <dictkey>offset</dictkey> value up to a velocity whose components are given by the entry <dictkey>refValue</dictkey>, components that are then multiplied by the <dictkey>amplitude</dictkey> scalar.  
 
-For example, a linear 0.1 ms-long increase in velocity from 50 m/s to 1000 m/s with no angle of attack nor slip angle (_**U**_ is thus aligned with the x-axis: (1 0 0)) is obtained by setting up the <dictkey>rampInlet</dictkey> BC as
+For example, a 0.1 ms-long linear increase in velocity from 50 m/s to 1000 m/s with no angle of attack nor slip angle (_**U**_ is thus aligned with the x-axis: (1 0 0)) is obtained by setting up the <dictkey>rampInlet</dictkey> BC as
 
 ```c++
     inlet
@@ -228,7 +228,7 @@ For example, a linear 0.1 ms-long increase in velocity from 50 m/s to 1000 m/s w
     }
 ```
 
-To use the <dictkey>rampInlet</dictkey> BC, one line should be added to the <dirname>system/<dirname><dict>controlDict</dict> dictionary 
+To use the <dictkey>rampInlet</dictkey> BC, one line should be added to the <dirname>system/</dirname><dict>controlDict</dict> dictionary 
  
 ```c++
 libs ("libstrathFiniteVolume.so");
