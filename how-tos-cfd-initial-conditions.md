@@ -12,7 +12,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ---  
 ## 1) The include/ sub-folder
 
-To avoid repetitive editing in the <dirname>0/</dirname> folder, in particular if there are many species in the gas mixture, a call to a dictionary within the <dirname>include/</dirname> sub-folder can be made. <dictval>empty</dictval>, <dictval>cyclic</dictval>, <dictval>wedge</dictval>, <dictval>zeroGradient</dictval>, and <dictval>symmetry</dictval> patches can be regrouped into <dirname>include/</dirname><dict>boundaries</dict>. For example, any field in the <dirname>0/</dirname> folder requires a <dictval>zeroGradient</dictval> outlet (typical supersonic/hypersonic outlet BC). Below, the outlet patch is omitted and replaced by a call to <dict>boundaries</dict>.
+A call to a dictionary in the <dirname>0/include/</dirname> sub-folder can be made to avoid editing multiple files in the <dirname>0/</dirname> directory, in particular if the gas mixture is composed of many species. <dictval>empty</dictval>, <dictval>cyclic</dictval>, <dictval>wedge</dictval>, <dictval>zeroGradient</dictval>, and <dictval>symmetry</dictval> boundary patches can be put into <dirname>include/</dirname><dict>boundaries</dict>. For instance, most fields in the <dirname>0/</dirname> folder require a <dictval>zeroGradient</dictval> outlet boundary condition (BC) and this patch can thus be replaced by a call to <dict>boundaries</dict>.
 
 ```c++
 boundaryField

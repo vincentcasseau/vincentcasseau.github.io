@@ -55,8 +55,9 @@ git push origin master
 |-------------|:-------------:|:-------------:|:-------------:|
 | [R.Tech Engineering](http://rtech-engineering.com/) | OF-v1706 | [Update to OpenFOAM v1706](https://vincentcasseau.github.io/maintenance/), v1706 branch created | 12 May 2018 |
 
-&nbsp; 
- 
+<br>
+
+--- 
 ## List of integrations
 
 | Author | _hyStrath_ branch | Contribution | Date |  
