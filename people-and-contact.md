@@ -4,8 +4,10 @@ title: People
 nav-short: true
 ---
 
-_GitHub coordinator_:
+<br>
 
+## CFD module &nbsp;—&nbsp; __*hyFoam*__, __*hy2Foam*__  
+_Lead developer_:   
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/vincentcasseau" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
@@ -17,13 +19,7 @@ _GitHub coordinator_:
       <i class="fab fa-researchgate fa-stack-2x" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
-  </a> &nbsp; **Dr Vincent Casseau**, Postdoctoral Fellow at [McGill University](https://www.cfdlab.mcgill.ca/), Montreal, Canada
-
-<br>
-
-## CFD module &nbsp;—&nbsp; __*hyFoam*__, __*hy2Foam*__  
-_Lead developer_:   
-* **Dr Vincent Casseau**  
+  </a> &nbsp; **Dr Vincent Casseau**, Postdoctoral Fellow at [McGill University](https://www.cfdlab.mcgill.ca/), Montreal, Canada   
 
 _Contributors_:  
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/daniel-espinoza-52862452" target="_blank">
@@ -157,6 +153,27 @@ _Contributors_:
 * **Dr Richard E. Brown**
 
 <br>  
+
+
+_GitHub coordinator_:
+
+* **Dr Vincent Casseau**  
+
+_Jekyll theme designer_:
+
+* <a style="text-decoration: none" href="https://twitter.com/daattali" target="_blank">
+    <span class="fa-stack" aria-hidden="true">
+      <i class="fas fa-circle fa-stack-2x" style='color:#404040'></i>
+      <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="sr-only">LinkedIn</span>
+  </a> <a style="text-decoration: none" href="https://github.com/daattali" target="_blank">
+    <span class="fa-stack" aria-hidden="true">
+      <i class="fas fa-circle fa-stack-2x" style='color:#404040'></i>
+      <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="sr-only">LinkedIn</span>
+  </a> &nbsp; **Dean Attali**
  
 ---
 # External contributors
