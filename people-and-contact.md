@@ -199,10 +199,10 @@ _Jekyll theme designer_:
 **Enquiries: hystrath@gmail.com**    
 
 This e-mail address may be used if  
-1. you would like to [contribute](https://vincentcasseau.github.io/contributions/)
-2. you would like to use the hyStrath platform for educational purposes
-3. you need support in the form of consulting services   
+  - you would like to [contribute](https://vincentcasseau.github.io/contributions/)
+  - you would like to use the hyStrath platform for educational purposes
+  - you need support in the form of consulting services   
 
 This e-mail address should not be used to
-1. report bugs, the [Issues](https://github.com/vincentcasseau/hyStrath/issues) page is there for this purpose  
-2. seek for free OpenFOAM advice, please visit [CFD-Online](https://www.cfd-online.com/Forums/openfoam/) instead
+  - report bugs, the [Issues](https://github.com/vincentcasseau/hyStrath/issues) page is there for this purpose  
+  - seek for free OpenFOAM advice, please visit [CFD-Online](https://www.cfd-online.com/Forums/openfoam/) instead
