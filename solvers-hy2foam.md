@@ -45,10 +45,8 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 * all dictionaries can be re-read on-the-fly which is handy on a high-performance computer  
 * layer functions for the strongly-coupled hybrid CFD-DSMC code _hyperFoam_  
 
-<br>
-
-<table>
-<tr >
+<table border="0">
+<tr>
   <td>This work was funded by the <a href="https://www.epsrc.ac.uk/">Engineering and Physical Sciences Research Council</a> (EPSRC) from February 2014 until early 2017.</td>
   <td><img src="https://vincentcasseau.github.io/docs/img/logos/epsrc-sponsor-highres.jpg" width="100%"></td>
 </tr>
