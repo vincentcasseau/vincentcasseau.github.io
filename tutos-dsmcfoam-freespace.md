@@ -16,12 +16,16 @@ nav-short: true
 ```sh
 ./Allclean  
 ./Allrun
-```   
+```  
+
+<br> 
 
 + Monitoring:   
 ```sh
 gnuplot gnuplot/monitor
 ```  
+
+<br> 
 
 + Flow visualisations using Paraview:  
 <p align="center">
@@ -30,6 +34,8 @@ gnuplot gnuplot/monitor
   <img src="/docs/img/tutos/dsmcFoam+/freespacePeriodic/tutorial-dsmcFoam+-freespace-fieldrhoNmix.gif" width="800">  
 </p>
 
----  
+<br>
+
+--- 
 
 Contributor: Dr Vincent Casseau
