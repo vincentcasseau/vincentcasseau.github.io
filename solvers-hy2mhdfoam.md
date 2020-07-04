@@ -22,9 +22,9 @@ nav-short: true
   <img src="/docs/img/logos/hy2MhdFoamLogo.png" width="210"/>
 </p>
 
-By: A. Ryakhovskiy, Ioffe Institute & Peter the Great St. Petersburg Polytechnic University , St Petersburg, Russia  
+By: A. Ryakhovskiy, Ioffe Institute & Peter the Great St. Petersburg Polytechnic University, St Petersburg, Russia  
 
-_hy2MhdFoam_ supplements _hy2Foam_ with features relative to magnetohydrodynamics (MHD) flow control. The general objectives are to study the interaction between a high-speed ionized flow and the magnetic field, and to investigate the potential of MHD flow control technology on scramjet configurations.
+_hy2MhdFoam_ supplements _hy2Foam_ with features relative to magnetohydrodynamics (MHD) flow control. The main objectives are to study the interaction between a high-speed ionized flow and a magnetic field, and to investigate the potential of MHD flow control technology on scramjet configurations.
 
 * MHD terms added to the Navier-Stokes-Fourier equations
   + Lorentz force

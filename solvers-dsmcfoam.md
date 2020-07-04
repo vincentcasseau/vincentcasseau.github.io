@@ -22,21 +22,21 @@ nav-short: true
   <img src="/docs/img/logos/dsmcFoamPlusLogo.png" width="220"/>
 </p>
 
-A modified version of the _dsmcFoam+_ direct simulation Monte Carlo solver located at [MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig). The new features are the following
+A modified version of the _dsmcFoam+_ direct simulation Monte Carlo solver available at [MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig). The new features are as follows
 
 * improved load balancing feature
 * improved axially-symmetric capability
-* several variants for vibrational energy redistribution including a constant vibrational collision number
+* inclusion of several variants for vibrational energy redistribution including a constant vibrational collision number
 * corrections made to the calculation of macroscopic properties
 * re-arranged wall boundary conditions and addition of the absorption & adsorption/desorption mechanisms
 * measurement of the mean squared displacement (thus effective diffusivity) and particle transit time for porous media computations
 * complete re-arrangement of the QK reaction classes
-* extension of the QK reaction classes to Martian entry problems
 * added capability to run steady normal shock wave computations
 * layer functions for the strongly-coupled hybrid CFD-DSMC code _hyperFoam_
 * Ongoing developments
   + adaptive mesh refinement (AMR)  
   + variable time-step method
+  + modelling of free-electrons
   + extension of the QK reaction classes to Martian entry problems  
 
 [**> How-tos**](https://vincentcasseau.github.io/how-tos-dsmc/)  
