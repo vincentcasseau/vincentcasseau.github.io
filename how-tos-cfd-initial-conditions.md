@@ -84,7 +84,7 @@ Y_O       0;
 ---  
 ## 2) Species mass fractions
   
-The mass fractions of all species appearing in the [_**species()**_ list](https://vincentcasseau.github.io/how-tos-cfd-chemistry/#12-addingdeleting-species) must be given in the <dirname>0/</dirname> folder. OpenFOAM's naming convention for mass fractions omits the prefix "_Y\__", which means that the mass fraction of _N2_ is simply called _**N2**_.
+The mass fractions of all species appearing in the [_**species()**_ list](https://vincentcasseau.github.io/how-tos-cfd-chemistry/#12-addingdeleting-species) must be given in the <dirname>0/</dirname> folder. OpenFOAM's naming convention for mass fractions omits the prefix "_Y\__", which means that the mass fraction of species _N2_ is simply called _**N2**_.
 
 ### 2.1 Non-catalytic wall
 A non-catalytic wall BC can be set-up using the <dictval>zeroGradient</dictval> wall boundary type  
@@ -99,7 +99,7 @@ A non-catalytic wall BC can be set-up using the <dictval>zeroGradient</dictval> 
 &nbsp;
 
 ### 2.2 Super-catalytic wall
-For a super-catalytic wall, the mixture composition at the wall is that of the free-stream and the current implementation is as follows
+For a super-catalytic wall, the mixture composition at the surface is that of the free-stream and its implementation is as follows
   
 ```c++
     inlet
@@ -121,12 +121,25 @@ For a super-catalytic wall, the mixture composition at the wall is that of the f
 ## 3) Temperature fields
 
 ### 3.1 Trans-rotational temperature
-The trans-rotational temperature field is named _**Tt**_  and must be present in the <dirname>0/</dirname> folder.  
+The trans-rotational temperature field is printed as _**Tt**_  and must always be present in the <dirname>0/</dirname> folder.
+Its implementation is identical to the temperature field in all official OpenFOAM solvers, except for the Smoluchowski temperature jump boundary condition. Some examples are given hereafter.  
 
-Its implementation in the <dirname>0/</dirname> folder is identical to the standard temperature field in OpenFOAM, except for the Smoluchowski temperature jump boundary condition.    
-
-The Smoluchowski temperature jump boundary condition for the trans-rotational counterpart writes as follows
-
++ An isothermal wall
+```c++
+    wall
+    {
+        type            fixedValue;
+        value           uniform $Twall;
+    }
+```
++ An adiabatic wall
+```c++
+    wall
+    {
+        type            zeroGradient;
+    }
+```
++ A wall with the Smoluchowski trans-rotational temperature jump BC
 ```c++
     wall
     {
