@@ -14,7 +14,7 @@ nav-short: true
 
 + A description of the case scenario can be found in: V. Casseau _et al._, 12/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/45/html), Section _3.1. Mach 11.3 Blunted Cone_.  
 
-+ View of the _gmsh_ mesh provided in the _constant/backup-polyMesh_ folder  
++ View of the _gmsh_ mesh provided in the <dirname>constant/backup-polyMesh</dirname> folder  
 
 <p align="center">
   <img src="http://www.mdpi.com/aerospace/aerospace-03-00045/article_deploy/html/images/aerospace-03-00045-g001.png" width="400">
