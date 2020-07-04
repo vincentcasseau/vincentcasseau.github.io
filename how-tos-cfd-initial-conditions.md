@@ -194,7 +194,7 @@ The Smoluchowski vibro-electronic temperature jump BC for molecule species is de
 ## 4) Velocity field
 
 ### 4.1 Maxwell velocity slip
-The Maxwell velocity slip BC has been slightly re-written (the [mean free path](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#3-mean-free-path-and-breakdown-parameter) now calculated according to the model chosen in <dict>transportProperties</dict> dictionary) and is given by 
+The Maxwell velocity slip BC has been slightly re-written (the [mean free path](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#3-mean-free-path-and-breakdown-parameter) is now calculated according to the model chosen in <dict>transportProperties</dict> dictionary) and is given by 
 
 ```c++
     wall
@@ -210,9 +210,12 @@ The Maxwell velocity slip BC has been slightly re-written (the [mean free path](
     }
 ```
 
+&nbsp;
+
 ### 4.2 Linear inlet ramp
-The velocity at the inlet patch can increase linearly with time from an <dictkey>offset</dictkey> value up to a velocity whose components are given by the entry <dictkey>refValue</dictkey>, components that can then be multiplied by the <dictkey>amplitude</dictkey>.
-For example, for a linear 1e-4 sec long increase in velocity from 50 m/s up to 1000 m/s with no angle of attack nor slip angle (_**U**_ is thus aligned with the x-axis: (1 0 0)), then the new <dictkey>rampInlet</dictkey> BC is
+The velocity at the inlet patch can be set to increase linearly with time from an <dictkey>offset</dictkey> value up to a velocity whose components are given by the entry <dictkey>refValue</dictkey>, components that are then multiplied by the <dictkey>amplitude</dictkey> scalar.  
+
+For example, a linear 0.1 ms-long increase in velocity from 50 m/s to 1000 m/s with no angle of attack nor slip angle (_**U**_ is thus aligned with the x-axis: (1 0 0)) is obtained by setting up the <dictkey>rampInlet</dictkey> BC as
 
 ```c++
     inlet
