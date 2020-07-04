@@ -26,10 +26,10 @@ _hy2Foam_ is an open-source two-temperature computational fluid dynamics (CFD)
 solver that has been developed to tackle the highly complex flow physics of the hypersonic planetary
 atmospheric entry. Implemented within the OpenFOAM framework, the code has the capability to model physical phenomena relative to the high-speed chemically-reacting environment surrounding a spacecraft. The core of the solver initially relied on OpenFOAM solvers _rhoCentralFoam_ and _reactingFoam_ and it has been complemented with many new features, some of which are listed below
 
-* **non-equilibrium Navier-Stokes-Fourier equations**: **Park's two-temperature model** is implemented and the choice of having a single vibrational energy pool and multiple vibrational energy pools is left to the user. Energy transfers between the different energy pools are
-  + Vibrational-Translational (V-T)
-  + Vibrational-Vibrational (V-V)
-  + Heavy particle-electron (H-e)
+* **non-equilibrium Navier-Stokes-Fourier equations**: **Park's two-temperature model** is implemented and the choice of having a single or multiple vibrational energy pools is left to the user. The energy transfers taking place between the different energy pools are
+  + Vibrational-Translational (V—T)
+  + Vibrational-Vibrational (V—V)
+  + Heavy particle-electron (H—e)
 * addition of the electronic and electron energy modes
 * finite-rate chemistry
 * chemistry-vibration coupling: **Park TTv model**, coupled vibration-dissociation-vibration (CVDV) model

@@ -50,7 +50,7 @@ The path to the non-equilibrium dictionary is also set in <dict>thermophysicalPr
     twoTemperatureDictFile "$FOAM_CASE/constant/thermo2TModel";
 ```
 
-and its default name is <dict>thermo2TModel</dict>. It is composed of one subdictionary, <subdict>thermalRelaxationModels</subdict>, for the selection of the energy transfer models, and various subdictionaries to store the models coefficients. The energy transfers that are allowed to take place are vibrational-translational (V—T) and heavy-particles — electrons (h—e). If the gas mixture is composed of neutral species only, then h—e energy transfer is automatically discarded.
+and its default name is <dict>thermo2TModel</dict>. It is composed of one subdictionary, <subdict>thermalRelaxationModels</subdict>, for the selection of the energy transfer models, and various subdictionaries to store the models coefficients. The energy transfers that are allowed to take place are vibrational-translational (V—T) and heavy-particles — electrons (H—e). If the gas mixture is composed of neutral species only, then H—e energy transfer is automatically discarded.
 The subdictionary's default implementation is as follows
 
 ```c++
@@ -116,7 +116,7 @@ As is customary, the Landau-Teller equation is employed for V—T energy exchang
   </tr>
 </table>
 
-The h—e energy transfer of Appleton & Bray (1963) does not require any input. It can be disabled using a <dictkey>relaxationType</dictkey> set to <dictval>noHEEnergyTransfer</dictval>.
+The H—e energy transfer of Appleton & Bray (1963) does not require any input. It can be disabled using a <dictkey>relaxationType</dictkey> set to <dictval>noHEEnergyTransfer</dictval>.
 
 
 ### 2.2 Two-temperature solver, multiple vibro-electronic energy pools
