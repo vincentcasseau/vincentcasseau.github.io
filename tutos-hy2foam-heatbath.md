@@ -15,11 +15,10 @@ nav-short: true
 + A description of the case scenario can be found in: V. Casseau _et al._, 10/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part One: Zero-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/34/html), Section _3.4. Relaxation of a Chemically-Reacting Mixture_.  
 
 + Running this tutorial:  
-
 ```sh
 ./Allclean  
 ./Allrun
-```  
+```
 
 <br>
 
@@ -34,7 +33,6 @@ nav-short: true
 <br>
 
 + Testing that the results are matching the solution:  
-
 ```sh
 ./Alltest
 ```  

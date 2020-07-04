@@ -13,16 +13,14 @@ nav-short: true
 + The working directory for the freespace periodic case is located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/dsmcFoam%2B/threeDimensional/freeSpacePeriodic).  
 
 + Running this tutorial:  
-
 ```sh
 ./Allclean  
 ./Allrun
-```  
+```
 
 <br>
 
 + Monitoring:  
-
 ```sh
 gnuplot gnuplot/monitor
 ```  
