@@ -47,14 +47,12 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 
 <br>
 
-<div class="row">
-  <div class="column" float="left" width= "50%"> 
-    This work was funded by the <a href="https://www.epsrc.ac.uk/">Engineering and Physical Sciences Research Council</a> (EPSRC) from 2014 until early 2017.
-  </div>
-  <div class="column" float="right" width= "50%"> 
-     <img src="/docs/img/logos/epsrc-sponsor-highres.jpg" alt="EPSRC logo"> 
-  </div>
-</div> 
+<table>
+<tr >
+  <td>This work was funded by the <a href="https://www.epsrc.ac.uk/">Engineering and Physical Sciences Research Council</a> (EPSRC) from February 2014 until early 2017.</td>
+  <td><img src="https://vincentcasseau.github.io/docs/img/logos/epsrc-sponsor-highres.jpg" width="100%"></td>
+</tr>
+</table>
 
 
 [**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd/)  
