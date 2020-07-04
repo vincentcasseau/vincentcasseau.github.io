@@ -181,13 +181,13 @@ _Jekyll theme designer_:
       <i class="fas fa-circle fa-stack-2x" style='color:#404040'></i>
       <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
     </span>
-    <span class="sr-only">LinkedIn</span>
+    <span class="sr-only">Twitter</span>
   </a> <a style="text-decoration: none" href="https://github.com/daattali" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#404040'></i>
       <i class="fab fa-github fa-stack-1x fa-inverse"></i>
     </span>
-    <span class="sr-only">LinkedIn</span>
+    <span class="sr-only">Github</span>
   </a> &nbsp; **Dean Attali**
 
 <br>
