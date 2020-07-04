@@ -157,9 +157,8 @@ Its implementation is identical to the temperature field in all official OpenFOA
 #### 3.2.1 Single vibro-electronic energy pool formulation  
 Please refer to [D. §2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool) if you are not familiar with this code feature.  
    
-The mixture vibro-electronic temperature field is called _**Tv**_ and must be present in the <dirname>0/</dirname> folder.  
-
-The Smoluchowski temperature jump boundary condition for the mixture vibro-electronic counterpart writes as follows  
+The mixture vibro-electronic temperature field is called _**Tv**_ and must be present in the <dirname>0/</dirname> folder.
+The Smoluchowski vibro-electronic temperature jump BC is written as follows  
 
 ```c++
     wall
@@ -176,9 +175,8 @@ The Smoluchowski temperature jump boundary condition for the mixture vibro-elect
 #### 3.2.2 Multiple vibro-electronic energy pools formulation  
 Please refer to [D. §2.2](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#22-two-temperature-solver-multiple-vibro-electronic-energy-pools) if you are not familiar with this code feature.
   
-The species vibro-electronic temperature fields are called _**Tv\_#speciesName**_. There are as many _**Tv\_#speciesName**_ fields to define in the <dirname>0/</dirname> folder as there are species in the <dictkey>species()</dictkey> list.  
-
-The Smoluchowski temperature jump boundary condition for the species (molecule) vibro-electronic temperature writes as follows
+The species vibro-electronic temperature fields are called *Tv\_#speciesName* and there are as many *Tv\_#speciesName* fields as there are species in the <dictkey>species()</dictkey> list.
+The Smoluchowski vibro-electronic temperature jump BC for molecule / molecule-ion species is defined as
 
 ```c++
     wall
