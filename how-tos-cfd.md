@@ -108,6 +108,8 @@ These how-tos are based on the working folder located [here](https://github.com/
       - [3.2.2 Multiple vibro-electronic energy pools formulation](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#322-multiple-vibro-electronic-energy-pools-formulation)   
  
 ### [4) Velocity field](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#4-velocity-field)  
++ **[4.1 Maxwell velocity slip](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#41-maxwell-velocity-slip)**  
++ **[4.2 Linear inlet ramp](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#42-linear-inlet-ramp)**  
 
 <br>
 
