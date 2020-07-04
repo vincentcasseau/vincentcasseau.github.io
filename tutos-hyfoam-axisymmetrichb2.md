@@ -48,8 +48,6 @@ gnuplot gnuplot/monitorCd
 gnuplot gnuplot/monitorIntegratedWallHeatFlux
 ```  
 
-> Results are given in the _gnuplot/solution_ folder.
-
 <br>
 
 + Solution: wall heat flux along the HB2 surface
