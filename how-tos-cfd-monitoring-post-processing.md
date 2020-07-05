@@ -198,7 +198,7 @@ where <dirname>system/</dirname><dict>surfaceCoefficients</dict> is a dictionary
 
 ### 2.1 Pressure coefficient
 
-In the _functions_ sub-dictionary, add  
+In the <subdict>functions</subdict> sub-dictionary, add  
   
 ```c++
 pressureCoefficient
@@ -215,7 +215,7 @@ pressureCoefficient
 ### 2.2 Stanton number
 
 The _**wallHeatFlux**_ field is a required input.  
-Within the _functions_ sub-dictionary, add
+Within the <subdict>functions</subdict> sub-dictionary, add
   
 ```c++
 StantonNumber
@@ -234,7 +234,7 @@ StantonNumber
 ### 2.3 Skin-friction coefficient
 
 The _**wallShearStress**_ field is a required input.
-In the _functions_ sub-dictionary, add  
+In the <subdict>functions</subdict> sub-dictionary, add  
   
 ```c++
 frictionCoefficient
@@ -250,7 +250,7 @@ frictionCoefficient
 
 ### 2.4 y+
 
-Within the _functions_ sub-dictionary, add  
+In the <subdict>functions</subdict> sub-dictionary, add  
 
 ```c++
 yPlus
