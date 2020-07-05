@@ -53,7 +53,7 @@ plot \
 
 ### 1.2 Wall shear stress
 
-In the <dirname>system/</dirname><dict>controlDict</dict> dictionary, uncomment the correct include statement
+In the <dirname>system/</dirname><dict>controlDict</dict> dictionary, uncomment the include statement that prints surface quantities 
   
 ```c++
 functions
