@@ -50,7 +50,7 @@ Phase no 1.1  ExecutionTime = 72.32 s  ClockTime = 74 s  Iteration no 4505 (0.03
 ```
 
 For the <u><dict>thermo2TModel</dict> dictionary</u>:  
-  + The steps to follow are similar to the <dict>transportProperties</dict> dictionary: add the <dictkey>applyChanges<dictkey> key after editing the desired subdictionary and save.  
+  + The steps to follow are similar to the <dict>transportProperties</dict> dictionary: add the <dictkey>applyChanges</dictkey> key after editing the desired subdictionary and save.  
 
 
 For <u>any other dictionaries</u>:  
@@ -90,7 +90,11 @@ should the solution needs to be printed before making modification(s) to the com
 
 For <u>boundary conditions</u>:  
   + Open the <dict>hTCProperties</dict> dictionary   
-  + Add the entry _**applyChangesAtWriteTimeAndWait        #numberOfSeconds;**_ where _**#numberOfSeconds**_ is an integer value prescribing the time during which the simulation will be paused.  
+  + Add the key
+```c++
+    applyChangesAtWriteTimeAndWait        #numberOfSeconds;
+``` 
+where <dictval>#numberOfSeconds</dictval> is an integer value prescribing the time during which the simulation will be paused (give yourself enough time!).  
   + Save the <dict>hTCProperties</dict> dictionary   
   + Type in: _tail -f log.hy2Foam_ into the terminal window and wait until the next write time  
   + Once the simulation is sleeping, _reconstructPar_ can be used (for a parallel job)  
@@ -103,7 +107,7 @@ For <u>boundary conditions</u>:
 ---  
 ## 3) Bounding the temperature field
 
-Within the <dict>thermophysicalProperties</dict> dictionary, the <subdict>temperatureBounds</subdict> subdictionary can be copy-pasted to bound the temperature field and increase robustness. After stopping the simulation, please make sure that the minimum and maximum temperature values are strictly within these bounds.
+In the <dict>thermophysicalProperties</dict> dictionary, the <subdict>temperatureBounds</subdict> subdictionary shown below can be copy-pasted to bound the temperature field and increase robustness. After stopping the simulation, please make sure that the minimum and maximum temperature values are <b>strictly</b> within these bounds.
 
 ```c++
 temperatureBounds
@@ -113,7 +117,7 @@ temperatureBounds
 }
 ```
 
-If the temperature field goes unbounded, a warning will be printed in the log file for this iteration. It tells the number of times the _limit_ function had to be called and the minimum/maximum temperature recorded before bounding.
+If the temperature field goes unbounded, a warning will be printed in the log file for this iteration. It reports the number of times the _limit_ function had to be called and the minimum/maximum temperature recorded before bounding.
 
 ```c++
 Attempt to use rho2ReactionThermo out of temperature range 3197 times during this iteration.
