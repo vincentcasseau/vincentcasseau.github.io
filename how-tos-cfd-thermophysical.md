@@ -107,17 +107,22 @@ The Table below lists the meaning of the different keys present in the <subdict>
   <tr>
     <td align="center"><dictkey>noVibTemp</dictkey></td>
     <td align="center"> - </td>  
-    <td align="center"> number of vibrational energy modes of the particle </td>
+    <td align="center"> number of vibrational energy modes </td>
   </tr>
   <tr>
     <td align="center"><dictkey>noElecLevels</dictkey></td>
     <td align="center"> - </td>  
-    <td align="center"> number of electronic energy levels of the particle </td>
+    <td align="center"> number of electronic energy levels </td>
   </tr>
   <tr>
-    <td align="center"><dictkey>dissocEnergy</dictkey>, <dictkey>iHat</dictkey></td>
-    <td align="center"> - </td>  
-    <td align="center"> more info coming soon </td>
+    <td align="center"><dictkey>dissocEnergy</dictkey></td>
+    <td align="center"> J/kg </td>  
+    <td align="center"> species dissociation potential, used in the <a href="https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#411-general-settings">preferential model</a> </td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>iHat</dictkey></td>
+    <td align="center"> n/a </td>  
+    <td align="center"> under development</td>
   </tr>
 </table>
 
