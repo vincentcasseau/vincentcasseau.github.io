@@ -135,9 +135,7 @@ forceCoeffs
 }
 ```
 
-Review and edit the relevant entries
-
-Forces / Aerodynamic coefficients (_e.g._ drag coefficient) can be monitored using the script file given in the <dirname>gnuplot/</dirname> folder
+Review and edit the relevant entries. Forces / aerodynamic coefficients (_e.g._ drag coefficient) can be monitored using the script file given in the <dirname>gnuplot/</dirname> folder
   
 ```c++
 set output "gnuplot/dragCoefficient.eps"
@@ -163,7 +161,7 @@ set output "gnuplot/residuals.eps"
 set size 0.95,0.47
 set origin 0.03,0.53
 set logscale y
-set format y "10^%{01T}"
+set format y "10^{\%01T}"
 set xlabel "Timestep [x 100]"
 set ylabel "Residuals"
 set mytics 10
@@ -179,10 +177,10 @@ plot \
 "< cat log.hy2Foam | grep 'Solving for e,' | cut -d '=' -f 3 | cut -d ',' -f 1" every 100 w l ls 4 t 'e final'
 ```
 
-and this can be executed by typing in
+and this script can be run as follows
 
 ```c++
-    gnuplot gnuplot/monitorResiduals
+gnuplot gnuplot/monitorResiduals
 ```
 
 <br>
