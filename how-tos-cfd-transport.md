@@ -14,14 +14,15 @@ These how-tos are based on the working folder located [here](https://github.com/
 
 ### 1.1 Inviscid simulation    
 
-This is done in two steps:
+This is done in two steps:  
   + in the <dict>thermophysicalProperties/</dict><subdict>thermoType</subdict> dictionary, edit the <dictkey>transport</dictkey> entry to <dictval>constant</dictval>;
-  + in the <dict>thermoDEM/</dict><subdict>#speciesName/transport/constant</subdict> dictionary, for all #speciesName present in the gas mixture, edit the value of the entry <dictkey>mu</dictkey> to be <dictval>0</dictval>.
+  + in the <dict>thermoDEM/</dict><subdict>#speciesName/transport/constant</subdict> dictionary, for all species present in the gas mixture, edit the value of the entry <dictkey>mu</dictkey> to be <dictval>0</dictval>.
 
 ### 1.2 Viscous simulation with constant shear viscosity and thermal conductivity
 + In the <dict>thermophysicalProperties/</dict><subdict>thermoType</subdict> dictionary, edit the <dictkey>transport</dictkey> entry to <dictval>constant</dictval>.
-+ In the <dict>thermoDEM/</dict><subdict>#speciesName/transport/constant</subdict> dictionary, for all #speciesName present in the gas mixture, edit the value of the entry <dictkey>mu</dictkey> to the desired value.
-+ The thermal conductivity is then calculated using Eucken's formula.
++ In the <dict>thermoDEM/</dict><subdict>#speciesName/transport/constant</subdict> dictionary, for all species present in the gas mixture, edit the value of the entry <dictkey>mu</dictkey> to the desired value.  
+
+The thermal conductivity is then calculated using Eucken's formula.
 
 ### 1.3 Other transport models
 The names of all valid entries for the <dictkey>transport</dictkey> keyword in the <dict>thermophysicalProperties/</dict><subdict>thermoType</subdict> dictionary are  
@@ -37,7 +38,7 @@ The names of all valid entries for the <dictkey>transport</dictkey> keyword in t
 The coefficients of these models are to be found in the <dict>thermoDEM/</dict><subdict>#speciesName</subdict> dictionary. The first four models are employing coefficients located into the <subdict>transport</subdict> subdictionary, while the <dictval>powerLawEucken</dictval> model is using the species diameter, <dictkey>diameter</dictkey>, and species temperature exponent of viscosity, <dictkey>omega</dictkey>, located in the <subdict>specie</subdict> subdictionary.
 
 ### 1.4 Print species shear viscosity and thermal conductivity
-In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dictionary, edit any of the following booleans to <dictval>on</dictval>  
+In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dictionary, edit any of these two switches to <dictval>on</dictval>  
 
 ```c++
     writeViscositySpecies          on;  
@@ -49,7 +50,7 @@ In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dicti
 ---
 ## 2) Mixing rules
 
-The available mixing rules are  
+The available mixing rules are given in the following Table 
 
 | Mixing rule name    | Parameters          |
 |:-------------:|:-------------:|
@@ -57,7 +58,7 @@ The available mixing rules are
 | <dictval>Wilke</dictval>      | - |
 | <dictval>ArmalySutton</dictval> | <dictkey>correctedArmalySutton</dictkey>    |
 
-and can be chosen editing the entry <dictkey>mixingRule</dictkey> in the <dict>transportProperties/</dict><subdict>transportModels</subdict> dictionary. The mixture shear viscosity and thermal conductivity can be printed by reproducing the procedure described in [§1.4](https://vincentcasseau.github.io/how-tos-cfd-transport/#14-print-species-shear-viscosity-and-thermal-conductivity)
+and the dedicated entry, <dictkey>mixingRule</dictkey>, is located in the <dict>transportProperties/</dict><subdict>transportModels</subdict> dictionary. The mixture shear viscosity and thermal conductivity can be printed by switching <dictval>on</dictval> the following booleans
   
 ```c++
     writeViscosityMixture          on;  
@@ -67,7 +68,6 @@ and can be chosen editing the entry <dictkey>mixingRule</dictkey> in the <dict>t
 <br>
 
 ---
-
 ## 3) Mass diffusion
 
 ### 3.1 Disable multi-species diffusion
