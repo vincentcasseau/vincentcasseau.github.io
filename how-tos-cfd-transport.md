@@ -105,7 +105,7 @@ In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dicti
     multiSpeciesTransport         Fick; 
 ``` 
 
-Binary diffusion coefficients can be calculated according Available models for the calculation of  are  
+Binary diffusion coefficients can be calculated according to any of the models presented in the Table below  
 
 | Binary diffusion model name    | Parameters          |
 |:-------------:|-------------|
