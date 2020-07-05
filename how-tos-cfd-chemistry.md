@@ -106,7 +106,7 @@ In the <dict>hTCProperties</dict> dictionary, switch <dictval>on</dictval> the <
      active          on;
 ```  
 
-In the <dict>chemistryProperties</dict> dictionary, the same operation should be repeated with the <dictkey>chemistry</dictkey> boolean  
+In the <dict>chemistryProperties</dict> dictionary, the same operation must be repeated with the <dictkey>chemistry</dictkey> switch  
 
 ```c++
      chemistry          on;
@@ -116,7 +116,7 @@ In the <dict>chemistryProperties</dict> dictionary, the same operation should be
 
 ### 3.2 Implementing a chemical reaction  
 #### 3.2.1 Forward reaction  
-Within the <dict>hTCReactions#name</dict> dictionary, the <subdict>reactions</subdict> subdictionary is enumerating the different chemical reactions to consider. The modified Arrhenius law coefficients are given in the table below
+In the <dict>hTCReactions#name</dict> dictionary, the <subdict>reactions</subdict> subdictionary is enumerating the different chemical reactions to consider. The modified Arrhenius law coefficients are given in the table below
 
 | Coefficient    | Meaning | Units |
 |:-------------:|:-------------|:------:|
