@@ -114,6 +114,11 @@ The Table below lists the meaning of the different keys present in the <subdict>
     <td align="center"> - </td>  
     <td align="center"> number of electronic energy levels of the particle </td>
   </tr>
+  <tr>
+    <td align="center"><dictkey>dissocEnergy</dictkey>, <dictkey>iHat</dictkey></td>
+    <td align="center"> - </td>  
+    <td align="center"> more info coming soon </td>
+  </tr>
 </table>
 
 In the <subdict>thermodynamics</subdict> subdictionary, the first entry is a list of coefficients called <dictkey>decoupledCvCoeffs()</dictkey>. The heat capacity at constant volume, _Cv_, is decomposed into the contributions of the different energy modes that are translational (element 1), rotational (element 2), vibrational (element 3), electronic (element 4), and electron (element 5). For a planar molecule,   
