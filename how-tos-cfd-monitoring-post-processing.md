@@ -66,7 +66,7 @@ functions
 }
 ```
 
-and review/edit the entries in the <dirname>system/</dirname><dict>surfaceQuantities</dict> dictionary
+and review/edit the relevant subdictionary in the <dirname>system/</dirname><dict>surfaceQuantities</dict> dictionary
 
 ```c++
 wallShearStress
@@ -83,7 +83,7 @@ wallShearStress
 
 ### 1.3 Forces
 
-In the <dirname>system/</dirname><dict>controlDict</dict> dictionary, uncomment the correct include statement
+In the <dirname>system/</dirname><dict>controlDict</dict> dictionary, uncomment the include statement that prints forces and aerodynamic coefficients
   
 ```c++
 functions
