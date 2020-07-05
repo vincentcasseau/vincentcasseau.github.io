@@ -214,8 +214,8 @@ pressureCoefficient
 
 ### 2.2 Stanton number
 
-The _**wallHeatFlux**_ field is a required input.  
-Within the <subdict>functions</subdict> sub-dictionary, add
+The _**wallHeatFlux**_ field is a required input.
+In the <subdict>functions</subdict> sub-dictionary, add
   
 ```c++
 StantonNumber
