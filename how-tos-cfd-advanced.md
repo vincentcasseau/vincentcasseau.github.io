@@ -50,15 +50,12 @@ Phase no 1.1  ExecutionTime = 72.32 s  ClockTime = 74 s  Iteration no 4505 (0.03
 ```
 
 For the <u><dict>thermo2TModel</dict> dictionary</u>:  
-  + The steps are similar to the <dict>transportProperties</dict> dictionary: add the <dictkey>applyChanges<dictkey> key after editing the desired subdictionary and save.  
+  + The steps to follow are similar to the <dict>transportProperties</dict> dictionary: add the <dictkey>applyChanges<dictkey> key after editing the desired subdictionary and save.  
 
 
-For **any other dictionaries**:  
-  + Make modifications to the dictionary in question (_e.g._, adding extra chemical reaction, etc) and save.  
-  + Open the <dict>hTCProperties</dict> dictionary and add the entry:
-```c++
-    applyChanges        true;
-``` 
+For <u>any other dictionaries</u>:  
+  + Make modifications to the dictionary in question (_e.g._, adding additional chemical reactions, etc) and save.  
+  + Open the <dict>hTCProperties</dict> dictionary and add the <dictkey>applyChanges<dictkey> key
   + Save the <dict>hTCProperties</dict> dictionary  
 
 As shown in the log file, the simulation enters into a new stage/phase
@@ -75,11 +72,23 @@ After:
 Phase no 2.0  ExecutionTime = 153.05 s  ClockTime = 157 s  Iteration no 9075 (0.03 s)
 ```
 
-> NB: For all dictionaries, _**applyChangesAtWriteTime        true;**_ can be used instead of _**applyChanges        true;**_ in case the solution needs to be printed before applying modification(s) to the computation.  
+For all dictionaries, 
+
+```c++
+    applyChangesAtWriteTime        true;
+```
+
+can be used instead of 
+
+```c++
+    applyChanges        true;
+```
+
+should the solution needs to be printed before making modification(s) to the computation.  
 
 <br>
 
-For **boundary conditions**:  
+For <u>boundary conditions</u>:  
   + Open the <dict>hTCProperties</dict> dictionary   
   + Add the entry _**applyChangesAtWriteTimeAndWait        #numberOfSeconds;**_ where _**#numberOfSeconds**_ is an integer value prescribing the time during which the simulation will be paused.  
   + Save the <dict>hTCProperties</dict> dictionary   
