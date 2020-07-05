@@ -35,7 +35,7 @@ Thus, the integrated wall heat flux can easily be monitored (and later plotted) 
 grep lowerWall log.hy2Foam
 ```
 
-Alternatively, use the dedicated monitoring script given in the <dirname>gnuplot/</dirname> folder, called _monitorIntegratedWallHeatFlux_ replacing _#patchName_ by the name of the wall patch.  
+Alternatively, use the dedicated monitoring script given in the <dirname>gnuplot/</dirname> folder, called _monitorIntegratedWallHeatFlux_, and replace _#patchName_ by the name of the wall patch.  
 
 ```c++
 set output "gnuplot/integratedWallHeatFlux.eps"
