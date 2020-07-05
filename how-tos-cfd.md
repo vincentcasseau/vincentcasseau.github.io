@@ -12,8 +12,9 @@ These how-tos are based on the working folder located [here](https://github.com/
 ---  
 ## [A. Thermophysical](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/)
 ### [1) Species thermophysical properties](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#1-species-thermophysical-properties)
-+ **[1.1 Disabling/enabling the vibrational mode of a molecule](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#11-disablingenabling-the-vibrational-mode-of-a-molecule)**  
-+ **[1.2 Disabling/enabling the electronic mode of a particle](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle)**  
+### [2) Adding/removing energy modes](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#2-addingremoving-energy-modes)
++ **[2.1 Disabling/enabling the vibrational mode of a molecule](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#21-disablingenabling-the-vibrational-mode-of-a-molecule)**  
++ **[2.2 Disabling/enabling the electronic mode of a particle](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle)**  
 
 <br>
 

@@ -122,7 +122,7 @@ The H—e energy transfer of Appleton & Bray (1963) does not require any input. 
 ### 2.2 Multiple vibro-electronic energy pools
 In the current version of the code, this configuration has several limitations that are as follows
    + the gas mixture must be composed of neutral particles only  
-   + the electronic mode of all particles must be turned off (see [A. §1.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle))
+   + the electronic mode of all particles must be turned off (see [A. §2.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle))
    + the molecules must be planar  
 
 If the above conditions are fulfilled, then the <dict>thermophysicalProperties</dict> dictionary setup is
