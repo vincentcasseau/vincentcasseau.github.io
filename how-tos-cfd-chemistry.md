@@ -37,7 +37,7 @@ Available <dict>hTCReactions#name</dict> dictionaries are
 &nbsp;  
 
 ### 1.2 Adding/deleting species   
-In the <dict>hTCReactions#name</dict> dictionary, the species composing the gas mixture need to be uncommented in the <dictkey>species()</dictkey> list entry. For a 5-species air mixture  
+In the <dict>hTCReactions#name</dict> dictionary, the species composing the gas mixture need to be uncommented in <dictkey>species()</dictkey>. For a 5-species air mixture  
  
 ```c++
     species
@@ -56,14 +56,14 @@ In the <dict>hTCReactions#name</dict> dictionary, the species composing the gas 
     );
 ```
 
-As illustrated in the example, a specific order should be respected  
+As shown in this example, a specific order must be respected  
 1. molecules  
 2. charged molecules  
 3. atoms  
 4. charged atoms  
 5. electrons  
 
-In the <dict>thermoDEM</dict> dictionary, uncomment all species listed in the <dict>hTCReactions#name</dict> dictionary (**and comment out those which are not present**).  
+In the <dict>thermoDEM</dict> dictionary, uncomment all species listed in the <dict>hTCReactions#name</dict> dictionary - **and comment out those that are not present**.  
 All species listed in the <dict>hTCReactions#name</dict> dictionary should also be present in the <dirname>0/</dirname> directory. This is discussed in [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/).
 
 ### 1.3 Printing species quantities  
