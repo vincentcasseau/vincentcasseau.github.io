@@ -13,9 +13,9 @@ These how-tos are based on the working folder located [here](https://github.com/
 ## 1) Multi-species flow
 
 ### 1.1 The chemDicts/ folder
-Within the <dirname>constant/</dirname> directory, the <dirname>chemDicts/</dirname> folder regroups default chemistry dictionaries. It is preferable not to modify the original files. Thus, a copy of the most appropriate <dict>hTCReactions#name</dict> dictionary can be made into the <dirname>constant/</dirname> folder.  
+In the <dirname>constant/</dirname> directory, the <dirname>chemDicts/</dirname> folder is gathering default chemistry dictionaries. It is advised not to modify the original files for future reference. Thus, a copy of the most appropriate <dict>hTCReactions#name</dict> dictionary can be made into the <dirname>constant/</dirname> folder.  
 
-The path to the <dict>hTCReactions#name</dict> dictionary needs to be edited accordingly in <dict>thermophysicalProperties</dict>. This done with the entry <dictkey>foamChemistryFile</dictkey> that can be defined as  
+The path to the <dict>hTCReactions#name</dict> dictionary needs to be edited accordingly in <dict>thermophysicalProperties</dict>. This done using the  <dictkey>foamChemistryFile</dictkey> entry as  
 
 ```c++
     foamChemistryFile        "$FOAM_CASE/constant/hTCReactions#name";
