@@ -34,7 +34,7 @@ solver that derives from _hy2Foam_. In the latter code, the trans-rotational and
 <table cellspacing="0" cellpadding="0">
 <tr>
   <td>This work was initiated at the University of Strathclyde and was funded by the <a href="https://www.epsrc.ac.uk/">Engineering and Physical Sciences Research Council</a> (EPSRC) from February 2014 until early 2017.</td>
-  <td><img src="https://vincentcasseau.github.io/docs/img/logos/epsrc-sponsor-highres.jpg" width="160%"></td>
+  <td><img src="https://vincentcasseau.github.io/docs/img/logos/epsrc-sponsor-highres.jpg" width="210%"></td>
 </tr>
 <tr>
 <td style="text-align:center" colspan="2"> Volunteering work from mid-2017 onwards.
