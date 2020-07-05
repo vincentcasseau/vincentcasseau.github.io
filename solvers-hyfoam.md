@@ -29,6 +29,15 @@ solver that derives from _hy2Foam_. In the latter code, the trans-rotational and
 * hydrogen compounds added to the thermochemical database
 * transport models: CEA2 (Chemical Equilibrium with Applications, NASA)
 
+&nbsp;
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+  <td>This work was funded by the <a href="https://www.epsrc.ac.uk/">Engineering and Physical Sciences Research Council</a> (EPSRC) from February 2014 until early 2017.</td>
+  <td><img src="https://vincentcasseau.github.io/docs/img/logos/epsrc-sponsor-highres.jpg" width="130%"></td>
+</tr>
+</table>
+
 [**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd/)  
 [**> Tutorials**](https://vincentcasseau.github.io/tutos-hyfoam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2Foam)  
