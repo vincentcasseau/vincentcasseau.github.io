@@ -58,7 +58,7 @@ N2
 }
 ```
 
-For the <subdict>specie</subdict> subdictionary, the Table below
+The Table below lists the meaning of the different keys present in the <subdict>specie</subdict> subdictionary. 
 
 <table>
   <tr>
@@ -68,6 +68,11 @@ For the <subdict>specie</subdict> subdictionary, the Table below
     <td align="center"><b>Key</b></td>
     <td align="center"><b>Units</b></td>
     <td align="center"><b>Meaning</b></td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>nMoles</dictkey></td>
+    <td align="center"> - </td>
+    <td align="center">deprecated OpenFOAM entry, always set to <dictval>1</dictval></td>
   </tr>
   <tr>
     <td align="center"><dictkey>molWeight</dictkey></td>
@@ -92,21 +97,27 @@ For the <subdict>specie</subdict> subdictionary, the Table below
   <tr>
     <td align="center"><dictkey>omega</dictkey></td>
     <td align="center"> - </td>  
-    <td align="center">temperature exponent of viscosity, see also: [B. Transport](https://vincentcasseau.github.io/how-tos-cfd-transport/#13-other-transport-models) </td>
+    <td align="center">temperature exponent of viscosity, see also: <a href="https://vincentcasseau.github.io/how-tos-cfd-transport/#13-other-transport-models">B. Transport</a></td>
   </tr>
   <tr>
     <td align="center"><dictkey>eta_s</dictkey></td>
     <td align="center"> - </td>  
-    <td align="center">factor that enters in the calculation of the [vibrational thermal conductivity](https://github.com/vincentcasseau/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1) (this entry is optional and equal to <dictval>1.2</dictval> by default) </td>
+    <td align="center">factor that enters in the calculation of the <a href="https://github.com/vincentcasseau/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1">vibrational thermal conductivity</a> (this key is optional and is equal to <dictval>1.2</dictval> by default) </td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>noVibTemp</dictkey></td>
+    <td align="center"> - </td>  
+    <td align="center"> number of vibrational energy modes of the particle </td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>noElecLevels</dictkey></td>
+    <td align="center"> - </td>  
+    <td align="center"> number of electronic energy levels of the particle </td>
   </tr>
 </table>
 
-
-The number of vibrational energy modes of the particle is defined using the keyword <dictkey>noVibTemp</dictkey> and finally the number of electronic energy levels is specified by the entry <dictkey>noElecLevels</dictkey>.
-  
-  
-  
 In the <subdict>thermodynamics</subdict> subdictionary, the first entry is a list of coefficients called <dictkey>decoupledCvCoeffs()</dictkey>. The heat capacity at constant volume, _Cv_, is decomposed into the contributions of the different energy modes that are translational (element 1), rotational (element 2), vibrational (element 3), electronic (element 4), and electron (element 5). For a planar molecule,   
+
 ```
 Cv_t (T) = 1.5*R_m 
 ``` 
