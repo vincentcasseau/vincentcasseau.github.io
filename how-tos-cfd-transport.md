@@ -15,8 +15,8 @@ These how-tos are based on the working folder located [here](https://github.com/
 ### 1.1 Inviscid simulation    
 
 This is done in two steps:
-+ in the <dict>thermophysicalProperties/</dict><subdict>thermoType</subdict> dictionary, edit the <dictkey>transport</dictkey> entry to <dictval>constant</dictval>;
-+ in the <dict>thermoDEM/</dict><subdict>#speciesName/transport/constant</subdict> dictionary, for all #speciesName present in the gas mixture, edit the value of the entry <dictkey>mu</dictkey> to be <dictval>0</dictval>.
+  + in the <dict>thermophysicalProperties/</dict><subdict>thermoType</subdict> dictionary, edit the <dictkey>transport</dictkey> entry to <dictval>constant</dictval>;
+  + in the <dict>thermoDEM/</dict><subdict>#speciesName/transport/constant</subdict> dictionary, for all #speciesName present in the gas mixture, edit the value of the entry <dictkey>mu</dictkey> to be <dictval>0</dictval>.
 
 ### 1.2 Viscous simulation with constant shear viscosity and thermal conductivity
 + In the <dict>thermophysicalProperties/</dict><subdict>thermoType</subdict> dictionary, edit the <dictkey>transport</dictkey> entry to <dictval>constant</dictval>.
