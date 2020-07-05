@@ -34,9 +34,9 @@ hy2Foam > log.hyFoam 2>&1 &
 ---  
 ## 2) Thermal non-equilibrium
 
-As mentioned in the introduction, the non-equilibrium solver _hy2Foam_ can take two forms: it can either solve the mixture vibro-electronic energy equation or multiple vibro-electronic energy equations. The choice of the former variant is highly recommended.
+As mentioned in the introduction, the non-equilibrium solver _hy2Foam_ can take two forms: it can either solve the mixture vibro-electronic energy equation or multiple vibro-electronic energy equations. The choice of the former variant is <u>highly recommended</u>.
 
-### 2.1 Two-temperature solver, single vibro-electronic energy pool  
+### 2.1 Single vibro-electronic energy pool  
 The <dict>thermophysicalProperties</dict> dictionary setup in this variant of _hy2Foam_ is  
 
 ```c++
@@ -119,7 +119,7 @@ As is customary, the Landau-Teller equation is employed for V—T energy exchang
 The H—e energy transfer of Appleton & Bray (1963) does not require any input. It can be disabled using a <dictkey>relaxationType</dictkey> set to <dictval>noHEEnergyTransfer</dictval>.
 
 
-### 2.2 Two-temperature solver, multiple vibro-electronic energy pools
+### 2.2 Multiple vibro-electronic energy pools
 In the current version of the code, this configuration has several limitations that are as follows
    + the gas mixture must be composed of neutral particles only  
    + the electronic mode of all particles must be turned off (see [A. §1.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#12-disablingenabling-the-electronic-mode-of-a-particle))
@@ -132,7 +132,7 @@ If the above conditions are fulfilled, then the <dict>thermophysicalProperties</
     downgradeToSingleTemperature no;
 ```
 
-In addition to the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), the <subdict>thermalRelaxationModels</subdict> subdictionary is augmented with vibrational-vibrational (V—V) and electron-vibrational (e—V) energy transfers and the <subdict>thermalRelaxationModels</subdict> takes the following form  
+In addition to the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-single-vibro-electronic-energy-pool), the <subdict>thermalRelaxationModels</subdict> subdictionary is complemented with vibrational-vibrational (V—V) and electron-vibrational (e—V) energy transfers and the <subdict>thermalRelaxationModels</subdict> takes the following form  
 
 ```c++
 thermalRelaxationModels
@@ -156,7 +156,7 @@ thermalRelaxationModels
 }
 ```
 
-V—V energy transfer presented in Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V—T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the <dictkey>collidingPair</dictkey> key. V—V energy exchange can also be disabled by setting the <dictkey>relaxationType</dictkey> to <dictval>noVVEnergyTransfer</dictval>.  
+V—V energy transfer presented in Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V—T model](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the <dictkey>collidingPair</dictkey> key. V—V energy exchange can also be disabled by setting the <dictkey>relaxationType</dictkey> to <dictval>noVVEnergyTransfer</dictval>.  
 
 e—V energy transfer is not tested and should not be used.  
 
@@ -208,7 +208,7 @@ rarefiedParameters
 }
 ```
 
-> Always switch <dictkey>computeMfpBoundaries</dictkey> on when using the Smoluchowski temperature jump and the Maxwell velocity slip BCs.
+> Always switch <dictkey>computeMfpBoundaries</dictkey> on when using the Smoluchowski temperature jump and the Maxwell velocity slip boundary conditions.
 
 To compute the mfp in the entire domain, <dictkey>computeFieldAndBoundaries</dictkey> must be switched <dictval>on</dictval>.
 The species and mixture mfp can be printed using the <dictkey>writeMfpSpecies</dictkey> and <dictkey>writeMfpMixture</dictkey> switches.  
@@ -311,3 +311,5 @@ chemistryVibrationCoupling
     }
 }
 ```
+
+and there should be no need to edit them.

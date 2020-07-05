@@ -62,8 +62,8 @@ These how-tos are based on the working folder located [here](https://github.com/
 ### [1) Thermal equilibrium](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#1-thermal-equilibrium)
 
 ### [2) Thermal non-equilibrium](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#2-thermal-non-equilibrium)
-+ **[2.1 Two-temperature solver, single vibro-electronic energy pool](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-two-temperature-solver-single-vibro-electronic-energy-pool)**  
-+ **[2.2 Two-temperature solver, multiple vibro-electronic energy pools](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#22-two-temperature-solver-multiple-vibro-electronic-energy-pools)** 
++ **[2.1 Single vibro-electronic energy pool](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#21-single-vibro-electronic-energy-pool)**  
++ **[2.2 Multiple vibro-electronic energy pools](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#22-multiple-vibro-electronic-energy-pools)** 
 
 ### [3) Mean free path and breakdown parameter](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#3-mean-free-path-and-breakdown-parameter)  
 + **[3.1 Mean free path](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#31-mean-free-path)**    
