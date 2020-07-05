@@ -19,7 +19,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 
 ---  
 ## [B. Transport](https://vincentcasseau.github.io/how-tos-cfd-transport/)
-### [1) Species transport properties](https://vincentcasseau.github.io/how-tos-cfd-transport/#1-individual-shear-viscosity-and-thermal-conductivity)
+### [1) Species transport properties](https://vincentcasseau.github.io/how-tos-cfd-transport/#1-species-shear-viscosity-and-thermal-conductivity)
 + **[1.1 Inviscid simulation](https://vincentcasseau.github.io/how-tos-cfd-transport/#11-inviscid-simulation)**  
 + **[1.2 Viscous simulation with constant shear viscosity and thermal conductivity](https://vincentcasseau.github.io/how-tos-cfd-transport/#12-viscous-simulation-with-constant-shear-viscosity-and-thermal-conductivity)**  
 + **[1.3 Other transport models](https://vincentcasseau.github.io/how-tos-cfd-transport/#13-other-transport-models)**  
