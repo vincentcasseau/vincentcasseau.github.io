@@ -44,10 +44,9 @@ A modified version of the <i>dsmcFoam+</i> direct simulation Monte Carlo (DSMC) 
 <table cellspacing="0" cellpadding="0">
 <tr>
   <td>This work was initiated at the University of Glasgow and was funded for 9 months by <a href="http://www.fluidgravity.co.uk/fgewebsite/">Fluid Gravity Engineering</a> (October 2017 — June 2018).</td>
-  <td><img src="https://vincentcasseau.github.io/docs/img/logos/epsrc-sponsor-highres.jpg" width="160%"></td>
 </tr>
 <tr>
-<td style="text-align:center" colspan="2"> Volunteering work from mid-2018 onwards.
+<td style="text-align:center"> Volunteering work from mid-2018 onwards.
 </td>
 </tr>
 </table>  
