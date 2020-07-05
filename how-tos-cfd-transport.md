@@ -33,7 +33,7 @@ The names of all other available transport models to be loaded using the <dictke
 | <dictval>CEA</dictval>      | <dictkey>temp()</dictkey>, <dictkey>visco()</dictkey>, <dictkey>kappa()</dictkey>      |
 | <dictval>powerLawEucken</dictval> | <dictkey>diameter</dictkey>, <dictkey>omega</dictkey>     |
 
-The coefficients of these models can be found in the <dict>thermoDEM/</dict><subdict>#speciesName</subdict> dictionary. The first three models are using coefficients located into the <subdict>transport</subdict> subdictionary, while the <dictval>powerLawEucken</dictval> model requires the species diameter, <dictkey>diameter</dictkey>, and the species temperature exponent of viscosity, <dictkey>omega</dictkey>, located in the <subdict>specie</subdict> subdictionary.
+The coefficients of these models can be found in the <dict>thermoDEM/</dict><subdict>#speciesName</subdict> dictionary. The first three models are using coefficients located in the <subdict>transport</subdict> subdictionary, while the <dictval>powerLawEucken</dictval> model requires the species diameter, <dictkey>diameter</dictkey>, and the species temperature exponent of viscosity, <dictkey>omega</dictkey>, located in the <subdict>specie</subdict> subdictionary.
 
 ### 1.4 Print species shear viscosity and thermal conductivity
 In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dictionary, edit any of these two switches to <dictval>on</dictval>  
@@ -85,7 +85,16 @@ In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dicti
     binaryDiffusivityModel        noBinaryDiffusivityModel;
 ```
 
-The Lewis number value can be found in the <subdict>diffusiveFluxesParameters</subdict> subdictionary.  
+The Lewis number value can be found in the <subdict>diffusiveFluxesParameters</subdict> subdictionary
+
+```c++
+    diffusiveFluxesParameters
+    {
+        LewisNumber                    1.4;
+        
+        [...]
+    }
+```  
 
 ### 3.3 Fick's law and binary diffusion models
 In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dictionary, edit the following entries to
