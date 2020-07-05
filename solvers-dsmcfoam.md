@@ -22,7 +22,7 @@ nav-short: true
   <img src="/docs/img/logos/dsmcFoamPlusLogo.png" width="220"/>
 </p>
 
-A modified version of the <i>dsmcFoam+</i> direct simulation Monte Carlo (DSMC) solver was added end of 2017 as part of a European Space Agency project and was funded for 9 months by <a href="http://www.fluidgravity.co.uk/fgewebsite/">Fluid Gravity Engineering</a>. The original code is available at [MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig). The new features are as follows
+A modified version of the <i>dsmcFoam+</i> direct simulation Monte Carlo (DSMC) solver was added end of 2017 as part of a European Space Agency project, funded for 9 months by <a href="http://www.fluidgravity.co.uk/fgewebsite/">Fluid Gravity Engineering</a>. The original <i>dsmcFoam+</i> code is available at [MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF/tree/devel-craig). The new features are as follows
 
 * improved load balancing feature
 * improved axially-symmetric capability

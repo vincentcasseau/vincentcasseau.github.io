@@ -50,7 +50,7 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 <table cellspacing="0" cellpadding="0">
 <tr>
   <td>This work was funded by the <a href="https://www.epsrc.ac.uk/">Engineering and Physical Sciences Research Council</a> (EPSRC) from February 2014 until early 2017.</td>
-  <td><img src="https://vincentcasseau.github.io/docs/img/logos/epsrc-sponsor-highres.jpg" width="130%"></td>
+  <td><img src="https://vincentcasseau.github.io/docs/img/logos/epsrc-sponsor-highres.jpg" width="160%"></td>
 </tr>
 </table>
 
