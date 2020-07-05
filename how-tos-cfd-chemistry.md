@@ -146,7 +146,7 @@ reactions
 &nbsp;
 
 #### 3.2.2 Reverse reaction   
-Extra coefficients entering into the calculation of the reverse reaction rate constant [Park, 1990], _k\_rev_, are given below  
+Additional coefficients entering into the calculation of the reverse reaction rate constant [Park, 1990], _k\_rev_, are given below  
 
 | Extra coefficient    | Meaning | Units |
 |:-------------:|:-------------|:------:|
@@ -236,7 +236,7 @@ reactions
     }
 }
 ```
-**NB:** All species present in the <dictkey>species()</dictkey> list must be present in the <dictkey>coeff()</dictkey> list, no more, no less. 
+> All species present in the <dictkey>species()</dictkey> list must be present in the <dictkey>coeff()</dictkey> list, no more, no less. 
 
 ### 3.3  Increase robustness
 Backward reaction rates may sometimes cause problems in low-temperature regions and yield the simulation to crash. A minimum temperature value, <dictkey>Tmin</dictkey>, can be introduced into the rate calculations to increase robustness [Scalabrin, 2007]. A switch called <dictkey>modifiedTemperature</dictkey> located in the <dict>chemistryProperties</dict> dictionary is there for this purpose.
