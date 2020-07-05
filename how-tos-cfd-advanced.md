@@ -14,25 +14,28 @@ These how-tos are based on the working folder located [here](https://github.com/
   
 In the <dirname>system/</dirname> directory, open the <dict>fvSchemes</dict> dictionary and edit the default <dictkey>ddtSchemes</dictkey> entry to <dictval>localEuler rDeltaT</dictval>.
 
-> Local time stepping is currently inappropriate for axisymmetric and chemically-reacting simulations.  
+The [Lorrain scramjet tutorial](https://vincentcasseau.github.io/tutos-hyfoam/#3-lorrain-geometry) is a suitable case to employ LTS and the aforementioned time discretisation scheme is the only modification to be made.  
 
-The [Lorrain scramjet tutorial](https://vincentcasseau.github.io/tutos-hyfoam/#3-lorrain-geometry) is a suitable case for running LTS and the aforementioned time discretisation scheme is the only modification to be made.
+> Local time stepping is currently inappropriate for axisymmetric and chemically-reacting simulations. 
 
 <br>
 
 ---  
 ## 2) On-the-fly dictionary editing  
 
-On-the-fly editing was made available primarily for computations on a high-performance computer on which days can be lost waiting in a priority queue. The different steps to follow are explained below depending on the dictionary that is affected by the changes.
+On-the-fly editing was made available primarily for computations on a high-performance computer where days can be lost waiting in a priority queue. The different steps to follow are explained below depending on the dictionary that is affected by the changes.
 
-For the <strong><dict>transportProperties</dict> dictionary</strong>:  
+For the <u><dict>transportProperties</dict> dictionary</u>:  
   + Open the <dict>transportProperties</dict> dictionary  
   + Edit one or several entries inside the <subdict>rarefiedParameters</subdict> or <subdict>transportModels</subdict> subdictionaries  
-  + [NB: if you save the file at this point, nothing will happen] 
-  + Add an entry to the modified subdictionary that is: _**applyChanges        true;**_
+  + <i>NB: if you save the file at this point, nothing will happen</i> 
+  + Add a new key to the modified subdictionary
+```c++
+    applyChanges        true;
+```
   + Save the file  
-  + [For safety, once the modification has taken effect, the file can be re-opened and the <dictkey>applyChanges</dictkey> entry can be removed. Save again.]  
-  + If this operation has worked, then your simulation should have entered into a second sub-phase of the run as shown in the log file
+  + <i>NB: For safety, once the modification has taken effect, the file can be re-opened and the <dictkey>applyChanges</dictkey> entry can be removed. Save again.</i> 
+  + If this operation worked, then your simulation should have entered into a second sub-phase of the run, as shown in the log file
 
 Before:  
 
@@ -46,13 +49,16 @@ After:
 Phase no 1.1  ExecutionTime = 72.32 s  ClockTime = 74 s  Iteration no 4505 (0.03 s)
 ```
 
-For the <strong><dict>thermo2TModel</dict> dictionary</strong>:  
-  + The steps are equivalent to the <dict>transportProperties</dict> dictionary: add the entry _**applyChanges        true;**_ after editing the desired subdictionary and save.  
+For the <u><dict>thermo2TModel</dict> dictionary</u>:  
+  + The steps are similar to the <dict>transportProperties</dict> dictionary: add the <dictkey>applyChanges<dictkey> key after editing the desired subdictionary and save.  
 
 
 For **any other dictionaries**:  
   + Make modifications to the dictionary in question (_e.g._, adding extra chemical reaction, etc) and save.  
-  + Open the <dict>hTCProperties</dict> dictionary and add the entry: _**applyChanges        true;**_  
+  + Open the <dict>hTCProperties</dict> dictionary and add the entry:
+```c++
+    applyChanges        true;
+``` 
   + Save the <dict>hTCProperties</dict> dictionary  
 
 As shown in the log file, the simulation enters into a new stage/phase
