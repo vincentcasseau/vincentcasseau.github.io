@@ -64,7 +64,7 @@ As shown in this example, a specific order must be respected
 5. electrons  
 
 In the <dict>thermoDEM</dict> dictionary, uncomment all species listed in the <dict>hTCReactions#name</dict> dictionary - **and comment out those that are not present**.  
-All species listed in the <dict>hTCReactions#name</dict> dictionary should also be present in the <dirname>0/</dirname> directory. This is discussed in [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#2-species-mass-fractions/).
+All species listed in the <dict>hTCReactions#name</dict> dictionary should also be present in the <dirname>0/</dirname> directory. This is discussed in [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/#2-species-mass-fractions).
 
 ### 1.3 Printing species quantities  
 In the <dict>hTCProperties</dict> dictionary, switch <dictval>on</dictval>/<dictval>off</dictval> any of these booleans to print the desired fields 
