@@ -136,7 +136,7 @@ The <dictkey>hyLight</dictkey> switch located into the <dict>thermophysicalPrope
 ---  
 ## 5) Adaptive mesh refinement
   
-The <dict>dynamicMeshDict</dict> dictionary needs to be added to the standard _hy2Foam_ working directory: please refer to the official OpenFOAM tutorials and copy-paste the most appropriate one in the <dirname>constant/</dirname> folder. For example, the following command line will list all <dict>dynamicMeshDict</dict> available
+The <dict>dynamicMeshDict</dict> dictionary needs to be added to the standard _hy2Foam_ working directory: please refer to the official OpenFOAM tutorials and copy-paste the most appropriate one in the <dirname>constant/</dirname> folder. For instance, the following command line will list all <dict>dynamicMeshDict</dict> available
 
 ```sh
 tut
@@ -156,6 +156,12 @@ The command line to run _hy2Foam_ with adaptive mesh refinement, is
 
 ```sh
 hy2DyMFoam > log.hy2DyMFoam 2>&1 &
+```
+
+In the logfile, the number of adaptation cycles that the mesh has undergone at any time is given before the '/' symbol, that is 2 in the following example:
+
+```c++
+Phase no 2/1.0  ExecutionTime = 153.02 s  ClockTime = 157 s  Iteration no 9074 (0.03 s)
 ```
 
 <b>NB</b>: In Paraview, on the left-hand side panel, _Properties_ tab, untick _Decompose Polyhedra_ and then set _Representation_ to _Surface With Edges_.
