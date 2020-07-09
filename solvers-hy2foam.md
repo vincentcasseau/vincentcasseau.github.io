@@ -42,6 +42,7 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 * computation of the convective wall heat flux
 * computation of the mean free path and breakdown parameter
 * modifications to the Smoluchowski temperature jump and Maxwell velocity slip boundary conditions. Possibility to gradually increase the inlet flow velocity    
+* adaptive mesh refinement (DyM) based on the Mach number gradient or normalised gradients of density or pressure
 * all dictionaries can be re-read on-the-fly which is handy on a high-performance computer  
 * layer functions for the strongly-coupled hybrid CFD-DSMC code _hyperFoam_  
 

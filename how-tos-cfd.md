@@ -125,6 +125,8 @@ These how-tos are based on the working folder located [here](https://github.com/
 
 ### [4) The _hyLight_ switch](https://vincentcasseau.github.io/how-tos-cfd-advanced/#4-the-hylight-switch)   
 
+### [5) Adaptive mesh refinement](https://vincentcasseau.github.io/how-tos-cfd-advanced/#5-adaptive-mesh-refinement)  
+
 <br>
 
 ---  

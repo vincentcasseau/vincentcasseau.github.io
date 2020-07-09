@@ -130,3 +130,35 @@ Attempt to use rho2ReactionThermo out of temperature range 3197 times during thi
 ## 4) The _hyLight_ switch
 
 The <dictkey>hyLight</dictkey> switch located into the <dict>thermophysicalProperties</dict> dictionary disables some of the code features to run a minimalistic version of the solver. For instance, quantities like the Knudsen number or the overall temperature will not be calculated at each time step when this switch is <dictval>on</dictval> (and that even if the set-up of the <dict>transportProperties</dict> dictionary is telling otherwise). The solution should not be affected by the state of the <dictkey>hyLight</dictkey> switch, only the number of fields to be printed might differ.
+
+<br>
+
+---  
+## 5) Adaptive mesh refinement
+  
+The <dict>dynamicMeshDict</dict> dictionary needs to be added to the standard _hy2Foam_ case setup: please refer to the official OpenFOAM tutorials and copy-paste the most appropriate one in the <dirname>constant/</dirname> folder. For example, the following command line will list all <dict>dynamicMeshDict</dict> available
+
+```sh
+tut
+find . -type f -name "dynamicMeshDict"
+```
+
+and the one located in
+
+```sh
+./multiphase/interDyMFoam/RAS/motorBike/constant/dynamicMeshDict
+```
+
+is suitable. In the <dict>dynamicRefineFvMeshCoeffs</dict> subdictionary, the field on which refinement/coarsening is based on is given by the key <dictkey>field</dictkey>.
+You can either provide the name of an existing field or input any of three hardcoded fields:
+<dictval>normalisedPressureGradient</dictval>, <dictval>normalisedPressureGradient</dictval>, <dictval>MachGradient</dictval>
+
+If you chose one of the three hardcoded adaptation fields, this field will be printed in the results folder.  
+
+The command line to run _hy2Foam_ with adaptative mesh refinement, is  
+
+```sh
+hy2DyMFoam > log.hy2DyMFoam 2>&1 &
+```
+
+NB: In Paraview, on the left-hand side panel, _Properties_ tab, untick _Decompose Polyhedra_.
