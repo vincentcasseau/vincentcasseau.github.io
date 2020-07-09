@@ -149,7 +149,7 @@ and the one located here
 ./multiphase/interDyMFoam/RAS/motorBike/constant/dynamicMeshDict
 ```
 
-is suitable. In the <subdict>dynamicRefineFvMeshCoeffs</subdict> subdictionary, the field on which refinement/coarsening is based on is given by the key <dictkey>field</dictkey>.
+is suitable. In the <subdict>dynamicRefineFvMeshCoeffs</subdict> subdictionary, the field on which refinement/coarsening is based is given by the key <dictkey>field</dictkey>.
 You can either provide the name of an existing field or input any of three hardcoded fields: <dictval>MachGradient</dictval>, <dictval>normalisedDensityGradient</dictval> or <dictval>normalisedPressureGradient</dictval>. If you choose one of these three hardcoded adaptation fields, it will be printed in the results folder.  
 
 The command line to run _hy2Foam_ with adaptive mesh refinement, is  
