@@ -136,26 +136,25 @@ The <dictkey>hyLight</dictkey> switch located into the <dict>thermophysicalPrope
 ---  
 ## 5) Adaptive mesh refinement
   
-The <dict>dynamicMeshDict</dict> dictionary needs to be added to the standard _hy2Foam_ case setup: please refer to the official OpenFOAM tutorials and copy-paste the most appropriate one in the <dirname>constant/</dirname> folder. For example, the following command line will list all <dict>dynamicMeshDict</dict> available
+The <dict>dynamicMeshDict</dict> dictionary needs to be added to the standard _hy2Foam_ working directory: please refer to the official OpenFOAM tutorials and copy-paste the most appropriate one in the <dirname>constant/</dirname> folder. For example, the following command line will list all <dict>dynamicMeshDict</dict> available
 
 ```sh
 tut
 find . -type f -name "dynamicMeshDict"
 ```
 
-and the one located in
+and the one located here
 
 ```sh
 ./multiphase/interDyMFoam/RAS/motorBike/constant/dynamicMeshDict
 ```
 
-is suitable. In the <dict>dynamicRefineFvMeshCoeffs</dict> subdictionary, the field on which refinement/coarsening is based on is given by the key <dictkey>field</dictkey>.
+is suitable. In the <subdict>dynamicRefineFvMeshCoeffs</subdict> subdictionary, the field on which refinement/coarsening is based on is given by the key <dictkey>field</dictkey>.
 You can either provide the name of an existing field or input any of three hardcoded fields:
-<dictval>normalisedPressureGradient</dictval>, <dictval>normalisedPressureGradient</dictval>, <dictval>MachGradient</dictval>
+<dictval>normalisedDensityGradient</dictval>, <dictval>normalisedPressureGradient</dictval> or <dictval>MachGradient</dictval>.
+If you chose one of these three hardcoded adaptation fields, it will be printed in the results folder.  
 
-If you chose one of the three hardcoded adaptation fields, this field will be printed in the results folder.  
-
-The command line to run _hy2Foam_ with adaptative mesh refinement, is  
+The command line to run _hy2Foam_ with adaptive mesh refinement, is  
 
 ```sh
 hy2DyMFoam > log.hy2DyMFoam 2>&1 &
