@@ -150,9 +150,7 @@ and the one located here
 ```
 
 is suitable. In the <subdict>dynamicRefineFvMeshCoeffs</subdict> subdictionary, the field on which refinement/coarsening is based on is given by the key <dictkey>field</dictkey>.
-You can either provide the name of an existing field or input any of three hardcoded fields:
-<dictval>normalisedDensityGradient</dictval>, <dictval>normalisedPressureGradient</dictval> or <dictval>MachGradient</dictval>.
-If you chose one of these three hardcoded adaptation fields, it will be printed in the results folder.  
+You can either provide the name of an existing field or input any of three hardcoded fields: <dictval>MachGradient</dictval>, <dictval>normalisedDensityGradient</dictval> or <dictval>normalisedPressureGradient</dictval>. If you chose one of these three hardcoded adaptation fields, it will be printed in the results folder.  
 
 The command line to run _hy2Foam_ with adaptive mesh refinement, is  
 
@@ -160,4 +158,4 @@ The command line to run _hy2Foam_ with adaptive mesh refinement, is
 hy2DyMFoam > log.hy2DyMFoam 2>&1 &
 ```
 
-NB: In Paraview, on the left-hand side panel, _Properties_ tab, untick _Decompose Polyhedra_.
+<b>NB</b>: In Paraview, on the left-hand side panel, _Properties_ tab, untick _Decompose Polyhedra_ and then set _Representation_ to _Surface With Edges_.
