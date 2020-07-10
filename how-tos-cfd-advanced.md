@@ -150,7 +150,35 @@ and the one located here
 ```
 
 is suitable. In the <subdict>dynamicRefineFvMeshCoeffs</subdict> subdictionary, the field on which refinement/coarsening is based is given by the key <dictkey>field</dictkey>.
-You can either provide the name of an existing field or input any of three hardcoded fields: <dictval>MachGradient</dictval>, <dictval>normalisedDensityGradient</dictval> or <dictval>normalisedPressureGradient</dictval>. If you choose one of these three hardcoded adaptation fields, it will be printed in the results folders.  
+You can either provide the name of an existing field or input any of three hardcoded fields: <dictval>MachGradient</dictval>, <dictval>normalisedDensityGradient</dictval> or <dictval>normalisedPressureGradient</dictval>. If you choose one of these three hardcoded adaptation fields, it will be printed in the results folders. Finally, an example is given below:
+
+```sh
+dynamicRefineFvMeshCoeffs
+{
+    // How often to refine
+    refineInterval  10000;
+    
+    // Field to base refinement on
+    field normalisedDensityGradient;
+    
+    // Refine field inbetween lower..upper
+    lowerRefineLevel 1.0;
+    upperRefineLevel 1e6;
+    
+    // Unrefine field inbetween 0..unrefine
+    unrefineLevel 0.5;
+    
+    // Have slower than 2:1 refinement
+    nBufferLayers   1;
+    // Refine cells only up to maxRefinement levels
+    maxRefinement   3;
+    // Stop refinement if maxCells reached
+    maxCells        2000000;
+    
+    // Write the refinement level as a volScalarField
+    dumpLevel       true;
+}
+```
 
 The command line to run _hy2Foam_ with adaptive mesh refinement, is  
 
