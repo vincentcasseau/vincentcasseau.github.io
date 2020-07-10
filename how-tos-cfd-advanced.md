@@ -152,7 +152,7 @@ and the one located here
 is suitable. In the <subdict>dynamicRefineFvMeshCoeffs</subdict> subdictionary, the field on which refinement/coarsening is based is given by the key <dictkey>field</dictkey>.
 You can either provide the name of an existing field or input any of three hardcoded fields: <dictval>MachGradient</dictval>, <dictval>normalisedDensityGradient</dictval> or <dictval>normalisedPressureGradient</dictval>. If you choose one of these three hardcoded adaptation fields, it will be printed in the results folders. Finally, an example is given below:
 
-```sh
+```c++
 dynamicRefineFvMeshCoeffs
 {
     // How often to refine
