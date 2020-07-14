@@ -106,9 +106,11 @@ _Lead developer_:
 ---   
 ## DSMC module &nbsp;—&nbsp; __*dsmcFoam+*__        
 _Current developers_: 
-* **Dr Vincent Casseau** 
+* **Dr Vincent Casseau**  
+* **Tim Teichmann**, PhD student in the [Institute for Technical Physics](http://www.itep.kit.edu/english/), Karlsruhe Institute of Technology (KIT), Eggenstein-Leopoldshafen, Germany  
 * **Dr Daniel E.R. Espinoza**  
-* **Tim Teichmann**, PhD student in the [Institute for Technical Physics](http://www.itep.kit.edu/english/), Karlsruhe Institute of Technology (KIT), Eggenstein-Leopoldshafen, Germany
+ 
+_Contributors_:  
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/craig-white-53b70387" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
@@ -116,8 +118,6 @@ _Current developers_:
     </span>
     <span class="sr-only">LinkedIn</span>
   </a> &nbsp; **Dr Craig White**, Lecturer in Aerospace Sciences at the [University of Glasgow](https://www.gla.ac.uk/schools/engineering/staff/craigwhite/), Glasgow, UK
- 
-_Contributors_:  
 * **Dr Rodrigo C. Palharini**  
 * **Dr Thomas J. Scanlon**  
 * **Dr Richard E. Brown**  
