@@ -110,20 +110,20 @@ Binary diffusion coefficients can be calculated according to any of the models p
 | Binary diffusion model name    | Parameters          |
 |:-------------:|-------------|
 | <dictval>constant</dictval>      | <dictkey>constantBinaryDiffusivityModelCoefficients</dictkey> |
-| <dictval>GuptaD</dictval>      | <dictkey>yearGuptaModel</dictkey>, <subdict>collisionData</subdict> dict     |
-| <dictval>GuptaO</dictval> | <dictkey>yearGuptaModel</dictkey>, <subdict>collisionData</subdict> dict     |
+| <dictval>collisionData</dictval>      | <dictkey>collisionDataModel</dictkey>, <subdict>collisionData</subdict> dict     |
 | <dictval>Stephani</dictval> | <dictkey>molWeight</dictkey>, <dictkey>diameter</dictkey>, <dictkey>omega</dictkey>     |
 
-The <dictkey>constantBinaryDiffusivityModelCoefficients</dictkey> and <dictkey>yearGuptaModel</dictkey> entries can be found in the <subdict>diffusiveFluxesParameters</subdict> subdictionary. <dictkey>yearGuptaModel</dictkey> accepted values are <dictval>"1989"</dictval> and <dictval>"1990"</dictval>. Please refer to the <subdict>collisionData</subdict> dictionary for the correct combination.
+The <dictkey>constantBinaryDiffusivityModelCoefficients</dictkey> and <dictkey>collisionDataModel</dictkey> entries can be found in the <subdict>diffusiveFluxesParameters</subdict> subdictionary. <dictkey>collisionDataModel</dictkey> accepted values are <dictval>"Gupta1989D"</dictval>, <dictval>"Gupta1989O"</dictval>, <dictval>"Gupta1990D"</dictval>, <dictval>"Gupta1990O"</dictval>, and <dictval>"Wright2005O"</dictval>.
 
 Example:  
 
 ```c++
-binaryDiffusivityModel       GuptaD;  
+multiSpeciesTransport        Fick;
+binaryDiffusivityModel       collisionData;  
   
 diffusiveFluxesParameters   
 {  
-     yearGuptaModel          "1989";   
+     collisionDataModel          "Gupta1989D";   
 }  
   
 collisionData  
