@@ -89,7 +89,7 @@ _Lead developer_:
   </a> &nbsp; **Alexey Ryakhovskiy**, Lecturer at [Peter the Great St. Petersburg Polytechnic University](https://english.spbstu.ru/science/) (SPbPU) and Scientific Researcher at [Corning Incorporated](https://www.corning.com/worldwide/en.html), St. Petersburg, Russia  
 
 
-_Contributors_:  
+_Contributor_:  
 * **Dr Vincent Casseau**  
 
 <br> 

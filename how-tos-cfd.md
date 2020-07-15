@@ -89,7 +89,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 <br>
 
 ---  
-## F. MHD
+## [F. MHD](https://vincentcasseau.github.io/how-tos-cfd-mhd/)
 
 <br>
 
