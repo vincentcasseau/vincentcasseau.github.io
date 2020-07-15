@@ -29,7 +29,7 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 * **non-equilibrium Navier-Stokes-Fourier equations**: **Park's two-temperature model** is implemented and the choice of having a single or multiple vibrational energy pools is left to the user. The energy transfers taking place between the different energy pools are
   + Vibrational-Translational (V—T)
   + Vibrational-Vibrational (V—V)
-  + Heavy particle-electron (H—e)
+  + Heavy-particle — electron (H—e)
 * addition of the electronic and electron energy modes
 * finite-rate chemistry
 * chemistry-vibration coupling: **Park TTv model**, coupled vibration-dissociation-vibration (CVDV) model
@@ -39,7 +39,7 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 * species diffusion models: Lewis number, generalised Fick's law, SCEBD model, inclusion of the effect of the pressure gradient
 * mixing rules: Wilke, Armaly & Sutton
 * turbulence models (no changes made to OF-v1706): laminar, k-omega SST, k-Epsilon, Spalart Allmaras, etc
-* computation of the convective wall heat flux
+* computation of the convective & diffusive wall heat flux
 * computation of the mean free path and breakdown parameter
 * modifications to the Smoluchowski temperature jump and Maxwell velocity slip boundary conditions. Possibility to gradually increase the inlet flow velocity    
 * adaptive mesh refinement (DyM) based on the Mach number gradient or normalised gradients of density or pressure
