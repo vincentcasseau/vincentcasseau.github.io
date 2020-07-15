@@ -88,6 +88,10 @@ _Lead developer_:
     <span class="sr-only">ResearchGate</span>
   </a> &nbsp; **Alexey Ryakhovskiy**, Lecturer at [Peter the Great St. Petersburg Polytechnic University](https://english.spbstu.ru/science/) (SPbPU) and Scientific Researcher at [Corning Incorporated](https://www.corning.com/worldwide/en.html), St. Petersburg, Russia  
 
+
+_Contributors_:  
+* **Dr Vincent Casseau**  
+
 <br> 
 
 ---
@@ -154,6 +158,7 @@ _Contributors_:
 * **Prof Russell R. Boyce**, Chair for Space Engineering at [UNSW Canberra Space](https://research.unsw.edu.au/people/professor-russell-robert-boyce), Canberra, Australia  
 * **Dr Melrose Brown**, Lecturer at [UNSW Canberra Space](https://www.unsw.adfa.edu.au/space-research/dr-melrose-brown), Canberra, Australia    
 * **Dr Craig White**  
+* **Dr Vincent Casseau**  
 * **Dr Thomas J. Scanlon**  
 * **Dr Richard E. Brown**
 
