@@ -277,7 +277,7 @@ chemistryVibrationCoupling
 }
 ```
 
-<p>Park's temperature, defined as $$T_{tr}^{\textrm{<dictkey>exponentTtr</dictkey>}} * T_{ve}^{1 - \textrm{exponentTtr}}$$ or T_tr^<dictkey>exponentTtr</dictkey> x T_ve^(1 - <dictkey>exponentTtr</dictkey>), is utilised for dissociation reactions if need be and a value of 0.7 is usually employed for <dictkey>exponentTtr</dictkey>. In this example, the <dictval>preferential</dictval> model is retained (the other <dictkey>sourceTermModel</dictkey> being <dictval>nonPreferential</dictval>).   
+<p>Park's temperature, defined as $$T_{tr}^{\textrm{\textcolor{magenta}{exponentTtr}} * T_{ve}^{1 - \textrm{exponentTtr}}$$ or T_tr^<dictkey>exponentTtr</dictkey> x T_ve^(1 - <dictkey>exponentTtr</dictkey>), is utilised for dissociation reactions if need be and a value of 0.7 is usually employed for <dictkey>exponentTtr</dictkey>. In this example, the <dictval>preferential</dictval> model is retained (the other <dictkey>sourceTermModel</dictkey> being <dictval>nonPreferential</dictval>).   
 </p>
 
 #### 4.1.2 Reactions dictionary
