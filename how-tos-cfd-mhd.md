@@ -55,10 +55,6 @@ hallEffect      true;
 The first switch, <dictkey>mhd</dictkey>, can be used to enable or disable MHD.  
 
 
-When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-
-
 <p>When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and
 they are</p>
 <p style="text-align:center">
