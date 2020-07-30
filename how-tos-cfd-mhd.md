@@ -81,3 +81,12 @@ The first switch, <dictkey>mhd</dictkey>, can be used to enable or disable MHD.
 
 ---
 ## 5) Hall effect
+
+
+<br>
+  
+--- 
+
+[**< E. Turbulence modelling**](https://vincentcasseau.github.io/how-tos-cfd-turbulence/)  
+[**> G. Initial conditions**](https://vincentcasseau.github.io/how-tos-cfd-initial-conditions/)  
+[**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)

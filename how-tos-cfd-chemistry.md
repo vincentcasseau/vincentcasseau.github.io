@@ -256,3 +256,11 @@ modifiedTemperatureCoeffs
 
 ## 4) To go further: chemistry-vibration coupling  
 This aspect is detailed in [D. Nonequilibrium](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/#4-chemistry-vibration-coupling).
+
+<br>
+  
+--- 
+
+[**< B. Transport modelling**](https://vincentcasseau.github.io/how-tos-cfd-transport/)  
+[**> D. Non-equilibrium flow modelling**](https://vincentcasseau.github.io/how-tos-cfd-nonequilibrium/)  
+[**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)

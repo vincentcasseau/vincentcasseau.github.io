@@ -233,3 +233,11 @@ To use the <dictkey>rampInlet</dictkey> BC, one line should be added to the <dir
 ```c++
 libs ("libstrathFiniteVolume.so");
 ```
+
+<br>
+  
+--- 
+
+[**< F. MHD modelling**](https://vincentcasseau.github.io/how-tos-cfd-mhd/)  
+[**> H. Advanced features**](https://vincentcasseau.github.io/how-tos-cfd-advanced/)  
+[**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)

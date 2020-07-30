@@ -314,3 +314,11 @@ chemistryVibrationCoupling
 ```
 
 and there should be no need to edit them.
+
+<br>
+  
+--- 
+
+[**< C. Chemistry modelling**](https://vincentcasseau.github.io/how-tos-cfd-chemistry/)  
+[**> E. Turbulence modelling**](https://vincentcasseau.github.io/how-tos-cfd-turbulence/)  
+[**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)
