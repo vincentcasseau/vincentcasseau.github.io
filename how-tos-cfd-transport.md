@@ -159,3 +159,11 @@ Results using the non-corrected forms of Fick's law and the SCEBD model can be o
 > The <dictkey>useNonCorrectedForm</dictkey> entry can be deleted from the <subdict>diffusiveFluxesParameters</subdict> subdictionary if you wish (safer).
 
 In the same subdictionary, the <dictkey>addPressureGradientTerm</dictkey> switch allows to account for the effects of pressure gradients.
+
+<br>
+  
+--- 
+
+[**< A. Thermophysical modelling**](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/)  
+[**> C. Chemistry modelling**](https://vincentcasseau.github.io/how-tos-cfd-chemistry/)  
+[**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)

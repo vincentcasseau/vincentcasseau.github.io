@@ -168,6 +168,9 @@ In the following example, the electronic energy mode of the N atom is enabled
         decoupledCvCoeffs    ( 1.5 0 0 1 0 56852 0 );
 ```
 
+<br>
+  
+--- 
 
-[**> Next: Transport modelling**](https://vincentcasseau.github.io/how-tos-cfd-transport/)  
+[**> B. Transport modelling**](https://vincentcasseau.github.io/how-tos-cfd-transport/)  
 [**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)
