@@ -127,20 +127,17 @@ The Table below lists the meaning of the different keys present in the <subdict>
 </table>
 
 In the <subdict>thermodynamics</subdict> subdictionary, the first entry is a list of coefficients called <dictkey>decoupledCvCoeffs()</dictkey>. The heat capacity at constant volume, _Cv_, is decomposed into the contributions of the different energy modes that are translational (element 1), rotational (element 2), vibrational (element 3), electronic (element 4), and electron (element 5). For a planar molecule,   
-
-```
-Cv_t (T) = 1.5*R_m 
-``` 
-
-and  
-
-```
-Cv_r (T) = 1.0*R_m 
-```
+<p>
+$$Cv_t = 1.5*R_m$$
+</p>
+<p>and</p>
+<p>
+Cv_r = 1.0*R_m 
+</p>
  
-where _R\_m_ is the specific gas constant. Thus, the first two elements in the <dictkey>decoupledCvCoeffs()</dictkey> list are the coefficients by which _R\_m_ should be multiplied.
+<p>where `R_m` is the specific gas constant. Thus, the first two elements in the <dictkey>decoupledCvCoeffs()</dictkey> list are the coefficients by which `R_m` should be multiplied.</p>
 
-For the vibrational and electronic modes, the expressions of _Cv\_v_ and _Cv\_el_ are a function of the valus provided in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists. Hence, elements 3 and 4 can be seen as switches (see [§2.1](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#21-disablingenabling-the-vibrational-mode-of-a-molecule) and [§2.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle)). Elements in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists are grouped by pairs with the first column being the degeneracy and the second column being the characteristic vibrational/electronic temperature, in Kelvins.   
+<p>For the vibrational and electronic modes, the expressions of `Cv_v` and `Cv_el` are a function of the valus provided in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists. Hence, elements 3 and 4 can be seen as switches (see [§2.1](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#21-disablingenabling-the-vibrational-mode-of-a-molecule) and [§2.2](https://vincentcasseau.github.io/how-tos-cfd-thermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle)). Elements in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists are grouped by pairs with the first column being the degeneracy and the second column being the characteristic vibrational/electronic temperature, in Kelvins.</p>   
 
 The 5th element of the <dictkey>decoupledCvCoeffs()</dictkey> list is the ratio of the species chemical enthalpy taken at 298 K (in J/mol) to the universal gas constant, while the 6th element is not used.  
 
