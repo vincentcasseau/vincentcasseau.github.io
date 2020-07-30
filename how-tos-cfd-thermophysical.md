@@ -132,7 +132,7 @@ $$Cv_t = 1.5*R_m$$
 </p>
 <p>and</p>
 <p>
-Cv_r = 1.0*R_m 
+$$Cv_r = 1.0*R_m$$
 </p>
  
 <p>where `R_m` is the specific gas constant. Thus, the first two elements in the <dictkey>decoupledCvCoeffs()</dictkey> list are the coefficients by which `R_m` should be multiplied.</p>
