@@ -27,7 +27,6 @@ howpublished={\url{https://github.com/vincentcasseau/hyStrath/}}
 ---
 
 ## Journal articles
-  - [*__dsmcFoam+__*] &nbsp; C. White _et al._, 03/2018: [dsmcFoam+: An OpenFOAM based direct simulation Monte Carlo solver](https://pure.strath.ac.uk/portal/files/81235392/White_etal_CPC_2017_an_OpenFOAM_based_direct_simulation_Monte_Carlo_solver.pdf)  
   - [*__pdFoam__*] &nbsp; C. J. Capon _et al._, 06/2017: [pdFOAM: A PIC-DSMC code for near-Earth plasma-body interactions](http://eprints.gla.ac.uk/138700/7/138700.pdf)
   - [*__hy2Foam__*] &nbsp; V. Casseau _et al._, 12/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/45/html)  
   - [*__hy2Foam__*] &nbsp; V. Casseau _et al._, 10/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part One: Zero-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/34/html)  
@@ -67,6 +66,7 @@ and continuum hypersonic flow over re-entry objects](https://strathprints.strath
 ## Other relevant publications
 
 #### Journal articles
+  - [*__dsmcFoam+__*] &nbsp; C. White _et al._, 03/2018: [dsmcFoam+: An OpenFOAM based direct simulation Monte Carlo solver](https://pure.strath.ac.uk/portal/files/81235392/White_etal_CPC_2017_an_OpenFOAM_based_direct_simulation_Monte_Carlo_solver.pdf)  
   - [*__dsmcFoam__*] &nbsp; T. J. Scanlon _et al._, 06/2015: [Open-Source Direct Simulation Monte Carlo Chemistry
 Modeling for Hypersonic Flows](https://pdfs.semanticscholar.org/5819/1acfdf18b4c0ca3905b161fb65829aadd89c.pdf)  
   - [*__dsmcFoam__*] &nbsp; T. J. Scanlon _et al._, 12/2010: [An open source, parallel DSMC code for rarefied gas flows in arbitrary geometries](https://www.research.ed.ac.uk/portal/files/17079048/ScanlonEtAlCandF2010.pdf)  
