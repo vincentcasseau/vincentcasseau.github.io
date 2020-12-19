@@ -100,7 +100,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 
 ### [1) The _include/_ sub-folder](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-initial-conditions/#1-the-include-sub-folder)
 
-### [2) Species mass fractions](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-initial-conditions/#2-species-mass-fractions)  
+### [2) Species mass or molar fractions](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-initial-conditions/#2-species-mass-or-molar-fractions)  
 + **[2.1 Non-catalytic wall](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-initial-conditions/#21-non-catalytic-wall)**  
 + **[2.2 Super-catalytic wall](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-initial-conditions/#22-super-catalytic-wall)**
 
