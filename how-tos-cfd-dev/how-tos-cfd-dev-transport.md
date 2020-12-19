@@ -109,11 +109,11 @@ Binary diffusion coefficients can be calculated according to any of the models p
 
 | Binary diffusion model name    | Parameters          |
 |:-------------:|-------------|
-| <dictval>constant</dictval>      | <dictkey>constantBinaryDiffusivityModelCoefficients</dictkey> |
+| <dictval>constant</dictval>      | <dictkey>constantBinaryDiffusionModelCoefficients</dictkey> |
 | <dictval>collisionData</dictval>      | <dictkey>collisionDataModel</dictkey>, <subdict>collisionData</subdict> dict     |
 | <dictval>Stephani</dictval> | <dictkey>molWeight</dictkey>, <dictkey>diameter</dictkey>, <dictkey>omega</dictkey>     |
 
-The <dictkey>constantBinaryDiffusivityModelCoefficients</dictkey> and <dictkey>collisionDataModel</dictkey> entries can be found in the <subdict>diffusionModelParameters</subdict> subdictionary. <dictkey>collisionDataModel</dictkey> accepted values are <dictval>"Gupta1989D"</dictval>, <dictval>"Gupta1989O"</dictval>, <dictval>"Gupta1990D"</dictval>, <dictval>"Gupta1990O"</dictval>, and <dictval>"Wright2005O"</dictval>.
+The <dictkey>constantBinaryDiffusionModelCoefficients</dictkey> and <dictkey>collisionDataModel</dictkey> entries can be found in the <subdict>diffusionModelParameters</subdict> subdictionary. <dictkey>collisionDataModel</dictkey> accepted values are <dictval>"Gupta1989D"</dictval>, <dictval>"Gupta1989O"</dictval>, <dictval>"Gupta1990D"</dictval>, <dictval>"Gupta1990O"</dictval>, and <dictval>"Wright2005O"</dictval>.
 
 Example:  
 
