@@ -1,11 +1,11 @@
 ---
 layout: page
 title: How-tos
-subtitle: CFD Module
+subtitle: CFD Module - Next Release
 nav-short: true
 ---
 
-These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
+These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/dev-isro-1/run/hyStrath/hy2Foam/genericCase).  
 
 # Thermophysical modelling
 
@@ -168,7 +168,7 @@ In the following example, the electronic energy mode of the N atom is enabled
 ---  
 ## 3) Choosing a thermoDEM dictionary
 
-Three <dict>thermoDEM</dict> dictionaries are provided in the [generic hy2Foam test case](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase/constant).  
+Three <dict>thermoDEM</dict> dictionaries are provided in the [generic hy2Foam test case](https://github.com/vincentcasseau/hyStrath/tree/dev-isro-1/run/hyStrath/hy2Foam/genericCase/constant).  
 
 - <dict>thermoDEM_TR</dict> includes the rotational energy mode only
 - <dict>thermoDEM_TRV</dict> includes the rotational and vibrational internal energy modes

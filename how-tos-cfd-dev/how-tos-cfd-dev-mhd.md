@@ -1,11 +1,11 @@
 ---
 layout: page
 title: How-tos
-subtitle: CFD Module
+subtitle: CFD Module - Next Release
 nav-short: true
 ---
 
-This how-to is based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2MhdFoam/NASA_MSL_forebody_NR-MHD).  
+This how-to is based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/dev-isro-1/run/hyStrath/hy2MhdFoam/NASA_MSL_forebody_NR-MHD).  
 
 # MHD modelling
 
