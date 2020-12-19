@@ -168,9 +168,9 @@ In the following example, the electronic energy mode of the N atom is enabled
 ## 3) Choosing a thermoDEM dictionary
 
 Three <dict>thermoDEM</dict> dictionaries are provided in the [generic *hy2Foam* test case](https://github.com/vincentcasseau/hyStrath/tree/dev-isro-1/run/hyStrath/hy2Foam/genericCase/constant)  
-  + <dict>thermoDEM_TR</dict> includes the rotational energy mode only;  
-  + <dict>thermoDEM_TRV</dict> includes the rotational and vibrational internal energy modes;  
-  + <dict>thermoDEM_TRVE</dict> includes all internal energy modes: rotational, vibrational and electronic.  
+  + to include the rotational energy mode only: <dict>thermoDEM_TR</dict>;
+  + to include the rotational and vibrational internal energy modes: <dict>thermoDEM_TRV</dict>;
+  + to includes all internal energy modes: <dict>thermoDEM_TRVE</dict>.  
 
 
 <br>
