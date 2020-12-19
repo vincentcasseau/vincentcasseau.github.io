@@ -73,7 +73,7 @@ In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dicti
   
 ```c++
     multiSpeciesTransport         noSpeciesDiffusion;  
-    binaryDiffusivityModel        noBinaryDiffusivityModel;
+    binaryDiffusionModel          noBinaryDiffusionModel;
 ```
 &nbsp;
 
@@ -82,13 +82,13 @@ In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dicti
  
 ```c++
     multiSpeciesTransport         LewisNumber;  
-    binaryDiffusivityModel        noBinaryDiffusivityModel;
+    binaryDiffusionModel          noBinaryDiffusionModel;
 ```
 
-The Lewis number value can be found in the <subdict>diffusiveFluxesParameters</subdict> subdictionary
+The Lewis number value can be found in the <subdict>diffusionModelParameters</subdict> subdictionary
 
 ```c++
-    diffusiveFluxesParameters
+    diffusionModelParameters
     {
         LewisNumber                    1.4;
         
@@ -113,15 +113,15 @@ Binary diffusion coefficients can be calculated according to any of the models p
 | <dictval>collisionData</dictval>      | <dictkey>collisionDataModel</dictkey>, <subdict>collisionData</subdict> dict     |
 | <dictval>Stephani</dictval> | <dictkey>molWeight</dictkey>, <dictkey>diameter</dictkey>, <dictkey>omega</dictkey>     |
 
-The <dictkey>constantBinaryDiffusivityModelCoefficients</dictkey> and <dictkey>collisionDataModel</dictkey> entries can be found in the <subdict>diffusiveFluxesParameters</subdict> subdictionary. <dictkey>collisionDataModel</dictkey> accepted values are <dictval>"Gupta1989D"</dictval>, <dictval>"Gupta1989O"</dictval>, <dictval>"Gupta1990D"</dictval>, <dictval>"Gupta1990O"</dictval>, and <dictval>"Wright2005O"</dictval>.
+The <dictkey>constantBinaryDiffusivityModelCoefficients</dictkey> and <dictkey>collisionDataModel</dictkey> entries can be found in the <subdict>diffusionModelParameters</subdict> subdictionary. <dictkey>collisionDataModel</dictkey> accepted values are <dictval>"Gupta1989D"</dictval>, <dictval>"Gupta1989O"</dictval>, <dictval>"Gupta1990D"</dictval>, <dictval>"Gupta1990O"</dictval>, and <dictval>"Wright2005O"</dictval>.
 
 Example:  
 
 ```c++
 multiSpeciesTransport        Fick;
-binaryDiffusivityModel       collisionData;  
+binaryDiffusionModel       collisionData;  
   
-diffusiveFluxesParameters   
+diffusionModelParameters   
 {  
      collisionDataModel          "Gupta1989D";   
 }  
@@ -154,9 +154,9 @@ In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dicti
 Please refer to [§3.3](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-transport/#33-ficks-law-and-binary-diffusion-models) for the list of available binary diffusion coefficient models.
 
 ### 3.5 Additional features (to Fick and SCEBD models)
-Results using the non-corrected forms of Fick's law and the SCEBD model can be obtained by switching on the <dictkey>useNonCorrectedForm</dictkey> boolean located in the <subdict>diffusiveFluxesParameters</subdict> subdictionary (for comparison with the corrected form only). It is turned <dictval>off</dictval> by default, which means that the sum of the diffusive fluxes is zero.
+Results using the non-corrected forms of Fick's law and the SCEBD model can be obtained by switching on the <dictkey>useNonCorrectedForm</dictkey> boolean located in the <subdict>diffusionModelParameters</subdict> subdictionary (for comparison with the corrected form only). It is turned <dictval>off</dictval> by default, which means that the sum of the diffusive fluxes is zero.
 
-> The <dictkey>useNonCorrectedForm</dictkey> entry can be deleted from the <subdict>diffusiveFluxesParameters</subdict> subdictionary if you wish (safer).
+> The <dictkey>useNonCorrectedForm</dictkey> entry can be deleted from the <subdict>diffusionModelParameters</subdict> subdictionary if you wish (safer).
 
 In the same subdictionary, the <dictkey>addPressureGradientTerm</dictkey> switch allows to account for the effects of pressure gradients.
 
