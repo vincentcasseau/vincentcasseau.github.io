@@ -126,19 +126,25 @@ diffusionModelParameters
      collisionDataModel          "Gupta1989D";   
 }  
   
-collisionData  
-{  
-     neutralNeutralInteractions  
-     { 
-          Gupta1989D
-          {
-               Dbar
-               {
-                    N2_N2 (0.0 0.0112 1.16182 -11.3091);  
-                    N2_O2 (0.0 0.0465 0.9271 -8.1137);         
-               }
-          } 
-     }  
+collisionData
+{
+    tabulatedInteractions
+    { 
+        // NASA-TM-101528 (Gupta, Yos, Thompson: Feb. 1989)
+        // Document ID: 19890011822
+        // A review of reaction rates and thermodynamic and transport 
+        // properties for the 11-species air model for chemical and thermal
+        // nonequilibrium calculations to 30000 K
+        Gupta1989D
+        {
+            // Table VI
+            Dbar
+            {
+                N2_N2 (0.0 0.0112 1.16182 -11.3091);  
+                N2_O2 (0.0 0.0465 0.9271 -8.1137);         
+            } 
+        }
+    }  
 }  
 ```  
 
