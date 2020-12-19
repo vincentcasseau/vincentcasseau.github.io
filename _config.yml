@@ -38,8 +38,8 @@ navbar-links:
     - Installation: "installation"
     - Sync: "sync"
   How-tos:
-    - CFD-Concordia: "how-tos-cfd"
-    - CFD-dev: "how-tos-cfd-dev"
+    - CFD Concordia: "how-tos-cfd"
+    - CFD dev: "how-tos-cfd-dev/how-tos-cfd-dev"
   Tutorials:
     - hyFoam: "tutos-hyfoam"
     - hy2Foam: "tutos-hy2foam"
