@@ -19,7 +19,6 @@ N2
 {
     specie
     {
-        nMoles          1;
         molWeight       28.0134;
         particleType    2;
         charge          0;
@@ -70,11 +69,6 @@ The Table below lists the meaning of the different keys present in the <subdict>
     <td align="center"><b>Meaning</b></td>
   </tr>
   <tr>
-    <td align="center"><dictkey>nMoles</dictkey></td>
-    <td align="center"> - </td>
-    <td align="center">deprecated OpenFOAM entry, always set to <dictval>1</dictval></td>
-  </tr>
-  <tr>
     <td align="center"><dictkey>molWeight</dictkey></td>
     <td align="center"> g/mol </td>
     <td align="center">molecular weight</td>
@@ -121,8 +115,8 @@ The Table below lists the meaning of the different keys present in the <subdict>
   </tr>
   <tr>
     <td align="center"><dictkey>iHat</dictkey></td>
-    <td align="center"> n/a </td>  
-    <td align="center"> under development</td>
+    <td align="center"> J/kg </td>  
+    <td align="center"> first ionization energy of the species, used in the free-electron impact ionization vibro-electronic source term</td>
   </tr>
 </table>
 
@@ -167,6 +161,19 @@ In the following example, the electronic energy mode of the N atom is enabled
 ```c++
         decoupledCvCoeffs    ( 1.5 0 0 1 0 56852 0 );
 ```
+
+
+&nbsp;
+
+---  
+## 3) Choosing a thermoDEM dictionary
+
+Three <dict>thermoDEM</dict> dictionaries are provided in the [generic hy2Foam test case](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase/constant).  
+
+- <dict>thermoDEM_TR</dict> includes the rotational energy mode only
+- <dict>thermoDEM_TRV</dict> includes the rotational and vibrational internal energy modes
+- <dict>thermoDEM_TRVE</dict> includes all internal energy modes: rotational, vibrational and electronic
+
 
 <br>
   
