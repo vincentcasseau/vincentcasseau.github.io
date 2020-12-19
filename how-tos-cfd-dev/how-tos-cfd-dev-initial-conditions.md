@@ -86,7 +86,7 @@ Y_O       0;
   
 Either the mass or molar fractions of all species appearing in the [_**species()**_ list](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-chemistry/#12-addingdeleting-species) must be given in the <dirname>0/</dirname> folder. OpenFOAM's naming convention for mass fractions omits the prefix "_Y\__", which means that the mass fraction of species _N2_ is simply called _**N2**_.
 
-To initialise the simulation using molar fractions instead, the species are called _**X_N2**_. The <dirname>include/</dirname><dict>initialConditions</dict> dictionary may then be defined to contain
+To initialise the simulation using molar fractions instead, rename the species files with the prefix "_X\__", for example: _**X_N2**_. The <dirname>include/</dirname><dict>initialConditions</dict> dictionary may then be defined to contain
 
 ```c++
 X_N2      0.79;
