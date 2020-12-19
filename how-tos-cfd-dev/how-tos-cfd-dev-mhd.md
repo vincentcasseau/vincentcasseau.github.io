@@ -32,27 +32,31 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-mhd             true;
+active          true;
 
 mhdModel        lowReMag;
 
-collisionData   constant;
-
-conductivityModel Bush;
-
-T0              12000;
-
-n               2;
-
-sigma0          5100;
-
 hallEffect      true;
+
+electricalConductivityModel Bush;
+
+constantElectricalConductivityCoeffs
+{
+    value           5100;
+}
+
+BushCoeffs
+{
+    sigma0          5100;
+    T0              12000;
+    n               2;
+}
 
 
 // ************************************************************************* //
 ```
 
-The first switch, <dictkey>mhd</dictkey>, can be used to enable or disable MHD.  
+The first switch, <dictkey>active</dictkey>, can be used to enable or disable MHD.  
 
 
 <!--<p>When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and-->
