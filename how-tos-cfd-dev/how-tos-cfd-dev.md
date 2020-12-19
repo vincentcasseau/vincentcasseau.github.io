@@ -15,6 +15,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ### [2) Adding/removing energy modes](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-thermophysical/#2-addingremoving-energy-modes)
 + **[2.1 Disabling/enabling the vibrational mode of a molecule](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-thermophysical/#21-disablingenabling-the-vibrational-mode-of-a-molecule)**  
 + **[2.2 Disabling/enabling the electronic mode of a particle](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-thermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle)**  
+
 ### [3) Choosing a thermoDEM dictionary](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-thermophysical/#3-choosing-a-thermodem-dictionary)
 
 <br>
