@@ -172,6 +172,7 @@ Three <dict>thermoDEM</dict> dictionaries are provided in the [generic *hy2Foam*
   + to include the rotational and vibrational internal energy modes: <dict>thermoDEM_TRV</dict>;
   + to includes all internal energy modes: <dict>thermoDEM_TRVE</dict>.  
 
+<b>NB</b>: It is safe to leave all species uncommented at all times.
 
 <br>
   
