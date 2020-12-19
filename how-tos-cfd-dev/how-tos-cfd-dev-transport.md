@@ -20,7 +20,7 @@ This is done in two steps:
 
 ### 1.2 Viscous simulation with constant shear viscosity and thermal conductivity
 
-Repeat the two steps presented in [§1.1](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-transport/#11-inviscid-simulation) but edit <dictkey>mu</dictkey> to the desired value. The thermal conductivity is then calculated using Eucken's formula.
+Repeat the two steps presented in [§1.1](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-transport/#11-inviscid-simulation) but edit <dictkey>mu</dictkey> to the desired value. The constant thermal conductivities are provided <dictkey>kappa</dictkey> (trans-rotational energy mode) and <dictkey>kappave</dictkey> (vibro-electronic energy mode).
 
 ### 1.3 Other transport models
 
