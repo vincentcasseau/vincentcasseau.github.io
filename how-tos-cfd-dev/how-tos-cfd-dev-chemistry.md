@@ -109,9 +109,10 @@ In the <dict>chemistryProperties</dict> dictionary, the same operation must be r
 
 ```c++
      chemistry          on;
+     initialChemicalTimeStep          1e-09;
 ```
 
-> In this dictionary, the <dictkey>initialChemicalTimeStep</dictkey> entry is not used by the solvers yet.  
+where the <dictkey>initialChemicalTimeStep</dictkey> entry sets the initial chemical time-step.  
 
 ### 3.2 Implementing a chemical reaction  
 #### 3.2.1 Forward reaction  
