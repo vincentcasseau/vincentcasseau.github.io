@@ -13,7 +13,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ## 1) Multi-species flow
 
 ### 1.1 The chemDicts/ folder
-In the <dirname>constant/</dirname> directory, the <dirname>chemDicts/</dirname> folder is gathering default chemistry dictionaries. It is advised not to modify the original files for future reference. Thus, a copy of the most appropriate <dict>hTCReactions#name</dict> dictionary can be made into the <dirname>constant/</dirname> folder.  
+In the <dirname>constant/</dirname> directory, the <dirname>chemDicts/</dirname> folder is storing default chemistry dictionaries. It is advised not to modify the original files for future reference. Thus, a copy of the most appropriate <dict>hTCReactions#name</dict> dictionary can be made into the <dirname>constant/</dirname> folder.  
 
 The path to the <dict>hTCReactions#name</dict> dictionary needs to be edited accordingly in <dict>thermophysicalProperties</dict>. This done using the  <dictkey>foamChemistryFile</dictkey> entry as  
 
@@ -63,8 +63,7 @@ As shown in this example, a specific order must be respected
 4. charged atoms  
 5. electrons  
 
-In the <dict>thermoDEM</dict> dictionary, uncomment all species listed in the <dict>hTCReactions#name</dict> dictionary - **and comment out those that are not present**.  
-All species listed in the <dict>hTCReactions#name</dict> dictionary should also be present in the <dirname>0/</dirname> directory. This is discussed in [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-initial-conditions/#2-species-mass-fractions).
+All species listed in the <dict>hTCReactions#name</dict> dictionary should also be present in <dict>thermoDEM</dict> and the <dirname>0/</dirname> directory. This is discussed in [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-initial-conditions/#2-species-mass-fractions).
 
 ### 1.3 Printing species quantities  
 In the <dict>hTCProperties</dict> dictionary, switch <dictval>on</dictval>/<dictval>off</dictval> any of these booleans to print the desired fields 
