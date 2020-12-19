@@ -93,6 +93,8 @@ X_N2      0.79;
 X_O2      0.21;
 ```
 
+When both species mass and molar fractions are given in a time folder, the simulation will (re)start using the species mass fractions.
+
 ### 2.1 Non-catalytic wall
 A non-catalytic wall BC can be set-up using the <dictval>zeroGradient</dictval> wall boundary type  
 
