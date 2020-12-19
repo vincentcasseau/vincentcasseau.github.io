@@ -119,7 +119,7 @@ Example:
 
 ```c++
 multiSpeciesTransport        Fick;
-binaryDiffusionModel       collisionData;  
+binaryDiffusionModel         collisionData;  
   
 diffusionModelParameters   
 {  
