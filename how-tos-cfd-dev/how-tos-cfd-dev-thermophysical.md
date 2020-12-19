@@ -97,7 +97,7 @@ The Table below lists the meaning of the different keys present in the <subdict>
   <tr>
     <td align="center"><dictkey>omega</dictkey></td>
     <td align="center"> - </td>  
-    <td align="center">temperature exponent of viscosity, see also: <a href="https://vincentcasseau.github.io/how-tos-cfd-dev-transport/#13-other-transport-models">B. Transport</a></td>
+    <td align="center">temperature exponent of viscosity, see also: <a href="https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-transport/#13-other-transport-models">B. Transport</a></td>
   </tr>
   <tr>
     <td align="center"><dictkey>eta_s</dictkey></td>
@@ -117,7 +117,7 @@ The Table below lists the meaning of the different keys present in the <subdict>
   <tr>
     <td align="center"><dictkey>dissocEnergy</dictkey></td>
     <td align="center"> J/kg </td>  
-    <td align="center"> species dissociation potential, used in the <a href="https://vincentcasseau.github.io/how-tos-cfd-dev-nonequilibrium/#411-general-settings">preferential model</a> </td>
+    <td align="center"> species dissociation potential, used in the <a href="https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-nonequilibrium/#411-general-settings">preferential model</a> </td>
   </tr>
   <tr>
     <td align="center"><dictkey>iHat</dictkey></td>
@@ -137,7 +137,7 @@ $$Cv_r = 1.0*R_m$$
  
 <p>where `R_m` is the specific gas constant. Thus, the first two elements in the <dictkey>decoupledCvCoeffs()</dictkey> list are the coefficients by which `R_m` should be multiplied.</p>
 
-<p>For the vibrational and electronic modes, the expressions of `Cv_v` and `Cv_{el}` are a function of the valus provided in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists. Hence, elements 3 and 4 can be seen as switches (see <a href="https://vincentcasseau.github.io/how-tos-cfd-dev-thermophysical/#21-disablingenabling-the-vibrational-mode-of-a-molecule">§2.1</a> and <a href="https://vincentcasseau.github.io/how-tos-cfd-dev-thermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle">§2.2</a>). Elements in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists are grouped by pairs with the first column being the degeneracy and the second column being the characteristic vibrational/electronic temperature, in Kelvins.</p>   
+<p>For the vibrational and electronic modes, the expressions of `Cv_v` and `Cv_{el}` are a function of the valus provided in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists. Hence, elements 3 and 4 can be seen as switches (see <a href="https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-thermophysical/#21-disablingenabling-the-vibrational-mode-of-a-molecule">§2.1</a> and <a href="https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-thermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle">§2.2</a>). Elements in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists are grouped by pairs with the first column being the degeneracy and the second column being the characteristic vibrational/electronic temperature, in Kelvins.</p>   
 
 The 5th element of the <dictkey>decoupledCvCoeffs()</dictkey> list is the ratio of the species chemical enthalpy taken at 298 K (in J/mol) to the universal gas constant, while the 6th element is not used.  
 
@@ -172,5 +172,5 @@ In the following example, the electronic energy mode of the N atom is enabled
   
 --- 
 
-[**> B. Transport modelling**](https://vincentcasseau.github.io/how-tos-cfd-dev-transport/)  
-[**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd-dev/)
+[**> B. Transport modelling**](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-transport/)  
+[**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev/)

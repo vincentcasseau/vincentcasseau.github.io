@@ -273,5 +273,5 @@ yPlus
   
 --- 
 
-[**< H. Advanced features**](https://vincentcasseau.github.io/how-tos-cfd-dev-advanced/)  
-[**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd-dev/)
+[**< H. Advanced features**](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev-advanced/)  
+[**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd-dev/how-tos-cfd-dev/)
