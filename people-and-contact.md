@@ -86,7 +86,7 @@ _Lead developer_:
       <i class="fab fa-researchgate fa-stack-2x" style='color:#00D0AF'></i>
     </span>
     <span class="sr-only">ResearchGate</span>
-  </a> &nbsp; **Alexey Ryakhovskiy**, Lecturer at [Peter the Great St. Petersburg Polytechnic University](https://english.spbstu.ru/science/) (SPbPU) and Scientific Researcher at [Corning Incorporated](https://www.corning.com/worldwide/en.html), St. Petersburg, Russia  
+  </a> &nbsp; **Dr Alexey Ryakhovskiy**, Lecturer at [Peter the Great St. Petersburg Polytechnic University](https://english.spbstu.ru/science/) (SPbPU) and Scientific Researcher at [Corning Incorporated](https://www.corning.com/worldwide/en.html), St. Petersburg, Russia  
 
 
 _Contributor_:  
