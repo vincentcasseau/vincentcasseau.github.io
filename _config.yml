@@ -38,7 +38,7 @@ navbar-links:
     - Installation: "installation"
     - Sync: "sync"
   How-tos:
-    - CFD dev: "how-tos-cfd-fleming/how-tos-cfd-fleming"
+    - CFD Fleming: "how-tos-cfd-fleming/how-tos-cfd-fleming"
     - CFD Concordia: "how-tos-cfd-concordia/how-tos-cfd-concordia"
   Tutorials:
     - hyFoam: "tutos-hyfoam"
