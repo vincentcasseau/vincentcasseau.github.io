@@ -11,7 +11,7 @@ nav-short: true
 ## How to cite our work
 {: #How-to-cite-our-work }
 
-You should cite the publication(s) related to the solver(s) you are using __and__ make a reference to this website:  
+You should cite the publication(s) related to the solver(s) you are using __and__ make a reference to the Release name and commit tag as follows:  
 ```
 @MISC{Github_hyStrath,  
 title = {Github repository of the hyStrath platform},  
