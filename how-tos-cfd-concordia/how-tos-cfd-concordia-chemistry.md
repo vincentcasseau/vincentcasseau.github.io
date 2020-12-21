@@ -64,7 +64,7 @@ As shown in this example, a specific order must be respected
 5. electrons  
 
 In the <dict>thermoDEM</dict> dictionary, uncomment all species listed in the <dict>hTCReactions#name</dict> dictionary - **and comment out those that are not present**.  
-All species listed in the <dict>hTCReactions#name</dict> dictionary should also be present in the <dirname>0/</dirname> directory. This is discussed in [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiainitial-conditions/#2-species-mass-fractions).
+All species listed in the <dict>hTCReactions#name</dict> dictionary should also be present in the <dirname>0/</dirname> directory. This is discussed in [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-initial-conditions/#2-species-mass-fractions).
 
 ### 1.3 Printing species quantities  
 In the <dict>hTCProperties</dict> dictionary, switch <dictval>on</dictval>/<dictval>off</dictval> any of these booleans to print the desired fields 
@@ -255,12 +255,12 @@ modifiedTemperatureCoeffs
 ---  
 
 ## 4) To go further: chemistry-vibration coupling  
-This aspect is detailed in [D. Nonequilibrium](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordianonequilibrium/#4-chemistry-vibration-coupling).
+This aspect is detailed in [D. Nonequilibrium](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-nonequilibrium/#4-chemistry-vibration-coupling).
 
 <br>
   
 --- 
 
-[**< B. Transport modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiatransport/)  
-[**> D. Non-equilibrium flow modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordianonequilibrium/)  
+[**< B. Transport modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-transport/)  
+[**> D. Non-equilibrium flow modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-nonequilibrium/)  
 [**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)

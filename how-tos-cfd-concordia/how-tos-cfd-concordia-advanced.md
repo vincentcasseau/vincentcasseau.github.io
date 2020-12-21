@@ -198,6 +198,6 @@ Phase no 2/1.0  ExecutionTime = 153.02 s  ClockTime = 157 s  Iteration no 9074 (
   
 --- 
 
-[**< G. Initial conditions**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiainitial-conditions/)  
-[**> I. Monitoring & Post-processing**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiamonitoring-post-processing)  
+[**< G. Initial conditions**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-initial-conditions/)  
+[**> I. Monitoring & Post-processing**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-monitoring-post-processing)  
 [**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)

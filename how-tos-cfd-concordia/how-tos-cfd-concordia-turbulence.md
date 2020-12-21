@@ -26,7 +26,7 @@ Then, in the <subdict>RAS</subdict> sub-dictionary, edit the <dictkey>RASModel</
   
 --- 
 
-[**< D. Non-equilibrium flow modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordianonequilibrium/)  
-[**> F. MHD modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiamhd/)  
+[**< D. Non-equilibrium flow modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-nonequilibrium/)  
+[**> F. MHD modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-mhd/)  
 [**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)
 

@@ -87,6 +87,6 @@ The first switch, <dictkey>mhd</dictkey>, can be used to enable or disable MHD.
   
 --- 
 
-[**< E. Turbulence modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiaturbulence/)  
-[**> G. Initial conditions**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiainitial-conditions/)  
+[**< E. Turbulence modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-turbulence/)  
+[**> G. Initial conditions**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-initial-conditions/)  
 [**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)

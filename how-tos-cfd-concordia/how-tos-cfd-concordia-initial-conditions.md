@@ -84,7 +84,7 @@ Y_O       0;
 ---  
 ## 2) Species mass fractions
   
-The mass fractions of all species appearing in the [_**species()**_ list](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiachemistry/#12-addingdeleting-species) must be given in the <dirname>0/</dirname> folder. OpenFOAM's naming convention for mass fractions omits the prefix "_Y\__", which means that the mass fraction of species _N2_ is simply called _**N2**_.
+The mass fractions of all species appearing in the [_**species()**_ list](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-chemistry/#12-addingdeleting-species) must be given in the <dirname>0/</dirname> folder. OpenFOAM's naming convention for mass fractions omits the prefix "_Y\__", which means that the mass fraction of species _N2_ is simply called _**N2**_.
 
 ### 2.1 Non-catalytic wall
 A non-catalytic wall BC can be set-up using the <dictval>zeroGradient</dictval> wall boundary type  
@@ -155,7 +155,7 @@ Its implementation is identical to the temperature field in all official OpenFOA
 ### 3.2 Vibro-electronic temperature
 
 #### 3.2.1 Single vibro-electronic energy pool formulation  
-Please refer to [D. §2.1](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordianonequilibrium/#21-single-vibro-electronic-energy-pool) if you are not familiar with this code feature.  
+Please refer to [D. §2.1](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-nonequilibrium/#21-single-vibro-electronic-energy-pool) if you are not familiar with this code feature.  
    
 The mixture vibro-electronic temperature field is called _**Tv**_ and must be present in the <dirname>0/</dirname> folder.
 The Smoluchowski vibro-electronic temperature jump BC is written as follows  
@@ -173,7 +173,7 @@ The Smoluchowski vibro-electronic temperature jump BC is written as follows
 &nbsp;
 
 #### 3.2.2 Multiple vibro-electronic energy pools formulation  
-Please refer to [D. §2.2](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordianonequilibrium/#22-multiple-vibro-electronic-energy-pools) if you are not familiar with this code feature.
+Please refer to [D. §2.2](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-nonequilibrium/#22-multiple-vibro-electronic-energy-pools) if you are not familiar with this code feature.
   
 The species vibro-electronic temperature fields are called _**Tv\_#speciesName**_ and there are as many fields as there are species in the <dictkey>species()</dictkey> list.
 The Smoluchowski vibro-electronic temperature jump BC for molecule species is defined as
@@ -194,7 +194,7 @@ The Smoluchowski vibro-electronic temperature jump BC for molecule species is de
 ## 4) Velocity field
 
 ### 4.1 Maxwell velocity slip
-The Maxwell velocity slip BC has been slightly re-written (the [mean free path](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordianonequilibrium/#3-mean-free-path-and-breakdown-parameter) is now calculated according to the model chosen in the <dict>transportProperties</dict> dictionary) and is given by 
+The Maxwell velocity slip BC has been slightly re-written (the [mean free path](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-nonequilibrium/#3-mean-free-path-and-breakdown-parameter) is now calculated according to the model chosen in the <dict>transportProperties</dict> dictionary) and is given by 
 
 ```c++
     wall
@@ -238,6 +238,6 @@ libs ("libstrathFiniteVolume.so");
   
 --- 
 
-[**< F. MHD modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiamhd/)  
-[**> H. Advanced features**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiaadvanced/)  
+[**< F. MHD modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-mhd/)  
+[**> H. Advanced features**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-advanced/)  
 [**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)

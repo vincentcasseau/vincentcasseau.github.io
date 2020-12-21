@@ -122,7 +122,7 @@ The H—e energy transfer of Appleton & Bray (1963) does not require any input. 
 ### 2.2 Multiple vibro-electronic energy pools
 In the current version of the code, this configuration has several limitations that are as follows
    + the gas mixture must be composed of neutral particles only  
-   + the electronic mode of all particles must be turned off (see [A. §2.2](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiathermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle))
+   + the electronic mode of all particles must be turned off (see [A. §2.2](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-thermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle))
    + the molecules must be planar  
 
 If the above conditions are fulfilled, then the <dict>thermophysicalProperties</dict> dictionary setup is
@@ -132,7 +132,7 @@ If the above conditions are fulfilled, then the <dict>thermophysicalProperties</
     downgradeToSingleTemperature no;
 ```
 
-In addition to the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordianonequilibrium/#21-single-vibro-electronic-energy-pool), the <subdict>thermalRelaxationModels</subdict> subdictionary is complemented with vibrational-vibrational (V—V) and electron-vibrational (e—V) energy transfers and the <subdict>thermalRelaxationModels</subdict> takes the following form  
+In addition to the energy exchange processes described in [§2.1](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-nonequilibrium/#21-single-vibro-electronic-energy-pool), the <subdict>thermalRelaxationModels</subdict> subdictionary is complemented with vibrational-vibrational (V—V) and electron-vibrational (e—V) energy transfers and the <subdict>thermalRelaxationModels</subdict> takes the following form  
 
 ```c++
 thermalRelaxationModels
@@ -156,7 +156,7 @@ thermalRelaxationModels
 }
 ```
 
-V—V energy transfer presented in Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V—T model](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordianonequilibrium/#21-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the <dictkey>collidingPair</dictkey> key. V—V energy exchange can also be disabled by setting the <dictkey>relaxationType</dictkey> to <dictval>noVVEnergyTransfer</dictval>.  
+V—V energy transfer presented in Knab _et al._ (1992) is the unique V—V model implemented. [Similarly to the V—T model](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-nonequilibrium/#21-single-vibro-electronic-energy-pool), it can be made collision-pair specific by switching on the <dictkey>collidingPair</dictkey> key. V—V energy exchange can also be disabled by setting the <dictkey>relaxationType</dictkey> to <dictval>noVVEnergyTransfer</dictval>.  
 
 e—V energy transfer is not tested and should not be used.  
 
@@ -194,7 +194,7 @@ These two quantities are calculated according to the entries specified in the <d
 
 There are three <dictkey>mfpModel</dictkey> models available for the computation of the mean free path (mfp): <dictval>maxwellian</dictval>, <dictval>hardSphere</dictval>, and <dictval>variableHardSphere</dictval>.   
 
-You may want to compute the mfp at boundary patches only to speed-up the calculations: indeed, knowledge of the mfp at boundary patches is enough to use the [Smoluchowski temperature jump boundary condition](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiainitial-conditions/#31-trans-rotational-temperature). To this aim, two switches (<dictkey>computeFieldAndBoundaries</dictkey> and <dictkey>computeMfpBoundaries</dictkey>) are implemented and the correct combination is shown below
+You may want to compute the mfp at boundary patches only to speed-up the calculations: indeed, knowledge of the mfp at boundary patches is enough to use the [Smoluchowski temperature jump boundary condition](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-initial-conditions/#31-trans-rotational-temperature). To this aim, two switches (<dictkey>computeFieldAndBoundaries</dictkey> and <dictkey>computeMfpBoundaries</dictkey>) are implemented and the correct combination is shown below
 
 ```c++
 rarefiedParameters
@@ -319,6 +319,6 @@ and there should be no need to edit them.
   
 --- 
 
-[**< C. Chemistry modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiachemistry/)  
-[**> E. Turbulence modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiaturbulence/)  
+[**< C. Chemistry modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-chemistry/)  
+[**> E. Turbulence modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-turbulence/)  
 [**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)

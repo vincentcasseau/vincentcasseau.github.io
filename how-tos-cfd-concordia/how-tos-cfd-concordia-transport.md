@@ -20,7 +20,7 @@ This is done in two steps:
 
 ### 1.2 Viscous simulation with constant shear viscosity and thermal conductivity
 
-Repeat the two steps presented in [§1.1](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiatransport/#11-inviscid-simulation) but edit <dictkey>mu</dictkey> to the desired value. The thermal conductivity is then calculated using Eucken's formula.
+Repeat the two steps presented in [§1.1](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-transport/#11-inviscid-simulation) but edit <dictkey>mu</dictkey> to the desired value. The thermal conductivity is then calculated using Eucken's formula.
 
 ### 1.3 Other transport models
 
@@ -151,7 +151,7 @@ In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dicti
     multiSpeciesTransport         SCEBD; 
 ``` 
 
-Please refer to [§3.3](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiatransport/#33-ficks-law-and-binary-diffusion-models) for the list of available binary diffusion coefficient models.
+Please refer to [§3.3](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-transport/#33-ficks-law-and-binary-diffusion-models) for the list of available binary diffusion coefficient models.
 
 ### 3.5 Additional features (to Fick and SCEBD models)
 Results using the non-corrected forms of Fick's law and the SCEBD model can be obtained by switching on the <dictkey>useNonCorrectedForm</dictkey> boolean located in the <subdict>diffusiveFluxesParameters</subdict> subdictionary (for comparison with the corrected form only). It is turned <dictval>off</dictval> by default, which means that the sum of the diffusive fluxes is zero.
@@ -164,6 +164,6 @@ In the same subdictionary, the <dictkey>addPressureGradientTerm</dictkey> switch
   
 --- 
 
-[**< A. Thermophysical modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiathermophysical/)  
-[**> C. Chemistry modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordiachemistry/)  
+[**< A. Thermophysical modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-thermophysical/)  
+[**> C. Chemistry modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-chemistry/)  
 [**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)
