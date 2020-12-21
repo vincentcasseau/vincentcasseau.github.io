@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How-tos
-subtitle: CFD Module - Next Release
+subtitle: CFD Module - Next release
 nav-short: true
 ---
 
