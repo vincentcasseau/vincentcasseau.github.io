@@ -60,7 +60,7 @@ atmospheric entry. Implemented within the OpenFOAM framework, the code has the c
 </table>
 
 
-[**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd/)  
+[**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia/)  
 [**> Tutorials**](https://vincentcasseau.github.io/tutos-hy2foam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2Foam)  
 [**> Disclaimer**](https://vincentcasseau.github.io/disclaimer/)  

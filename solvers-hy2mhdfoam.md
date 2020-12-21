@@ -41,7 +41,7 @@ _hy2MhdFoam_ supplements _hy2Foam_ with features relative to magnetohydrodynamic
   + Artificial ionization  
   + P-1 radiation model  
 
-[**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd/)  
+[**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia/)  
 [**> Tutorials**](https://vincentcasseau.github.io/tutos-hy2mhdfoam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2MhdFoam)  
 [**> Disclaimer**](https://vincentcasseau.github.io/disclaimer/)  

@@ -42,7 +42,7 @@ solver that derives from _hy2Foam_. In the latter code, the trans-rotational and
 </tr>
 </table>
 
-[**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd/)  
+[**> How-tos**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia/)  
 [**> Tutorials**](https://vincentcasseau.github.io/tutos-hyfoam/)  
 [**> Source code**](https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2Foam)  
 [**> Disclaimer**](https://vincentcasseau.github.io/disclaimer/)  
