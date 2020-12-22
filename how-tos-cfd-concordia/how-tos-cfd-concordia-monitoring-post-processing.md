@@ -5,7 +5,7 @@ subtitle: CFD Module - Concordia release
 nav-short: true
 ---
 
-These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
+These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/e755d7d8f23cf7b0555e29eed33590916e30ee73/run/hyStrath/hy2Foam/genericCase).  
 
 # Monitoring & Post-processing
 
