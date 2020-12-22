@@ -5,7 +5,7 @@ subtitle: CFD Module - Fleming release
 nav-short: true
 ---
 
-These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/dev-isro-1/run/hyStrath/hy2Foam/genericCase).  
+These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
 
 # Chemistry modelling
 
