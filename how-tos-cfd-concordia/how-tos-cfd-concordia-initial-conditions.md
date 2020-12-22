@@ -238,6 +238,6 @@ libs ("libstrathFiniteVolume.so");
   
 --- 
 
-[**< F. MHD modelling**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-mhd/)  
-[**> H. Advanced features**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-advanced/)  
+[**< E. Turbulence**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-mhd/)  
+[**> G. Advanced features**](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-advanced/)  
 [**&#x2191; Back to Contents**](https://vincentcasseau.github.io/how-tos-cfd/)

@@ -89,12 +89,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 <br>
 
 ---  
-## [F. MHD](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-mhd/)
-
-<br>
-
----  
-## [G. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-initial-conditions/)
+## [F. Initial conditions](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-initial-conditions/)
 
 ### [1) The _include/_ sub-folder](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-initial-conditions/#1-the-include-sub-folder)
 
@@ -115,7 +110,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 <br>
 
 ---  
-## [H. Advanced](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-advanced/)
+## [G. Advanced](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-advanced/)
 
 ### [1) Local time stepping](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-advanced/#1-local-time-stepping)  
 
@@ -130,7 +125,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 <br>
 
 ---  
-## [I. Monitoring & Post-processing](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-monitoring-post-processing)
+## [H. Monitoring & Post-processing](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-monitoring-post-processing)
 
 ### [1) Monitoring](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-monitoring-post-processing/#1-monitoring)  
 + **[1.1 Wall heat flux](https://vincentcasseau.github.io/how-tos-cfd-concordia/how-tos-cfd-concordia-monitoring-post-processing/#11-wall-heat-flux)**  
