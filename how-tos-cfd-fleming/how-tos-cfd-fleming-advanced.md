@@ -129,7 +129,7 @@ Attempt to use rho2ReactionThermo out of temperature range 3197 times during thi
 ---  
 ## 4) The _hyLight_ switch
 
-<p style="text-align:center"><strong> >> {\color{#ff6347}{Momentarily unavailable} << </strong></p>
+<p style="text-align:center; color:Tomato"><strong> >> Momentarily unavailable << </strong></p>
 
 The <dictkey>hyLight</dictkey> switch located into the <dict>thermophysicalProperties</dict> dictionary disables some of the code features to run a minimalistic version of the solver. For instance, quantities like the Knudsen number or the overall temperature will not be calculated at each time step when this switch is <dictval>on</dictval> (and that even if the set-up of the <dict>transportProperties</dict> dictionary is telling otherwise). The solution should not be affected by the state of the <dictkey>hyLight</dictkey> switch, only the number of fields to be printed might differ.
 
