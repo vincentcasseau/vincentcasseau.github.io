@@ -121,7 +121,7 @@ The H—e energy transfer of Appleton & Bray (1963) does not require any input. 
 
 ### 2.2 Multiple vibro-electronic energy pools
 
-<p style="text-align:center"><strong>Momentarily unavailable</strong></p>
+<p style="text-align:center"><strong> >> {\color{Tomato}{Momentarily unavailable} << </strong></p>
 
 In the current version of the code, this configuration has several limitations that are as follows
    + the gas mixture must be composed of neutral particles only  
