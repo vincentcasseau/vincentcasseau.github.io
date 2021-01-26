@@ -72,7 +72,7 @@ Some of these strategies are listed hereafter:
   5- [Mach ramp](https://vincentcasseau.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-initial-conditions/#42-linear-inlet-ramp) at the inlet;  
   6- [inviscid vs. viscous flow](https://vincentcasseau.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-transport/#transport-modelling);  
   7- [no diffusion vs. species diffusion](https://vincentcasseau.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-transport/#3-mass-diffusion);  
-  8- use of the [continuum solver *hyFoam* vs. thermal non-equilibrium solver *hy2Foam*](https://vincentcasseau.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-nonequilibrium/#1-thermal-equilibrium)  
+  8- use of the [continuum solver *hyFoam* vs. thermal non-equilibrium solver *hy2Foam*](https://vincentcasseau.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-nonequilibrium/#1-thermal-equilibrium);  
   9- progressive increase in the [degree of rarefaction](https://vincentcasseau.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-nonequilibrium/#32-knudsen-number);  
   10- gradual increase in the maximum CFL number.
   
