@@ -61,7 +61,7 @@ Hypervelocity flow | Thermal non-equilibrium | Chemically reacting flow
 
 --- 
 
-# 3) Running your own case 
+# 4) Running your own case 
 
 When simulating the complex physics around a re-entry body, it is often necessary to break down the full problem into a sequence of stages and gradually build the case up in complexity. Indeed, convergence can become difficult because of the presence of steep gradients, flow chemistry, thermal non-equilibrium effects, etc, and different strategies must then be adopted to get the desired simulation setup to run.  
 Some of these strategies are listed hereafter:  
