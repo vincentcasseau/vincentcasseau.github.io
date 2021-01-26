@@ -42,6 +42,23 @@ Axially-symmetric flow-field | Thermal non-equilibrium | Slip boundary condition
 
 <br>
 
+---  
+
+# 3) FireII capsule forebody
+
+<p align="center">
+Hypervelocity flow | Thermal non-equilibrium | Chemically reacting flow
+</p>
+
++ The working directory for the 2D axisymmetric FireII capsule forebody is located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/fireII). 
+
+<!--+ A description can be found in: V. Casseau _et al._, 12/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/45/html), Section _3.2. Mach 20 Cylinder_.  -->
+
+<!--+ [View more](https://vincentcasseau.github.io/tutos-hy2foam-2dcylinder/)-->
+
+
+<br>
+
 --- 
 
 # 3) Running your own case 
@@ -59,18 +76,4 @@ Some of these strategies are listed hereafter:
   9- progressive increase in the [degree of rarefaction](https://vincentcasseau.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-nonequilibrium/#32-knudsen-number);  
   10- gradual increase in the maximum CFL number.
   
-<!--<br>-->
 
-<!-----  -->
-
-<!--# 3) 2D Cylinder-->
-
-<!--<p align="center">-->
-<!--Hypervelocity flow | Thermal non-equilibrium | Chemically reacting flow-->
-<!--</p>-->
-
-<!--+ The working directory for the 2D planar cylinder is located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/cylinderReactingMach20). -->
-
-<!--+ A description can be found in: V. Casseau _et al._, 12/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/45/html), Section _3.2. Mach 20 Cylinder_.  -->
-
-<!--+ [View more](https://vincentcasseau.github.io/tutos-hy2foam-2dcylinder/)-->
