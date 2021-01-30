@@ -59,7 +59,7 @@ thermalRelaxationModels
     VT
     {
         relaxationType        LandauTellerVT;
-        model                 MillikanWhitePark;
+        model                 LeMANSMWP;
         fullCoeffsForm        on;
         overwriteDefault      on;
         speciesDependent      on;
@@ -91,7 +91,7 @@ As is customary, the Landau-Teller equation is employed for V—T energy exchang
   </tr>
   <tr>
     <td align="center"><dictkey>model</dictkey></td>
-    <td align="center"><dictval>MillikanWhitePark</dictval><i class="fa fa-thumbs-up" style="font-size:18px;color:green" title="recommended"></i> <br /> <dictval>MillikanWhite</dictval></td>  
+    <td align="center"><dictval>LeMANSMWP</dictval><i class="fa fa-thumbs-up" style="font-size:18px;color:green" title="recommended"></i> <br /> <dictval>MillikanWhitePark</dictval> <br /> <dictval>MillikanWhite</dictval></td>  
     <td align="center">if <dictval>LandauTellerVT</dictval> is chosen, whether to use Park's correction or not</td>
   </tr>
   <tr>  
