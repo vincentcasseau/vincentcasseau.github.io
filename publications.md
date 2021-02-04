@@ -17,7 +17,7 @@ You should cite the publication(s) related to the solver(s) you are using __and_
 title = {Github repository of the hyStrath platform},  
 month = {MM},  
 year = {YYYY},  
-note = {Release `Concordia', commit <commit tag>},
+note = {Release `Fleming', commit <commit tag>},
 howpublished={\url{https://github.com/vincentcasseau/hyStrath/}}  
 } 
 ```
